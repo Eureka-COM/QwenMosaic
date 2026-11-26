@@ -31,6 +31,7 @@
 ## 学習した重み
 
 学習した重みはこのリポジトリに入れていません。元のリポジトリ（Eureka-COM/mosaic-qwen、非公開）の Release に、次の名前で置いてあります。
+このうち `mq-0p8b-dev` と `mq-27b-s2` は、Hugging Face の Eureka-COM/QwenMosaic-0.8B と Eureka-COM/QwenMosaic-27B-delta でも公開しています。
 
 | Release | 中身（記録の文書による） |
 |---|---|

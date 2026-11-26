@@ -56,6 +56,17 @@ mq.drop_teacher()                           # 元の注意の層を捨てる
 - 27B の段 2 の重みは MMLU 1,000 問で元の 84.3% に対して 77.1% でした。数学 5 科目での差が大きく出ています
 - 全 24 層の置き換えは、記録の範囲では合格の線に届いていません。いちばん長い学習（1.6 億語）でも KL は 0.408（合格の線は 0.30）で、学習していない種類の文（英語 Wikipedia）では KL 0.577 まで開きます。品質が止まる理由の切り分けも記録にあります
 
+## 学習した重み
+
+2 つを Hugging Face で公開しています。どちらも読み込むにはこのリポジトリのコードが要ります。使い方はそれぞれのモデルカードにあります。
+
+| Hugging Face | 中身 |
+|---|---|
+| [Eureka-COM/QwenMosaic-0.8B](https://huggingface.co/Eureka-COM/QwenMosaic-0.8B) | Qwen3.5-0.8B の注意 6 層を置き換えて書き出した単体のモデル（bf16、約 1.5GB） |
+| [Eureka-COM/QwenMosaic-27B-delta](https://huggingface.co/Eureka-COM/QwenMosaic-27B-delta) | Qwen3.8-27B の段 2 の差分（記憶・正規化・LoRA、bf16、約 2.4GB）。元の Qwen3.8-27B の重みに足して使う |
+
+モデルカードの元は `docs/model-cards/` にあります。
+
 ## 中身
 
 | 場所 | 中身 |
