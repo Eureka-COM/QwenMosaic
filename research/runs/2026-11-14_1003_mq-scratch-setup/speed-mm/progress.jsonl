@@ -1,0 +1,34 @@
+{"event": "start", "step": 0, "elapsed_min": 0.0, "family": "mosaics_v2", "parameters": 127460800, "non_embedding": 94692800, "total_steps": 18310, "tokens_per_step": 65536, "lr": 0.0006, "duty": 0.7, "resumed": false, "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}}
+{"event": "eval", "step": 0, "elapsed_min": 0.51, "tokens": 0, "heldout_loss": 10.864, "position": {"1-16": 10.8403, "17-64": 10.8664, "65-256": 10.8646, "257-1024": 10.8645, "1025-2048": 10.8649}, "icl_score": -0.0044, "early": 10.8602, "late": 10.8646, "recall": {"32": {"n": 20, "acc": 0.0, "mean_logprob": -10.79}, "512": {"n": 20, "acc": 0.0, "mean_logprob": -10.683}, "1500": {"n": 20, "acc": 0.0, "mean_logprob": -10.669}, "3500": {"n": 20, "acc": 0.0, "mean_logprob": -10.62}}, "eval_min": 0.51}
+{"event": "step", "step": 10, "elapsed_min": 1.47, "tokens": 655360, "loss": 10.8238, "lr": 6.56e-06, "grad_norm": 1.427, "tok_per_s": 7412.0, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 20, "elapsed_min": 2.29, "tokens": 1310720, "loss": 10.5742, "lr": 1.311e-05, "grad_norm": 1.332, "tok_per_s": 13333.9, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 30, "elapsed_min": 3.12, "tokens": 1966080, "loss": 10.095, "lr": 1.967e-05, "grad_norm": 1.541, "tok_per_s": 13156.8, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 40, "elapsed_min": 3.95, "tokens": 2621440, "loss": 9.4114, "lr": 2.623e-05, "grad_norm": 1.268, "tok_per_s": 13173.5, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 50, "elapsed_min": 4.77, "tokens": 3276800, "loss": 8.868, "lr": 3.279e-05, "grad_norm": 1.118, "tok_per_s": 13387.2, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 60, "elapsed_min": 5.61, "tokens": 3932160, "loss": 8.5706, "lr": 3.934e-05, "grad_norm": 0.904, "tok_per_s": 12976.1, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 70, "elapsed_min": 6.45, "tokens": 4587520, "loss": 8.2796, "lr": 4.59e-05, "grad_norm": 0.824, "tok_per_s": 13036.8, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 80, "elapsed_min": 7.29, "tokens": 5242880, "loss": 8.0221, "lr": 5.246e-05, "grad_norm": 0.72, "tok_per_s": 12978.4, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 90, "elapsed_min": 8.1, "tokens": 5898240, "loss": 7.7677, "lr": 5.902e-05, "grad_norm": 0.656, "tok_per_s": 13420.5, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 100, "elapsed_min": 8.93, "tokens": 6553600, "loss": 7.5334, "lr": 6.557e-05, "grad_norm": 0.563, "tok_per_s": 13261.9, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 110, "elapsed_min": 9.65, "tokens": 7208960, "loss": 7.2976, "lr": 7.213e-05, "grad_norm": 0.492, "tok_per_s": 15156.0, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 120, "elapsed_min": 10.12, "tokens": 7864320, "loss": 7.1322, "lr": 7.869e-05, "grad_norm": 0.459, "tok_per_s": 23137.1, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 130, "elapsed_min": 10.58, "tokens": 8519680, "loss": 6.9758, "lr": 8.525e-05, "grad_norm": 0.425, "tok_per_s": 23515.7, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 140, "elapsed_min": 11.06, "tokens": 9175040, "loss": 6.8472, "lr": 9.18e-05, "grad_norm": 0.466, "tok_per_s": 23180.1, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 150, "elapsed_min": 11.52, "tokens": 9830400, "loss": 6.735, "lr": 9.836e-05, "grad_norm": 0.403, "tok_per_s": 23270.3, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 160, "elapsed_min": 12.0, "tokens": 10485760, "loss": 6.604, "lr": 0.00010492, "grad_norm": 0.454, "tok_per_s": 22978.7, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 170, "elapsed_min": 12.47, "tokens": 11141120, "loss": 6.5353, "lr": 0.00011148, "grad_norm": 0.452, "tok_per_s": 23408.4, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 180, "elapsed_min": 12.93, "tokens": 11796480, "loss": 6.417, "lr": 0.00011803, "grad_norm": 0.475, "tok_per_s": 23405.0, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 190, "elapsed_min": 13.41, "tokens": 12451840, "loss": 6.2974, "lr": 0.00012459, "grad_norm": 0.586, "tok_per_s": 23101.9, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 200, "elapsed_min": 13.87, "tokens": 13107200, "loss": 6.2169, "lr": 0.00013115, "grad_norm": 0.552, "tok_per_s": 23330.5, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 210, "elapsed_min": 14.34, "tokens": 13762560, "loss": 6.1446, "lr": 0.0001377, "grad_norm": 0.453, "tok_per_s": 23203.4, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 220, "elapsed_min": 14.8, "tokens": 14417920, "loss": 6.07, "lr": 0.00014426, "grad_norm": 0.613, "tok_per_s": 23787.2, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 230, "elapsed_min": 15.27, "tokens": 15073280, "loss": 5.9782, "lr": 0.00015082, "grad_norm": 0.53, "tok_per_s": 23490.8, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 240, "elapsed_min": 15.73, "tokens": 15728640, "loss": 5.8878, "lr": 0.00015738, "grad_norm": 0.642, "tok_per_s": 23616.4, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 250, "elapsed_min": 16.2, "tokens": 16384000, "loss": 5.7849, "lr": 0.00016393, "grad_norm": 0.548, "tok_per_s": 23219.4, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 260, "elapsed_min": 16.66, "tokens": 17039360, "loss": 5.7323, "lr": 0.00017049, "grad_norm": 0.554, "tok_per_s": 23665.2, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 270, "elapsed_min": 17.13, "tokens": 17694720, "loss": 5.648, "lr": 0.00017705, "grad_norm": 0.526, "tok_per_s": 23452.1, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 280, "elapsed_min": 17.59, "tokens": 18350080, "loss": 5.5941, "lr": 0.00018361, "grad_norm": 0.624, "tok_per_s": 23519.8, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 290, "elapsed_min": 18.06, "tokens": 19005440, "loss": 5.5387, "lr": 0.00019016, "grad_norm": 0.634, "tok_per_s": 23234.0, "gpu_gb_peak": 4.5}
+{"event": "step", "step": 300, "elapsed_min": 18.53, "tokens": 19660800, "loss": 5.4847, "lr": 0.00019672, "grad_norm": 0.572, "tok_per_s": 23636.8, "gpu_gb_peak": 4.5}
+{"event": "saved", "step": 305, "elapsed_min": 18.78, "tokens": 19988480, "tag": "stop_after"}
+{"event": "stopped", "step": 305, "elapsed_min": 18.78, "status": "stop_after"}

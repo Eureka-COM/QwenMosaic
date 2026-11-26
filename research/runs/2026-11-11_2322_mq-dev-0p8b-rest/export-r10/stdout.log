@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 6145.42it/s]
+ninja: no work to do.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"out": "/content/export/mosaic-qwen-0.8b", "parameters": 746393888, "memory_parameters": 38044128, "attention_parameters_left": 0, "shards": 1, "reload_max_logit_diff": 0.45312, "reload_top1_agree": 1.0, "attention_parameters_after_reload": 0, "attention_modules_after_reload": 0, "stored": {"where": "github-release:mq-0p8b-dev (Eureka-COM/mosaic-qwen)", "files": ["chat_template.jinja", "config.json", "model-00000.safetensors", "mq_config.json", "tokenizer.json", "tokenizer_config.json"]}}

@@ -1,0 +1,661 @@
+{
+ "args": {
+  "model": "/content/models/Qwen3.5-0.8B",
+  "data": [
+   "/content/data/cosmopedia-100k@4",
+   "/content/data/ultrachat:messages@2",
+   "/content/data/wikipedia-ja@2",
+   "/content/data/codeparrot:content@1"
+  ],
+  "out": "/content/out/clusters",
+  "docs": 40000,
+  "seq_len": 16384,
+  "max_doc": 8192,
+  "cluster_size": 60,
+  "holdout_frac": 0.05,
+  "cluster_cache": "/content/cache/clusters",
+  "rows": 3,
+  "fresh_data": [
+   "/content/ctx/cosmopedia-100k@4",
+   "/content/ctx/ultrachat:messages@2",
+   "/content/ctx/wikipedia-ja@2",
+   "/content/ctx/codeparrot:content@1"
+  ],
+  "fresh_docs": 6000,
+  "n_per_source": 20,
+  "max_minutes": 25.0
+ },
+ "load_s": 3.5,
+ "cluster_s": 0.1,
+ "data": {
+  "seq_len": 16384,
+  "max_doc": 8192,
+  "sep_id": 248044,
+  "sources": [
+   {
+    "name": "cosmopedia-100k:text",
+    "docs": 40000,
+    "weight": 4.0,
+    "chat": false,
+    "holdout": 2022,
+    "clusters": 667,
+    "held_out_clusters": 32,
+    "cluster_docs_min_median_max": [
+     1,
+     54,
+     209
+    ]
+   },
+   {
+    "name": "ultrachat:messages",
+    "docs": 40000,
+    "weight": 2.0,
+    "chat": true,
+    "holdout": 2008,
+    "clusters": 667,
+    "held_out_clusters": 33,
+    "cluster_docs_min_median_max": [
+     1,
+     55,
+     241
+    ]
+   },
+   {
+    "name": "wikipedia-ja:text",
+    "docs": 40000,
+    "weight": 2.0,
+    "chat": false,
+    "holdout": 2010,
+    "clusters": 667,
+    "held_out_clusters": 36,
+    "cluster_docs_min_median_max": [
+     1,
+     51,
+     253
+    ]
+   },
+   {
+    "name": "codeparrot:content",
+    "docs": 40000,
+    "weight": 1.0,
+    "chat": false,
+    "holdout": 2020,
+    "clusters": 667,
+    "held_out_clusters": 34,
+    "cluster_docs_min_median_max": [
+     1,
+     55,
+     335
+    ]
+   }
+  ],
+  "rows": "cluster",
+  "cluster_size": 60,
+  "holdout_frac": 0.05
+ },
+ "rows": {
+  "cosmopedia-100k:text": {
+   "documents_per_row_mean": 24.9,
+   "documents_per_row_min": 18,
+   "examples": [
+    {
+     "documents": 24,
+     "tokens": 16384,
+     "heads": [
+      " One key concept when discussing the appointment of a government official, as described in",
+      " Title: Uzbekistan's New Electoral Code: A Step Towards Democratic Reforms?  Introduction ",
+      " In international relations and politics, game theory has emerged as a significant framewo",
+      " Title: The International Implications of Atiku Abubakar's US Court Case Against Bola Tinu",
+      " Political Endorsements: An Examination of Their Importance and Impact in Elections  In th",
+      " Title: The Nuanced Role of Political Promises and Policy Changes in International Relatio",
+      " The passage you have provided offers insight into the political structure and activities ",
+      " Title: The Man Challenging Putin's Rule: An Examination of Alexei Navalny's Impact on Int",
+      " International relations and politics are never static, and recent events surrounding seve",
+      " Corruption has long been a pervasive issue in many countries around the world, and Zambia",
+      " The study of international relations and politics involves understanding the dynamics bet",
+      " International relations and politics involve the study of relationships among countries, ",
+      " The recent announcement that Italian Prime Minister Giorgia Meloni will be visiting the B",
+      " Title: The Arrest of Dr. Kizza Besigye: An Examination of Political Protest and Repressio",
+      " The recent endorsement of Asiwaju Bola Ahmed Tinubu by the United Northern Youth and Stud",
+      " Title: The Intersection of Student Protests, Political Power Dynamics, and International ",
+      " International organizations and associations play a crucial role in shaping global polici",
+      " Mohammad Reza Shalgouni, a prominent figure in Iranian politics, is no stranger to strugg",
+      " Donald Trump's much-anticipated State visit to the United Kingdom has hit a roadblock, ac",
+      " Course Unit: The Role of Political Action Networks in Modern British Politics: An Explora",
+      " The electoral process is a fundamental aspect of any democratic government, allowing citi",
+      " In the field of International Relations and Politics, understanding the role of communica",
+      " On October 9, 2002, the United States Congress was embroiled in a heated debate over the ",
+      " Defamation law is a crucial aspect of international relations and politics, particularly "
+     ]
+    },
+    {
+     "documents": 19,
+     "tokens": 16384,
+     "heads": [
+      " Let us delve into the problem of solving a particular type of differential equation using",
+      " When working to solve for the inverse function of a given function, there are several ste",
+      " Sure thing! Let me try my best to simplify this concept so that it is accessible to grade",
+      " Unit: Mathematics of Interference  In this unit, we delve into the mathematical underpinn",
+      " In this section, we delve into one of the most powerful techniques for evaluating definit",
+      " The concept being discussed here is multivariable limits, specifically how they differ fr",
+      " The concept of limits is fundamental in calculus, providing a way to determine how functi",
+      " To understand the equation presented, we need to delve into several advanced topics in ma",
+      " The process you're working through is known as linear approximation, which is a fundament",
+      " Now let's delve into solving equations involving logarithms using the given problem as ou",
+      " The limit theorem is a fundamental concept in calculus that allows us to calculate limits",
+      " To show that the function $f(x, y) = \\frac{xy}{\\sqrt{x^{2}+y^{2}}}$ is continuous at the ",
+      " To begin, let us consider the definition of an ellipse in \\(\\mathbb{R}^3\\). An ellipsoid ",
+      " The problem presented involves solving a second order nonlinear ordinary differential equ",
+      " Course Unit: The Mathematics of International Competitions  I. Introduction  Mathematical",
+      " The point-slope form of a linear equation is a fundamental concept in entry-level college",
+      " In geometry, the terms 'covertex' and 'covertices' are essential when discussing the prop",
+      " Nested Radical Sequences and Their Convergence  In this discussion, we will explore the c",
+      " The concept being discussed here is the Leibniz Integral Rule, which is a fundamental the"
+     ]
+    },
+    {
+     "documents": 26,
+     "tokens": 16384,
+     "heads": [
+      " In the bustling city of Bucharest, Romania, two longtime friends, Alex and Mihai, found t",
+      " Beneath the vast sky, sprawled a small town named Serenity. The kind of place where every",
+      " In the small town of Newhaven, there was a longstanding tradition known as the \"Spring Sp",
+      " Once upon a time in the vibrant town of Artville, there were three friends: Mia, a curiou",
+      " In the lush gardens of the Imperial Palace in Chang'an, two friends - Lin Hua, a humble f",
+      " In the small town of Meadowgrove, three friends - Emily, a curious 12-year-old; Olivia, h",
+      " In the bustling heart of London, where modern skyscrapers kiss the clouds and historical ",
+      " Once upon a time in the bustling city of New York, there was an upscale art gallery named",
+      " Once upon a time, in the bustling city of New York, lived two friends - Mia, a curious an",
+      " On a bustling city street, three strangers - Maya, an artist; Sam, a scientist; and Joe, ",
+      " In a bustling classroom filled with curious young minds, sat Anna and her friends, workin",
+      " Once upon a time, there were three friends named Alex, Jamie, and Taylor who lived in the",
+      " In the heart of New York City, there was a small independent bookstore named \"The Reading",
+      " Once upon a time in the quaint town of Rosedale, two old friends, Oliver and Emma, found ",
+      " In the bustling city of Dataville, there was a brilliant scientist named Dr. Vectors who ",
+      " In the heart of Tokyo, there was a quaint little Shinto shrine named Fushimi Inari, nestl",
+      " In the small coastal town of Seaview, two siblings, Mia and Max, lived with their grandpa",
+      " Once upon a time, in a small town named Serenity Springs, lived three friends: Timmy, an ",
+      " In the heart of Europe, nestled between France and Italy, lay a small but vibrant nation ",
+      " In the lush gardens of ancient China, two friends, Li Mei and Wei Zhen, strolled along th",
+      " In a cozy corner of a small town library, sat two friends, Mia and Theo, engrossed in con",
+      " In the heart of Amsterdam, there was a quaint little café called \"Tulip Haven.\" It was ow",
+      " In the bustling city of Letterville, there lived two passionate designers - Timothy the T",
+      " In the bustling streets of Jakarta, the nation's thriving capital, lived two friends who ",
+      " Once upon a time, in the picturesque town of Paisley known for its well-preserved archite",
+      " In the quaint town of Archaen, nestled between rolling hills and meandering rivers, lived"
+     ]
+    }
+   ]
+  },
+  "ultrachat:messages": {
+   "documents_per_row_mean": 17.3,
+   "documents_per_row_min": 7,
+   "examples": [
+    {
+     "documents": 14,
+     "tokens": 16384,
+     "heads": [
+      "Create a comprehensive plan for a week of low-carb meals and snacks, including breakfast, ",
+      "Could you suggest ways to make food appealing to children, based on the given material?: I",
+      "Can you suggest some healthy recipes for lunch that can be prepared quickly? Sure! Here ar",
+      "Develop a meal plan for a week of vegetarian lunches. Monday: - Lentil soup - Whole wheat ",
+      "Outline a week-long meal prep plan for a healthy lifestyle. Monday: - Breakfast: Greek yog",
+      "Share your favorite recipes for healthy meal prep dinners. I do not have any favorite reci",
+      "Can you suggest some healthy meal ideas for someone with a gluten allergy? Sure, here are ",
+      "Can you suggest some healthy breakfast recipes that are quick and easy to make for someone",
+      "Create a weekly menu with three meals per day and snacks that provides proper nutrition an",
+      "Develop a detailed weekly budget and meal plan for a 30-day healthy eating challenge, incl",
+      "Can you recommend some healthy, affordable meal prep ideas for people on a tight budget? Y",
+      "Could you suggest some vegan-friendly substitutions for dairy products in baking recipes? ",
+      "Create a comprehensive grocery list and easy-to-follow meal plan for a high-protein vegeta",
+      "Using information about common trigger foods and safe alternatives, develop a 7-day meal p"
+     ]
+    },
+    {
+     "documents": 10,
+     "tokens": 16384,
+     "heads": [
+      "Create a historical fiction novel set during the Viking Age, where the protagonist is a sh",
+      "Write a compelling story with a protagonist who must evade capture by a hostile army. The ",
+      "Write a story about a person who is transported to a world where they must learn to fight ",
+      "Write a 2000-word fantasy short story in third person omniscient about a young mage who go",
+      "Write a fictional story about a young woman who embarks on a pilgrimage to seek redemption",
+      "Write a 3-page fantasy story in third person limited point of view about a young female wa",
+      "Write a fantasy story in a third-person omniscient style about a young woman who discovers",
+      "Write a fictional story about a young character embarking on an epic adventure to fulfill ",
+      "Write a high-fantasy story that revolves around a character who is tasked with retrieving ",
+      "Create a set of character designs for an upcoming science fiction animation that features "
+     ]
+    },
+    {
+     "documents": 25,
+     "tokens": 16384,
+     "heads": [
+      "Record a casual and friendly conversation between a bartender and a customer discussing va",
+      "What makes Caliente unique compared to other non-alcoholic drinks for grown-ups, and what ",
+      "How many servings are in a typical family-sized bag of potato chips? A typical family-size",
+      "Write a phone conversation between two adult friends, one of whom has recently been diagno",
+      "What are the best substitutes for dairy and gluten in baking recipes? There are several su",
+      "Write a conversation script in a casual style between a baker and a customer discussing di",
+      "Record a polite and informative conversation between a patient baker and a cautious-but-cu",
+      "Could be because of your food processor is dull or not very powerful? In your case, I woul",
+      "Develop a line of high-protein and low-carbohydrate snacks that are tailored to the nutrit",
+      "Can you provide some additional information on how this cream helps with reducing friction",
+      "Given the text: A bad day camping is still better than a good day working. This is the per",
+      "The Best Smoothie you will ever taste! Recipe made with fresh fruits. More Delicious Cooki",
+      "Think of a catchy jingle for a new line of children's vitamins. \"Grow big and strong with ",
+      "Given the text: Do you cater to people with allergies? Are your recipes suitable for vegan",
+      "How does the texture of taste buds affect taste perception? I don't have taste buds or fee",
+      "Script a dialogue between a parent and child discussing the importance of healthy eating. ",
+      "Write a catchy slogan for a new line of vegetable crisps. \"Crunch your way to a healthier ",
+      "Come up with a name and tagline for a store that sells organic popcorn. Name: Kernel Karma",
+      "Write a dialogue between a cheese expert and a customer discussing how cheese ages. Cheese",
+      "Are there any recommended safety measures pet owners should take while giving No-Hides or ",
+      "What is the breakfast menu like at the Ocean View Cafe? I don't have the current or update",
+      "What are some non-dairy alternatives to milk that can be used in breakfast cereal? 1. Almo",
+      "What types of RVs does Cliff Jones RV have in stock for tailgating? Generate according to:",
+      "What is mouth feel and how does it affect the taste of food? Answer according to: Mouth fe",
+      "We have many beliefs of what composes our philosophy of fashion. Have you ever eaten Arman"
+     ]
+    }
+   ]
+  },
+  "wikipedia-ja:text": {
+   "documents_per_row_mean": 50.7,
+   "documents_per_row_min": 13,
+   "examples": [
+    {
+     "documents": 90,
+     "tokens": 16384,
+     "heads": [
+      "シバツトガ（芝苞蛾、学名 : ）は、鱗翅目ツトガ科ツトガ亜科に属する昆虫の一種。幼虫は芝を食草とする。帰化昆虫であり、1964年兵庫県三田市千刈ゴルフ場に、アメリカジョージア州から",
+      "レンテンヤッコ（連点奴、学名：Centropyge interrupta）は、スズキ目キンチャクダイ科アブラヤッコ属に分類される魚類の一種。種小名は「途切れた」を意味する。  形態",
+      "ヤスジチョウチョウウオ（八筋蝶々魚、学名：Chaetodon octofasciatus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名・英名・和名いずれも「8本の線",
+      "カンパニュラ・ミラビリス（）は、キキョウ科ホタルブクロ属の多年草。南コーカサスを原産とする。特にジョージアのアブハジア自治共和国を流れるブジピ川の渓谷に生育しており、「アブハジアの",
+      "ウォンバット型亜目（）は哺乳綱有袋類双前歯目の一亜目。現生のコアラ、ウォンバットの他、絶滅したティラコレオ（フクロライオン）、ディプロトドンなどが属す。  下位分類  ウォンバット",
+      "ミカドチョウチョウウオ（三角蝶々魚、学名：Chaetodon baronessa）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「男爵夫人」を意味する。  形態  ",
+      "テングチョウチョウウオ（天狗蝶々魚、学名:Chaetodon selene）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「月」を意味し、おそらく本種の背鰭から尾鰭",
+      "レモンチョウチョウウオ（檸檬蝶々魚、学名：Chaetodon semeion）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は、糸状に伸びる背鰭の後方から「旗」を意味",
+      "モニラリアは、ハマミズナ科に属する多肉植物。原産地は 南アフリカのケープ州。  概要  日本では近年になって、観葉植物として定着している。本葉がうさぎの耳のように見えることから、日",
+      "キジルガハ石窟（キジルガハせっくつ、）またはクズルガハ石窟（から）はキジルガハ千仏洞とも呼ばれ、中国新疆ウイグル自治区タリム盆地北部のクチャ地区にある仏教の石窟遺跡である。壁画は紀",
+      "のびる   のびる  動詞の「伸びる」「延びる」などについては:wikt:のびるを参照。  やさか運輸（やさか引越センター）が運営する時代家具建具店。   ノビル  ノビル - ユ",
+      "ワモンアザラシ属（）はアザラシ科の属。  種  脚注  アザラシ",
+      "ミナミオットセイ属（）とは食肉目鰭脚類アシカ科の属である。  種  脚注  アシカ科",
+      "フチドリカワハギ属 (学名:Acreichthys)は、フグ目カワハギ科の属の一つ。インド洋と太平洋の熱帯海域に分布する。全てが底生魚であり、全長10cm程度の小型種である。  分",
+      "マクロブロキス・ボルネエンシス（Macrobrochis borneensis）は、鱗翅目（チョウ目）エレビダエ科に属するガの一種。1939年にによって発見された。ボルネオ島とマレ",
+      "タイコウチ科（Nepidae）は、カメムシ目カメムシ亜目に属す科。水生昆虫である。長い呼吸管が特徴。  14 の属があり、タイコウチ亜科 とミズカマキリ亜科 の2つの亜科がある。世",
+      "スミツキトノサマダイ（墨付殿様鯛、学名：Chaetodon plebeius）は、スズキ目チョウチョウウオ科に分類される魚類の一種。英名は、青色の部分が滲んだように見えることにちな",
+      "コムラサキ亜科 (Apaturinae) は、タテハチョウ科に属する蝶の分類で、コムラサキ、オオムラサキ、ゴマダラチョウなどを含み、雄は独特な形状をした交尾器を持つ。  幼虫も独特",
+      "アルバートニクス(学名 Albertonykus)は、後期白亜紀竜盤目獣脚亜目アルバレッツサウルス科に属する恐竜である。名前は「アルバータ州（カナダの地名）の爪」を意味する。カナダ",
+      "丸山電気石（まるやまでんきせき、英：Maruyamaite、マルヤマアイト）とは、カザフスタンのコクチェタフで発見された新鉱物。理想化学組成は、K(MgAl2)(Al5Mg)(BO",
+      "サンバー属またはルサジカ属（Rusa）は哺乳綱鯨偶蹄目シカ科シカ亜科の属。サンバー、ルサジカなど4種が属する。3尖の角瘤が発達する枝角を持つ。  種  脚注  シカ科",
+      "プロバイノグナトゥス科（プロバイノグナトゥスか、学名：Probainognathidae）は、後期三畳紀に生息した動物食性キノドン類の絶滅した科。南アメリカ大陸のとプロバイノグナト",
+      "コウノトリ属（）はコウノトリ目コウノトリ科の属。  現生種 7種が存在する。  脚注  コウノトリ科",
+      "ルリタマアザミ（）またはエキノプスは、キク科ヒゴタイ属の多年生植物。耐寒性がある。和名の漢字表示については「瑠璃玉薊」。  分布  南ヨーロッパおよび東ヨーロッパ（スペイン東部から",
+      "ダマジカ属（Dama）は哺乳綱鯨偶蹄目シカ科シカ亜科の属。ダマジカ、ペルシャダマジカが属す。中～遠位部が掌状になる枝角を持つ。  種  脚注  シカ科",
+      "オウギチョウチョウウオ（扇蝶々魚、学名：Chaetodon meyeri）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は、本種のタイプ標本を所持していたオランダの人",
+      "ノロ亜科（Capreolinae）は、シカ科の下位の亜科。側中手骨が遠位に残る（近位側が消失する）という特徴がある。以前は学名をOdocoileinaeとしてオジロジカ亜科やシロオ",
+      "マザマ属（Mazama）は、哺乳綱鯨偶蹄目シカ科ノロ亜科の属。中南米に分布する。枝角が退化して小さくなっている種が多い。  種 和名は川田ほか（2018）による。   M. ame",
+      "テンツキチョウチョウウオ（点付蝶々魚、学名：Parachaetodon ocellatus）は、スズキ目チョウチョウウオ科テンツキチョウチョウウオ属に分類される魚類の一種。本種のみ",
+      "クラズミウマ (Tachycines asynamorus）は、バッタ目カマドウマ科の昆虫。  特徴 体長15-17mm、日本では本州、四国、九州に分布。体表に黒斑がある。マダラカ",
+      "Antipodogomphus neophytusは、トンボ亜目のサナエトンボ科に属するトンボの一種であり 、ノザン・ドラゴン（northern dragon）の名前で知られている",
+      "ミスジチョウチョウウオ（三筋蝶々魚、学名：Chaetodon lunulatus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「新月」を意味する。  形態   全",
+      "カナダカワウソ属（）は食肉目イタチ科カワウソ亜科の属。アメリカ大陸に分布する。  現生種 分類・英名はWozencraft (2005) に従い、和名は川田ら (2018) に従う",
+      "ブタオザル (Macaca nemestrina) は、哺乳綱霊長目オナガザル科マカク属に分類されていたサル。以下の2種に分割されたことで和名も変更された。  Macaca leo",
+      "キュウシュウエゾゼミ（学名:）は、カメムシ目、セミ科に分類される昆虫である。和名の通り九州を中心に分布している。  生態  主に本州中部以西に分布している。このセミもエゾゼミやアカ",
+      "コウキョアケハダニ（Eotetranychus palatiensis）は東京都千代田区の皇居の敷地内で発見された植物に寄生するアケハダニの一種で体長0.5ミリ未満。2009年から",
+      "獣型類（じゅうけいるい、学名：）は、哺乳綱の一群。分類体系によっては獣型亜綱とされることもある。1988年に多丘歯目と獣亜綱からなるクレードとして定義された。原獣亜綱（単孔目）など",
+      "シベリアノロジカ（Capreolus pygargus）は、哺乳綱鯨偶蹄目シカ科ノロ属に分類される哺乳類。  ノロジカよりも体が大きい。角はノロジカに似るが、より大きく、分岐も多い",
+      "ハクテンカタギ（白点担、学名：Chaetodon reticulatus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は、鱗の模様から「網型」を意味する。  形態 ",
+      "ニセフウライチョウチョウウオ（偽風来蝶々魚、学名：Chaetodon lineolatus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名と英名は、体側の黒い横縞模様",
+      "タキゲンロクダイ（滝元禄鯛、学名：Coradion altivelis）は、スズキ目チョウチョウウオ科タキゲンロクダイ属に分類される魚類の一種。種小名は「高い帆」を意味し、本種の背",
+      "タマバチ科（Cynipidae）とはハチ目ハチ亜目に属す科。この科に属す種の総称をタマバチという。小さな蜂で、体長は5mmに満たない。多くは植物の組織に寄生して虫こぶを作る。  脚",
+      "綿毛（わたげ）とは、綿のように柔らかい羽毛を指す語。   毛状突起（毛）のうち、ワタの種子の種皮表面に生えている単細胞毛を指す名称。  タンポポのようなキク科植物などの果実の、多数",
+      "イトトンボ科（Coenagriondae）は、トンボ目イトトンボ亜目の科である。  日本産の主な種  日本産の主な種は以下の通り。 クロイトトンボ  27-38mm 北海道、本州、",
+      "ペルシアダマジカ（Dama mesopotamica）は、哺乳綱偶蹄目シカ科ダマジカ属に分類されるシカの一種。  かつては中東に広く分布したが、現在はイランとイスラエルのみに分布す",
+      "オビシメ（帯締、学名：Scarus obishime）は、スズキ目ベラ亜目ブダイ科の魚。種小名と和名は帯締めを意味し、本種のオスの体側中央にある黄色（白色）の横帯に由来する。  形",
+      "セイボウ科（Chrysididae）とは、ハチ目ハチ亜目の科。この科に属す種をセイボウ（青蜂）と呼ぶ。体は美しい金属光沢を持つ。寄生バチであり、泥や筒などに巣を作るハチ類（トックリ",
+      "ツノハタタテダイ（角旗立鯛、学名：Heniochus varius）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は、模様から「斑点」を表すという説と「角」を意味する",
+      "ビワコカタカイガラモドキ（琵琶湖硬介殻擬き、学名 Nipponaclerda biwakoensis ） は、カメムシ目カイガラムシ上科に分類される昆虫の一種。  分布  日本では",
+      "イヌワシ属（）はタカ目タカ科の属。  現生種 以下の11種から成る。  脚注  タカ科",
+      "ヌマジカ属（スマジカぞく、Rucervus）は、哺乳綱鯨偶蹄目シカ科シカ亜科に分類される属。  所属種 所属種は以下の通り。 Rucervus duvaucelii バラシンガジカ",
+      "マダラカマドウマ (Diestrammena japanica）は、バッタ目カマドウマ科の昆虫。普通種で、日本で最もよく見られるカマドウマである。  特徴 体長20-34mm、北海",
+      "オジロジカ属（Odocoileus）は哺乳綱鯨偶蹄目シカ科ノロ亜科の属。オジロジカ、ミュールジカなどが属す。湾曲した独特の形状の枝角を有す。  種  脚注  シカ科",
+      "ヒメフウライチョウチョウウオ（姫風来蝶々魚、学名：Chaetodon oxycephalus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「鋭い頭」を意味する。 ",
+      "オオフエヤッコダイ（大笛奴鯛、学名：Forcipiger longirostris）は、スズキ目チョウチョウウオ科フエヤッコダイ属に分類される魚類の一種。種小名は「長い鼻」を意味す",
+      "ヨーロッパジャガー（Panthera gombaszoegensis）は約200-35万年前にヨーロッパに生息したヒョウ属の1種。最初の化石は1938年にスロヴァキアで発掘された。",
+      "Helwingia chinensisは、によって最初に記述されたハナイカダ科ハナイカダ属の植物種である。  変種 Helwingia chinesis var. crenata.",
+      "シレサウルス科（学名 Silesauridae）は、三畳紀に生息していた竜団類に属する絶滅した科であり、一般に恐竜類の姉妹群と見なされている。ただし、このグレードの分類法については",
+      "キイロテントウとは、コウチュウ目/テントウムシ科/カビクイテントウ族の昆虫である。  説明   公園などの木の葉にいることが多く、葉にいるカビやうどんこ病菌などを食べる益虫である。",
+      "ノロ属（Capreolus）は哺乳綱鯨偶蹄目シカ科ノロ亜科の属。ノロジカとシベリアノロジカの2種が属する。角座から第1分岐までが長く、角瘤が発達した枝角を持つのが特徴。  種  脚",
+      "フタユビナマケモノ（Choloepus didactylus）は、哺乳綱有毛目フタユビナマケモノ科フタユビナマケモノ属に分類されるナマケモノ。  南アメリカの北部（ベネズエラ、コロ",
+      "Cyclopterus lumpus は、ダンゴウオ科(Cyclopteridae)に属する海産魚である。この種は Cyclopterus に属する唯一の種である 。北大西洋と隣接",
+      "ハナグロチョウチョウウオ（鼻黒蝶々魚、学名：Chaetodon ornatissimus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。  形態    全長18cm。  青",
+      "は、大爪翼類に属する翼竜の一群である。  概要  ジュラ紀前期から白亜紀後期（トアルシアン初期からマーストリヒチアン後期 ）まで生息していた大爪翼類（翼竜）の絶滅したクレードであり",
+      "ハキリバチ科（Megachilidae）は、ハチの科の一つ。いわゆるハナバチに属す。この科のうち、葉片を切って巣を作る習性を持つ種を総称してハキリバチと呼ぶ。  日本産の主な種  ",
+      "カワウソ属（）はイタチ科カワウソ亜科の属。  種  現生種  絶滅種   † † † † † † † † † †  本属は鮮新世にアジアで進化したと考えられ、最も古い種は鮮新世後期",
+      "ツチバチ科はハチ目ハチ亜目に属す科。この科に属す種を総称してツチバチと呼ぶ。  特徴 コガネムシ科の幼虫を麻痺させ卵を産む。幼虫は外部から宿主を食す。産卵の際は地中スレスレを飛び、",
+      "モトゥロア島（モトゥロアとう）は、ツバルのヌクフェタウ環礁にある島。長さは200mの楕円形で、テアフアノフ島とテアフアニウア島の間に位置している。  参考文献  ツバルの島",
+      "コオイムシ科（Belostomatidae）は、カメムシ目カメムシ亜目に属す科。水生昆虫である。雄が卵を保育するという特徴がある。  世界中で約170 種が発見されており、新熱帯区",
+      "シチセンチョウチョウウオ（七線蝶々魚、学名：Chaetodon punctatofasciatus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「斑点の縞模様」を",
+      "トノサマダイ（殿様鯛、学名：Chaetodon speculum）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名と英名は「鏡」を意味し、本種の鮮やかな体色か、黒い斑紋",
+      "大雄紅桜（だいゆうべにざくら）は、2010年に「花咲く里山協議会」によって品種登録された神奈川県南足柄市の桜。  由来 南足柄市大雄町で作られたことに由来。  特徴 ソメイヨシノと",
+      "トンプソン・バタフライフィッシュ（学名：Hemitaurichthys thompsoni）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は芸術家・モデラーのJohn",
+      "羽盗類（うとうるい、）は、手盗類に属する恐竜の一群である。  名称 学名および和名は「羽泥棒」の意。では、羽ラプトル類の和名が用いられている。  定義 オビラプトル・フィロケラトプ",
+      "有剣類（Aculeata）とはハチ目ハチ亜目の下位グループ。産卵管が刺針になるという特徴を持つ。いわゆるスズメバチ、ハナバチ、アリ、狩蜂（狩人蜂）、一部の寄生蜂が含まれる。  系統",
+      "ホッグジカ（Axis porcinus）は、哺乳綱鯨偶蹄目シカ科シカ亜科アクシスジカ属に分類される種。  インド亜大陸北部からインドシナ半島の一部に分布する。スリランカ、オーストラ",
+      "ユミヘリゴカクノシダムシ（学名：）はシダムシ属に分類される甲殻類。ユミヘリゴカクヒトデとウデナガゴカクヒトデの体腔内に寄生する。  脚注  注釈  出典   甲殻類 鞘甲亜綱 寄生",
+      "エノスイグソクムシ（Bathynomus yucatanensis）はフクロエビ上目スナホリムシ科オオグソクムシ属に属する生物。ユカタン半島沖のメキシコ湾の水深600〜800メート",
+      "ミゾレチョウチョウオ（霙蝶々魚、学名：Chaetodon kleinii）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は、ドイツの法学者、歴史家、植物学者、動物学者",
+      "クラカケチョウチョウウオ（鞍掛蝶々魚、学名：Chaetodon adiergastos）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「未完成」を意味し、本種がブラ",
+      "ミズタマヤッコ（水玉奴、学名：Genicanthus takeuchii）は、スズキ目キンチャクダイ科タテジマヤッコ属に分類される魚類の一種。種小名は、本種を発見した武内宏司への献",
+      "グリソンモドキ(Patagonian weaselまたはhuro)は、イタチ科の小型の哺乳類で、グリソンモドキ属の唯一の種である。  アルゼンチン西部のパンパとチリの一部に分布する",
+      "ヒミツナメクジは、宮古島で発見された、陸生ウミウシの一種。に属することは形態学的に明らかだが、ムシクイヒミツナメクジとは種もしくは属レベルで異なる。との近縁性は、配列の比較により確",
+      "アクシスジカ属（Axis）は哺乳綱鯨偶蹄目シカ科シカ亜科の属。アクシスジカ、ホッグジカ、カラミアジカ、バウェアンジカの4種が属す。3尖の枝角を持つ。  種  脚注  シカ科",
+      "キスジゲンロクダイ（黄筋元禄鯛、学名：Coradion chrysozonus）は、スズキ目チョウチョウウオ科タキゲンロクダイ属に分類される魚類の一種。タキゲンロクダイ属のタイプ種",
+      "イシカゲガイ（Clinocardium buellowi）は、マルスダレガイ目ザルガイ科の二枚貝。イシガキガイとも呼ぶが、標準和名はイシカゲガイである。食用。  分布  北海道から",
+      "バージェス・バタフライフィッシュ（学名：Chaetodon burgessi）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は魚類学者バージェスへの献名である。日本に",
+      "ジャワマメジカ（）は鯨偶蹄目マメジカ科マメジカ属の種。成体でもウサギほどの大きさしかなく、現生最小の偶蹄類である。ジャワ島に生息する。おそらくバリ島にも生息すると思われるが、目撃例",
+      "カリフォルニアアシカ属 () は食肉目鰭脚類アシカ科の属。  種 以下の種が属す。このうちニホンアシカは最近絶滅した。  脚注  アシカ科",
+      "カガミチョウチョウウオ（鏡蝶々魚、学名：Chaetodon argentatus）は、スズキ目チョウチョウウオ科に分類される魚類の一種。種小名は「銀」を意味し、体色に由来する。  "
+     ]
+    },
+    {
+     "documents": 34,
+     "tokens": 16384,
+     "heads": [
+      "この項ではアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンの1992－1993シーズンについて述べる。このシーズンはプロ化以降通算63シーズン目であり、アペルトゥーラ",
+      "この項では、アルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンの1990－1991シーズンについて記述する。このシーズンはプロ化以降通算61シーズン目であり、アペルトゥ",
+      "プリメーラ・ディビシオン1948は、アルゼンチンのプロサッカーリーグ1部として第18シーズン目のプリメーラ・ディビシオンである。アルゼンチンサッカー協会の運営で行われた。  概要 ",
+      "プリメーラ・ディビシオン1988-1989はアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンのプロ化後通算59シーズン目である。CAインデペンディエンテが14回目の優",
+      "この項では、1972年シーズンのアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンについて記述する。プロリーグ化されてから通算42シーズン目であり、上半期の「トルネオ・メ",
+      "プリメーラ・ディビシオン1987-1988はアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンのプロ化後通算58シーズン目である。ニューウェルズ・オールドボーイズが2回",
+      "この項目では、2022-2023シーズンのセグンダ・ディビシオンについて述べる。  セグンダ・ディビシオン2022-2023は、スペインのプロサッカーリーグ、セグンダ・ディビシオン",
+      "この項ではアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンの2005－2006シーズンについて記述する。このシーズンはプロ化以降通算76シーズン目であり、アペルトゥー",
+      "プリメーラ・ディビシオン1925は、アルゼンチンのサッカーリーグ1部プリメーラ・ディビシオンの第33回目のシーズンである。アルゼンチンサッカー協会 (AAF)と分裂団体「アマチュア",
+      "プリメーラ・ディビシオン1930は、アルゼンチンのサッカーリーグ1部プリメーラ・ディビシオンの第38回目のシーズンである。運営団体はアルゼンチンサッカー協会 (Asociación",
+      "1985年シーズンのアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンについて記述する。プロリーグ化されてから通算55シーズン目であり、通年制から越年制への移行期であるた",
+      "プリメーラ・ディビシオン1956は、アルゼンチンのプロサッカーリーグ1部として第26シーズン目のプリメーラ・ディビシオンである。アルゼンチンサッカー協会の運営で行われた。  概要 ",
+      "コパ・カンペオナート1939は、アルゼンチンのプロサッカーリーグ1部として第9シーズン目のプリメーラ・ディビシオンである。アルゼンチンサッカー協会の運営で行われた。  概要 開催期",
+      "プリメーラ・ディビシオン1928は、アルゼンチンのサッカーリーグ1部プリメーラ・ディビシオンの第36回目のシーズンである。運営団体はアルゼンチンサッカー協会 (Asociación",
+      "この項では、1975年シーズンのアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンについて記述する。プロリーグ化されてから通算45シーズン目であり、上半期の「トルネオ・メ",
+      "この項では、1980年シーズンのアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンについて記述する。プロリーグ化されてから通算50シーズン目であり、上半期の「トルネオ・メ",
+      "プリメーラ・ディビシオン1922は、アルゼンチンのサッカーリーグ1部プリメーラ・ディビシオンの第30回目のシーズンである。アルゼンチンサッカー協会 (AAF)と分裂団体「アマチュア",
+      "コパ・リベルタドーレス1997（）は、39回目のコパ・リベルタドーレスである。クルゼイロEC（ブラジル)が第2戦にエリベウトンのゴールで、スポルティング・クリスタル（ペルー）に勝利",
+      "この項では、1978年シーズンのアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンについて記述する。プロリーグ化されてから通算48シーズン目であり、上半期の「トルネオ・メ",
+      "プリメーラ・ディビシオン1914はアルゼンチンのサッカーリーグ1部、プリメーラ・ディビシオンの第22回目のシーズンである。アルゼンチンサッカー協会 (AAF)と分裂団体「アルゼンチ",
+      "この項ではアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンの1999－2000シーズンについて記述する。このシーズンはプロ化以降通算70シーズン目であり、アペルトゥー",
+      "この項では、1973年シーズンのアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンについて記述する。プロリーグ化されてから通算43シーズン目であり、上半期の「トルネオ・メ",
+      "プリメーラ・ディビシオン1955は、アルゼンチンのプロサッカーリーグ1部として第25シーズン目のプリメーラ・ディビシオンである。アルゼンチンサッカー協会の運営で行われた。  概要 ",
+      "この項ではアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンの1997－1998シーズンについて記述する。このシーズンはプロ化以降通算68シーズン目であり、アペルトゥー",
+      "コパ・カンペオナート1911は、アマチュア時代におけるアルゼンチンのサッカーリーグ1部、プリメーラ・ディビシオンの第19回目のシーズンである。主催団体は「アルゼンチン・アソシエーシ",
+      "この項ではアルゼンチンのプロサッカーリーグ1部、プリメーラ・ディビシオンの2000－2001シーズンについて記述する。このシーズンはプロ化以降通算71シーズン目であり、アペルトゥー",
+      "プリメイラ・リーガ・エクスペリメンタル・デ・1934-1935 (Primeira Liga Experimental de 1934–35)は、ポルトガルのプロサッカーリーグ1部",
+      "3. リーガ2022-2023 (2022–2023 3. Liga)は、第1シーズンが行われて以来、15回目の3. リーガである。  2021-2022年シーズンの昇格・降格  ",
+      "コパ・カンペオナート1903は、アマチュア時代におけるアルゼンチンのサッカーリーグ1部、プリメーラ・ディビシオンの第11回目のシーズンである。主催団体は「アルゼンチン・アソシエーシ",
+      "コパ・カンペオナート1909は、アマチュア時代におけるアルゼンチンのサッカーリーグ1部、プリメーラ・ディビシオンの第17回目のシーズンである。主催団体は「アルゼンチン・アソシエーシ",
+      "プリメーラ・ディビシオン1985-1986はアルゼンチンのプロサッカーリーグ1部プリメーラ・ディビシオンのプロ化後通算56シーズン目である。1967年シーズンから続いてきた「トルネ",
+      "カンペオナート・デ・プリメーラ・ディビシオン2016は、アルゼンチンサッカー協会が開催した同国プロサッカーリーグ1部の第87シーズン目である。2016年2月5日から5月29日まで行",
+      "アルゼンチン・アソシエーション・フットボールリーグ (Argentine Association Football League) は、かつてアルゼンチンに存在したサッカーの競技連",
+      "プリメーラ・ディビシオン1942は、アルゼンチンのプロサッカーリーグ1部として第12シーズン目のプリメーラ・ディビシオンである。アルゼンチンサッカー協会の運営で行われた。  概要 "
+     ]
+    },
+    {
+     "documents": 41,
+     "tokens": 16384,
+     "heads": [
+      "具 仁会（ク・イネ〈ク・インフェ〉、、1907年 - 1969年12月31日）は、大韓民国の実業家。LGグループの創業者である。本貫は綾城具氏。幼名は丁得（チョンドゥク、）。号は蓮",
+      "梁 柱東（ヤン・ジュドン、1903年8月16日〈太陰暦: 6月24日〉 - 1977年2月4日）は、大韓民国の詩人、評論家、国文学者、英文学者、翻訳家、随筆家、教授。  本貫は南海",
+      "尹 崑崗（ユン・ゴンガン、、1911年 - 1950年2月23日〈1949年〉）は、日本統治時代の朝鮮及び大韓民国の詩人。本貫は漆原尹氏。本名は尹 朋遠（ユン・ブンウォン、윤붕원）",
+      "金 祐鎮（キム・ウジン、、1897年9月19日 - 1926年8月4日）は、日本統治時代の朝鮮の詩人、劇作家。本貫は安東金氏。号は焦星（チョソン、）、水山（スサン、）。  略歴  ",
+      "李 海朝（イ・ヘジョ、、1869年2月27日 - 1927年5月11日）は、日本統治時代の朝鮮の評論家、小説家。  本貫は全州李氏。号は悦斉（ヨルジェ、）、怡悦斉（イヨルジェ、）、",
+      "金 宗文（キム・ジョンムン、、1919年4月22日 - 1981年1月17日）は、大韓民国の詩人、文化評論家。  生涯  日本統治時代の平壌出身。1942年にアテネ・フランセ卒。国",
+      "陽 煥宜（ヤン・ファンイー、、、1906年 - 2004年9月20日）は、中華人民共和国の女性。  女書の最後の後継者であった。  生涯と活動  1907年、江永県で上江圩鎮の陽家",
+      "尹 起重（윤기중、ユン・ギジュン、1931年12月19日 - 2023年8月15日）は、韓国の経済学者。韓国で「SKY」と呼ばれる延世大学校名誉教授、韓国学術院会員。元韓国経済学会",
+      "金 容浩（キム・ヨンホ、1912年5月26日 - 1973年5月14日）は、日本統治時代の朝鮮及び大韓民国の詩人。  本貫は金海金氏。幼名は金 万石（キム・マンソク、）。号は鶴山（",
+      "ジャン・バセ（Jean Basset、漢名は白日昇）は、フランスのカトリック宣教師で、中国における聖書翻訳者である。  バセは1662年頃、フランスのリヨンで生まれた。1684年に",
+      "朴 鉄（パク・チョル、、1938年10月5日 - 2020年7月13日）は、大韓民国の演出家。  生涯  日本統治時代の慶尚南道密陽に生まれ、高麗大学校卒業。1965年、ソウル中央",
+      "金 源（キム・ウォン、、1912年2月2日 - 1994年8月5日）は、大韓民国の洋画家。日本統治時代の朝鮮平安南道平壌出身。  1937年、日本の帝国美術学校（現・武蔵野美術大学",
+      "崔 時亨（チェ・シヒョン、、1827年 - 1898年）は、東学の第2代教主。朝鮮の独立運動家である。号は「梅月堂」、「海月」。  人物  慶尚北道慶州の貧農出身で幼くして父母を失",
+      "崔 常寿（チェ・サンス、、1918年12月3日 - 1995年6月5日）は、大韓民国の民俗学者、随筆家。  本貫は慶州崔氏。号は石泉（ソンチョン、석천）。  経歴  1918年12",
+      "鮮于 仲皓（ソヌ・ジュンホ、、1940年11月28日 - ）は、大韓民国の土木工学者、教授。  本貫は太原鮮于氏。父は法曹であり国会事務総長を務めた鮮于宗源。  経歴  1940年",
+      "姜 求真（カン・グジン、、1942年2月1日 - 1984年4月6日）は、大韓民国の法学者、教授。本貫は晋州姜氏。  生涯  1942年2月1日、日本統治時代の朝鮮でソウルに生まれ",
+      "李 漢稷（イ・ハンジク、、1921年 -1976年7月14日）は、日本統治時代の朝鮮と大韓民国の詩人。本貫は全義李氏。号は木南（モンナム、목남）。  生涯  京城に生まれた。慶應大",
+      "金 柄憲（キム・ビョンホン、、1958年 - ）は、韓国の作家・歴史評論家。韓国国史教科書研究所所長、慰安婦法廃止国民運動代表、国史問題研究所理事を務めている。  経歴  1958",
+      "李 寿福（イ・スボク、、1924年 - 1986年4月9日）は、大韓民国の詩人。  生涯  全羅南道咸平郡出身。ソウル大学校予科、朝鮮大学校講師を経て、1965年に朝鮮大学校国語国",
+      "桂 応祥（ケ・ウンサン、、1893年12月 - 1967年4月25日）は、日本統治時代の朝鮮及び朝鮮民主主義人民共和国の繊維学者、遺伝学者。  本貫は遂安桂氏。  生涯  苦学生と",
+      "廉 殷鉉（ヨム・ウニョン、1914年2月22日 - 1999年1月19日）は、朝鮮半島出身のバスケットボール選手。本貫は坡州廉氏。  1936年ベルリンオリンピックに日本代表選手の",
+      "朴 永昌（パク・ヨンチャン、、1915年5月28日 - 2015年7月28日）は、大韓民国の独立運動家、牧師、教授。   雅号はウォルガン（월광）。数々の著書があり、民族のための牧",
+      "金 鉉球（キム・ヒョング、1944年 - ）は、大韓民国の歴史学者。高麗大学名誉教授。日本古代史と韓日関係史を専攻。論文「大和政権の対外政策」で1985年に早稲田大学で博士を取得。",
+      "権 煥（クォン・ファン、、1903年1月6日 - 1954年7月30日）は、日本統治時代の朝鮮及び大韓民国の詩人。本貫は安東権氏。  本名は権 景完（クォン・ギョンワン、권경완）、",
+      "蔡 光錫（チェ・グァンソク、、1948年7月11日 - 1987年7月12日）は、大韓民国の詩人、評論家。  1948年7月11日、大韓民国の忠清南道泰安郡安眠島安眠邑に生まれ、大",
+      "朴 成龍（パク・ソンニョン、、1930年7月29日〈1934年4月20日の説がある〉 - 2002年7月27日）は、大韓民国の詩人、ジャーナリスト、編集者。本貫は密陽朴氏。  生涯",
+      "朴 哲洙（パク・チョルス、、1948年11月20日 - 2013年2月19日）は、大韓民国の映画監督、教授。   本貫は竹山朴氏。  韓国芸術総合学校、牧園大学校、ハンギョレ映画演",
+      "鄭 夢弼（チョン・モンピル、、1934年12月11日 - 1982年4月29日）は、大韓民国の実業家。  本貫は河東鄭氏。  学歴   1952年：ソウル商業高等学校（現：京畿商業",
+      "金 宗三（キム・ジョンサム、、1921年 - 1984年12月8日）は、大韓民国の詩人。本貫は安山金氏。  生涯  日本統治時代の黄海道殷栗生まれ。渡日し、豊島商業学校（現・豊島学",
+      "金珖燮（キム・グァンソプ、、1905年9月22日 - 1977年5月23日）は、日本統治時代の朝鮮と大韓民国の詩人、翻訳家、評論家、独立運動家。本貫は全州金氏。号は怡山（イサン、이",
+      "李 化礼（イ・ファレ、、1899年10月23日 - 2020年5月17日）は、大韓民国のスーパーセンテナリアン。1907年3月21日生まれだとする説もある。1899年10月23日、",
+      "李 愛利秀（イ・エリス、、1910年1月1日 - 2009年3月31日）は、日本統治時代の朝鮮の演劇俳優、歌手。  『愛利秀』は英・仏圏の女性名である『アリス』に因む。そのため、イ",
+      "金 秉騏（キム・ビョンギ、、1916年4月16日 - 2022年3月1日）は、大韓民国の画家、センテナリアン。  号は台径（テギョン、）。  経歴  1916年4月16日、日本統治",
+      "李 永道（イ・ヨンド、、1916年10月22日 - 1976年3月5日）は、大韓民国の時調詩人、教員。号は丁芸（チョンイェ、정예）。兄は同じく詩人の李鎬雨。  生涯  慶尚北道清道",
+      "楊 明文（ヤン・ミョンムン、、1913年11月1日 - 1985年11月21日）は、大韓民国の詩人、文学者、教授。号は紫門（ジャムン、자문）。  生涯  日本統治時代の平安南道平壌",
+      "林 仁洙（イム・インス、、1919年 - 1967年7月31日）は、大韓民国の児童文学作家、詩人。  日本統治時代の京畿道の金浦に生まれ、朝鮮神学校卒業。1944年に『春の風』を発",
+      "崔 玉泳（チェ・オギョン、、1959年3月28日 - ）は、大韓民国の彫刻家、教授。  朴信正と共にハスラアートワールドを共同設立し、王山造形研究所所長職を歴任した。  略歴  元",
+      "黄 文弼（こう ぶんひつ、、1893年4月23日 - 1966年12月18日）は、中国の考古学者、中国西北地域の歴史地理学者。湖北省漢陽府漢川県出身。字は仲良（ちゅうりょう、）。中",
+      "王 平（ワン・ピョン、、1908年 - 1940年7月30日）は、日本統治時代の朝鮮の作詞家。俳優。  本名はイ・ウンホ（この名でも活動）。演劇や映画、大衆歌謡などさまざまな分野で",
+      "林 和（イム・ファ、1908年10月13日 - 1953年8月7日）は、朝鮮のプロレタリア詩人、文学者。本名は林 仁植（イム・インシク）。金鉄友（キム・チョル）、星児（ソン・ア）、",
+      "柳 麟錫（ユ・インソク、、1842年1月25日 - 1915年1月29日）は、李氏朝鮮時代末期から大韓帝国の儒学者。両班。本貫は高興。字は汝聖、号は毅庵。  江原道春川生まれ。李恒"
+     ]
+    }
+   ]
+  },
+  "codeparrot:content": {
+   "documents_per_row_mean": 11.9,
+   "documents_per_row_min": 5,
+   "examples": [
+    {
+     "documents": 17,
+     "tokens": 16384,
+     "heads": [
+      "#!/usr/bin/env python  \"\"\" This code is copyrighted work by Paul Williams. Distributed und",
+      "def override(cls):     \"\"\"Annotation for documenting method overrides.      Arguments:    ",
+      "from ..remote import RemoteModel from infoblox_netmri.utils.utils import check_api_availab",
+      "from hoomd.data.local_access import (         ParticleLocalAccessBase, BondLocalAccessBase",
+      "# -*- coding: utf-8 -*-  from ..index.folder_node import FolderNode from ..index.hints imp",
+      "# -*- coding: utf-8 -*- \"\"\"The gzip file path specification resolver helper implementation",
+      "from __future__ import absolute_import  from enum import Enum from itertools import chain ",
+      "from __future__ import division from .rib import Rib from .profile import Profile from .co",
+      "\"\"\"Mongodb implementations of authorization records.\"\"\"  # pylint: disable=no-init #     N",
+      "\"\"\"A python module for manipulating deeply nested data structures without mutating them.  ",
+      " from ..osid import records as osid_records   class QuestionRecord(osid_records.OsidRecord",
+      "from typing import Union  from deepchem.utils.typing import RDKitMol from deepchem.feat.ba",
+      "\"\"\"Tools for creating and definding againts adversarial examples.  \"\"\"   # third party imp",
+      "__author__ = 'TOSUKUi' from requests.exceptions import *   class APIException(Exception): ",
+      "  class UserError(RuntimeError):     '''     An error that should be reported to the user.",
+      "from TestStack.White.UIItems import ProgressBar from WhiteLibrary.keywords.librarycomponen",
+      "\"\"\" AvcCacheThreshold - File ``/sys/fs/selinux/avc/cache_threshold`` ====================="
+     ]
+    },
+    {
+     "documents": 7,
+     "tokens": 16384,
+     "heads": [
+      "# Copyright 2017 The TensorFlow Authors. All Rights Reserved. # # Licensed under the Apach",
+      "# Copyright 2018 The TensorFlow Authors. All Rights Reserved. # # Licensed under the Apach",
+      "# Copyright 2019 DeepMind Technologies Ltd. All rights reserved. # # Licensed under the Ap",
+      "# Copyright 2018 The TensorFlow Probability Authors. # # Licensed under the Apache License",
+      "# coding=utf-8 # Copyright 2021 The Google Research Authors. # # Licensed under the Apache",
+      "# Copyright 2015 The TensorFlow Authors. All Rights Reserved. # # Licensed under the Apach",
+      "# Lint as: python2, python3 # Copyright 2017 The TensorFlow Authors. All Rights Reserved. "
+     ]
+    },
+    {
+     "documents": 12,
+     "tokens": 16384,
+     "heads": [
+      "# coding: utf-8 import numpy as np import chainer.links as L import chainer.functions as F",
+      "from __future__ import print_function,division import numpy as np import six.moves.cPickle",
+      "#!/usr/bin/env python3 import os os.environ['TF_CPP_MIN_LOG_LEVEL']='2' import numpy as np",
+      "# tensorflow no longer supports gpu. # just another reason to jump to pytorch. # with hard",
+      "import numpy as np import tensorflow as tf import cancer_data from neural_network_decision",
+      "import math import collections import random import numpy as np import tensorflow as tf im",
+      "# -*- coding: utf-8 -*-  import itertools import numpy as np import tensorflow as tf  from",
+      "import argparse  import numpy as np from rstools.utils.batch_utils import iterate_minibatc",
+      "%autoindent import numpy import theano from theano import tensor  def numpy_floatX(data): ",
+      "#!/usr/bin/env python2 # -*- coding: utf-8 -*- \"\"\" Created on Fri Oct 27 15:44:34 2017  @a",
+      "import paddle.fluid as fluid   def loss(x, y, clip_value=10.0):     \"\"\"Calculate the sigmo",
+      "#!/usr/bin/env python # vim: set fileencoding=utf-8 : # Marcus de Assis Angeloni <marcus@l"
+     ]
+    }
+   ]
+  }
+ },
+ "batch_of_4_rows_s": 0.11,
+ "context_cases": {
+  "seconds": 5.8,
+  "data": {
+   "seq_len": 16384,
+   "max_doc": 16384,
+   "sep_id": 248044,
+   "sources": [
+    {
+     "name": "cosmopedia-100k:text",
+     "docs": 6000,
+     "weight": 4.0,
+     "chat": false,
+     "holdout": 5933,
+     "clusters": 100,
+     "held_out_clusters": 99,
+     "cluster_docs_min_median_max": [
+      4,
+      54,
+      156
+     ]
+    },
+    {
+     "name": "ultrachat:messages",
+     "docs": 6000,
+     "weight": 2.0,
+     "chat": true,
+     "holdout": 5953,
+     "clusters": 100,
+     "held_out_clusters": 99,
+     "cluster_docs_min_median_max": [
+      15,
+      58,
+      110
+     ]
+    },
+    {
+     "name": "wikipedia-ja:text",
+     "docs": 6000,
+     "weight": 2.0,
+     "chat": false,
+     "holdout": 5962,
+     "clusters": 100,
+     "held_out_clusters": 99,
+     "cluster_docs_min_median_max": [
+      11,
+      53,
+      144
+     ]
+    },
+    {
+     "name": "codeparrot:content",
+     "docs": 6000,
+     "weight": 1.0,
+     "chat": false,
+     "holdout": 5978,
+     "clusters": 100,
+     "held_out_clusters": 99,
+     "cluster_docs_min_median_max": [
+      8,
+      55,
+      141
+     ]
+    }
+   ],
+   "rows": "cluster",
+   "cluster_size": 60,
+   "holdout_frac": 1.0
+  },
+  "by_source": {
+   "cosmopedia-100k:text": {
+    "cases": 20,
+    "related_docs_mean": 21.7,
+    "related_tokens_mean": 14799,
+    "target_tokens_mean": 652,
+    "example": {
+     "target": " Dance music has been a staple of nightlife and entertainment for decades, but few genres have had the enduring popularity and influence of trance. The extract provided describes a performance by Tiesto, one of the genre",
+     "related": [
+      " Course Unit: Music Podcasting and Its Role in Performing Arts\n\nI. Introduction\n\nPodcasting has emerged as a popular",
+      " Course Unit: Hip Hop and Cannabis Culture\n\nI. Introduction\n\nThe relationship between hip hop music and cannabis culture has been",
+      " Course Unit: Collaborative Songwriting and Music Production\n\nIntroduction:\nCollaboration has always been a significant part of",
+      " Course Unit: Baseball and Music - A Symphony of America's Pastime\n\nIntroduction:\nIn this course unit, we"
+     ],
+     "unrelated": [
+      " Course Unit: Automotive Fuel Pump Systems\n\nI. Introduction\nA. Definition of automotive fuel pump system\nB. Importance",
+      " Title: Unleashing Creativity: Exploring Grade 5 & 6 Visual Arts Curriculum\n\nHello, dear readers"
+     ]
+    }
+   },
+   "ultrachat:messages": {
+    "cases": 20,
+    "related_docs_mean": 13.1,
+    "related_tokens_mean": 14926,
+    "target_tokens_mean": 818,
+    "example": {
+     "target": "<|im_start|>user\n5 Flower Feeding Ports for Hummingbird To Drink and Rest. Also, The Perch Extends All Around The Feeder Now!\nEasy to Assemble and Hang from Wire or",
+     "related": [
+      "<|im_start|>user\nParaphrase the statement from the City of Boston Twitter account about their plans to explore closing select streets to",
+      "<|im_start|>user\nA stylish Personalised Wreath Glass Bauble, perfect for someone special this Christmas.\nOur Personal",
+      "<|im_start|>user\nIs it possible to translate the submitted poem by Christopher T. Moore into a different language?: This Poem",
+      "<|im_start|>user\nCould you please provide a summary of the published poems and where they can be found?: This is an alphabetical"
+     ],
+     "unrelated": [
+      "<|im_start|>user\nThis is an introduction to working with interpersonal trauma. It is teleological, field based, deeply democratic and",
+      "<|im_start|>user\nPlease write a JavaScript program that creates a dictionary data structure to store information such as key-value pairs. The"
+     ]
+    }
+   },
+   "wikipedia-ja:text": {
+    "cases": 20,
+    "related_docs_mean": 23.7,
+    "related_tokens_mean": 14158,
+    "target_tokens_mean": 642,
+    "example": {
+     "target": "グエナエル・ニコラ（Gwenael Nicolas、1966年6月9日 - ）は、フランス出身のインテリアデザイナー/プロダクトデザイナー。デザイン事務所「",
+     "related": [
+      "プリ・ジュネス（Prix Jeunesse）は、世界の優れた子供・青少年向けテレビ番組に与えられる賞。",
+      "サム・オスティーン（Sam O'Steen, 本名：Samuel Alexander O'Steen、19",
+      "ヴォラーレ（Volare ）は、アメリカの自動車メーカークライスラー（現:フィアット",
+      "エディンバラ - ダンブレイン線は、イギリス、スコットランド中東部にある鉄道路"
+     ],
+     "unrelated": [
+      "クィントゥス・フルウィウス・フラックス（Quintus Fulvius Flaccus、-",
+      "SOTUS S（ソータス・エス）はタイでGMMTVによって制作され放送された『"
+     ]
+    }
+   },
+   "codeparrot:content": {
+    "cases": 20,
+    "related_docs_mean": 13.4,
+    "related_tokens_mean": 14498,
+    "target_tokens_mean": 790,
+    "example": {
+     "target": "#!/usr/bin/env python\n\"\"\"\n\nf2py2e - Fortran to Python C/API generator. 2nd Edition.\n         See __usage__ below.\n\nCopyright 19",
+     "related": [
+      "# http://g95.sourceforge.net/\nfrom __future__ import division, absolute_import, print_function\n\nfrom",
+      "# mysql/gaerdbms.py\n# Copyright (C) 2005-2015",
+      "\n# http://www.absoft.com/literature/osxuserguide.pdf\n# http://www.absoft.com",
+      "#!/usr/bin/env python\n \n##\n##  Copyright 2016 SRI International\n##  See COPYING"
+     ],
+     "unrelated": [
+      "# Copyright 2013 OpenStack Foundation\n#\n# Licensed under the Apache License, Version 2.",
+      "# -*- coding: utf-8 -*-\n\"\"\"\n    werkzeug.routing\n    ~~~~~~~~~~~~~~~~\n\n   "
+     ]
+    }
+   }
+  }
+ }
+}

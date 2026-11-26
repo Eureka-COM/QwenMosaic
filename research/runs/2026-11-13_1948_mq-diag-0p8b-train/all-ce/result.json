@@ -1,0 +1,38 @@
+{
+ "stage": 2,
+ "status": "done",
+ "step": 2441,
+ "total_steps": 2441,
+ "tokens": 39993344,
+ "eval": {
+  "kl": 0.78715,
+  "nll_student": 2.49235,
+  "nll_teacher": 2.15708,
+  "top1": 0.63343,
+  "ppl_ratio": 1.3983,
+  "positions": 16376,
+  "calibration": {
+   "entropy_teacher": 1.92917,
+   "entropy_student": 2.49548,
+   "correct_teacher": 0.54482,
+   "correct_student": 0.4986,
+   "nll_teacher_temperature_1.25": 2.22242,
+   "nll_teacher_temperature_1.5": 2.50711,
+   "hard_nll": 8.0,
+   "hard_positions": 804.0,
+   "nll_teacher_hard": 10.0452,
+   "nll_student_hard": 8.9495,
+   "nll_teacher_rest": 1.74981,
+   "nll_student_rest": 2.15896
+  }
+ },
+ "minutes": 69.0,
+ "train": "all",
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ }
+}

@@ -1,0 +1,2 @@
+{"event": "clusters", "step": 1, "elapsed_min": 0.65, "cluster_s": 35.5, "sources": [["cosmopedia-100k:text", 667], ["ultrachat:messages", 667], ["wikipedia-ja:text", 667], ["codeparrot:content", 667]]}
+{"event": "done", "step": 2, "elapsed_min": 0.91, "cluster_s": 35.5}

@@ -1,0 +1,20 @@
+{
+ "delta": "/home/claude/runs/cpu-s2/delta",
+ "seq_len": 512,
+ "rows": 2,
+ "kl": 0.50183,
+ "nll_student": 2.79976,
+ "nll_teacher": 2.27807,
+ "top1": 0.68982,
+ "ppl_ratio": 1.6849,
+ "positions": 1022,
+ "rel_mse": {
+  "3": 0.61653,
+  "7": 0.60717,
+  "11": 0.62093,
+  "15": 0.72062,
+  "19": 0.53499,
+  "23": 0.38013
+ },
+ "rel_mse_mean": 0.58006
+}

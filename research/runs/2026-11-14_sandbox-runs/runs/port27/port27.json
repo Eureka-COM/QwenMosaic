@@ -1,0 +1,44 @@
+{
+ "config": "/home/claude/memory-mosaics-llm/data/qwen3.8-27b-config.json",
+ "pattern": "A",
+ "hidden_size": 5120,
+ "intermediate_size": 17408,
+ "heads": [
+  16,
+  16,
+  128
+ ],
+ "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf",
+ "checks": {
+  "teacher_equals_original_max_diff": 0.0,
+  "cache_vs_full_max_diff": 1.1324882507324219e-05,
+  "attention_parameters_in_student": 0,
+  "ffn_shared_with_original": true
+ },
+ "per_layer": {
+  "memory_parameters": 63406240,
+  "removed_attention_parameters": 104858112
+ },
+ "full_27b": {
+  "attention_layers": 16,
+  "layers": 64,
+  "memory_parameters": 1014499840,
+  "removed_attention_parameters": 1677729792,
+  "parameters_before": 27781427952,
+  "parameters_after": 27118198000,
+  "memory_gb_fp32": 3.78,
+  "memory_gb_bf16": 1.89,
+  "adam_state_gb_fp32": 7.56
+ },
+ "per_token_cache_numbers": {
+  "original_attention_kv": 2048,
+  "mosaics_long": 4096,
+  "mosaics_short_window_only": 4096,
+  "ratio_long_vs_original": 2.0
+ },
+ "timing_cpu": {
+  "convert_s": 15.2,
+  "forward_384_tokens_s": 1.32
+ },
+ "status": "ok"
+}

@@ -1,0 +1,746 @@
+{
+ "cases": [
+  {
+   "distance": 32,
+   "code": "60487",
+   "prompt_tokens": 352,
+   "teacher": " 60487.\n",
+   "student": " 60487.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "75938",
+   "prompt_tokens": 352,
+   "teacher": " 75938.",
+   "student": " 75938.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "21948",
+   "prompt_tokens": 352,
+   "teacher": " 21948.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 32,
+   "code": "41157",
+   "prompt_tokens": 352,
+   "teacher": " 41157.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 32,
+   "code": "56593",
+   "prompt_tokens": 352,
+   "teacher": " 56593.\n",
+   "student": " 56593.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "78408",
+   "prompt_tokens": 352,
+   "teacher": " 78408.\n",
+   "student": " 78408.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "60975",
+   "prompt_tokens": 352,
+   "teacher": " 60975.\n",
+   "student": " 60975.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "13933",
+   "prompt_tokens": 352,
+   "teacher": " 13933.",
+   "student": " 13933.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "71158",
+   "prompt_tokens": 352,
+   "teacher": " 71158.\n\n",
+   "student": " 71158.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "48418",
+   "prompt_tokens": 352,
+   "teacher": " 48418.\n",
+   "student": " 48418.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "39894",
+   "prompt_tokens": 352,
+   "teacher": " 39894.\n",
+   "student": " 39894.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "96593",
+   "prompt_tokens": 352,
+   "teacher": " 96593.\n",
+   "student": " 96593.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "32094",
+   "prompt_tokens": 352,
+   "teacher": " 32094.\n",
+   "student": " 32094.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "12201",
+   "prompt_tokens": 352,
+   "teacher": " 12201.\n",
+   "student": " 12201.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "84833",
+   "prompt_tokens": 352,
+   "teacher": " 84833.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 32,
+   "code": "94775",
+   "prompt_tokens": 352,
+   "teacher": " 94775.",
+   "student": " 94775.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "91795",
+   "prompt_tokens": 352,
+   "teacher": " 91795.\n",
+   "student": " 91795.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "04135",
+   "prompt_tokens": 352,
+   "teacher": " 04135.\n\n",
+   "student": " 04135.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "60123",
+   "prompt_tokens": 352,
+   "teacher": " 60123.\n",
+   "student": " 60123.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 32,
+   "code": "89101",
+   "prompt_tokens": 352,
+   "teacher": " 89101.\n",
+   "student": " 89101.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "91615",
+   "prompt_tokens": 832,
+   "teacher": " 91615.",
+   "student": " 91615.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "90321",
+   "prompt_tokens": 832,
+   "teacher": " 90321.\n\n",
+   "student": " 90321.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "00869",
+   "prompt_tokens": 832,
+   "teacher": "",
+   "student": " 00869.",
+   "teacher_ok": false,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "13145",
+   "prompt_tokens": 832,
+   "teacher": " 13145.\n\n",
+   "student": " 13145.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "08709",
+   "prompt_tokens": 832,
+   "teacher": "",
+   "student": " 08709.",
+   "teacher_ok": false,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "34579",
+   "prompt_tokens": 832,
+   "teacher": " 34579.\n",
+   "student": " 34579.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "02258",
+   "prompt_tokens": 832,
+   "teacher": " 02258.\n",
+   "student": " 02258.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "97207",
+   "prompt_tokens": 832,
+   "teacher": " 97207.\n",
+   "student": " 97207.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "84564",
+   "prompt_tokens": 832,
+   "teacher": " 84564.",
+   "student": " 84564.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "07150",
+   "prompt_tokens": 832,
+   "teacher": " 07150.",
+   "student": " 07150.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "23759",
+   "prompt_tokens": 832,
+   "teacher": " 23759.\n",
+   "student": " 23759.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "99246",
+   "prompt_tokens": 832,
+   "teacher": " 99246.\n",
+   "student": " 99246.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "09352",
+   "prompt_tokens": 832,
+   "teacher": " 09352.",
+   "student": " 09352.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "76960",
+   "prompt_tokens": 832,
+   "teacher": " 76960.\n",
+   "student": " 76960.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "60271",
+   "prompt_tokens": 832,
+   "teacher": " 60271.\n",
+   "student": " 60271.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "78789",
+   "prompt_tokens": 832,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 512,
+   "code": "75470",
+   "prompt_tokens": 832,
+   "teacher": " 75470.\n",
+   "student": " 75470.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "81206",
+   "prompt_tokens": 832,
+   "teacher": " 81206.\n",
+   "student": " 81206.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "03008",
+   "prompt_tokens": 832,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 512,
+   "code": "19344",
+   "prompt_tokens": 832,
+   "teacher": " 19344.",
+   "student": " 19344.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "76104",
+   "prompt_tokens": 1820,
+   "teacher": " 76104.\n",
+   "student": " 76104.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "42851",
+   "prompt_tokens": 1820,
+   "teacher": " 4.5",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 1500,
+   "code": "00034",
+   "prompt_tokens": 1820,
+   "teacher": " 00034.\n\n",
+   "student": " 00034.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "90977",
+   "prompt_tokens": 1820,
+   "teacher": " 90977.\n",
+   "student": " 90977.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "82369",
+   "prompt_tokens": 1820,
+   "teacher": " 82369.\n\n",
+   "student": " 82369.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "22455",
+   "prompt_tokens": 1820,
+   "teacher": " 22455.\n\n",
+   "student": " 22455.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "59004",
+   "prompt_tokens": 1820,
+   "teacher": " 59004.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 1500,
+   "code": "94568",
+   "prompt_tokens": 1820,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 1500,
+   "code": "17304",
+   "prompt_tokens": 1820,
+   "teacher": " 17304.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 1500,
+   "code": "14654",
+   "prompt_tokens": 1820,
+   "teacher": " 14654.\n\n",
+   "student": " 14654.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "18775",
+   "prompt_tokens": 1820,
+   "teacher": " 18775.\n",
+   "student": " 18775.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "71760",
+   "prompt_tokens": 1820,
+   "teacher": " 71760.\n\n",
+   "student": " 71760.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "22961",
+   "prompt_tokens": 1820,
+   "teacher": " 22961.",
+   "student": " 22961.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "33060",
+   "prompt_tokens": 1820,
+   "teacher": " 33060.",
+   "student": " 33060.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "88477",
+   "prompt_tokens": 1820,
+   "teacher": " 88477.",
+   "student": " 88477",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "15349",
+   "prompt_tokens": 1820,
+   "teacher": " 15349.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 1500,
+   "code": "35110",
+   "prompt_tokens": 1820,
+   "teacher": " 35110.\n",
+   "student": " 35110.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "17643",
+   "prompt_tokens": 1820,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 1500,
+   "code": "92137",
+   "prompt_tokens": 1820,
+   "teacher": " 92137.\n\n",
+   "student": " 92137.\n\n",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "82197",
+   "prompt_tokens": 1820,
+   "teacher": " ",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "66875",
+   "prompt_tokens": 6320,
+   "teacher": " 66875.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "73893",
+   "prompt_tokens": 6320,
+   "teacher": " 73893.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "55082",
+   "prompt_tokens": 6320,
+   "teacher": " 55082.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "92694",
+   "prompt_tokens": 6320,
+   "teacher": " 92694.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "11801",
+   "prompt_tokens": 6320,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "04075",
+   "prompt_tokens": 6320,
+   "teacher": " 04075.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "27586",
+   "prompt_tokens": 6320,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "80918",
+   "prompt_tokens": 6320,
+   "teacher": " 80918.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "16348",
+   "prompt_tokens": 6320,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "67699",
+   "prompt_tokens": 6320,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "02489",
+   "prompt_tokens": 6320,
+   "teacher": " 02489",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "17446",
+   "prompt_tokens": 6320,
+   "teacher": " 17446.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "02234",
+   "prompt_tokens": 6320,
+   "teacher": " 02234.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "00762",
+   "prompt_tokens": 6320,
+   "teacher": " 00762.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "12560",
+   "prompt_tokens": 6320,
+   "teacher": " 12560.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "67017",
+   "prompt_tokens": 6320,
+   "teacher": " 67017.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "00992",
+   "prompt_tokens": 6320,
+   "teacher": " 00992.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "18536",
+   "prompt_tokens": 6320,
+   "teacher": " ",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "10979",
+   "prompt_tokens": 6320,
+   "teacher": " 10979.",
+   "student": "",
+   "teacher_ok": true,
+   "student_ok": false
+  },
+  {
+   "distance": 6000,
+   "code": "19426",
+   "prompt_tokens": 6320,
+   "teacher": "",
+   "student": "",
+   "teacher_ok": false,
+   "student_ok": false
+  }
+ ],
+ "summary": {
+  "32": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 0.85
+  },
+  "512": {
+   "n": 20,
+   "teacher": 0.8,
+   "student": 0.9
+  },
+  "1500": {
+   "n": 20,
+   "teacher": 0.8,
+   "student": 0.65
+  },
+  "6000": {
+   "n": 20,
+   "teacher": 0.7,
+   "student": 0.0
+  }
+ }
+}

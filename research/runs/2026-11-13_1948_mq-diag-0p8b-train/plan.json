@@ -1,0 +1,429 @@
+{
+ "name": "mq-diag-0p8b-train",
+ "purpose": "docs/plan-mosaic-qwen.md §10 診断 3〜5：手順 1 のモデル（全 24 層置き換え、8+8 ヘッド）で、段2 と同じ大きさ（40e6 トークン、同じ行）の学習を 3 通り行う。cont-kl＝手順 1 の最終モデルから同じ蒸留を続ける（学習量）、all-kl＝段1 の結果から全部の重みを動かして蒸留する（LoRA の制約）、all-ce＝同じく全部の重みを動かし、蒸留なしで次トークンの損失だけで学習する（蒸留かどうか）。どれも学習に使っていない 16 行で、手順 1 の段2 の結果と比べる",
+ "save_mode": "token",
+ "auto_stop": false,
+ "export_token": true,
+ "max_minutes": 330,
+ "save_every_min": 10,
+ "max_parallel": 3,
+ "stagger_sec": 30,
+ "gpu_frac": 0.92,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-all-s1",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 15,
+   "args": [
+    "--store",
+    "github-release:mq-all-0p8b-s1",
+    "--dest",
+    "/content/prev/all-s1/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "fetch-all-s2",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 15,
+   "args": [
+    "--store",
+    "github-release:mq-all-0p8b-s2",
+    "--dest",
+    "/content/prev/all-s2/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "fetch-all-s3",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 15,
+   "args": [
+    "--store",
+    "github-release:mq-all-0p8b-s3",
+    "--dest",
+    "/content/prev/all-s3/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "evalc-s2-all",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "fetch-all-s2"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--delta",
+    "/content/prev/all-s2/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "cont-kl",
+   "script": "scripts/mq_stage2.py",
+   "gpu_gb": 8,
+   "max_minutes": 130,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--grad-checkpoint",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--positions",
+    "512",
+    "--tokens",
+    "40e6",
+    "--lr",
+    "1e-4",
+    "--warmup",
+    "30",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--delta-in",
+    "/content/prev/all-s3/delta",
+    "--train",
+    "mem+lora",
+    "--lora-r",
+    "32",
+    "--store",
+    "github-release:mq-diag-0p8b-cont",
+    "--shard-mb",
+    "1900",
+    "--no-optim-save",
+    "--save-every-min",
+    "15"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ],
+   "after": [
+    "fetch-all-s3"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "evalc-cont-kl",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "cont-kl"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--delta",
+    "/content/out/cont-kl/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "all-kl",
+   "script": "scripts/mq_stage2.py",
+   "gpu_gb": 24,
+   "max_minutes": 130,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--grad-checkpoint",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--positions",
+    "512",
+    "--tokens",
+    "40e6",
+    "--lr",
+    "1e-4",
+    "--warmup",
+    "30",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--delta-in",
+    "/content/prev/all-s1/delta",
+    "--train",
+    "all",
+    "--lr-base",
+    "1e-5",
+    "--store",
+    "github-release:mq-diag-0p8b-allkl",
+    "--shard-mb",
+    "1900",
+    "--no-optim-save",
+    "--save-every-min",
+    "40"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ],
+   "after": [
+    "fetch-all-s1"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "evalc-all-kl",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "all-kl"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--delta",
+    "/content/out/all-kl/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "all-ce",
+   "script": "scripts/mq_stage2.py",
+   "gpu_gb": 24,
+   "max_minutes": 130,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--grad-checkpoint",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--positions",
+    "512",
+    "--tokens",
+    "40e6",
+    "--lr",
+    "1e-4",
+    "--warmup",
+    "30",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--delta-in",
+    "/content/prev/all-s1/delta",
+    "--train",
+    "all",
+    "--lr-base",
+    "1e-5",
+    "--kl-weight",
+    "0",
+    "--ce-weight",
+    "1",
+    "--store",
+    "github-release:mq-diag-0p8b-allce",
+    "--shard-mb",
+    "1900",
+    "--no-optim-save",
+    "--save-every-min",
+    "40"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ],
+   "after": [
+    "fetch-all-s1"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "evalc-all-ce",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "all-ce"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--delta",
+    "/content/out/all-ce/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "code_commit": "357d128",
+ "platform": "local"
+}

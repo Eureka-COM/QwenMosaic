@@ -1,0 +1,11 @@
+{
+ "status": "done",
+ "step": 915,
+ "total_steps": 915,
+ "tokens": 59965440,
+ "family": "transformer",
+ "lr": 0.0003,
+ "parameters": 114582016,
+ "minutes": 28.7,
+ "gpu_gb_peak": 4.35
+}

@@ -1,0 +1,17 @@
+{
+ "plan": "mq-27b-s2",
+ "runs": {},
+ "started": "2026-11-12 05:43:38",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA L4",
+  "gpu_mem_gb": 22.0,
+  "transformers": "5.22.1",
+  "flash_linear_attention": false
+ },
+ "error": "Traceback (most recent call last):\n  File \"/content/mmllm/colab/runner.py\", line 349, in run_all\n    raise RuntimeError(f\"GPU {status['environment'].get('gpu')} は計画の条件 {need} に合わないので止めます\")\nRuntimeError: GPU NVIDIA L4 は計画の条件 ['A100', 'H100', 'H200', 'B200', 'RTX PRO 6000'] に合わないので止めます\n",
+ "elapsed_min": 0.1
+}

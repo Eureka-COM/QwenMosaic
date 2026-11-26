@@ -1,0 +1,100 @@
+{
+ "plain text, no chat document before it": {
+  "n": 11640,
+  "nll": 14819.190338134766,
+  "bad": 205,
+  "end": 0,
+  "end_sure": 0
+ },
+ "eval0 | plain text, no chat document before it": {
+  "n": 5215,
+  "nll": 7099.409912109375,
+  "bad": 109,
+  "end": 0,
+  "end_sure": 0
+ },
+ "chat document": {
+  "n": 10499,
+  "nll": 32138.048583984375,
+  "bad": 1162,
+  "end": 3673,
+  "end_sure": 1804
+ },
+ "eval0 | chat document": {
+  "n": 1450,
+  "nll": 3767.899658203125,
+  "bad": 121,
+  "end": 273,
+  "end_sure": 115
+ },
+ "plain text after a chat document": {
+  "n": 10598,
+  "nll": 66301.55053710938,
+  "bad": 2824,
+  "end": 6540,
+  "end_sure": 4473
+ },
+ "eval0 | plain text after a chat document": {
+  "n": 1515,
+  "nll": 5743.1300048828125,
+  "bad": 230,
+  "end": 405,
+  "end_sure": 179
+ },
+ "eval1 | plain text, no chat document before it": {
+  "n": 1304,
+  "nll": 2280.5198974609375,
+  "bad": 25,
+  "end": 0,
+  "end_sure": 0
+ },
+ "eval1 | chat document": {
+  "n": 4402,
+  "nll": 18348.09912109375,
+  "bad": 739,
+  "end": 2256,
+  "end_sure": 1153
+ },
+ "eval1 | plain text after a chat document": {
+  "n": 2480,
+  "nll": 16170.2705078125,
+  "bad": 795,
+  "end": 697,
+  "end_sure": 383
+ },
+ "train6 | plain text, no chat document before it": {
+  "n": 5121,
+  "nll": 5439.260528564453,
+  "bad": 71,
+  "end": 0,
+  "end_sure": 0
+ },
+ "train6 | chat document": {
+  "n": 2423,
+  "nll": 4161.75,
+  "bad": 110,
+  "end": 480,
+  "end_sure": 167
+ },
+ "train6 | plain text after a chat document": {
+  "n": 643,
+  "nll": 1502.6500244140625,
+  "bad": 62,
+  "end": 71,
+  "end_sure": 22
+ },
+ "train8 | chat document": {
+  "n": 2224,
+  "nll": 5860.2998046875,
+  "bad": 192,
+  "end": 664,
+  "end_sure": 369
+ },
+ "train8 | plain text after a chat document": {
+  "n": 5960,
+  "nll": 42885.5,
+  "bad": 1737,
+  "end": 5367,
+  "end_sure": 3889
+ }
+}

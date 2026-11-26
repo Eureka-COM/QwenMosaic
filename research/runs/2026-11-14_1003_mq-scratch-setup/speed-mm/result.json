@@ -1,0 +1,11 @@
+{
+ "status": "stop_after",
+ "step": 305,
+ "total_steps": 18310,
+ "tokens": 19988480,
+ "family": "mosaics_v2",
+ "lr": 0.0006,
+ "parameters": 127460800,
+ "minutes": 19.1,
+ "gpu_gb_peak": 4.5
+}

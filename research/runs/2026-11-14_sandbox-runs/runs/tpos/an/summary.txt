@@ -1,0 +1,117 @@
+dump of /home/claude/models/Qwen3.5-0.8B: ['eval0', 'eval1', 'train6', 'train8', 'eval0_tail', 'eval1_tail', 'eval1_autocast']  (separator token 248044 = <|endoftext|>)
+
+===== eval0: 2048 tokens, loss 1.798, top-1 correct 0.604, entropy 0.000
+  bad positions (loss > 8): 76 = 3.7%   their loss 10.19   the rest 1.474
+  documents:  start  len | loss  bad | first 32 tokens: loss bad | the rest: loss | text
+        0   716 |  1.587   40 | 3.089 2 | 1.519 | sep 0.25 | import os\nimport unittest\n\nimport h5py\nimport numpy as
+      717  1331 |  1.912   36 | 3.693 3 | 1.868 | sep None |  Course Unit: Pharmaceutical Manufacturing and Technology: A
+  by position in the row (each 1,024): 0:1.78/50  1024:1.815/26
+  by distance from the start of its document: 0+:5.241/2of15  8+:2.819/3of48  32+:1.808/8of192  128+:1.638/25of768  512+:1.817/38of1024
+  runs of bad positions: 69 runs, longest 2, 0 of 76 bad positions sit in runs of 8 or more
+  at the bad positions the model's top token had probability 0.389 on average (11% above 0.9)
+  its top tokens there: ']×3,  and×3, rdf×2,  f×2,  =×2, source×2, '×2,  h×1, wd×1, name×1, ald×1, /×1
+  the real tokens there:  bald×1, attrs×1, rdf×1, __×1, Container×1,  group×1, _pref×1, inary×1, -array×1, #'×1, sk×1, Pref×1
+    pos    17 (+17) loss  14.5 real [ bald] top [ h] p 0.086 | … h5py\nimport numpy as np\n\nimport
+    pos    50 (+50) loss  13.8 real [ group] top [ f] p 0.848 | …'] = 'bald__Container'\n   
+    pos   128 (+128) loss  10.6 real [sk] top [rdf] p 0.641 | …-syntax-ns#'\n    group_pref.attrs['
+    pos   326 (+326) loss  10.7 real [Graph] top [5] p 0.935 | ….ref\n    return container\n\n\nclass TestHDF
+    pos   435 (+435) loss   8.0 real [_d] top [_pref] p 0.481 | …11, 17))\n            group
+    pos   494 (+494) loss  14.0 real [ inst] top [ _] p 0.694 | … 'anotherpair', (2,))\n           
+    pos   551 (+551) loss   8.3 real [ loc] top [ a] p 0.135 | …['skos__prefLabel'] = 'for
+    pos   652 (+652) loss   8.0 real [ cache] top [ '] p 0.447 | …_container = bald.load_hdf5(tfile,
+    pos   717 (+0) loss  19.0 real [ Course] top [import] p 0.293 | …main__':\n    unittest.main()\n<|endoftext|>
+    pos   934 (+217) loss   8.4 real [ follow] top [ determine] p 0.254 | …omous tractor uses satellite positioning data to
+    pos  1086 (+369) loss   8.5 real [ yield] top [ remote] p 0.138 | …culture include variable rate application (VRA),
+    pos  1424 (+707) loss   8.7 real [ optimization] top [ the] p 0.189 | …mization of cultivation parameters, facilitating
+    pos  1617 (+900) loss  11.6 real [ circum] top [ leading] p 0.309 | … specific loci within plant genomes, potentially
+    pos  1717 (+1000) loss   8.5 real [ common] top [ turbo] p 0.146 | …rvice life, often incorporating features such as
+
+===== eval1: 2048 tokens, loss 1.325, top-1 correct 0.738, entropy 0.000
+  bad positions (loss > 8): 75 = 3.7%   their loss 10.47   the rest 0.977
+  documents:  start  len | loss  bad | first 32 tokens: loss bad | the rest: loss | text
+        0  2048 |  1.325   75 | 2.994 4 | 1.299 | sep None | #\n# lfo.py - Lfo tab conversion objects\n#
+  by position in the row (each 1,024): 0:1.602/50  1024:1.047/25
+  by distance from the start of its document: 0+:4.567/2of7  8+:2.535/2of24  32+:0.488/1of96  128+:2.172/29of384  512+:1.131/41of1536
+  runs of bad positions: 61 runs, longest 5, 0 of 75 bad positions sit in runs of 8 or more
+  at the bad positions the model's top token had probability 0.405 on average (8% above 0.9)
+  its top tokens there: \n×10, ,×7,  ×2,  g×2,  __×2, )×2,  =×2, Mod×2,  conv×2, :×2, l×1,  get×1
+  the real tokens there:  dos×2, Var×2,  adj×2, m×2,  l×1, fo×1,  tab×1,  objects×1, ools×1,  Fo×1,  nord×1,  isn×1
+    pos     3 (+3) loss   8.7 real [ l] top [ ] p 0.129 | …#\n#
+    pos   182 (+182) loss  17.9 real [ Fo] top [ g] p 0.925 | … of the GNU General Public License\n# along with
+    pos   252 (+252) loss   8.5 real [con] top [colors] p 0.234 | …\nfrom nord.nm1.colors import nm1
+    pos   270 (+270) loss   8.8 real [cm] top [\n] p 0.403 | …nvert\nfrom nord.convert.convert import handleos
+    pos   281 (+281) loss  10.7 real [ables] top [\n] p 0.414 | …asterslv, handlekbt, doslvc
+    pos   303 (+303) loss   8.0 real [param] top [,] p 0.28 | …lv(conv, ratemodin, ratemod
+    pos   371 (+371) loss   8.3 real [master] top [ =] p 0.358 | …mm.outputs.Slv.cables):\n    osc
+    pos   633 (+633) loss  10.8 real [ fine] top [ a] p 0.107 | … 35, False)\n\n  # add
+    pos   743 (+743) loss  11.3 real [.Chain] top [.F] p 0.228 | … ratemodin)\n      conv.connect(adj.inputs
+    pos   885 (+885) loss  11.2 real [stin] top [st] p 0.938 | …mm.params, g2m.params\n\n  m
+    pos  1027 (+1027) loss  11.1 real [.sl] top [.get] p 0.344 | ….net.output.rate != nm1conncolors
+    pos  1098 (+1098) loss   8.8 real [Cnt] top [',] p 0.148 | …\n    pout = conv.add_module('Zero
+    pos  1238 (+1238) loss   9.0 real [ing] top [ =] p 0.398 | …class ConvLFOA(Convert):\n  ma
+    pos  1314 (+1314) loss  12.1 real [ dom] top [ __] p 0.538 | … ['', 'Out'] # Slv\n\n  def
+
+===== train6: 2048 tokens, loss 1.993, top-1 correct 0.536, entropy 0.000
+  bad positions (loss > 8): 62 = 3.0%   their loss 10.23   the rest 1.736
+  documents:  start  len | loss  bad | first 32 tokens: loss bad | the rest: loss | text
+        0   819 |  2.243   25 | 2.08 0 | 2.249 | sep 3.05 |  When it comes to marketing and business strategies, creatin
+      820   502 |  1.911   14 | 2.046 1 | 1.902 | sep 5.23 |  Cannabis and its derivatives, including CBD products, have 
+     1323   452 |  1.707   18 | 3.584 6 | 1.564 | sep 7.56 | from j25.web import Controller\nimport inspect\nimport loggi
+     1776   272 |  1.833    5 | 2.576 1 | 1.734 | sep None | <|im_start|>user\nWrite a comprehensive report of at least 2
+  by position in the row (each 1,024): 0:2.156/31  1024:1.831/31
+  by distance from the start of its document: 0+:4.391/5of31  8+:1.989/3of96  32+:1.735/10of384  128+:1.969/35of1228  512+:2.171/9of308
+  runs of bad positions: 56 runs, longest 3, 0 of 62 bad positions sit in runs of 8 or more
+  at the bad positions the model's top token had probability 0.401 on average (3% above 0.9)
+  its top tokens there:  and×5,  to×2,  can×2, The×2, ")×2,  ×1,  Magento×1, eger×1,  that×1,  tools×1,  extensions×1,  directly×1
+  the real tokens there:  j×2,  Magento×1,  extensions×1,  developed×1,  Ja×1, Ju×1,  focused×1,  cutting×1,  newer×1,  tailored×1,  utilizing×1,  digital×1
+    pos    45 (+45) loss   9.5 real [ Magento] top [ to] p 0.265 | …atory compliance. The following will explore how
+    pos    50 (+50) loss   8.1 real [Ju] top [eger] p 0.059 | …l explore how Magento extensions developed by Ja
+    pos   233 (+233) loss  12.4 real [ tailored] top [ directly] p 0.39 | … JPEG and PNG files. By serving optimized images
+    pos   330 (+330) loss   8.6 real [ ease] top [ improve] p 0.564 | …ameters—to facilitate indexation by crawlers and
+    pos   539 (+539) loss   9.8 real [ Personal] top [ This] p 0.445 | …owsing history, preferences, and past purchases.
+    pos   691 (+691) loss   9.4 real [ request] top [ controls] p 0.491 | …e consent prompts, easily accessible data access
+    pos   758 (+758) loss  10.0 real [ unw] top [ strategic] p 0.406 | …ration. Through rigorous attention to detail and
+    pos   982 (+162) loss   8.0 real [It] top [The] p 0.213 | … THC-rich strains and those high in CBD.\n\n
+    pos  1154 (+334) loss   8.1 real [ burgeoning] top [ debate] p 0.084 | … safe dosages and administration methods.\n\nThe
+    pos  1282 (+462) loss   8.6 real [ let] top [ we] p 0.198 | … potential of CBD-rich products. Moving forward,
+    pos  1324 (+1) loss   9.2 real [ j] top [ the] p 0.293 | …ces into our lives responsibly.<|endoftext|>from
+    pos  1350 (+27) loss   8.1 real [Loader] top [")] p 0.872 | …ceback\n\nlogger = logging.getLogger("Controller
+    pos  1562 (+239) loss  11.5 real [ j] top [ Controller] p 0.705 | … '%s' package but is not a subclass of
+    pos  1599 (+276) loss  14.9 real [.P] top [)] p 0.494 | …         dispatcher.registerServiceFactory(klass
+
+===== train8: 2048 tokens, loss 1.670, top-1 correct 0.586, entropy 0.000
+  bad positions (loss > 8): 43 = 2.1%   their loss 9.88   the rest 1.493
+  documents:  start  len | loss  bad | first 32 tokens: loss bad | the rest: loss | text
+        0   279 |  2.540   15 | 2.931 1 | 2.491 | sep 0.87 | 井川町中村流（いかわちょうなかむらなが
+      280  1768 |  1.533   28 | 2.867 1 | 1.509 | sep None | <|im_start|>user\nIn a 500-word essay, discuss the
+  by position in the row (each 1,024): 0:1.979/27  1024:1.36/16
+  by distance from the start of its document: 0+:4.215/1of15  8+:2.487/1of48  32+:2.355/9of192  128+:1.826/12of536  512+:1.437/20of1256
+  runs of bad positions: 42 runs, longest 2, 0 of 43 bad positions sit in runs of 8 or more
+  at the bad positions the model's top token had probability 0.409 on average (14% above 0.9)
+  its top tokens there: 町×3, 中×2, 三×2, <think>×2,  a×2, 山×1, 河×1, 数の×1, 好×1, 井×1, み×1, JR×1
+  the real tokens there: 流×1, 島×1, タク×1, み×1, 無×1, 住×1, 郵便×1, 野×1, 山城×1, 祖×1, 山村×1, 辻×1
+    pos     5 (+5) loss   9.1 real [流] top [町] p 0.142 | …井川町中村
+    pos    80 (+80) loss   8.8 real [み] top [山] p 0.073 | …吉野川を挟んで三好郡東
+    pos   108 (+108) loss   8.3 real [郵便] top [町] p 0.05 | …無住地となっている。住民がいないこともあり、
+    pos   169 (+169) loss  13.1 real [祖] top [み] p 0.484 | …町・池田町・山城町・東
+    pos   209 (+209) loss  11.4 real [佃] top [JR] p 0.329 | …寄り駅はJR徳島線の辻駅及び
+    pos   296 (+16) loss   8.1 real [ utilizing] top [ the] p 0.225 | …500-word essay, discuss the importance of
+    pos   397 (+117) loss   8.8 real [ customers] top [ a] p 0.495 | … build and maintain a positive brand image. When
+    pos   704 (+424) loss   9.8 real [ vital] top [ example] p 0.594 | … resulted in a surge of pre-orders.\n\nAnother
+    pos   954 (+674) loss  11.6 real [ recorded] top [ caused] p 0.217 | …ed from a United Airlines aircraft. The incident
+    pos  1074 (+794) loss   9.0 real [ distrust] top [ long] p 0.442 | …egatively impact a company’s reputation, causing
+    pos  1120 (+840) loss   8.7 real [Thanks] top [In] p 0.352 | … desired benefits.<|im_end|>\n<|im_start|>user\n
+    pos  1332 (+1052) loss  10.1 real [ Grand] top [ Product] p 0.123 | … tasting event.\n\nEvent planning:\n\n1.
+    pos  1736 (+1456) loss   9.8 real [ Sharing] top [ These] p 0.3 | … including blog posts, videos, and infographics.
+    pos  1936 (+1656) loss   8.7 real [ give] top [ share] p 0.158 | … platforms to promote upcoming sales and events,
+
+===== the second half of each row, alone (nothing before it)
+  eval0: tokens 1025..2048: loss in the row 1.814 / alone 1.995; bad in the row 26 / alone 35 / in both 26
+      tokens  1025+: in the row  1.686 (9 bad) / alone  1.895 (14 bad)
+      tokens  1537+: in the row  1.943 (17 bad) / alone  2.095 (21 bad)
+  eval1: tokens 1025..2048: loss in the row 1.049 / alone 1.562; bad in the row 25 / alone 52 / in both 20
+      tokens  1025+: in the row  1.516 (21 bad) / alone  2.473 (47 bad)
+      tokens  1537+: in the row  0.581 (4 bad) / alone  0.647 (5 bad)
+
+===== the same row under autocast (as the teacher runs during training)
+  eval1: {'loss_plain': 1.325, 'loss_autocast': 1.325, 'bad_plain': 75, 'bad_autocast': 75, 'largest_difference': 0.0}

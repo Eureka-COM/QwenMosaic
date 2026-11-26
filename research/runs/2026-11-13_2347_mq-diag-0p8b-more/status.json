@@ -1,0 +1,23 @@
+{
+ "plan": "mq-diag-0p8b-more",
+ "runs": {
+  "fetch-all-s1": "ok in 0.8 min",
+  "fit-lr2e3": "ok in 22.8 min",
+  "prog-kl": "stopped in 61.6 min",
+  "fit-lr3e3": "ok in 21.5 min",
+  "evalc-prog-kl": "skipped (dependency not successful)"
+ },
+ "started": "2026-11-13 23:47:00",
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "environment": {
+  "python": "3.12.3",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_mem_gb": 31.8,
+  "transformers": "5.22.2",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 62.7,
+ "finished": "2026-11-14 00:49:43"
+}

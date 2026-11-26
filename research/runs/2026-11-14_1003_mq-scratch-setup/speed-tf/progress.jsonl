@@ -1,0 +1,34 @@
+{"event": "start", "step": 0, "elapsed_min": 0.0, "family": "transformer", "parameters": 114582016, "non_embedding": 81814016, "total_steps": 18310, "tokens_per_step": 65536, "lr": 0.0006, "duty": 0.7, "resumed": false, "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}}
+{"event": "eval", "step": 0, "elapsed_min": 0.26, "tokens": 0, "heldout_loss": 10.8811, "position": {"1-16": 10.8647, "17-64": 10.8662, "65-256": 10.8781, "257-1024": 10.8577, "1025-2048": 10.8587}, "icl_score": -0.0093, "early": 10.8493, "late": 10.8586, "recall": {"32": {"n": 20, "acc": 0.0, "mean_logprob": -10.631}, "512": {"n": 20, "acc": 0.0, "mean_logprob": -10.588}, "1500": {"n": 20, "acc": 0.0, "mean_logprob": -10.757}, "3500": {"n": 20, "acc": 0.0, "mean_logprob": -10.742}}, "eval_min": 0.26}
+{"event": "step", "step": 10, "elapsed_min": 0.62, "tokens": 655360, "loss": 10.7527, "lr": 6.56e-06, "grad_norm": 4.617, "tok_per_s": 17706.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 20, "elapsed_min": 0.9, "tokens": 1310720, "loss": 10.1476, "lr": 1.311e-05, "grad_norm": 3.033, "tok_per_s": 37919.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 30, "elapsed_min": 1.19, "tokens": 1966080, "loss": 9.4599, "lr": 1.967e-05, "grad_norm": 1.508, "tok_per_s": 37764.8, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 40, "elapsed_min": 1.48, "tokens": 2621440, "loss": 9.155, "lr": 2.623e-05, "grad_norm": 1.369, "tok_per_s": 38677.2, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 50, "elapsed_min": 1.77, "tokens": 3276800, "loss": 8.9395, "lr": 3.279e-05, "grad_norm": 1.223, "tok_per_s": 37760.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 60, "elapsed_min": 2.05, "tokens": 3932160, "loss": 8.725, "lr": 3.934e-05, "grad_norm": 1.069, "tok_per_s": 38679.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 70, "elapsed_min": 2.34, "tokens": 4587520, "loss": 8.4524, "lr": 4.59e-05, "grad_norm": 0.998, "tok_per_s": 36984.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 80, "elapsed_min": 2.63, "tokens": 5242880, "loss": 8.1826, "lr": 5.246e-05, "grad_norm": 0.918, "tok_per_s": 38676.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 90, "elapsed_min": 2.92, "tokens": 5898240, "loss": 7.9094, "lr": 5.902e-05, "grad_norm": 0.777, "tok_per_s": 37154.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 100, "elapsed_min": 3.2, "tokens": 6553600, "loss": 7.6883, "lr": 6.557e-05, "grad_norm": 0.732, "tok_per_s": 38686.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 110, "elapsed_min": 3.5, "tokens": 7208960, "loss": 7.4726, "lr": 7.213e-05, "grad_norm": 0.549, "tok_per_s": 36560.7, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 120, "elapsed_min": 3.78, "tokens": 7864320, "loss": 7.3262, "lr": 7.869e-05, "grad_norm": 0.599, "tok_per_s": 39497.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 130, "elapsed_min": 4.07, "tokens": 8519680, "loss": 7.1847, "lr": 8.525e-05, "grad_norm": 0.637, "tok_per_s": 36761.7, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 140, "elapsed_min": 4.36, "tokens": 9175040, "loss": 7.0769, "lr": 9.18e-05, "grad_norm": 0.604, "tok_per_s": 38597.8, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 150, "elapsed_min": 4.66, "tokens": 9830400, "loss": 6.9861, "lr": 9.836e-05, "grad_norm": 0.565, "tok_per_s": 36455.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 160, "elapsed_min": 4.94, "tokens": 10485760, "loss": 6.8758, "lr": 0.00010492, "grad_norm": 0.563, "tok_per_s": 38329.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 170, "elapsed_min": 5.24, "tokens": 11141120, "loss": 6.8224, "lr": 0.00011148, "grad_norm": 0.616, "tok_per_s": 36918.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 180, "elapsed_min": 5.53, "tokens": 11796480, "loss": 6.7393, "lr": 0.00011803, "grad_norm": 0.709, "tok_per_s": 38027.9, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 190, "elapsed_min": 5.82, "tokens": 12451840, "loss": 6.6387, "lr": 0.00012459, "grad_norm": 0.952, "tok_per_s": 36986.8, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 200, "elapsed_min": 6.11, "tokens": 13107200, "loss": 6.5796, "lr": 0.00013115, "grad_norm": 0.903, "tok_per_s": 37624.8, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 210, "elapsed_min": 6.4, "tokens": 13762560, "loss": 6.5102, "lr": 0.0001377, "grad_norm": 0.66, "tok_per_s": 38118.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 220, "elapsed_min": 6.68, "tokens": 14417920, "loss": 6.4529, "lr": 0.00014426, "grad_norm": 0.623, "tok_per_s": 39159.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 230, "elapsed_min": 6.97, "tokens": 15073280, "loss": 6.4114, "lr": 0.00015082, "grad_norm": 1.028, "tok_per_s": 36890.1, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 240, "elapsed_min": 7.25, "tokens": 15728640, "loss": 6.326, "lr": 0.00015738, "grad_norm": 0.895, "tok_per_s": 38729.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 250, "elapsed_min": 7.56, "tokens": 16384000, "loss": 6.2453, "lr": 0.00016393, "grad_norm": 0.81, "tok_per_s": 36335.2, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 260, "elapsed_min": 7.84, "tokens": 17039360, "loss": 6.2066, "lr": 0.00017049, "grad_norm": 0.752, "tok_per_s": 38726.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 270, "elapsed_min": 8.14, "tokens": 17694720, "loss": 6.1477, "lr": 0.00017705, "grad_norm": 0.71, "tok_per_s": 36668.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 280, "elapsed_min": 8.42, "tokens": 18350080, "loss": 6.0807, "lr": 0.00018361, "grad_norm": 0.925, "tok_per_s": 38654.1, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 290, "elapsed_min": 8.72, "tokens": 19005440, "loss": 6.0508, "lr": 0.00019016, "grad_norm": 1.068, "tok_per_s": 36534.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 300, "elapsed_min": 9.0, "tokens": 19660800, "loss": 6.001, "lr": 0.00019672, "grad_norm": 1.798, "tok_per_s": 37893.7, "gpu_gb_peak": 4.35}
+{"event": "saved", "step": 305, "elapsed_min": 9.17, "tokens": 19988480, "tag": "stop_after"}
+{"event": "stopped", "step": 305, "elapsed_min": 9.17, "status": "stop_after"}

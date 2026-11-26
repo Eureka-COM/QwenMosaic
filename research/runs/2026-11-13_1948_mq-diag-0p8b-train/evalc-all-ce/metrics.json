@@ -1,0 +1,26 @@
+{
+ "delta": "/content/out/all-ce/delta",
+ "seq_len": 2048,
+ "rows": 16,
+ "teacher": "separate copy",
+ "kl": 0.80828,
+ "nll_student": 2.42483,
+ "nll_teacher": 2.10334,
+ "top1": 0.63105,
+ "ppl_ratio": 1.3792,
+ "positions": 32752,
+ "calibration": {
+  "entropy_teacher": 1.85507,
+  "entropy_student": 2.4469,
+  "correct_teacher": 0.55566,
+  "correct_student": 0.51078,
+  "nll_teacher_temperature_1.25": 2.15988,
+  "nll_teacher_temperature_1.5": 2.42887,
+  "hard_nll": 8.0,
+  "hard_positions": 1522.0,
+  "nll_teacher_hard": 10.088,
+  "nll_student_hard": 8.8458,
+  "nll_teacher_rest": 1.71421,
+  "nll_student_rest": 2.1119
+ }
+}

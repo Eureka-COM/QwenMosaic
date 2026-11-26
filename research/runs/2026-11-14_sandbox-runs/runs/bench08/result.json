@@ -1,0 +1,41 @@
+{
+ "status": "done",
+ "delta": "/home/claude/runs/d1-s3-r10-delta",
+ "backends": {
+  "attention": "dense",
+  "leaky_average": "scan",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ },
+ "mmlu": {
+  "n": 12,
+  "sampled_from": 14042,
+  "teacher": 0.3333,
+  "student": 0.25,
+  "same_answer": 0.4167,
+  "both_right": 2,
+  "only_teacher_right": 2,
+  "only_student_right": 1,
+  "both_wrong": 7
+ },
+ "gsm8k": {
+  "n": 2,
+  "asked_for": 2,
+  "max_new_tokens": 64,
+  "teacher": 0.0,
+  "student": 0.0,
+  "both_right": 0,
+  "only_teacher_right": 0,
+  "only_student_right": 0,
+  "both_wrong": 2,
+  "finished_with_answer": {
+   "teacher": 0,
+   "student": 0
+  },
+  "tokens_per_second": {
+   "teacher": 5.6,
+   "student": 5.1
+  }
+ }
+}

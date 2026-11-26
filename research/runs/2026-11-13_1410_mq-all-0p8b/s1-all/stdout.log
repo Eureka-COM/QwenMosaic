@@ -1,0 +1,33 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  61%|██████    | 194/320 [00:00<00:00, 1938.52it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 2025.48it/s]
+[1/3] c++ -MMD -MF gatesum_op_bf16.o.d -DTORCH_EXTENSION_NAME=gatesum_slim_cuda_bf16 -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-13.0/include -isystem /usr/include/python3.12 -fPIC -std=c++20 -c /content/mmllm/third_party/MemoryMosaics/model/mosaics/cuda/gatesum_slim/gatesum_op_bf16.cpp -o gatesum_op_bf16.o 
+[2/3] /usr/local/cuda-13.0/bin/nvcc -MD -MF gatesum_cuda_bf16.cuda.o.d -DTORCH_EXTENSION_NAME=gatesum_slim_cuda_bf16 -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-13.0/include -isystem /usr/include/python3.12 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 --compiler-options '-fPIC' -t 4 -std=c++20 -res-usage --maxrregcount 60 --use_fast_math -O3 -Xptxas -O3 --extra-device-vectorization -allow-unsupported-compiler -c /content/mmllm/third_party/MemoryMosaics/model/mosaics/cuda/gatesum_slim/gatesum_cuda_bf16.cu -o gatesum_cuda_bf16.cuda.o 
+ptxas info    : Overriding maximum register limit 256 for '_Z20kernel_backward_slimiiiiPKN3c108BFloat16ES2_S2_PfPS0_' with  60 of maxrregcount option
+ptxas info    : Overriding maximum register limit 256 for '_Z29kernel_forward_state_pad_slimiiiiPKN3c108BFloat16ES2_PS0_PKiPf' with  60 of maxrregcount option
+ptxas info    : Overriding maximum register limit 256 for '_Z25kernel_forward_cache_slimiiiiPKN3c108BFloat16ES2_PS0_Pf' with  60 of maxrregcount option
+ptxas info    : Overriding maximum register limit 256 for '_Z19kernel_forward_slimiiiiPKN3c108BFloat16ES2_PS0_' with  60 of maxrregcount option
+ptxas info    : 28 bytes gmem
+ptxas info    : Compiling entry function '_Z20kernel_backward_slimiiiiPKN3c108BFloat16ES2_S2_PfPS0_' for 'sm_120'
+ptxas info    : Function properties for _Z20kernel_backward_slimiiiiPKN3c108BFloat16ES2_S2_PfPS0_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 0 barriers
+ptxas info    : Compile time = 12.255 ms
+ptxas info    : Compiling entry function '_Z29kernel_forward_state_pad_slimiiiiPKN3c108BFloat16ES2_PS0_PKiPf' for 'sm_120'
+ptxas info    : Function properties for _Z29kernel_forward_state_pad_slimiiiiPKN3c108BFloat16ES2_PS0_PKiPf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers
+ptxas info    : Compile time = 4.281 ms
+ptxas info    : Compiling entry function '_Z25kernel_forward_cache_slimiiiiPKN3c108BFloat16ES2_PS0_Pf' for 'sm_120'
+ptxas info    : Function properties for _Z25kernel_forward_cache_slimiiiiPKN3c108BFloat16ES2_PS0_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 0 barriers
+ptxas info    : Compile time = 9.076 ms
+ptxas info    : Compiling entry function '_Z19kernel_forward_slimiiiiPKN3c108BFloat16ES2_PS0_' for 'sm_120'
+ptxas info    : Function properties for _Z19kernel_forward_slimiiiiPKN3c108BFloat16ES2_PS0_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 0 barriers
+ptxas info    : Compile time = 9.015 ms
+[3/3] c++ gatesum_op_bf16.o gatesum_cuda_bf16.cuda.o -shared -L/home/usergame/mq-venv/lib/python3.12/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda-13.0/lib64 -lcudart -o gatesum_slim_cuda_bf16.so
+{"event": "start", "step": 1220, "elapsed_min": 1.73, "layers": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], "memory_parameters": 152176512, "total_steps": 1220, "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "resumed_from": "/content/out/s1-all", "store": "github-release:mq-all-0p8b-s1 (Eureka-COM/mosaic-qwen)"}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"event": "eval", "step": 1220, "elapsed_min": 1.84, "tokens": 19988480, "kl": 2.16455, "nll_student": 4.34992, "nll_teacher": 2.15708, "top1": 0.39094, "ppl_ratio": 8.9606, "positions": 16376, "calibration": {"entropy_teacher": 1.92917, "entropy_student": 3.37809, "correct_teacher": 0.54482, "correct_student": 0.2958, "nll_teacher_temperature_1.25": 2.22242, "nll_teacher_temperature_1.5": 2.50711, "hard_nll": 8.0, "hard_positions": 804.0, "nll_teacher_hard": 10.0452, "nll_student_hard": 10.3087, "nll_teacher_rest": 1.74981, "nll_student_rest": 4.04226}, "rel_mse": {"0": 0.09226, "1": 0.21558, "2": 0.19138, "3": 0.25226, "4": 0.36196, "5": 0.3249, "6": 0.38579, "7": 0.26562, "8": 0.3634, "9": 0.35137, "10": 0.25072, "11": 0.25414, "12": 0.27481, "13": 0.26327, "14": 0.19858, "15": 0.26728, "16": 0.23107, "17": 0.26586, "18": 0.26554, "19": 0.23601, "20": 0.15493, "21": 0.23591, "22": 0.18139, "23": 0.08848}, "rel_mse_mean": 0.24885, "gpu_gb_peak": 3.43}
+{"event": "done", "step": 1220, "elapsed_min": 2.19, "tokens": 19988480, "status": "done"}

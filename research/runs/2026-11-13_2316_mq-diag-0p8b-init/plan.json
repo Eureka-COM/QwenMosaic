@@ -1,0 +1,213 @@
+{
+ "name": "mq-diag-0p8b-init",
+ "purpose": "docs/plan-mosaic-qwen.md §10 診断 6：記憶の初期値を、公式の乱数ではなく元の層の重みから作る（値と出力＝元の層の 出力側の写像の低ランク近似、-ovk は鍵も）。公式の層とコードは変えず、初期値だけを変える。段1 と同じ設定の層合わせを 10e6 トークン行い、乱数から始めた診断 1 の記憶と比べる。計測のみ（重みは Release に置かない）",
+ "save_mode": "token",
+ "auto_stop": false,
+ "max_minutes": 80,
+ "save_every_min": 10,
+ "max_parallel": 2,
+ "stagger_sec": 30,
+ "gpu_frac": 0.92,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "init-ov",
+   "script": "scripts/mq_stage1.py",
+   "gpu_gb": 13,
+   "max_minutes": 45,
+   "no_common": true,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--tokens",
+    "10e6",
+    "--warmup",
+    "50",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--no-optim-save",
+    "--shard-mb",
+    "1900",
+    "--init",
+    "teacher-ov",
+    "--lr",
+    "1e-3"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json",
+    "run.json"
+   ]
+  },
+  {
+   "name": "init-ovk",
+   "script": "scripts/mq_stage1.py",
+   "gpu_gb": 13,
+   "max_minutes": 45,
+   "no_common": true,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--tokens",
+    "10e6",
+    "--warmup",
+    "50",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--no-optim-save",
+    "--shard-mb",
+    "1900",
+    "--init",
+    "teacher-ovk",
+    "--lr",
+    "1e-3"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json",
+    "run.json"
+   ]
+  },
+  {
+   "name": "init-ov-lr3e4",
+   "script": "scripts/mq_stage1.py",
+   "gpu_gb": 13,
+   "max_minutes": 45,
+   "no_common": true,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--tokens",
+    "10e6",
+    "--warmup",
+    "50",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--no-optim-save",
+    "--shard-mb",
+    "1900",
+    "--init",
+    "teacher-ov",
+    "--lr",
+    "3e-4"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json",
+    "run.json"
+   ]
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "code_commit": "7e6bd2f",
+ "platform": "local"
+}

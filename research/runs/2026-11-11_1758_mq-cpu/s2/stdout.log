@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<04:59,  1.07it/s]Loading weights:  44%|████▍     | 142/320 [00:01<00:00, 181.49it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 146.61it/s]Loading weights:  78%|███████▊  | 251/320 [00:01<00:00, 142.52it/s]Loading weights:  88%|████████▊ | 282/320 [00:02<00:00, 157.40it/s]Loading weights:  97%|█████████▋| 311/320 [00:02<00:00, 145.22it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 134.06it/s]
+{"event": "start", "step": 0, "elapsed_min": 0.11, "layers": [3, 7, 11, 15, 19, 23], "trainable": 42627552, "total_steps": 40, "backends": {"attention": "dense", "leaky_average": "scan", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "delta_in": "/home/claude/runs/cpu-s1/delta", "train": "mem+lora", "resumed_from": null, "store": null}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{"event": "eval", "step": 0, "elapsed_min": 0.63, "tokens": 0, "kl": 0.50713, "nll_student": 2.98369, "nll_teacher": 2.49366, "top1": 0.73107, "ppl_ratio": 1.6324, "positions": 1149, "rel_mse": {"3": 0.5227, "7": 0.50484, "11": 0.48557, "15": 0.68354, "19": 0.465, "23": 0.33226}, "rel_mse_mean": 0.49899}
+{"event": "step", "step": 2, "elapsed_min": 1.12, "tokens": 768, "kl": 0.71587, "ce": 1.9617, "hidden": 0.0, "lr": 0.0002, "tok_per_s": 26.3}
+{"event": "step", "step": 4, "elapsed_min": 1.57, "tokens": 1536, "kl": 0.52813, "ce": 2.2393, "hidden": 0.0, "lr": 0.0003, "tok_per_s": 28.5}
+{"event": "step", "step": 6, "elapsed_min": 2.02, "tokens": 2304, "kl": 0.52202, "ce": 3.4806, "hidden": 0.0, "lr": 0.0002985, "tok_per_s": 28.2}
+{"event": "step", "step": 8, "elapsed_min": 2.48, "tokens": 3072, "kl": 0.3398, "ce": 2.6246, "hidden": 0.0, "lr": 0.000294, "tok_per_s": 28.0}
+{"event": "step", "step": 10, "elapsed_min": 2.94, "tokens": 3840, "kl": 0.42149, "ce": 2.9051, "hidden": 0.0, "lr": 0.0002867, "tok_per_s": 27.4}
+{"event": "step", "step": 12, "elapsed_min": 3.41, "tokens": 4608, "kl": 0.4968, "ce": 2.4948, "hidden": 0.0, "lr": 0.0002767, "tok_per_s": 27.4}
+{"event": "step", "step": 14, "elapsed_min": 3.88, "tokens": 5376, "kl": 0.37966, "ce": 2.607, "hidden": 0.0, "lr": 0.0002644, "tok_per_s": 27.4}
+{"event": "step", "step": 16, "elapsed_min": 4.34, "tokens": 6144, "kl": 0.39559, "ce": 3.0148, "hidden": 0.0, "lr": 0.0002501, "tok_per_s": 27.5}
+{"event": "step", "step": 18, "elapsed_min": 4.8, "tokens": 6912, "kl": 0.67584, "ce": 2.754, "hidden": 0.0, "lr": 0.0002341, "tok_per_s": 28.4}
+{"event": "step", "step": 20, "elapsed_min": 5.24, "tokens": 7680, "kl": 0.64393, "ce": 2.7682, "hidden": 0.0, "lr": 0.0002171, "tok_per_s": 28.9}
+{"event": "eval", "step": 20, "elapsed_min": 5.75, "tokens": 7680, "kl": 0.46354, "nll_student": 2.91585, "nll_teacher": 2.49366, "top1": 0.70757, "ppl_ratio": 1.5253, "positions": 1149, "rel_mse": {"3": 0.61527, "7": 0.59522, "11": 0.59105, "15": 0.72712, "19": 0.5191, "23": 0.37226}, "rel_mse_mean": 0.57}
+{"event": "step", "step": 22, "elapsed_min": 6.22, "tokens": 8448, "kl": 0.48702, "ce": 2.8397, "hidden": 0.0, "lr": 0.0001995, "tok_per_s": 13.0}
+{"event": "step", "step": 24, "elapsed_min": 6.69, "tokens": 9216, "kl": 0.67431, "ce": 3.285, "hidden": 0.0, "lr": 0.0001817, "tok_per_s": 27.2}
+{"event": "step", "step": 26, "elapsed_min": 7.17, "tokens": 9984, "kl": 0.368, "ce": 2.4873, "hidden": 0.0, "lr": 0.0001643, "tok_per_s": 27.0}
+{"event": "step", "step": 28, "elapsed_min": 7.63, "tokens": 10752, "kl": 0.33391, "ce": 2.522, "hidden": 0.0, "lr": 0.0001477, "tok_per_s": 27.4}
+{"event": "step", "step": 30, "elapsed_min": 8.1, "tokens": 11520, "kl": 0.39754, "ce": 3.0092, "hidden": 0.0, "lr": 0.0001326, "tok_per_s": 27.7}
+{"event": "step", "step": 32, "elapsed_min": 8.58, "tokens": 12288, "kl": 0.44518, "ce": 2.6215, "hidden": 0.0, "lr": 0.0001192, "tok_per_s": 26.6}
+{"event": "step", "step": 34, "elapsed_min": 9.07, "tokens": 13056, "kl": 0.49533, "ce": 2.179, "hidden": 0.0, "lr": 0.000108, "tok_per_s": 25.8}
+{"event": "step", "step": 36, "elapsed_min": 9.55, "tokens": 13824, "kl": 0.56023, "ce": 2.8057, "hidden": 0.0, "lr": 9.93e-05, "tok_per_s": 27.0}
+{"event": "step", "step": 38, "elapsed_min": 10.01, "tokens": 14592, "kl": 0.53459, "ce": 2.7317, "hidden": 0.0, "lr": 9.34e-05, "tok_per_s": 27.5}
+{"event": "step", "step": 40, "elapsed_min": 10.49, "tokens": 15360, "kl": 0.63743, "ce": 3.2157, "hidden": 0.0, "lr": 9.04e-05, "tok_per_s": 27.1}
+{"event": "eval", "step": 40, "elapsed_min": 11.01, "tokens": 15360, "kl": 0.39926, "nll_student": 2.87891, "nll_teacher": 2.49366, "top1": 0.72237, "ppl_ratio": 1.47, "positions": 1149, "rel_mse": {"3": 0.62976, "7": 0.61386, "11": 0.61473, "15": 0.7348, "19": 0.52505, "23": 0.37518}, "rel_mse_mean": 0.58223}
+{"event": "done", "step": 40, "elapsed_min": 11.01, "tokens": 15360, "status": "done"}

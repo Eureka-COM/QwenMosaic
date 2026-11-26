@@ -1,0 +1,98 @@
+[
+ {
+  "i": 13835,
+  "subject": "virology",
+  "gold": 0,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 100
+ },
+ {
+  "i": 6311,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 82
+ },
+ {
+  "i": 12418,
+  "subject": "professional_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 207
+ },
+ {
+  "i": 6890,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 80
+ },
+ {
+  "i": 663,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 101
+ },
+ {
+  "i": 4242,
+  "subject": "high_school_mathematics",
+  "gold": 3,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 144
+ },
+ {
+  "i": 8376,
+  "subject": "moral_disputes",
+  "gold": 3,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 120
+ },
+ {
+  "i": 7961,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 96
+ },
+ {
+  "i": 6634,
+  "subject": "jurisprudence",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 74
+ },
+ {
+  "i": 12841,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 117
+ },
+ {
+  "i": 13596,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 110
+ },
+ {
+  "i": 4969,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 84
+ }
+]

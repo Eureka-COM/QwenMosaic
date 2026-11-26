@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<04:44,  1.12it/s]Loading weights:  50%|████▉     | 159/320 [00:00<00:00, 217.99it/s]Loading weights:  78%|███████▊  | 248/320 [00:01<00:00, 247.94it/s]Loading weights:  97%|█████████▋| 310/320 [00:01<00:00, 260.20it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 208.83it/s]
+{"event": "loaded", "elapsed_min": 0.11, "rows": [6, 256], "lora_modules": 126}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{"event": "in_memory", "elapsed_min": 0.79, "kl_teacher": 0.13514, "nll": 2.08445, "ppl_ratio": 1.1237, "top1_teacher": 0.8745}
+{"event": "done", "elapsed_min": 0.88}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{"event": "saved_fp32", "elapsed_min": 0.72, "kl_teacher": 0.13514, "nll": 2.08445, "ppl_ratio": 1.1237, "top1_teacher": 0.8745, "kl_in_memory": -0.0, "top1_in_memory": 1.0, "max_logit_diff": 0.0001}
+{"event": "done", "elapsed_min": 0.74}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+{"event": "saved_bf16", "elapsed_min": 0.72, "kl_teacher": 0.13526, "nll": 2.08456, "ppl_ratio": 1.1238, "top1_teacher": 0.8745, "kl_in_memory": 2.2e-05, "top1_in_memory": 0.9993, "max_logit_diff": 0.1911}
+{"event": "done", "elapsed_min": 0.76}
+FINISHED

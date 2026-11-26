@@ -1,0 +1,4 @@
+{"event": "start", "step": 0, "elapsed_min": 0.12, "layers": [3, 7, 11, 15, 19, 23], "delta": "/content/out/s2-r10/delta", "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "attention_parameters_in_student": 0}
+{"event": "metrics", "step": 1, "elapsed_min": 0.25, "kl": 0.14373, "nll_student": 2.29798, "nll_teacher": 2.1957, "top1": 0.82746, "ppl_ratio": 1.1077, "positions": 32752, "rel_mse_mean": 0.29619}
+{"event": "recall", "step": 2, "elapsed_min": 2.35, "32": {"n": 20, "teacher": 1.0, "student": 1.0}, "512": {"n": 20, "teacher": 1.0, "student": 1.0}, "1500": {"n": 20, "teacher": 1.0, "student": 1.0}, "6000": {"n": 20, "teacher": 1.0, "student": 1.0}}
+{"event": "done", "step": 3, "elapsed_min": 3.05, "status": "done"}

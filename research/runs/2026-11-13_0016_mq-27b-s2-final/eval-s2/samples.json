@@ -1,0 +1,27 @@
+[
+ {
+  "prompt": "Explain in two sentences why the sky is blue.",
+  "teacher": "The sky appears blue because molecules in the Earth's atmosphere scatter shorter wavelengths of sunlight, such as blue and violet, more effectively than longer wavelengths like red and orange. This phenomenon, known as Rayleigh scattering, causes blue light to be dispersed across the sky, making it the dominant color we see during the day.",
+  "student": "Sunlight contains all colors of the visible spectrum, but when it enters Earth's atmosphere, shorter wavelengths like blue scatter off air molecules much more effectively than longer wavelengths like red. This phenomenon, known as Rayleigh scattering, causes the scattered blue light to scatter in all directions, making the sky appear blue to our eyes."
+ },
+ {
+  "prompt": "Write a Python function that returns the n-th Fibonacci number.",
+  "teacher": "```python\ndef fibonacci(n: int) -> int:\n    \"\"\"\n    Return the n-th Fibonacci number.\n    \n    The Fibonacci sequence is defined as:\n    F(0) = 0\n    F(1) = 1\n    F(n) = F(n-1) +",
+  "student": "```python\ndef fibonacci(n: int) -> int:\n    \"\"\"\n    Return the n-th Fibonacci number (0-indexed).\n    \n    F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2) for n"
+ },
+ {
+  "prompt": "日本で一番高い山は何ですか。標高も答えてください。",
+  "teacher": "日本で一番高い山は**富士山**です。\n\n標高は**3,776メートル**です。",
+  "student": "日本一の山は**富士山**です。\n\n標高は**3,776メートル**です。"
+ },
+ {
+  "prompt": "List three differences between a list and a tuple in Python.",
+  "teacher": "Here are three key differences between a list and a tuple in Python:\n\n### 1. Mutability\n*   **List**: Lists are **mutable**, meaning you can change, add, or remove elements after the list is created.\n*   **Tuple**: Tuples are **immutable**, meaning once a tuple",
+  "student": "Here are three key differences between a list and a tuple in Python:\n\n1.  **Mutability**: Lists are **mutable**, meaning their elements can be changed, added, or removed after creation. Tuples are **immutable**, meaning their elements cannot be changed after creation.\n2.  **Syntax**: Lists"
+ },
+ {
+  "prompt": "次の文を英語に訳してください：「記憶は予測のためにある。」",
+  "teacher": "Memory exists for prediction.",
+  "student": "Memory exists to serve prediction."
+ }
+]

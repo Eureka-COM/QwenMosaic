@@ -1,0 +1,27 @@
+[
+ {
+  "prompt": "Explain in two sentences why the sky is blue.",
+  "teacher": "The sky appears blue because sunlight scatters off the Earth's atmosphere, with shorter wavelengths of blue light being scattered more effectively than longer ones, making the sky look blue to our eyes.\n",
+  "student": "The sky is blue because the atmosphere is filled with a thin layer of tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny, tiny,"
+ },
+ {
+  "prompt": "Write a Python function that returns the n-th Fibonacci number.",
+  "teacher": "Here’s a simple, efficient Python function that returns the n-th Fibonacci number:\n\n```python\ndef fibonacci(n: int) -> int:\n    \"\"\"\n    Return the n-th Fibonacci number (1-indexed).\n    F(0) = 0, F(1) = 1, F",
+  "student": "Here’s a simple Python function that computes the n-th Fibonacci number:\n\n```python\ndef fibonacci(n):\n    if n < 0:\n        raise ValueError(\"n must be a non-negative integer\")\n    if n == 0:\n        return 0\n    if n == 1:"
+ },
+ {
+  "prompt": "日本で一番高い山は何ですか。標高も答えてください。",
+  "teacher": "日本では、**富士山**が「一番高い山」とされています。\n\nその標高は約 **3,378 米**（3,378.3 米）です。\n\n※ただし、山頂付近の標高は 3,378.3 米",
+  "student": "日本には、**富士山**が最も高い山です。\n\n富士山は、日本列島を東西に突き抜ける最も高い山です。その高さは約 **3,776 米**（約 2,184 フィート）です。\n\nこの山は、"
+ },
+ {
+  "prompt": "List three differences between a list and a tuple in Python.",
+  "teacher": "Here are three key differences between a list and a tuple in Python:\n\n1.  **Mutability**:\n    *   **Lists** are mutable, meaning you can modify the elements inside them (e.g., `list.append(new_element)` or `list[0] = \"new\"`).\n    *",
+  "student": "Here are the key differences between a list and a tuple in Python:\n\n1.  **Ordering**:\n    *   **List**: Elements are stored in a specific order (e.g., `[1, 2, 3]`).\n    *   **Tuple**: Elements are stored in a specific order"
+ },
+ {
+  "prompt": "次の文を英語に訳してください：「記憶は予測のためにある。」",
+  "teacher": "\"Memory is for prediction.\"\n",
+  "student": "\"Memory is a prediction.\"\n\nあるいは、より自然な表現として：\n\n*   \"Memory is a prediction.\"\n*   \"Memory is the prediction of the future.\"\n*   \"Memory is the prediction of the future.\"\n\nこれらの表現は、記憶が過去に蓄積された情報に基づいて予測"
+ }
+]

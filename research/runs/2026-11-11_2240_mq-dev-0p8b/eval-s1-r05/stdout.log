@@ -1,0 +1,8 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 6468.32it/s]
+ninja: no work to do.
+{"event": "start", "step": 0, "elapsed_min": 0.11, "layers": [3, 7, 11, 15, 19, 23], "delta": "/content/out/s1-r05/delta", "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "attention_parameters_in_student": 0}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"event": "metrics", "step": 1, "elapsed_min": 0.23, "kl": 0.3123, "nll_student": 2.48057, "nll_teacher": 2.1957, "top1": 0.75611, "ppl_ratio": 1.3296, "positions": 32752, "rel_mse_mean": 0.29376}
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{"event": "recall", "step": 2, "elapsed_min": 2.16, "32": {"n": 20, "teacher": 1.0, "student": 0.75}, "512": {"n": 20, "teacher": 1.0, "student": 0.7}, "1500": {"n": 20, "teacher": 1.0, "student": 0.65}, "6000": {"n": 20, "teacher": 1.0, "student": 0.75}}
+{"event": "done", "step": 3, "elapsed_min": 2.66, "status": "done"}

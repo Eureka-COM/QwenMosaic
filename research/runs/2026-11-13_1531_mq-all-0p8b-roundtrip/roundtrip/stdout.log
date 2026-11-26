@@ -1,0 +1,5 @@
+usage: mq_roundtrip.py [-h] --model MODEL --delta DELTA --data DATA
+                       [--docs DOCS] [--rows ROWS] [--seq-len SEQ_LEN] --out
+                       OUT [--work WORK] [--device DEVICE] [--step STEP]
+                       [--shard-mb SHARD_MB]
+mq_roundtrip.py: error: unrecognized arguments: --max-minutes 25

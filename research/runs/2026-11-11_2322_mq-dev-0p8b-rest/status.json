@@ -1,0 +1,23 @@
+{
+ "plan": "mq-dev-0p8b-rest",
+ "runs": {
+  "s2-r10": "ok in 21.8 min",
+  "eval-s2-r10": "ok in 3.3 min",
+  "s3-r10": "ok in 8.8 min",
+  "eval-s3-r10": "ok in 2.8 min",
+  "export-r10": "ok in 3.0 min"
+ },
+ "started": "2026-11-11 23:22:50",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_mem_gb": 79.3,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 37.3,
+ "finished": "2026-11-12 00:00:06"
+}

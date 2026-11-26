@@ -1,0 +1,109 @@
+{
+ "name": "mq-all-0p8b-roundtrip",
+ "purpose": "docs/plan-mosaic-qwen.md §10 手順 1 の動作の条件：書き出したモデル（fp32・bf16）を読み直し、メモリ上のモデルと同じ出力になるかを、学習に使わない位置で測る。学習はしない",
+ "save_mode": "token",
+ "auto_stop": false,
+ "export_token": true,
+ "max_minutes": 45,
+ "save_every_min": 5,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-all-s3",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 15,
+   "args": [
+    "--store",
+    "github-release:mq-all-0p8b-s3",
+    "--dest",
+    "/content/prev/all-s3/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "roundtrip",
+   "script": "scripts/mq_roundtrip.py",
+   "after": [
+    "fetch-all-s3"
+   ],
+   "gpu_gb": 16,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--delta",
+    "/content/prev/all-s3/delta",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "400",
+    "--rows",
+    "6",
+    "--seq-len",
+    "256",
+    "--work",
+    "/content/roundtrip-work"
+   ],
+   "output_files": [
+    "roundtrip.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "code_commit": "c33db7a",
+ "platform": "local"
+}

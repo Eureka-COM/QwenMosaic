@@ -1,0 +1,1282 @@
+{
+ "model": "/home/claude/models/Qwen3.5-0.8B",
+ "hard": 8.0,
+ "rows": {
+  "eval0": {
+   "tokens": 2048,
+   "loss": 1.7976,
+   "bad": 76,
+   "bad_share": 0.0371,
+   "loss_rest": 1.4741,
+   "top1_correct": 0.6043,
+   "documents": [
+    {
+     "start": 0,
+     "len": 716,
+     "loss": 1.587,
+     "bad": 40,
+     "loss_first32": 3.089,
+     "bad_first32": 2,
+     "loss_later": 1.519,
+     "loss_of_separator": 0.25,
+     "head": "import os\\nimport unittest\\n\\nimport h5py\\nimport numpy as"
+    },
+    {
+     "start": 717,
+     "len": 1331,
+     "loss": 1.912,
+     "bad": 36,
+     "loss_first32": 3.693,
+     "bad_first32": 3,
+     "loss_later": 1.868,
+     "loss_of_separator": null,
+     "head": " Course Unit: Pharmaceutical Manufacturing and Technology: A"
+    }
+   ],
+   "by_position": [
+    {
+     "from": 0,
+     "loss": 1.78,
+     "bad": 50
+    },
+    {
+     "from": 1024,
+     "loss": 1.815,
+     "bad": 26
+    }
+   ],
+   "by_offset": [
+    {
+     "from": 0,
+     "n": 15,
+     "loss": 5.241,
+     "bad": 2
+    },
+    {
+     "from": 8,
+     "n": 48,
+     "loss": 2.819,
+     "bad": 3
+    },
+    {
+     "from": 32,
+     "n": 192,
+     "loss": 1.808,
+     "bad": 8
+    },
+    {
+     "from": 128,
+     "n": 768,
+     "loss": 1.638,
+     "bad": 25
+    },
+    {
+     "from": 512,
+     "n": 1024,
+     "loss": 1.817,
+     "bad": 38
+    }
+   ],
+   "runs": {
+    "count": 69,
+    "longest": 2,
+    "bad_in_runs_of_8_or_more": 0
+   },
+   "top_tokens_at_bad": [
+    [
+     "']",
+     3
+    ],
+    [
+     " and",
+     3
+    ],
+    [
+     "rdf",
+     2
+    ],
+    [
+     " f",
+     2
+    ],
+    [
+     " =",
+     2
+    ],
+    [
+     "source",
+     2
+    ],
+    [
+     "'",
+     2
+    ],
+    [
+     " h",
+     1
+    ],
+    [
+     "wd",
+     1
+    ],
+    [
+     "name",
+     1
+    ],
+    [
+     "ald",
+     1
+    ],
+    [
+     "/",
+     1
+    ]
+   ],
+   "real_tokens_at_bad": [
+    [
+     " bald",
+     1
+    ],
+    [
+     "attrs",
+     1
+    ],
+    [
+     "rdf",
+     1
+    ],
+    [
+     "__",
+     1
+    ],
+    [
+     "Container",
+     1
+    ],
+    [
+     " group",
+     1
+    ],
+    [
+     "_pref",
+     1
+    ],
+    [
+     "inary",
+     1
+    ],
+    [
+     "-array",
+     1
+    ],
+    [
+     "#'",
+     1
+    ],
+    [
+     "sk",
+     1
+    ],
+    [
+     "Pref",
+     1
+    ]
+   ],
+   "samples": [
+    {
+     "pos": 17,
+     "offset": 17,
+     "loss": 14.5,
+     "real": " bald",
+     "top": " h",
+     "p_top": 0.086,
+     "before": " h5py\\nimport numpy as np\\n\\nimport"
+    },
+    {
+     "pos": 50,
+     "offset": 50,
+     "loss": 13.8,
+     "real": " group",
+     "top": " f",
+     "p_top": 0.848,
+     "before": "'] = 'bald__Container'\\n   "
+    },
+    {
+     "pos": 128,
+     "offset": 128,
+     "loss": 10.6,
+     "real": "sk",
+     "top": "rdf",
+     "p_top": 0.641,
+     "before": "-syntax-ns#'\\n    group_pref.attrs['"
+    },
+    {
+     "pos": 326,
+     "offset": 326,
+     "loss": 10.7,
+     "real": "Graph",
+     "top": "5",
+     "p_top": 0.935,
+     "before": ".ref\\n    return container\\n\\n\\nclass TestHDF"
+    },
+    {
+     "pos": 435,
+     "offset": 435,
+     "loss": 8.0,
+     "real": "_d",
+     "top": "_pref",
+     "p_top": 0.481,
+     "before": "11, 17))\\n            group"
+    },
+    {
+     "pos": 494,
+     "offset": 494,
+     "loss": 14.0,
+     "real": " inst",
+     "top": " _",
+     "p_top": 0.694,
+     "before": " 'anotherpair', (2,))\\n           "
+    },
+    {
+     "pos": 551,
+     "offset": 551,
+     "loss": 8.3,
+     "real": " loc",
+     "top": " a",
+     "p_top": 0.135,
+     "before": "['skos__prefLabel'] = 'for"
+    },
+    {
+     "pos": 652,
+     "offset": 652,
+     "loss": 8.0,
+     "real": " cache",
+     "top": " '",
+     "p_top": 0.447,
+     "before": "_container = bald.load_hdf5(tfile,"
+    },
+    {
+     "pos": 717,
+     "offset": 0,
+     "loss": 19.0,
+     "real": " Course",
+     "top": "import",
+     "p_top": 0.293,
+     "before": "main__':\\n    unittest.main()\\n<|endoftext|>"
+    },
+    {
+     "pos": 934,
+     "offset": 217,
+     "loss": 8.4,
+     "real": " follow",
+     "top": " determine",
+     "p_top": 0.254,
+     "before": "omous tractor uses satellite positioning data to"
+    },
+    {
+     "pos": 1086,
+     "offset": 369,
+     "loss": 8.5,
+     "real": " yield",
+     "top": " remote",
+     "p_top": 0.138,
+     "before": "culture include variable rate application (VRA),"
+    },
+    {
+     "pos": 1424,
+     "offset": 707,
+     "loss": 8.7,
+     "real": " optimization",
+     "top": " the",
+     "p_top": 0.189,
+     "before": "mization of cultivation parameters, facilitating"
+    },
+    {
+     "pos": 1617,
+     "offset": 900,
+     "loss": 11.6,
+     "real": " circum",
+     "top": " leading",
+     "p_top": 0.309,
+     "before": " specific loci within plant genomes, potentially"
+    },
+    {
+     "pos": 1717,
+     "offset": 1000,
+     "loss": 8.5,
+     "real": " common",
+     "top": " turbo",
+     "p_top": 0.146,
+     "before": "rvice life, often incorporating features such as"
+    }
+   ]
+  },
+  "eval1": {
+   "tokens": 2048,
+   "loss": 1.3245,
+   "bad": 75,
+   "bad_share": 0.0366,
+   "loss_rest": 0.9768,
+   "top1_correct": 0.7377,
+   "documents": [
+    {
+     "start": 0,
+     "len": 2048,
+     "loss": 1.325,
+     "bad": 75,
+     "loss_first32": 2.994,
+     "bad_first32": 4,
+     "loss_later": 1.299,
+     "loss_of_separator": null,
+     "head": "#\\n# lfo.py - Lfo tab conversion objects\\n#"
+    }
+   ],
+   "by_position": [
+    {
+     "from": 0,
+     "loss": 1.602,
+     "bad": 50
+    },
+    {
+     "from": 1024,
+     "loss": 1.047,
+     "bad": 25
+    }
+   ],
+   "by_offset": [
+    {
+     "from": 0,
+     "n": 7,
+     "loss": 4.567,
+     "bad": 2
+    },
+    {
+     "from": 8,
+     "n": 24,
+     "loss": 2.535,
+     "bad": 2
+    },
+    {
+     "from": 32,
+     "n": 96,
+     "loss": 0.488,
+     "bad": 1
+    },
+    {
+     "from": 128,
+     "n": 384,
+     "loss": 2.172,
+     "bad": 29
+    },
+    {
+     "from": 512,
+     "n": 1536,
+     "loss": 1.131,
+     "bad": 41
+    }
+   ],
+   "runs": {
+    "count": 61,
+    "longest": 5,
+    "bad_in_runs_of_8_or_more": 0
+   },
+   "top_tokens_at_bad": [
+    [
+     "\\n",
+     10
+    ],
+    [
+     ",",
+     7
+    ],
+    [
+     " ",
+     2
+    ],
+    [
+     " g",
+     2
+    ],
+    [
+     " __",
+     2
+    ],
+    [
+     ")",
+     2
+    ],
+    [
+     " =",
+     2
+    ],
+    [
+     "Mod",
+     2
+    ],
+    [
+     " conv",
+     2
+    ],
+    [
+     ":",
+     2
+    ],
+    [
+     "l",
+     1
+    ],
+    [
+     " get",
+     1
+    ]
+   ],
+   "real_tokens_at_bad": [
+    [
+     " dos",
+     2
+    ],
+    [
+     "Var",
+     2
+    ],
+    [
+     " adj",
+     2
+    ],
+    [
+     "m",
+     2
+    ],
+    [
+     " l",
+     1
+    ],
+    [
+     "fo",
+     1
+    ],
+    [
+     " tab",
+     1
+    ],
+    [
+     " objects",
+     1
+    ],
+    [
+     "ools",
+     1
+    ],
+    [
+     " Fo",
+     1
+    ],
+    [
+     " nord",
+     1
+    ],
+    [
+     " isn",
+     1
+    ]
+   ],
+   "samples": [
+    {
+     "pos": 3,
+     "offset": 3,
+     "loss": 8.7,
+     "real": " l",
+     "top": " ",
+     "p_top": 0.129,
+     "before": "#\\n#"
+    },
+    {
+     "pos": 182,
+     "offset": 182,
+     "loss": 17.9,
+     "real": " Fo",
+     "top": " g",
+     "p_top": 0.925,
+     "before": " of the GNU General Public License\\n# along with"
+    },
+    {
+     "pos": 252,
+     "offset": 252,
+     "loss": 8.5,
+     "real": "con",
+     "top": "colors",
+     "p_top": 0.234,
+     "before": "\\nfrom nord.nm1.colors import nm1"
+    },
+    {
+     "pos": 270,
+     "offset": 270,
+     "loss": 8.8,
+     "real": "cm",
+     "top": "\\n",
+     "p_top": 0.403,
+     "before": "nvert\\nfrom nord.convert.convert import handleos"
+    },
+    {
+     "pos": 281,
+     "offset": 281,
+     "loss": 10.7,
+     "real": "ables",
+     "top": "\\n",
+     "p_top": 0.414,
+     "before": "asterslv, handlekbt, doslvc"
+    },
+    {
+     "pos": 303,
+     "offset": 303,
+     "loss": 8.0,
+     "real": "param",
+     "top": ",",
+     "p_top": 0.28,
+     "before": "lv(conv, ratemodin, ratemod"
+    },
+    {
+     "pos": 371,
+     "offset": 371,
+     "loss": 8.3,
+     "real": "master",
+     "top": " =",
+     "p_top": 0.358,
+     "before": "mm.outputs.Slv.cables):\\n    osc"
+    },
+    {
+     "pos": 633,
+     "offset": 633,
+     "loss": 10.8,
+     "real": " fine",
+     "top": " a",
+     "p_top": 0.107,
+     "before": " 35, False)\\n\\n  # add"
+    },
+    {
+     "pos": 743,
+     "offset": 743,
+     "loss": 11.3,
+     "real": ".Chain",
+     "top": ".F",
+     "p_top": 0.228,
+     "before": " ratemodin)\\n      conv.connect(adj.inputs"
+    },
+    {
+     "pos": 885,
+     "offset": 885,
+     "loss": 11.2,
+     "real": "stin",
+     "top": "st",
+     "p_top": 0.938,
+     "before": "mm.params, g2m.params\\n\\n  m"
+    },
+    {
+     "pos": 1027,
+     "offset": 1027,
+     "loss": 11.1,
+     "real": ".sl",
+     "top": ".get",
+     "p_top": 0.344,
+     "before": ".net.output.rate != nm1conncolors"
+    },
+    {
+     "pos": 1098,
+     "offset": 1098,
+     "loss": 8.8,
+     "real": "Cnt",
+     "top": "',",
+     "p_top": 0.148,
+     "before": "\\n    pout = conv.add_module('Zero"
+    },
+    {
+     "pos": 1238,
+     "offset": 1238,
+     "loss": 9.0,
+     "real": "ing",
+     "top": " =",
+     "p_top": 0.398,
+     "before": "class ConvLFOA(Convert):\\n  ma"
+    },
+    {
+     "pos": 1314,
+     "offset": 1314,
+     "loss": 12.1,
+     "real": " dom",
+     "top": " __",
+     "p_top": 0.538,
+     "before": " ['', 'Out'] # Slv\\n\\n  def"
+    }
+   ]
+  },
+  "train6": {
+   "tokens": 2048,
+   "loss": 1.9931,
+   "bad": 62,
+   "bad_share": 0.0303,
+   "loss_rest": 1.7357,
+   "top1_correct": 0.5359,
+   "documents": [
+    {
+     "start": 0,
+     "len": 819,
+     "loss": 2.243,
+     "bad": 25,
+     "loss_first32": 2.08,
+     "bad_first32": 0,
+     "loss_later": 2.249,
+     "loss_of_separator": 3.05,
+     "head": " When it comes to marketing and business strategies, creatin"
+    },
+    {
+     "start": 820,
+     "len": 502,
+     "loss": 1.911,
+     "bad": 14,
+     "loss_first32": 2.046,
+     "bad_first32": 1,
+     "loss_later": 1.902,
+     "loss_of_separator": 5.23,
+     "head": " Cannabis and its derivatives, including CBD products, have "
+    },
+    {
+     "start": 1323,
+     "len": 452,
+     "loss": 1.707,
+     "bad": 18,
+     "loss_first32": 3.584,
+     "bad_first32": 6,
+     "loss_later": 1.564,
+     "loss_of_separator": 7.56,
+     "head": "from j25.web import Controller\\nimport inspect\\nimport loggi"
+    },
+    {
+     "start": 1776,
+     "len": 272,
+     "loss": 1.833,
+     "bad": 5,
+     "loss_first32": 2.576,
+     "bad_first32": 1,
+     "loss_later": 1.734,
+     "loss_of_separator": null,
+     "head": "<|im_start|>user\\nWrite a comprehensive report of at least 2"
+    }
+   ],
+   "by_position": [
+    {
+     "from": 0,
+     "loss": 2.156,
+     "bad": 31
+    },
+    {
+     "from": 1024,
+     "loss": 1.831,
+     "bad": 31
+    }
+   ],
+   "by_offset": [
+    {
+     "from": 0,
+     "n": 31,
+     "loss": 4.391,
+     "bad": 5
+    },
+    {
+     "from": 8,
+     "n": 96,
+     "loss": 1.989,
+     "bad": 3
+    },
+    {
+     "from": 32,
+     "n": 384,
+     "loss": 1.735,
+     "bad": 10
+    },
+    {
+     "from": 128,
+     "n": 1228,
+     "loss": 1.969,
+     "bad": 35
+    },
+    {
+     "from": 512,
+     "n": 308,
+     "loss": 2.171,
+     "bad": 9
+    }
+   ],
+   "runs": {
+    "count": 56,
+    "longest": 3,
+    "bad_in_runs_of_8_or_more": 0
+   },
+   "top_tokens_at_bad": [
+    [
+     " and",
+     5
+    ],
+    [
+     " to",
+     2
+    ],
+    [
+     " can",
+     2
+    ],
+    [
+     "The",
+     2
+    ],
+    [
+     "\")",
+     2
+    ],
+    [
+     " ",
+     1
+    ],
+    [
+     " Magento",
+     1
+    ],
+    [
+     "eger",
+     1
+    ],
+    [
+     " that",
+     1
+    ],
+    [
+     " tools",
+     1
+    ],
+    [
+     " extensions",
+     1
+    ],
+    [
+     " directly",
+     1
+    ]
+   ],
+   "real_tokens_at_bad": [
+    [
+     " j",
+     2
+    ],
+    [
+     " Magento",
+     1
+    ],
+    [
+     " extensions",
+     1
+    ],
+    [
+     " developed",
+     1
+    ],
+    [
+     " Ja",
+     1
+    ],
+    [
+     "Ju",
+     1
+    ],
+    [
+     " focused",
+     1
+    ],
+    [
+     " cutting",
+     1
+    ],
+    [
+     " newer",
+     1
+    ],
+    [
+     " tailored",
+     1
+    ],
+    [
+     " utilizing",
+     1
+    ],
+    [
+     " digital",
+     1
+    ]
+   ],
+   "samples": [
+    {
+     "pos": 45,
+     "offset": 45,
+     "loss": 9.5,
+     "real": " Magento",
+     "top": " to",
+     "p_top": 0.265,
+     "before": "atory compliance. The following will explore how"
+    },
+    {
+     "pos": 50,
+     "offset": 50,
+     "loss": 8.1,
+     "real": "Ju",
+     "top": "eger",
+     "p_top": 0.059,
+     "before": "l explore how Magento extensions developed by Ja"
+    },
+    {
+     "pos": 233,
+     "offset": 233,
+     "loss": 12.4,
+     "real": " tailored",
+     "top": " directly",
+     "p_top": 0.39,
+     "before": " JPEG and PNG files. By serving optimized images"
+    },
+    {
+     "pos": 330,
+     "offset": 330,
+     "loss": 8.6,
+     "real": " ease",
+     "top": " improve",
+     "p_top": 0.564,
+     "before": "ameters—to facilitate indexation by crawlers and"
+    },
+    {
+     "pos": 539,
+     "offset": 539,
+     "loss": 9.8,
+     "real": " Personal",
+     "top": " This",
+     "p_top": 0.445,
+     "before": "owsing history, preferences, and past purchases."
+    },
+    {
+     "pos": 691,
+     "offset": 691,
+     "loss": 9.4,
+     "real": " request",
+     "top": " controls",
+     "p_top": 0.491,
+     "before": "e consent prompts, easily accessible data access"
+    },
+    {
+     "pos": 758,
+     "offset": 758,
+     "loss": 10.0,
+     "real": " unw",
+     "top": " strategic",
+     "p_top": 0.406,
+     "before": "ration. Through rigorous attention to detail and"
+    },
+    {
+     "pos": 982,
+     "offset": 162,
+     "loss": 8.0,
+     "real": "It",
+     "top": "The",
+     "p_top": 0.213,
+     "before": " THC-rich strains and those high in CBD.\\n\\n"
+    },
+    {
+     "pos": 1154,
+     "offset": 334,
+     "loss": 8.1,
+     "real": " burgeoning",
+     "top": " debate",
+     "p_top": 0.084,
+     "before": " safe dosages and administration methods.\\n\\nThe"
+    },
+    {
+     "pos": 1282,
+     "offset": 462,
+     "loss": 8.6,
+     "real": " let",
+     "top": " we",
+     "p_top": 0.198,
+     "before": " potential of CBD-rich products. Moving forward,"
+    },
+    {
+     "pos": 1324,
+     "offset": 1,
+     "loss": 9.2,
+     "real": " j",
+     "top": " the",
+     "p_top": 0.293,
+     "before": "ces into our lives responsibly.<|endoftext|>from"
+    },
+    {
+     "pos": 1350,
+     "offset": 27,
+     "loss": 8.1,
+     "real": "Loader",
+     "top": "\")",
+     "p_top": 0.872,
+     "before": "ceback\\n\\nlogger = logging.getLogger(\"Controller"
+    },
+    {
+     "pos": 1562,
+     "offset": 239,
+     "loss": 11.5,
+     "real": " j",
+     "top": " Controller",
+     "p_top": 0.705,
+     "before": " '%s' package but is not a subclass of"
+    },
+    {
+     "pos": 1599,
+     "offset": 276,
+     "loss": 14.9,
+     "real": ".P",
+     "top": ")",
+     "p_top": 0.494,
+     "before": "         dispatcher.registerServiceFactory(klass"
+    }
+   ]
+  },
+  "train8": {
+   "tokens": 2048,
+   "loss": 1.6697,
+   "bad": 43,
+   "bad_share": 0.021,
+   "loss_rest": 1.4934,
+   "top1_correct": 0.5862,
+   "documents": [
+    {
+     "start": 0,
+     "len": 279,
+     "loss": 2.54,
+     "bad": 15,
+     "loss_first32": 2.931,
+     "bad_first32": 1,
+     "loss_later": 2.491,
+     "loss_of_separator": 0.87,
+     "head": "井川町中村流（いかわちょうなかむらなが"
+    },
+    {
+     "start": 280,
+     "len": 1768,
+     "loss": 1.533,
+     "bad": 28,
+     "loss_first32": 2.867,
+     "bad_first32": 1,
+     "loss_later": 1.509,
+     "loss_of_separator": null,
+     "head": "<|im_start|>user\\nIn a 500-word essay, discuss the"
+    }
+   ],
+   "by_position": [
+    {
+     "from": 0,
+     "loss": 1.979,
+     "bad": 27
+    },
+    {
+     "from": 1024,
+     "loss": 1.36,
+     "bad": 16
+    }
+   ],
+   "by_offset": [
+    {
+     "from": 0,
+     "n": 15,
+     "loss": 4.215,
+     "bad": 1
+    },
+    {
+     "from": 8,
+     "n": 48,
+     "loss": 2.487,
+     "bad": 1
+    },
+    {
+     "from": 32,
+     "n": 192,
+     "loss": 2.355,
+     "bad": 9
+    },
+    {
+     "from": 128,
+     "n": 536,
+     "loss": 1.826,
+     "bad": 12
+    },
+    {
+     "from": 512,
+     "n": 1256,
+     "loss": 1.437,
+     "bad": 20
+    }
+   ],
+   "runs": {
+    "count": 42,
+    "longest": 2,
+    "bad_in_runs_of_8_or_more": 0
+   },
+   "top_tokens_at_bad": [
+    [
+     "町",
+     3
+    ],
+    [
+     "中",
+     2
+    ],
+    [
+     "三",
+     2
+    ],
+    [
+     "<think>",
+     2
+    ],
+    [
+     " a",
+     2
+    ],
+    [
+     "山",
+     1
+    ],
+    [
+     "河",
+     1
+    ],
+    [
+     "数の",
+     1
+    ],
+    [
+     "好",
+     1
+    ],
+    [
+     "井",
+     1
+    ],
+    [
+     "み",
+     1
+    ],
+    [
+     "JR",
+     1
+    ]
+   ],
+   "real_tokens_at_bad": [
+    [
+     "流",
+     1
+    ],
+    [
+     "島",
+     1
+    ],
+    [
+     "タク",
+     1
+    ],
+    [
+     "み",
+     1
+    ],
+    [
+     "無",
+     1
+    ],
+    [
+     "住",
+     1
+    ],
+    [
+     "郵便",
+     1
+    ],
+    [
+     "野",
+     1
+    ],
+    [
+     "山城",
+     1
+    ],
+    [
+     "祖",
+     1
+    ],
+    [
+     "山村",
+     1
+    ],
+    [
+     "辻",
+     1
+    ]
+   ],
+   "samples": [
+    {
+     "pos": 5,
+     "offset": 5,
+     "loss": 9.1,
+     "real": "流",
+     "top": "町",
+     "p_top": 0.142,
+     "before": "井川町中村"
+    },
+    {
+     "pos": 80,
+     "offset": 80,
+     "loss": 8.8,
+     "real": "み",
+     "top": "山",
+     "p_top": 0.073,
+     "before": "吉野川を挟んで三好郡東"
+    },
+    {
+     "pos": 108,
+     "offset": 108,
+     "loss": 8.3,
+     "real": "郵便",
+     "top": "町",
+     "p_top": 0.05,
+     "before": "無住地となっている。住民がいないこともあり、"
+    },
+    {
+     "pos": 169,
+     "offset": 169,
+     "loss": 13.1,
+     "real": "祖",
+     "top": "み",
+     "p_top": 0.484,
+     "before": "町・池田町・山城町・東"
+    },
+    {
+     "pos": 209,
+     "offset": 209,
+     "loss": 11.4,
+     "real": "佃",
+     "top": "JR",
+     "p_top": 0.329,
+     "before": "寄り駅はJR徳島線の辻駅及び"
+    },
+    {
+     "pos": 296,
+     "offset": 16,
+     "loss": 8.1,
+     "real": " utilizing",
+     "top": " the",
+     "p_top": 0.225,
+     "before": "500-word essay, discuss the importance of"
+    },
+    {
+     "pos": 397,
+     "offset": 117,
+     "loss": 8.8,
+     "real": " customers",
+     "top": " a",
+     "p_top": 0.495,
+     "before": " build and maintain a positive brand image. When"
+    },
+    {
+     "pos": 704,
+     "offset": 424,
+     "loss": 9.8,
+     "real": " vital",
+     "top": " example",
+     "p_top": 0.594,
+     "before": " resulted in a surge of pre-orders.\\n\\nAnother"
+    },
+    {
+     "pos": 954,
+     "offset": 674,
+     "loss": 11.6,
+     "real": " recorded",
+     "top": " caused",
+     "p_top": 0.217,
+     "before": "ed from a United Airlines aircraft. The incident"
+    },
+    {
+     "pos": 1074,
+     "offset": 794,
+     "loss": 9.0,
+     "real": " distrust",
+     "top": " long",
+     "p_top": 0.442,
+     "before": "egatively impact a company’s reputation, causing"
+    },
+    {
+     "pos": 1120,
+     "offset": 840,
+     "loss": 8.7,
+     "real": "Thanks",
+     "top": "In",
+     "p_top": 0.352,
+     "before": " desired benefits.<|im_end|>\\n<|im_start|>user\\n"
+    },
+    {
+     "pos": 1332,
+     "offset": 1052,
+     "loss": 10.1,
+     "real": " Grand",
+     "top": " Product",
+     "p_top": 0.123,
+     "before": " tasting event.\\n\\nEvent planning:\\n\\n1."
+    },
+    {
+     "pos": 1736,
+     "offset": 1456,
+     "loss": 9.8,
+     "real": " Sharing",
+     "top": " These",
+     "p_top": 0.3,
+     "before": " including blog posts, videos, and infographics."
+    },
+    {
+     "pos": 1936,
+     "offset": 1656,
+     "loss": 8.7,
+     "real": " give",
+     "top": " share",
+     "p_top": 0.158,
+     "before": " platforms to promote upcoming sales and events,"
+    }
+   ]
+  }
+ },
+ "alone": {
+  "eval0": {
+   "from": 1025,
+   "tokens": 1023,
+   "loss_in_row": 1.814,
+   "loss_alone": 1.995,
+   "bad_in_row": 26,
+   "bad_alone": 35,
+   "bad_in_both": 26
+  },
+  "eval1": {
+   "from": 1025,
+   "tokens": 1023,
+   "loss_in_row": 1.049,
+   "loss_alone": 1.562,
+   "bad_in_row": 25,
+   "bad_alone": 52,
+   "bad_in_both": 20
+  }
+ },
+ "autocast": {
+  "eval1": {
+   "loss_plain": 1.325,
+   "loss_autocast": 1.325,
+   "bad_plain": 75,
+   "bad_autocast": 75,
+   "largest_difference": 0.0
+  }
+ }
+}

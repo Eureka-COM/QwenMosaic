@@ -1,0 +1,11 @@
+{
+ "out": "/content/export/mosaic-qwen-27b",
+ "parameters": 26232768512,
+ "memory_parameters": 1014499840,
+ "attention_parameters_left": 0,
+ "shards": 27,
+ "reload_max_logit_diff": 0.3125,
+ "reload_top1_agree": 1.0,
+ "attention_parameters_after_reload": 0,
+ "attention_modules_after_reload": 0
+}

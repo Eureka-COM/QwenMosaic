@@ -1,0 +1,255 @@
+{
+ "name": "mq-dev-0p8b-rest",
+ "purpose": "docs/plan-mosaic-qwen.md D1 の続き：results/2026-11-11_2240_mq-dev-0p8b でメモリ不足のため走らなかった 8+8 ヘッドの段2・段3・評価・書き出しを、同じ設定で、その実行が残した段1 の重みから行う",
+ "save_mode": "token",
+ "auto_stop": true,
+ "export_token": true,
+ "max_minutes": 150,
+ "save_every_min": 10,
+ "max_parallel": 2,
+ "stagger_sec": 45,
+ "gpu_frac": 0.9,
+ "setup": {
+  "results": [
+   "results/2026-11-11_2240_mq-dev-0p8b"
+  ],
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "s2-r10",
+   "script": "scripts/mq_stage2.py",
+   "gpu_gb": 42,
+   "max_minutes": 110,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--delta-in",
+    "/content/prev/results/2026-11-11_2240_mq-dev-0p8b/s1-r10/delta",
+    "--train",
+    "mem+lora",
+    "--lora-r",
+    "32",
+    "--grad-checkpoint",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "8",
+    "--positions",
+    "512",
+    "--tokens",
+    "10e6",
+    "--lr",
+    "1e-4",
+    "--warmup",
+    "30",
+    "--eval-every",
+    "150",
+    "--eval-rows",
+    "8",
+    "--no-optim-save"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "eval-s2-r10",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "s2-r10"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "8000",
+    "--delta",
+    "/content/out/s2-r10/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "s3-r10",
+   "script": "scripts/mq_stage2.py",
+   "after": [
+    "s2-r10"
+   ],
+   "gpu_gb": 42,
+   "max_minutes": 60,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--delta-in",
+    "/content/out/s2-r10/delta",
+    "--train",
+    "mem+lora",
+    "--lora-r",
+    "32",
+    "--grad-checkpoint",
+    "--seq-len",
+    "8192",
+    "--max-doc",
+    "8192",
+    "--bsz",
+    "2",
+    "--positions",
+    "1024",
+    "--tokens",
+    "4e6",
+    "--lr",
+    "5e-5",
+    "--warmup",
+    "20",
+    "--eval-every",
+    "100",
+    "--eval-rows",
+    "4",
+    "--no-optim-save"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "eval-s3-r10",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "s3-r10"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "8000",
+    "--delta",
+    "/content/out/s3-r10/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "export-r10",
+   "script": "scripts/mq_export.py",
+   "after": [
+    "s3-r10"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 15,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--delta",
+    "/content/out/s3-r10/delta",
+    "--weights-dir",
+    "/content/export/mosaic-qwen-0.8b",
+    "--shard-mb",
+    "1900",
+    "--store",
+    "github-release:mq-0p8b-dev"
+   ],
+   "output_files": [
+    "export_report.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "code_commit": "b583799"
+}

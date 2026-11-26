@@ -1,0 +1,98 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  69%|██████▉   | 214/310 [00:00<00:00, 2138.64it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 2209.28it/s]
+[1/3] c++ -MMD -MF gatesum_op_bf16.o.d -DTORCH_EXTENSION_NAME=gatesum_slim_cuda_bf16 -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-13.0/include -isystem /usr/include/python3.12 -fPIC -std=c++20 -c /content/mmllm/third_party/MemoryMosaics/model/mosaics/cuda/gatesum_slim/gatesum_op_bf16.cpp -o gatesum_op_bf16.o 
+[2/3] /usr/local/cuda-13.0/bin/nvcc -MD -MF gatesum_cuda_bf16.cuda.o.d -DTORCH_EXTENSION_NAME=gatesum_slim_cuda_bf16 -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include -isystem /home/usergame/mq-venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-13.0/include -isystem /usr/include/python3.12 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 --compiler-options '-fPIC' -t 4 -std=c++20 -res-usage --maxrregcount 60 --use_fast_math -O3 -Xptxas -O3 --extra-device-vectorization -allow-unsupported-compiler -c /content/mmllm/third_party/MemoryMosaics/model/mosaics/cuda/gatesum_slim/gatesum_cuda_bf16.cu -o gatesum_cuda_bf16.cuda.o 
+ptxas info    : Overriding maximum register limit 256 for '_Z20kernel_backward_slimiiiiPKN3c108BFloat16ES2_S2_PfPS0_' with  60 of maxrregcount option
+ptxas info    : Overriding maximum register limit 256 for '_Z29kernel_forward_state_pad_slimiiiiPKN3c108BFloat16ES2_PS0_PKiPf' with  60 of maxrregcount option
+ptxas info    : Overriding maximum register limit 256 for '_Z25kernel_forward_cache_slimiiiiPKN3c108BFloat16ES2_PS0_Pf' with  60 of maxrregcount option
+ptxas info    : Overriding maximum register limit 256 for '_Z19kernel_forward_slimiiiiPKN3c108BFloat16ES2_PS0_' with  60 of maxrregcount option
+ptxas info    : 28 bytes gmem
+ptxas info    : Compiling entry function '_Z20kernel_backward_slimiiiiPKN3c108BFloat16ES2_S2_PfPS0_' for 'sm_120'
+ptxas info    : Function properties for _Z20kernel_backward_slimiiiiPKN3c108BFloat16ES2_S2_PfPS0_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 0 barriers
+ptxas info    : Compile time = 13.237 ms
+ptxas info    : Compiling entry function '_Z29kernel_forward_state_pad_slimiiiiPKN3c108BFloat16ES2_PS0_PKiPf' for 'sm_120'
+ptxas info    : Function properties for _Z29kernel_forward_state_pad_slimiiiiPKN3c108BFloat16ES2_PS0_PKiPf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers
+ptxas info    : Compile time = 4.575 ms
+ptxas info    : Compiling entry function '_Z25kernel_forward_cache_slimiiiiPKN3c108BFloat16ES2_PS0_Pf' for 'sm_120'
+ptxas info    : Function properties for _Z25kernel_forward_cache_slimiiiiPKN3c108BFloat16ES2_PS0_Pf
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 0 barriers
+ptxas info    : Compile time = 9.146 ms
+ptxas info    : Compiling entry function '_Z19kernel_forward_slimiiiiPKN3c108BFloat16ES2_PS0_' for 'sm_120'
+ptxas info    : Function properties for _Z19kernel_forward_slimiiiiPKN3c108BFloat16ES2_PS0_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 0 barriers
+ptxas info    : Compile time = 9.102 ms
+[3/3] c++ gatesum_op_bf16.o gatesum_cuda_bf16.cuda.o -shared -L/home/usergame/mq-venv/lib/python3.12/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda-13.0/lib64 -lcudart -o gatesum_slim_cuda_bf16.so
+{"event": "start", "step": 0, "elapsed_min": 0.73, "layers": 28, "total_steps": 610, "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "memory_parameters": 177539264, "control_parameters": 176167936}
+{"event": "eval", "step": 0, "elapsed_min": 0.77, "tokens": 0, "mm": 1.00589, "control": 4.72672, "control_lr": "0.001", "controls": {"0.001": 4.72672, "0.0003": 4.72672}, "mm_full_attention": 1.00589, "control_full_attention": 4.72672}
+{"event": "step", "step": 10, "elapsed_min": 1.12, "tokens": 163840, "mm": 0.95871, "controls": {"0.001": 1.48843, "0.0003": 2.45163}, "tok_per_s": 7641.6, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 20, "elapsed_min": 1.46, "tokens": 327680, "mm": 0.88875, "controls": {"0.001": 1.14012, "0.0003": 1.37191}, "tok_per_s": 8049.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 30, "elapsed_min": 1.8, "tokens": 491520, "mm": 0.81791, "controls": {"0.001": 0.92436, "0.0003": 1.0802}, "tok_per_s": 8022.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 40, "elapsed_min": 2.14, "tokens": 655360, "mm": 0.74424, "controls": {"0.001": 0.7957, "0.0003": 0.96721}, "tok_per_s": 8074.1, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 50, "elapsed_min": 2.48, "tokens": 819200, "mm": 0.66178, "controls": {"0.001": 0.71014, "0.0003": 0.86771}, "tok_per_s": 7949.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 60, "elapsed_min": 2.81, "tokens": 983040, "mm": 0.6395, "controls": {"0.001": 0.69006, "0.0003": 0.85223}, "tok_per_s": 8436.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 70, "elapsed_min": 3.12, "tokens": 1146880, "mm": 0.571, "controls": {"0.001": 0.61659, "0.0003": 0.75796}, "tok_per_s": 8775.9, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 80, "elapsed_min": 3.43, "tokens": 1310720, "mm": 0.54509, "controls": {"0.001": 0.59275, "0.0003": 0.72889}, "tok_per_s": 8766.1, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 90, "elapsed_min": 3.74, "tokens": 1474560, "mm": 0.54542, "controls": {"0.001": 0.59481, "0.0003": 0.72308}, "tok_per_s": 8762.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 100, "elapsed_min": 4.05, "tokens": 1638400, "mm": 0.49556, "controls": {"0.001": 0.53298, "0.0003": 0.67209}, "tok_per_s": 8724.3, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 110, "elapsed_min": 4.37, "tokens": 1802240, "mm": 0.45018, "controls": {"0.001": 0.49343, "0.0003": 0.63251}, "tok_per_s": 8741.3, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 120, "elapsed_min": 4.68, "tokens": 1966080, "mm": 0.45224, "controls": {"0.001": 0.48225, "0.0003": 0.618}, "tok_per_s": 8759.9, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 130, "elapsed_min": 4.99, "tokens": 2129920, "mm": 0.4459, "controls": {"0.001": 0.47188, "0.0003": 0.61197}, "tok_per_s": 8766.7, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 140, "elapsed_min": 5.3, "tokens": 2293760, "mm": 0.44795, "controls": {"0.001": 0.47281, "0.0003": 0.60855}, "tok_per_s": 8735.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 150, "elapsed_min": 5.61, "tokens": 2457600, "mm": 0.40425, "controls": {"0.001": 0.42243, "0.0003": 0.55929}, "tok_per_s": 8780.1, "gpu_gb_peak": 13.74}
+{"event": "eval", "step": 150, "elapsed_min": 5.64, "tokens": 2457600, "mm": 0.40651, "control": 0.42533, "control_lr": "0.001", "controls": {"0.001": 0.42533, "0.0003": 0.56345}, "mm_full_attention": 0.40651, "control_full_attention": 0.42533}
+{"event": "step", "step": 160, "elapsed_min": 5.95, "tokens": 2621440, "mm": 0.40305, "controls": {"0.001": 0.41881, "0.0003": 0.5572}, "tok_per_s": 8063.9, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 170, "elapsed_min": 6.26, "tokens": 2785280, "mm": 0.39236, "controls": {"0.001": 0.40486, "0.0003": 0.54113}, "tok_per_s": 8748.2, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 180, "elapsed_min": 6.58, "tokens": 2949120, "mm": 0.37805, "controls": {"0.001": 0.37596, "0.0003": 0.51422}, "tok_per_s": 8763.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 190, "elapsed_min": 6.89, "tokens": 3112960, "mm": 0.39032, "controls": {"0.001": 0.39133, "0.0003": 0.53032}, "tok_per_s": 8751.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 200, "elapsed_min": 7.2, "tokens": 3276800, "mm": 0.37544, "controls": {"0.001": 0.37078, "0.0003": 0.51261}, "tok_per_s": 8755.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 210, "elapsed_min": 7.51, "tokens": 3440640, "mm": 0.35942, "controls": {"0.001": 0.34599, "0.0003": 0.48637}, "tok_per_s": 8731.3, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 220, "elapsed_min": 7.83, "tokens": 3604480, "mm": 0.36547, "controls": {"0.001": 0.35222, "0.0003": 0.49196}, "tok_per_s": 8749.2, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 230, "elapsed_min": 8.14, "tokens": 3768320, "mm": 0.36312, "controls": {"0.001": 0.35157, "0.0003": 0.49089}, "tok_per_s": 8754.3, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 240, "elapsed_min": 8.45, "tokens": 3932160, "mm": 0.36309, "controls": {"0.001": 0.34531, "0.0003": 0.48381}, "tok_per_s": 8736.7, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 250, "elapsed_min": 8.76, "tokens": 4096000, "mm": 0.33929, "controls": {"0.001": 0.31838, "0.0003": 0.4559}, "tok_per_s": 8762.8, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 260, "elapsed_min": 9.07, "tokens": 4259840, "mm": 0.34454, "controls": {"0.001": 0.31799, "0.0003": 0.45428}, "tok_per_s": 8740.3, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 270, "elapsed_min": 9.39, "tokens": 4423680, "mm": 0.34523, "controls": {"0.001": 0.31737, "0.0003": 0.45453}, "tok_per_s": 8752.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 280, "elapsed_min": 9.7, "tokens": 4587520, "mm": 0.32936, "controls": {"0.001": 0.29482, "0.0003": 0.43388}, "tok_per_s": 8773.2, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 290, "elapsed_min": 10.01, "tokens": 4751360, "mm": 0.33304, "controls": {"0.001": 0.30076, "0.0003": 0.43578}, "tok_per_s": 8736.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 300, "elapsed_min": 10.32, "tokens": 4915200, "mm": 0.33437, "controls": {"0.001": 0.30047, "0.0003": 0.43595}, "tok_per_s": 8762.0, "gpu_gb_peak": 13.74}
+{"event": "eval", "step": 300, "elapsed_min": 10.35, "tokens": 4915200, "mm": 0.3241, "control": 0.29114, "control_lr": "0.001", "controls": {"0.001": 0.29114, "0.0003": 0.42538}, "mm_full_attention": 0.3241, "control_full_attention": 0.29114}
+{"event": "step", "step": 310, "elapsed_min": 10.66, "tokens": 5079040, "mm": 0.34622, "controls": {"0.001": 0.31295, "0.0003": 0.44985}, "tok_per_s": 8034.1, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 320, "elapsed_min": 10.97, "tokens": 5242880, "mm": 0.30312, "controls": {"0.001": 0.26394, "0.0003": 0.39663}, "tok_per_s": 8756.9, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 330, "elapsed_min": 11.29, "tokens": 5406720, "mm": 0.34089, "controls": {"0.001": 0.29115, "0.0003": 0.43096}, "tok_per_s": 8746.6, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 340, "elapsed_min": 11.6, "tokens": 5570560, "mm": 0.33977, "controls": {"0.001": 0.29993, "0.0003": 0.43841}, "tok_per_s": 8760.8, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 350, "elapsed_min": 11.91, "tokens": 5734400, "mm": 0.30951, "controls": {"0.001": 0.26599, "0.0003": 0.39972}, "tok_per_s": 8757.2, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 360, "elapsed_min": 12.22, "tokens": 5898240, "mm": 0.31316, "controls": {"0.001": 0.27313, "0.0003": 0.40465}, "tok_per_s": 8768.7, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 370, "elapsed_min": 12.53, "tokens": 6062080, "mm": 0.33396, "controls": {"0.001": 0.27935, "0.0003": 0.41794}, "tok_per_s": 8771.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 380, "elapsed_min": 12.84, "tokens": 6225920, "mm": 0.32688, "controls": {"0.001": 0.27256, "0.0003": 0.41014}, "tok_per_s": 8773.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 390, "elapsed_min": 13.15, "tokens": 6389760, "mm": 0.31651, "controls": {"0.001": 0.2708, "0.0003": 0.40449}, "tok_per_s": 8748.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 400, "elapsed_min": 13.47, "tokens": 6553600, "mm": 0.32442, "controls": {"0.001": 0.26837, "0.0003": 0.40536}, "tok_per_s": 8777.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 410, "elapsed_min": 13.78, "tokens": 6717440, "mm": 0.32298, "controls": {"0.001": 0.2728, "0.0003": 0.41018}, "tok_per_s": 8755.8, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 420, "elapsed_min": 14.09, "tokens": 6881280, "mm": 0.30181, "controls": {"0.001": 0.24891, "0.0003": 0.38116}, "tok_per_s": 8768.2, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 430, "elapsed_min": 14.4, "tokens": 7045120, "mm": 0.30629, "controls": {"0.001": 0.24524, "0.0003": 0.38192}, "tok_per_s": 8763.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 440, "elapsed_min": 14.71, "tokens": 7208960, "mm": 0.31133, "controls": {"0.001": 0.24861, "0.0003": 0.38615}, "tok_per_s": 8773.9, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 450, "elapsed_min": 15.02, "tokens": 7372800, "mm": 0.3068, "controls": {"0.001": 0.24564, "0.0003": 0.38358}, "tok_per_s": 8752.6, "gpu_gb_peak": 13.74}
+{"event": "eval", "step": 450, "elapsed_min": 15.05, "tokens": 7372800, "mm": 0.29659, "control": 0.24276, "control_lr": "0.001", "controls": {"0.001": 0.24276, "0.0003": 0.37736}, "mm_full_attention": 0.29659, "control_full_attention": 0.24276}
+{"event": "step", "step": 460, "elapsed_min": 15.36, "tokens": 7536640, "mm": 0.31307, "controls": {"0.001": 0.25016, "0.0003": 0.3882}, "tok_per_s": 8051.6, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 470, "elapsed_min": 15.68, "tokens": 7700480, "mm": 0.31327, "controls": {"0.001": 0.25326, "0.0003": 0.39}, "tok_per_s": 8733.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 480, "elapsed_min": 15.99, "tokens": 7864320, "mm": 0.31801, "controls": {"0.001": 0.25905, "0.0003": 0.39841}, "tok_per_s": 8775.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 490, "elapsed_min": 16.3, "tokens": 8028160, "mm": 0.3022, "controls": {"0.001": 0.24359, "0.0003": 0.37892}, "tok_per_s": 8755.3, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 500, "elapsed_min": 16.62, "tokens": 8192000, "mm": 0.29764, "controls": {"0.001": 0.23626, "0.0003": 0.37098}, "tok_per_s": 8560.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 510, "elapsed_min": 16.93, "tokens": 8355840, "mm": 0.29054, "controls": {"0.001": 0.22676, "0.0003": 0.36138}, "tok_per_s": 8763.0, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 520, "elapsed_min": 17.25, "tokens": 8519680, "mm": 0.28872, "controls": {"0.001": 0.22954, "0.0003": 0.36683}, "tok_per_s": 8597.5, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 530, "elapsed_min": 17.57, "tokens": 8683520, "mm": 0.2838, "controls": {"0.001": 0.22442, "0.0003": 0.35987}, "tok_per_s": 8573.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 540, "elapsed_min": 17.88, "tokens": 8847360, "mm": 0.3008, "controls": {"0.001": 0.23973, "0.0003": 0.37856}, "tok_per_s": 8770.6, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 550, "elapsed_min": 18.19, "tokens": 9011200, "mm": 0.27899, "controls": {"0.001": 0.21049, "0.0003": 0.34414}, "tok_per_s": 8614.8, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 560, "elapsed_min": 18.51, "tokens": 9175040, "mm": 0.28274, "controls": {"0.001": 0.22589, "0.0003": 0.35967}, "tok_per_s": 8738.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 570, "elapsed_min": 18.82, "tokens": 9338880, "mm": 0.2984, "controls": {"0.001": 0.23832, "0.0003": 0.37779}, "tok_per_s": 8766.2, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 580, "elapsed_min": 19.13, "tokens": 9502720, "mm": 0.29597, "controls": {"0.001": 0.23598, "0.0003": 0.37225}, "tok_per_s": 8764.1, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 590, "elapsed_min": 19.44, "tokens": 9666560, "mm": 0.28633, "controls": {"0.001": 0.22484, "0.0003": 0.36122}, "tok_per_s": 8770.4, "gpu_gb_peak": 13.74}
+{"event": "step", "step": 600, "elapsed_min": 19.75, "tokens": 9830400, "mm": 0.30311, "controls": {"0.001": 0.24012, "0.0003": 0.37888}, "tok_per_s": 8759.6, "gpu_gb_peak": 13.74}
+{"event": "eval", "step": 600, "elapsed_min": 19.78, "tokens": 9830400, "mm": 0.29066, "control": 0.23149, "control_lr": "0.001", "controls": {"0.001": 0.23149, "0.0003": 0.36764}, "mm_full_attention": 0.29066, "control_full_attention": 0.23149}
+{"event": "step", "step": 610, "elapsed_min": 20.09, "tokens": 9994240, "mm": 0.28689, "controls": {"0.001": 0.21812, "0.0003": 0.35606}, "tok_per_s": 8032.6, "gpu_gb_peak": 13.74}
+{"event": "eval", "step": 610, "elapsed_min": 20.12, "tokens": 9994240, "mm": 0.29065, "control": 0.23137, "control_lr": "0.001", "controls": {"0.001": 0.23137, "0.0003": 0.36754}, "mm_full_attention": 0.29065, "control_full_attention": 0.23137}
+{"event": "done", "step": 610, "elapsed_min": 20.12, "tokens": 9994240, "status": "done"}

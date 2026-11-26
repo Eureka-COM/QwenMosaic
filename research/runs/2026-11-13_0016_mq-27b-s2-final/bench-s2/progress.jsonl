@@ -1,0 +1,15 @@
+{"event": "start", "step": 0, "elapsed_min": 3.98, "layers": [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 59, 63], "delta": "/content/prev/s2/delta", "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}}
+{"event": "mmlu", "step": 100, "elapsed_min": 4.81, "n": 100, "teacher": 0.89, "student": 0.84, "same_answer": 0.87, "seconds_per_question": 0.491}
+{"event": "mmlu", "step": 200, "elapsed_min": 5.59, "n": 200, "teacher": 0.9, "student": 0.835, "same_answer": 0.845, "seconds_per_question": 0.481}
+{"event": "mmlu", "step": 300, "elapsed_min": 6.37, "n": 300, "teacher": 0.87, "student": 0.8133, "same_answer": 0.8567, "seconds_per_question": 0.477}
+{"event": "mmlu", "step": 400, "elapsed_min": 7.15, "n": 400, "teacher": 0.8475, "student": 0.7875, "same_answer": 0.85, "seconds_per_question": 0.475}
+{"event": "mmlu", "step": 500, "elapsed_min": 7.94, "n": 500, "teacher": 0.852, "student": 0.774, "same_answer": 0.846, "seconds_per_question": 0.474}
+{"event": "mmlu", "step": 600, "elapsed_min": 8.72, "n": 600, "teacher": 0.8483, "student": 0.7767, "same_answer": 0.84, "seconds_per_question": 0.473}
+{"event": "mmlu", "step": 700, "elapsed_min": 9.5, "n": 700, "teacher": 0.84, "student": 0.77, "same_answer": 0.8386, "seconds_per_question": 0.473}
+{"event": "mmlu", "step": 800, "elapsed_min": 10.28, "n": 800, "teacher": 0.84, "student": 0.7675, "same_answer": 0.8387, "seconds_per_question": 0.472}
+{"event": "mmlu", "step": 900, "elapsed_min": 11.07, "n": 900, "teacher": 0.8411, "student": 0.7656, "same_answer": 0.8389, "seconds_per_question": 0.472}
+{"event": "mmlu", "step": 1000, "elapsed_min": 11.84, "n": 1000, "teacher": 0.843, "student": 0.771, "same_answer": 0.841, "seconds_per_question": 0.471}
+{"event": "gsm", "step": 5, "elapsed_min": 19.26, "n": 5, "teacher": 0.6, "student": 0.0, "tokens_per_second": {"teacher": 8.2, "student": 4.1}, "minutes": 7.41}
+{"event": "gsm", "step": 10, "elapsed_min": 26.97, "n": 10, "teacher": 0.3, "student": 0.0, "tokens_per_second": {"teacher": 8.2, "student": 4.1}, "minutes": 15.13}
+{"event": "gsm", "step": 15, "elapsed_min": 34.68, "n": 15, "teacher": 0.2, "student": 0.0, "tokens_per_second": {"teacher": 8.2, "student": 4.2}, "minutes": 22.83}
+{"event": "done", "step": 1, "elapsed_min": 34.68, "status": "done", "mmlu": {"n": 1000, "sampled_from": 14042, "teacher": 0.843, "student": 0.771, "same_answer": 0.841, "both_right": 737, "only_teacher_right": 106, "only_student_right": 34, "both_wrong": 123}, "gsm8k": {"n": 15, "asked_for": 100, "max_new_tokens": 256, "teacher": 0.2, "student": 0.0, "both_right": 0, "only_teacher_right": 3, "only_student_right": 0, "both_wrong": 12, "finished_with_answer": {"teacher": 2, "student": 0}, "tokens_per_second": {"teacher": 8.2, "student": 4.2}}}

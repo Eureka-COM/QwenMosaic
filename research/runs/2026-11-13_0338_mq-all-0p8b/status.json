@@ -1,0 +1,19 @@
+{
+ "plan": "mq-all-0p8b",
+ "runs": {
+  "s1-all": "ok in 27.8 min",
+  "s2-all": "running"
+ },
+ "started": "2026-11-13 03:38:12",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_mem_gb": 39.5,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 41.0
+}

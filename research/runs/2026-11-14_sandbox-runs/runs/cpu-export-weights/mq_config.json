@@ -1,0 +1,39 @@
+{
+ "mq_config": {
+  "n_short_heads": 8,
+  "n_long_heads": 8,
+  "head_dim": 128,
+  "window": 128,
+  "skip": 32,
+  "random_skip": 96,
+  "layout": "flat",
+  "memory_gate": true,
+  "short_key_feature": "leaky_average",
+  "long_key_feature": "leaky_average",
+  "recurrence_chunk_size": 1024,
+  "recurrence_padding": 256,
+  "replace": "attention",
+  "init_seed": 42,
+  "base_model": "/home/claude/models/Qwen3.5-0.8B",
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf",
+  "layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23
+  ],
+  "format_version": 1
+ },
+ "shards": [
+  "model-00000.safetensors"
+ ],
+ "tied": [
+  "lm_head.weight"
+ ],
+ "standalone": true,
+ "attention_parameters_left": 0,
+ "parameters": 746393888,
+ "num_memory_parameters": 38044128
+}

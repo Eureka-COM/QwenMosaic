@@ -1,0 +1,1111 @@
+{
+ "step": "done",
+ "summary": {
+  "chat/512": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.999,
+    "p_first": 0.076,
+    "p_end": 0.0
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.23,
+    "p_first": 0.063,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.997,
+    "p_first": 0.068,
+    "p_end": 0.0
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.997,
+    "p_first": 0.068,
+    "p_end": 0.0
+   }
+  },
+  "mixed/32": {
+   "n": 4,
+   "teacher": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.997,
+    "p_first": 0.975,
+    "p_end": 0.001
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.155,
+    "p_first": 0.755,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.993,
+    "p_first": 0.98,
+    "p_end": 0.001
+   },
+   "s3": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.993,
+    "p_first": 0.98,
+    "p_end": 0.001
+   }
+  },
+  "mixed/512": {
+   "n": 4,
+   "teacher": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.992,
+    "p_first": 0.906,
+    "p_end": 0.013
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.158,
+    "p_first": 0.61,
+    "p_end": 0.001
+   },
+   "s2": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.986,
+    "p_first": 0.93,
+    "p_end": 0.009
+   },
+   "s3": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.986,
+    "p_first": 0.93,
+    "p_end": 0.009
+   }
+  },
+  "plain/512": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.997,
+    "p_first": 0.977,
+    "p_end": 0.001
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.078,
+    "p_first": 0.574,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.991,
+    "p_first": 0.96,
+    "p_end": 0.001
+   },
+   "s3": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.991,
+    "p_first": 0.96,
+    "p_end": 0.001
+   }
+  },
+  "plain/1500": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.994,
+    "p_first": 0.956,
+    "p_end": 0.002
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.123,
+    "p_first": 0.562,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.991,
+    "p_first": 0.926,
+    "p_end": 0.001
+   },
+   "s3": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.991,
+    "p_first": 0.926,
+    "p_end": 0.001
+   }
+  }
+ },
+ "mixed_by_context": {
+  "inside a turn: user / 512": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.989,
+    "p_end": 0.021
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.265,
+    "p_end": 0.002
+   },
+   "s2": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.98,
+    "p_end": 0.018
+   },
+   "s3": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.98,
+    "p_end": 0.018
+   }
+  },
+  "no conversation yet / 32": {
+   "n": 4,
+   "teacher": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.997,
+    "p_end": 0.001
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.155,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.993,
+    "p_end": 0.001
+   },
+   "s3": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.993,
+    "p_end": 0.001
+   }
+  },
+  "no conversation yet / 512": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.996,
+    "p_end": 0.005
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.051,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.992,
+    "p_end": 0.001
+   },
+   "s3": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.992,
+    "p_end": 0.001
+   }
+  }
+ },
+ "path_check": [
+  {
+   "set": "mixed",
+   "distance": 512,
+   "tokens": 832,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "logit_scale": 3.134,
+   "generated": " 56593.\n",
+   "generated_ok": true,
+   "forward_pass_says": true
+  },
+  {
+   "set": "plain",
+   "distance": 1500,
+   "tokens": 1820,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "logit_scale": 2.836,
+   "generated": " 90743.\n",
+   "generated_ok": true,
+   "forward_pass_says": true
+  },
+  {
+   "set": "plain",
+   "distance": 1500,
+   "tokens": 1820,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "logit_scale": 2.836,
+   "generated": " 90743.\n",
+   "generated_ok": true,
+   "forward_pass_says": true
+  }
+ ],
+ "generated": [
+  {
+   "distance": 512,
+   "code": "11524",
+   "teacher": "The access code for Bexley is **11524**.\n",
+   "student": "The access code for Bexley is **11524**.\n",
+   "teacher_ok": true,
+   "student_ok": true
+  }
+ ],
+ "cases": [
+  {
+   "set": "mixed",
+   "distance": 32,
+   "name": "Maren",
+   "code": "60487",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.97647,
+     "p_end": 0.00124,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9765,
+     "p_digit": 0.99642,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.008
+    },
+    "s1": {
+     "p_first": 0.72943,
+     "p_end": 0.00038,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.7294,
+     "p_digit": 0.15929,
+     "rank_digit": 1,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -12.919
+    },
+    "s2": {
+     "p_first": 0.98069,
+     "p_end": 0.00098,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9807,
+     "p_digit": 0.99398,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.027
+    },
+    "s3": {
+     "p_first": 0.98069,
+     "p_end": 0.00098,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9807,
+     "p_digit": 0.99398,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.027
+    }
+   },
+   "prompt_tokens": 352
+  },
+  {
+   "set": "mixed",
+   "distance": 32,
+   "name": "Joss",
+   "code": "75938",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.9666,
+     "p_end": 0.00256,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9666,
+     "p_digit": 0.99724,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.005
+    },
+    "s1": {
+     "p_first": 0.86763,
+     "p_end": 0.00011,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.8676,
+     "p_digit": 0.08427,
+     "rank_digit": 2,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.941
+    },
+    "s2": {
+     "p_first": 0.97581,
+     "p_end": 0.00137,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9758,
+     "p_digit": 0.98912,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.017
+    },
+    "s3": {
+     "p_first": 0.97581,
+     "p_end": 0.00137,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9758,
+     "p_digit": 0.98912,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.017
+    }
+   },
+   "prompt_tokens": 352
+  },
+  {
+   "set": "mixed",
+   "distance": 32,
+   "name": "Joss",
+   "code": "21948",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.98181,
+     "p_end": 0.00064,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9818,
+     "p_digit": 0.99745,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.007
+    },
+    "s1": {
+     "p_first": 0.59493,
+     "p_end": 2e-05,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.5949,
+     "p_digit": 0.27458,
+     "rank_digit": 1,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.057
+    },
+    "s2": {
+     "p_first": 0.98074,
+     "p_end": 0.00119,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9807,
+     "p_digit": 0.99629,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.007
+    },
+    "s3": {
+     "p_first": 0.98074,
+     "p_end": 0.00119,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9807,
+     "p_digit": 0.99629,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.007
+    }
+   },
+   "prompt_tokens": 352
+  },
+  {
+   "set": "mixed",
+   "distance": 32,
+   "name": "Elric",
+   "code": "41157",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.97419,
+     "p_end": 0.00123,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9742,
+     "p_digit": 0.9979,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.004
+    },
+    "s1": {
+     "p_first": 0.82757,
+     "p_end": 0.00012,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.8276,
+     "p_digit": 0.10354,
+     "rank_digit": 2,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -14.413
+    },
+    "s2": {
+     "p_first": 0.9835,
+     "p_end": 0.00054,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9835,
+     "p_digit": 0.99079,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.013
+    },
+    "s3": {
+     "p_first": 0.9835,
+     "p_end": 0.00054,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9835,
+     "p_digit": 0.99079,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.013
+    }
+   },
+   "prompt_tokens": 352
+  },
+  {
+   "set": "mixed",
+   "distance": 512,
+   "name": "Dalia",
+   "code": "56593",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.97586,
+     "p_end": 0.00256,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9759,
+     "p_digit": 0.99787,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.005
+    },
+    "s1": {
+     "p_first": 0.57909,
+     "p_end": 9e-05,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.5791,
+     "p_digit": 0.04045,
+     "rank_digit": 7,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.818
+    },
+    "s2": {
+     "p_first": 0.97741,
+     "p_end": 0.00088,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9774,
+     "p_digit": 0.9967,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.009
+    },
+    "s3": {
+     "p_first": 0.97741,
+     "p_end": 0.00088,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9774,
+     "p_digit": 0.9967,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.009
+    }
+   },
+   "prompt_tokens": 832
+  },
+  {
+   "set": "mixed",
+   "distance": 512,
+   "name": "Perrin",
+   "code": "78408",
+   "before_question": "inside a turn: user",
+   "scores": {
+    "teacher": {
+     "p_first": 0.83035,
+     "p_end": 0.00658,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.8304,
+     "p_digit": 0.98682,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.018
+    },
+    "s1": {
+     "p_first": 0.40677,
+     "p_end": 0.00283,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.4068,
+     "p_digit": 0.12424,
+     "rank_digit": 2,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.964
+    },
+    "s2": {
+     "p_first": 0.85187,
+     "p_end": 0.01176,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.8519,
+     "p_digit": 0.96805,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.042
+    },
+    "s3": {
+     "p_first": 0.85187,
+     "p_end": 0.01176,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.8519,
+     "p_digit": 0.96805,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.042
+    }
+   },
+   "prompt_tokens": 832
+  },
+  {
+   "set": "mixed",
+   "distance": 512,
+   "name": "Corwin",
+   "code": "60975",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.93754,
+     "p_end": 0.00732,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9375,
+     "p_digit": 0.99383,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.012
+    },
+    "s1": {
+     "p_first": 0.6487,
+     "p_end": 0.00022,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.6487,
+     "p_digit": 0.06253,
+     "rank_digit": 4,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -15.403
+    },
+    "s2": {
+     "p_first": 0.96679,
+     "p_end": 0.00101,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9668,
+     "p_digit": 0.9868,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.03
+    },
+    "s3": {
+     "p_first": 0.96679,
+     "p_end": 0.00101,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9668,
+     "p_digit": 0.9868,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.03
+    }
+   },
+   "prompt_tokens": 832
+  },
+  {
+   "set": "mixed",
+   "distance": 512,
+   "name": "Kestrel",
+   "code": "13933",
+   "before_question": "inside a turn: user",
+   "scores": {
+    "teacher": {
+     "p_first": 0.88186,
+     "p_end": 0.0362,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.8819,
+     "p_digit": 0.99136,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.034
+    },
+    "s1": {
+     "p_first": 0.80683,
+     "p_end": 0.00074,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.8068,
+     "p_digit": 0.40625,
+     "rank_digit": 0,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -12.693
+    },
+    "s2": {
+     "p_first": 0.92517,
+     "p_end": 0.024,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9252,
+     "p_digit": 0.99262,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.029
+    },
+    "s3": {
+     "p_first": 0.92517,
+     "p_end": 0.024,
+     "p_eos": 2e-05,
+     "top": " ",
+     "p_top": 0.9252,
+     "p_digit": 0.99262,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.029
+    }
+   },
+   "prompt_tokens": 832
+  },
+  {
+   "set": "plain",
+   "distance": 512,
+   "name": "Elric",
+   "code": "91417",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.97667,
+     "p_end": 0.0007,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9767,
+     "p_digit": 0.99595,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.007
+    },
+    "s1": {
+     "p_first": 0.50564,
+     "p_end": 4e-05,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.5056,
+     "p_digit": 0.06246,
+     "rank_digit": 3,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.263
+    },
+    "s2": {
+     "p_first": 0.94264,
+     "p_end": 0.00074,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9426,
+     "p_digit": 0.98623,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.016
+    },
+    "s3": {
+     "p_first": 0.94264,
+     "p_end": 0.00074,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9426,
+     "p_digit": 0.98623,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.016
+    }
+   },
+   "prompt_tokens": 832
+  },
+  {
+   "set": "plain",
+   "distance": 512,
+   "name": "Perrin",
+   "code": "63170",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.97737,
+     "p_end": 0.00061,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9774,
+     "p_digit": 0.99745,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.005
+    },
+    "s1": {
+     "p_first": 0.6425,
+     "p_end": 6e-05,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.6425,
+     "p_digit": 0.09452,
+     "rank_digit": 3,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -12.442
+    },
+    "s2": {
+     "p_first": 0.97713,
+     "p_end": 0.00068,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9771,
+     "p_digit": 0.99568,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.011
+    },
+    "s3": {
+     "p_first": 0.97713,
+     "p_end": 0.00068,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.9771,
+     "p_digit": 0.99568,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.011
+    }
+   },
+   "prompt_tokens": 832
+  },
+  {
+   "set": "plain",
+   "distance": 1500,
+   "name": "Nolan",
+   "code": "90743",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.9485,
+     "p_end": 0.00141,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9485,
+     "p_digit": 0.99273,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.012
+    },
+    "s1": {
+     "p_first": 0.64512,
+     "p_end": 4e-05,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.6451,
+     "p_digit": 0.04963,
+     "rank_digit": 7,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -14.329
+    },
+    "s2": {
+     "p_first": 0.91421,
+     "p_end": 0.00061,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9142,
+     "p_digit": 0.987,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.02
+    },
+    "s3": {
+     "p_first": 0.91421,
+     "p_end": 0.00061,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9142,
+     "p_digit": 0.987,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.02
+    }
+   },
+   "prompt_tokens": 1820
+  },
+  {
+   "set": "plain",
+   "distance": 1500,
+   "name": "Kestrel",
+   "code": "00080",
+   "before_question": "no conversation yet",
+   "scores": {
+    "teacher": {
+     "p_first": 0.96409,
+     "p_end": 0.0031,
+     "p_eos": 1e-05,
+     "top": " ",
+     "p_top": 0.9641,
+     "p_digit": 0.99505,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.012
+    },
+    "s1": {
+     "p_first": 0.47963,
+     "p_end": 0.0001,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.4796,
+     "p_digit": 0.19538,
+     "rank_digit": 1,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -10.555
+    },
+    "s2": {
+     "p_first": 0.93702,
+     "p_end": 0.00201,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.937,
+     "p_digit": 0.99443,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.016
+    },
+    "s3": {
+     "p_first": 0.93702,
+     "p_end": 0.00201,
+     "p_eos": 0.0,
+     "top": " ",
+     "p_top": 0.937,
+     "p_digit": 0.99443,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": true,
+     "logp_digits": -0.016
+    }
+   },
+   "prompt_tokens": 1820
+  },
+  {
+   "set": "chat",
+   "distance": 512,
+   "name": "Bexley",
+   "code": "11524",
+   "before_question": "the question is in a user turn",
+   "scores": {
+    "teacher": {
+     "p_first": 0.14527,
+     "p_end": 0.0,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.8428,
+     "p_digit": 0.99945,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": false,
+     "logp_digits": -0.002
+    },
+    "s1": {
+     "p_first": 0.10438,
+     "p_end": 1e-05,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.5812,
+     "p_digit": 0.38895,
+     "rank_digit": 0,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.363
+    },
+    "s2": {
+     "p_first": 0.13312,
+     "p_end": 1e-05,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.8448,
+     "p_digit": 0.99902,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": false,
+     "logp_digits": -0.003
+    },
+    "s3": {
+     "p_first": 0.13312,
+     "p_end": 1e-05,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.8448,
+     "p_digit": 0.99902,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": false,
+     "logp_digits": -0.003
+    }
+   },
+   "prompt_tokens": 932
+  },
+  {
+   "set": "chat",
+   "distance": 512,
+   "name": "Tamsin",
+   "code": "39092",
+   "before_question": "the question is in a user turn",
+   "scores": {
+    "teacher": {
+     "p_first": 0.00712,
+     "p_end": 0.0,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.9799,
+     "p_digit": 0.9989,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": false,
+     "logp_digits": -0.002
+    },
+    "s1": {
+     "p_first": 0.02085,
+     "p_end": 1e-05,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.4408,
+     "p_digit": 0.07171,
+     "rank_digit": 3,
+     "digits_right": false,
+     "writes_the_code": false,
+     "logp_digits": -13.252
+    },
+    "s2": {
+     "p_first": 0.00195,
+     "p_end": 0.0,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.9463,
+     "p_digit": 0.99487,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": false,
+     "logp_digits": -0.017
+    },
+    "s3": {
+     "p_first": 0.00195,
+     "p_end": 0.0,
+     "p_eos": 0.0,
+     "top": " **",
+     "p_top": 0.9463,
+     "p_digit": 0.99487,
+     "rank_digit": 0,
+     "digits_right": true,
+     "writes_the_code": false,
+     "logp_digits": -0.017
+    }
+   },
+   "prompt_tokens": 932
+  }
+ ]
+}

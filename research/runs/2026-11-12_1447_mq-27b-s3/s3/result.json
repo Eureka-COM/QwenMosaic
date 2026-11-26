@@ -1,0 +1,57 @@
+{
+ "stage": 2,
+ "status": "done",
+ "step": 976,
+ "total_steps": 976,
+ "tokens": 7995392,
+ "eval": {
+  "kl": 0.42941,
+  "nll_student": 2.56732,
+  "nll_teacher": 3.26599,
+  "top1": 0.80247,
+  "ppl_ratio": 0.4972,
+  "positions": 16382,
+  "calibration": {
+   "entropy_teacher": 1.08826,
+   "entropy_student": 1.39654,
+   "correct_teacher": 0.47619,
+   "correct_student": 0.4522,
+   "nll_teacher_temperature_1.25": 2.90307,
+   "nll_teacher_temperature_1.5": 2.87155,
+   "hard_nll": 8.0,
+   "hard_positions": 2031.0,
+   "nll_teacher_hard": 14.1132,
+   "nll_student_hard": 8.2085,
+   "nll_teacher_rest": 1.73086,
+   "nll_student_rest": 1.76896
+  },
+  "rel_mse": {
+   "3": 0.44035,
+   "7": 0.33827,
+   "11": 0.32616,
+   "15": 0.3609,
+   "19": 0.42746,
+   "23": 0.45725,
+   "27": 0.41184,
+   "31": 0.46418,
+   "35": 0.41278,
+   "39": 0.47316,
+   "43": 0.39534,
+   "47": 0.48148,
+   "51": 0.42472,
+   "55": 0.53669,
+   "59": 0.39688,
+   "63": 0.19899
+  },
+  "rel_mse_mean": 0.40915
+ },
+ "minutes": 142.2,
+ "train": "mem+lora",
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ }
+}

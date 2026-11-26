@@ -1,0 +1,19 @@
+{
+ "train_tokens": 1500004065,
+ "train_docs": 1313279,
+ "heldout_tokens": 2001395,
+ "long_docs": 256,
+ "long_len": 4096,
+ "filler_tokens": 200000,
+ "train_files": [
+  "/content/data/fineweb-edu/sample/10BT/000_00000.parquet",
+  "/content/data/fineweb-edu/sample/10BT/001_00000.parquet"
+ ],
+ "eval_file": "/content/data/fineweb-edu/sample/10BT/002_00000.parquet",
+ "tokenizer": "/content/scratch-data/tokenizer.json",
+ "tokenizer_sha256": "11c08db21487c885d8c792180f0be237f6a261b89a46f128a6a80a3aa4bd1720",
+ "vocab_size": 32000,
+ "bos": 1,
+ "eos": 2,
+ "minutes": 2.9
+}

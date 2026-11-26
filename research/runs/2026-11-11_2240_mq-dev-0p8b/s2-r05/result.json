@@ -1,0 +1,33 @@
+{
+ "stage": 2,
+ "status": "done",
+ "step": 610,
+ "total_steps": 610,
+ "tokens": 9994240,
+ "eval": {
+  "kl": 0.16618,
+  "nll_student": 2.2773,
+  "nll_teacher": 2.15722,
+  "top1": 0.82279,
+  "ppl_ratio": 1.1276,
+  "positions": 16376,
+  "rel_mse": {
+   "3": 0.34315,
+   "7": 0.35677,
+   "11": 0.35991,
+   "15": 0.3794,
+   "19": 0.3575,
+   "23": 0.12532
+  },
+  "rel_mse_mean": 0.32034
+ },
+ "minutes": 19.7,
+ "train": "mem+lora",
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ }
+}

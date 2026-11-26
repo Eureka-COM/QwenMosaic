@@ -1,0 +1,989 @@
+{
+ "status": "done",
+ "summary": {
+  "chat/512": {
+   "n": 8,
+   "teacher": {
+    "writes_the_code": 6,
+    "digits_right": 8,
+    "p_digit": 1.0,
+    "p_first": 0.65,
+    "p_end": 0.0
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 3,
+    "p_digit": 0.86,
+    "p_first": 0.073,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 8,
+    "p_digit": 0.999,
+    "p_first": 0.311,
+    "p_end": 0.0
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 8,
+    "p_digit": 0.998,
+    "p_first": 0.267,
+    "p_end": 0.0
+   }
+  },
+  "chat/1500": {
+   "n": 8,
+   "teacher": {
+    "writes_the_code": 8,
+    "digits_right": 8,
+    "p_digit": 1.0,
+    "p_first": 0.839,
+    "p_end": 0.0
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 3,
+    "p_digit": 0.963,
+    "p_first": 0.091,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 8,
+    "p_digit": 1.0,
+    "p_first": 0.356,
+    "p_end": 0.0
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 8,
+    "p_digit": 1.0,
+    "p_first": 0.306,
+    "p_end": 0.0
+   }
+  },
+  "chat/6000": {
+   "n": 8,
+   "teacher": {
+    "writes_the_code": 8,
+    "digits_right": 8,
+    "p_digit": 1.0,
+    "p_first": 0.928,
+    "p_end": 0.0
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.984,
+    "p_first": 0.04,
+    "p_end": 0.0
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 8,
+    "p_digit": 1.0,
+    "p_first": 0.317,
+    "p_end": 0.0
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 8,
+    "p_digit": 0.999,
+    "p_first": 0.258,
+    "p_end": 0.0
+   }
+  },
+  "mixed/32": {
+   "n": 20,
+   "teacher": {
+    "writes_the_code": 19,
+    "digits_right": 20,
+    "p_digit": 0.966,
+    "p_first": 0.817,
+    "p_end": 0.07
+   },
+   "s1": {
+    "writes_the_code": 1,
+    "digits_right": 1,
+    "p_digit": 0.573,
+    "p_first": 0.604,
+    "p_end": 0.132
+   },
+   "s2": {
+    "writes_the_code": 17,
+    "digits_right": 20,
+    "p_digit": 0.856,
+    "p_first": 0.647,
+    "p_end": 0.239
+   },
+   "s3": {
+    "writes_the_code": 17,
+    "digits_right": 20,
+    "p_digit": 0.839,
+    "p_first": 0.631,
+    "p_end": 0.254
+   }
+  },
+  "mixed/512": {
+   "n": 20,
+   "teacher": {
+    "writes_the_code": 16,
+    "digits_right": 18,
+    "p_digit": 0.852,
+    "p_first": 0.689,
+    "p_end": 0.19
+   },
+   "s1": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.581,
+    "p_first": 0.628,
+    "p_end": 0.226
+   },
+   "s2": {
+    "writes_the_code": 18,
+    "digits_right": 19,
+    "p_digit": 0.835,
+    "p_first": 0.691,
+    "p_end": 0.212
+   },
+   "s3": {
+    "writes_the_code": 17,
+    "digits_right": 18,
+    "p_digit": 0.792,
+    "p_first": 0.663,
+    "p_end": 0.232
+   }
+  },
+  "mixed/1500": {
+   "n": 20,
+   "teacher": {
+    "writes_the_code": 16,
+    "digits_right": 17,
+    "p_digit": 0.872,
+    "p_first": 0.767,
+    "p_end": 0.161
+   },
+   "s1": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.651,
+    "p_first": 0.691,
+    "p_end": 0.178
+   },
+   "s2": {
+    "writes_the_code": 13,
+    "digits_right": 14,
+    "p_digit": 0.698,
+    "p_first": 0.573,
+    "p_end": 0.342
+   },
+   "s3": {
+    "writes_the_code": 12,
+    "digits_right": 12,
+    "p_digit": 0.643,
+    "p_first": 0.513,
+    "p_end": 0.398
+   }
+  },
+  "mixed/6000": {
+   "n": 20,
+   "teacher": {
+    "writes_the_code": 16,
+    "digits_right": 16,
+    "p_digit": 0.737,
+    "p_first": 0.569,
+    "p_end": 0.411
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.394,
+    "p_first": 0.488,
+    "p_end": 0.447
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 7,
+    "p_digit": 0.428,
+    "p_first": 0.227,
+    "p_end": 0.718
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 3,
+    "p_digit": 0.326,
+    "p_first": 0.148,
+    "p_end": 0.809
+   }
+  },
+  "plain/32": {
+   "n": 10,
+   "teacher": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.981,
+    "p_first": 0.834,
+    "p_end": 0.033
+   },
+   "s1": {
+    "writes_the_code": 1,
+    "digits_right": 1,
+    "p_digit": 0.655,
+    "p_first": 0.706,
+    "p_end": 0.064
+   },
+   "s2": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.898,
+    "p_first": 0.746,
+    "p_end": 0.135
+   },
+   "s3": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.896,
+    "p_first": 0.749,
+    "p_end": 0.131
+   }
+  },
+  "plain/512": {
+   "n": 10,
+   "teacher": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.977,
+    "p_first": 0.874,
+    "p_end": 0.013
+   },
+   "s1": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.754,
+    "p_first": 0.845,
+    "p_end": 0.02
+   },
+   "s2": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.945,
+    "p_first": 0.873,
+    "p_end": 0.064
+   },
+   "s3": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.93,
+    "p_first": 0.86,
+    "p_end": 0.072
+   }
+  },
+  "plain/1500": {
+   "n": 10,
+   "teacher": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.987,
+    "p_first": 0.885,
+    "p_end": 0.008
+   },
+   "s1": {
+    "writes_the_code": 1,
+    "digits_right": 1,
+    "p_digit": 0.65,
+    "p_first": 0.782,
+    "p_end": 0.034
+   },
+   "s2": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.892,
+    "p_first": 0.765,
+    "p_end": 0.104
+   },
+   "s3": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.852,
+    "p_first": 0.732,
+    "p_end": 0.129
+   }
+  },
+  "plain/3000": {
+   "n": 10,
+   "teacher": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.961,
+    "p_first": 0.884,
+    "p_end": 0.013
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.589,
+    "p_first": 0.727,
+    "p_end": 0.059
+   },
+   "s2": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.885,
+    "p_first": 0.766,
+    "p_end": 0.095
+   },
+   "s3": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.832,
+    "p_first": 0.748,
+    "p_end": 0.114
+   }
+  },
+  "plain/6000": {
+   "n": 10,
+   "teacher": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.979,
+    "p_first": 0.902,
+    "p_end": 0.014
+   },
+   "s1": {
+    "writes_the_code": 1,
+    "digits_right": 1,
+    "p_digit": 0.491,
+    "p_first": 0.765,
+    "p_end": 0.047
+   },
+   "s2": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.875,
+    "p_first": 0.722,
+    "p_end": 0.142
+   },
+   "s3": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.814,
+    "p_first": 0.678,
+    "p_end": 0.177
+   }
+  }
+ },
+ "mixed_by_context": {
+  "after a turn ended / 1500": {
+   "n": 1,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 1,
+    "p_digit": 0.975,
+    "p_end": 0.903
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.037,
+    "p_end": 0.962
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.242,
+    "p_end": 0.838
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.267,
+    "p_end": 0.862
+   }
+  },
+  "after a turn ended / 32": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 1,
+    "digits_right": 2,
+    "p_digit": 0.886,
+    "p_end": 0.498
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.062,
+    "p_end": 0.77
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.642,
+    "p_end": 0.607
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.592,
+    "p_end": 0.635
+   }
+  },
+  "after a turn ended / 512": {
+   "n": 3,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 2,
+    "p_digit": 0.507,
+    "p_end": 0.768
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.221,
+    "p_end": 0.722
+   },
+   "s2": {
+    "writes_the_code": 2,
+    "digits_right": 3,
+    "p_digit": 0.702,
+    "p_end": 0.431
+   },
+   "s3": {
+    "writes_the_code": 1,
+    "digits_right": 2,
+    "p_digit": 0.583,
+    "p_end": 0.528
+   }
+  },
+  "after a turn ended / 6000": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.324,
+    "p_end": 0.947
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.095,
+    "p_end": 0.898
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.346,
+    "p_end": 0.8
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.372,
+    "p_end": 0.806
+   }
+  },
+  "inside a turn: assistant / 1500": {
+   "n": 8,
+   "teacher": {
+    "writes_the_code": 6,
+    "digits_right": 6,
+    "p_digit": 0.823,
+    "p_end": 0.157
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.584,
+    "p_end": 0.159
+   },
+   "s2": {
+    "writes_the_code": 3,
+    "digits_right": 4,
+    "p_digit": 0.504,
+    "p_end": 0.531
+   },
+   "s3": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.42,
+    "p_end": 0.632
+   }
+  },
+  "inside a turn: assistant / 32": {
+   "n": 3,
+   "teacher": {
+    "writes_the_code": 3,
+    "digits_right": 3,
+    "p_digit": 0.958,
+    "p_end": 0.029
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.65,
+    "p_end": 0.101
+   },
+   "s2": {
+    "writes_the_code": 3,
+    "digits_right": 3,
+    "p_digit": 0.855,
+    "p_end": 0.296
+   },
+   "s3": {
+    "writes_the_code": 3,
+    "digits_right": 3,
+    "p_digit": 0.84,
+    "p_end": 0.27
+   }
+  },
+  "inside a turn: assistant / 512": {
+   "n": 5,
+   "teacher": {
+    "writes_the_code": 5,
+    "digits_right": 5,
+    "p_digit": 0.968,
+    "p_end": 0.045
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.52,
+    "p_end": 0.151
+   },
+   "s2": {
+    "writes_the_code": 5,
+    "digits_right": 5,
+    "p_digit": 0.846,
+    "p_end": 0.199
+   },
+   "s3": {
+    "writes_the_code": 5,
+    "digits_right": 5,
+    "p_digit": 0.803,
+    "p_end": 0.212
+   }
+  },
+  "inside a turn: assistant / 6000": {
+   "n": 15,
+   "teacher": {
+    "writes_the_code": 14,
+    "digits_right": 14,
+    "p_digit": 0.845,
+    "p_end": 0.293
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.446,
+    "p_end": 0.338
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 7,
+    "p_digit": 0.465,
+    "p_end": 0.679
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 3,
+    "p_digit": 0.343,
+    "p_end": 0.791
+   }
+  },
+  "inside a turn: system / 32": {
+   "n": 1,
+   "teacher": {
+    "writes_the_code": 1,
+    "digits_right": 1,
+    "p_digit": 0.902,
+    "p_end": 0.179
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.349,
+    "p_end": 0.278
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 1,
+    "p_digit": 0.687,
+    "p_end": 0.72
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 1,
+    "p_digit": 0.582,
+    "p_end": 0.781
+   }
+  },
+  "inside a turn: system / 6000": {
+   "n": 2,
+   "teacher": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.611,
+    "p_end": 0.477
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.489,
+    "p_end": 0.551
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.402,
+    "p_end": 0.793
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.279,
+    "p_end": 0.853
+   }
+  },
+  "inside a turn: user / 1500": {
+   "n": 1,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.075,
+    "p_end": 0.956
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.0,
+    "p_end": 0.996
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.314,
+    "p_end": 0.96
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.264,
+    "p_end": 0.976
+   }
+  },
+  "inside a turn: user / 512": {
+   "n": 1,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.02,
+    "p_end": 0.993
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.0,
+    "p_end": 0.998
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.084,
+    "p_end": 0.983
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.047,
+    "p_end": 0.99
+   }
+  },
+  "inside a turn: user / 6000": {
+   "n": 1,
+   "teacher": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.182,
+    "p_end": 0.979
+   },
+   "s1": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.035,
+    "p_end": 0.979
+   },
+   "s2": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.095,
+    "p_end": 0.985
+   },
+   "s3": {
+    "writes_the_code": 0,
+    "digits_right": 0,
+    "p_digit": 0.067,
+    "p_end": 0.987
+   }
+  },
+  "no conversation yet / 1500": {
+   "n": 10,
+   "teacher": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.981,
+    "p_end": 0.011
+   },
+   "s1": {
+    "writes_the_code": 2,
+    "digits_right": 2,
+    "p_digit": 0.832,
+    "p_end": 0.033
+   },
+   "s2": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.938,
+    "p_end": 0.08
+   },
+   "s3": {
+    "writes_the_code": 10,
+    "digits_right": 10,
+    "p_digit": 0.897,
+    "p_end": 0.106
+   }
+  },
+  "no conversation yet / 32": {
+   "n": 14,
+   "teacher": {
+    "writes_the_code": 14,
+    "digits_right": 14,
+    "p_digit": 0.984,
+    "p_end": 0.01
+   },
+   "s1": {
+    "writes_the_code": 1,
+    "digits_right": 1,
+    "p_digit": 0.645,
+    "p_end": 0.038
+   },
+   "s2": {
+    "writes_the_code": 14,
+    "digits_right": 14,
+    "p_digit": 0.899,
+    "p_end": 0.14
+   },
+   "s3": {
+    "writes_the_code": 14,
+    "digits_right": 14,
+    "p_digit": 0.893,
+    "p_end": 0.159
+   }
+  },
+  "no conversation yet / 512": {
+   "n": 11,
+   "teacher": {
+    "writes_the_code": 11,
+    "digits_right": 11,
+    "p_digit": 0.968,
+    "p_end": 0.026
+   },
+   "s1": {
+    "writes_the_code": 4,
+    "digits_right": 4,
+    "p_digit": 0.759,
+    "p_end": 0.055
+   },
+   "s2": {
+    "writes_the_code": 11,
+    "digits_right": 11,
+    "p_digit": 0.935,
+    "p_end": 0.088
+   },
+   "s3": {
+    "writes_the_code": 11,
+    "digits_right": 11,
+    "p_digit": 0.912,
+    "p_end": 0.092
+   }
+  }
+ },
+ "path_check": [
+  {
+   "set": "mixed",
+   "distance": 6000,
+   "tokens": 6320,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "dense read": {
+    "max_abs_diff": 0.125,
+    "same_top": true,
+    "kl": 0.00668
+   },
+   "logit_scale": 1.707,
+   "generated": "",
+   "generated_ok": false,
+   "forward_pass_says": false
+  },
+  {
+   "set": "mixed",
+   "distance": 6000,
+   "tokens": 6320,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "dense read": {
+    "max_abs_diff": 0.125,
+    "same_top": true,
+    "kl": 8e-05
+   },
+   "logit_scale": 1.903,
+   "generated": "",
+   "generated_ok": false,
+   "forward_pass_says": false
+  },
+  {
+   "set": "plain",
+   "distance": 6000,
+   "tokens": 6320,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "dense read": {
+    "max_abs_diff": 0.125,
+    "same_top": true,
+    "kl": 0.00143
+   },
+   "logit_scale": 1.747,
+   "generated": " 55514.",
+   "generated_ok": true,
+   "forward_pass_says": true
+  },
+  {
+   "set": "plain",
+   "distance": 6000,
+   "tokens": 6320,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "dense read": {
+    "max_abs_diff": 0.125,
+    "same_top": true,
+    "kl": 0.00185
+   },
+   "logit_scale": 1.8,
+   "generated": " 72981.",
+   "generated_ok": true,
+   "forward_pass_says": true
+  },
+  {
+   "set": "plain",
+   "distance": 1500,
+   "tokens": 1820,
+   "generation path": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "dense read": {
+    "max_abs_diff": 0.0,
+    "same_top": true,
+    "kl": 0.0
+   },
+   "logit_scale": 1.623,
+   "generated": " 84011.\n\n",
+   "generated_ok": true,
+   "forward_pass_says": true
+  }
+ ],
+ "generated": [
+  {
+   "distance": 512,
+   "code": "11524",
+   "teacher": "The access code for Bexley is 11524.",
+   "student": "The access code for Bexley is **11524**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "39092",
+   "teacher": "The access code for Tamsin is 39092.",
+   "student": "The access code for Tamsin is **39092**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 512,
+   "code": "85878",
+   "teacher": "The access code for Maren is 85878.",
+   "student": "The access code for Maren is **85878**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "37478",
+   "teacher": "The access code for Quill is 37478.",
+   "student": "The access code for Quill is **37478**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "75987",
+   "teacher": "The access code for Oriel is 75987.",
+   "student": "The access code for Oriel is **75987**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 1500,
+   "code": "52947",
+   "teacher": "The access code for Hollis is 52947.",
+   "student": "The access code for Hollis is **52947**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 6000,
+   "code": "23011",
+   "teacher": "The access code for Lorne is 23011.",
+   "student": "The access code for Lorne is **23011**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 6000,
+   "code": "00542",
+   "teacher": "The access code for Arlen is 00542.",
+   "student": "The access code for Arlen is **00542**.",
+   "teacher_ok": true,
+   "student_ok": true
+  },
+  {
+   "distance": 6000,
+   "code": "28069",
+   "teacher": "The access code for Fenna is 28069.",
+   "student": "The access code for Fenna is **28069**.",
+   "teacher_ok": true,
+   "student_ok": true
+  }
+ ],
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ }
+}

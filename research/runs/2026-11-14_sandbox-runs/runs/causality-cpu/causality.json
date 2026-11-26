@@ -1,0 +1,130 @@
+{
+ "model": "/home/claude/models/Qwen3.5-0.8B",
+ "seq": 2048,
+ "device": "cpu",
+ "dtype": "torch.float32",
+ "backends": {
+  "attention": "dense",
+  "leaky_average": "scan",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ },
+ "memories": "random",
+ "modes": {
+  "teacher": {
+   "skip_extra": 0,
+   "same_input_twice": 0.0,
+   "scale": 2.5050342082977295,
+   "cuts": {
+    "40": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 63.00243377685547
+    },
+    "300": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 61.21788024902344
+    },
+    "1023": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 61.55171585083008
+    },
+    "1024": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 64.06387329101562
+    },
+    "1025": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 62.573612213134766
+    },
+    "1500": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 55.95583724975586
+    }
+   },
+   "sees_the_future": false
+  },
+  "student, no gradient, fixed skip": {
+   "skip_extra": 0,
+   "same_input_twice": 0.0,
+   "scale": 2.535282850265503,
+   "cuts": {
+    "40": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 55.545616149902344
+    },
+    "300": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 66.3337173461914
+    },
+    "1023": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 41.63797378540039
+    },
+    "1024": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 60.72776794433594
+    },
+    "1025": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 47.042755126953125
+    },
+    "1500": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 47.742042541503906
+    }
+   },
+   "sees_the_future": false
+  },
+  "student, no gradient, sampled skip": {
+   "skip_extra": 128,
+   "same_input_twice": 0.0,
+   "scale": 2.528359889984131,
+   "cuts": {
+    "40": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 45.943359375
+    },
+    "300": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 52.7928581237793
+    },
+    "1023": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 49.232234954833984
+    },
+    "1024": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 53.56367111206055
+    },
+    "1025": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 48.697296142578125
+    },
+    "1500": {
+     "max_change_up_to_cut": 0.0,
+     "first_changed_position": null,
+     "max_change_after_cut": 45.904579162597656
+    }
+   },
+   "sees_the_future": false
+  }
+ }
+}

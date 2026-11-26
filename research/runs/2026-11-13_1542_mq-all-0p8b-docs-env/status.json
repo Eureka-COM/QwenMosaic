@@ -1,0 +1,21 @@
+{
+ "plan": "mq-all-0p8b-docs-env",
+ "runs": {
+  "clusters": "ok in 0.5 min",
+  "env-docs-16k": "ok in 1.3 min",
+  "env-docs-8k": "ok in 0.8 min"
+ },
+ "started": "2026-11-13 15:42:51",
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "environment": {
+  "python": "3.12.3",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_mem_gb": 31.8,
+  "transformers": "5.22.2",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 2.7,
+ "finished": "2026-11-13 15:45:31"
+}

@@ -1,0 +1,15 @@
+results/2026-11-11_2240_mq-dev-0p8b results/2026-11-11_2240_mq-dev-0p8b/s1-r05/delta/delta-00000.safetensors
+results/2026-11-11_2240_mq-dev-0p8b results/2026-11-11_2240_mq-dev-0p8b/s1-r10/delta/delta-00000.safetensors
+results/2026-11-11_2240_mq-dev-0p8b results/2026-11-11_2240_mq-dev-0p8b/s2-r05/delta/delta-00000.safetensors
+results/2026-11-11_2322_mq-dev-0p8b-rest results/2026-11-11_2322_mq-dev-0p8b-rest/s2-r10/delta/delta-00000.safetensors
+results/2026-11-11_2322_mq-dev-0p8b-rest results/2026-11-11_2322_mq-dev-0p8b-rest/s2-r10/delta/delta-00001.safetensors
+results/2026-11-11_2322_mq-dev-0p8b-rest results/2026-11-11_2322_mq-dev-0p8b-rest/s3-r10/delta/delta-00000.safetensors
+results/2026-11-11_2322_mq-dev-0p8b-rest results/2026-11-11_2322_mq-dev-0p8b-rest/s3-r10/delta/delta-00001.safetensors
+results/2026-11-12_0114_mq-27b-s1 results/2026-11-12_0114_mq-27b-s1/s1/delta/delta-00001.safetensors
+results/2026-11-12_0424_mq-27b-s1 results/2026-11-12_0424_mq-27b-s1/s1/delta/delta-00001.safetensors
+results/2026-11-14_0955_mq-scratch-setup results/2026-11-14_0955_mq-scratch-setup/prep/tokenizer-src/tokenizer.json
+results/2026-11-14_0955_mq-scratch-setup results/2026-11-14_0955_mq-scratch-setup/prep/tokenizer.json
+results/2026-11-14_sandbox-runs results/2026-11-14_sandbox-runs/runs/cpu-export-weights/tokenizer.json
+results/2026-11-14_sandbox-runs results/2026-11-14_sandbox-runs/runs/d1-s3-r10-delta/delta-00001.safetensors
+memory-mosaics-LLM:results/2026-11-11_1758_mq-cpu results/2026-11-11_1758_mq-cpu/s1/delta/delta-00000.safetensors
+memory-mosaics-LLM:results/2026-11-11_1758_mq-cpu results/2026-11-11_1758_mq-cpu/s2/delta/delta-00000.safetensors

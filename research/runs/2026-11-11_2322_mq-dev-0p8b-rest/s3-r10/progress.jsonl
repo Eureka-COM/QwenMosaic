@@ -1,0 +1,31 @@
+{"event": "start", "step": 0, "elapsed_min": 0.32, "layers": [3, 7, 11, 15, 19, 23], "trainable": 56340960, "total_steps": 244, "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "delta_in": "/content/out/s2-r10/delta", "train": "mem+lora", "resumed_from": null, "store": null}
+{"event": "eval", "step": 0, "elapsed_min": 0.71, "tokens": 0, "kl": 0.15364, "nll_student": 2.14275, "nll_teacher": 2.03954, "top1": 0.83473, "ppl_ratio": 1.1087, "positions": 32764, "rel_mse": {"3": 0.30778, "7": 0.32478, "11": 0.34252, "15": 0.32098, "19": 0.32757, "23": 0.1177}, "rel_mse_mean": 0.29022, "gpu_gb_peak": 3.07}
+{"event": "step", "step": 10, "elapsed_min": 1.65, "tokens": 163840, "kl": 0.15788, "ce": 2.1037, "hidden": 0.0, "lr": 2.5e-05, "tok_per_s": 2917.9, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 20, "elapsed_min": 2.03, "tokens": 327680, "kl": 0.16988, "ce": 2.1112, "hidden": 0.0, "lr": 5e-05, "tok_per_s": 7215.6, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 30, "elapsed_min": 2.38, "tokens": 491520, "kl": 0.15812, "ce": 2.0758, "hidden": 0.0, "lr": 4.98e-05, "tok_per_s": 7776.8, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 40, "elapsed_min": 2.66, "tokens": 655360, "kl": 0.16011, "ce": 2.1224, "hidden": 0.0, "lr": 4.92e-05, "tok_per_s": 9653.5, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 50, "elapsed_min": 2.94, "tokens": 819200, "kl": 0.15851, "ce": 2.1261, "hidden": 0.0, "lr": 4.82e-05, "tok_per_s": 9837.3, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 60, "elapsed_min": 3.22, "tokens": 983040, "kl": 0.16156, "ce": 2.0693, "hidden": 0.0, "lr": 4.67e-05, "tok_per_s": 9733.0, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 70, "elapsed_min": 3.5, "tokens": 1146880, "kl": 0.15215, "ce": 1.9276, "hidden": 0.0, "lr": 4.49e-05, "tok_per_s": 9787.6, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 80, "elapsed_min": 3.78, "tokens": 1310720, "kl": 0.15847, "ce": 2.0796, "hidden": 0.0, "lr": 4.27e-05, "tok_per_s": 9801.7, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 90, "elapsed_min": 4.06, "tokens": 1474560, "kl": 0.1585, "ce": 2.0827, "hidden": 0.0, "lr": 4.03e-05, "tok_per_s": 9783.2, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 100, "elapsed_min": 4.34, "tokens": 1638400, "kl": 0.15821, "ce": 1.934, "hidden": 0.0, "lr": 3.75e-05, "tok_per_s": 9542.4, "gpu_gb_peak": 18.15}
+{"event": "eval", "step": 100, "elapsed_min": 4.38, "tokens": 1638400, "kl": 0.15583, "nll_student": 2.14175, "nll_teacher": 2.03954, "top1": 0.83241, "ppl_ratio": 1.1076, "positions": 32764, "rel_mse": {"3": 0.31089, "7": 0.32694, "11": 0.34334, "15": 0.3237, "19": 0.32963, "23": 0.11998}, "rel_mse_mean": 0.29242, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 110, "elapsed_min": 4.66, "tokens": 1802240, "kl": 0.16553, "ce": 2.0838, "hidden": 0.0, "lr": 3.46e-05, "tok_per_s": 8685.2, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 120, "elapsed_min": 4.94, "tokens": 1966080, "kl": 0.16579, "ce": 2.2235, "hidden": 0.0, "lr": 3.16e-05, "tok_per_s": 9701.1, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 130, "elapsed_min": 5.22, "tokens": 2129920, "kl": 0.17355, "ce": 2.0118, "hidden": 0.0, "lr": 2.84e-05, "tok_per_s": 9666.3, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 140, "elapsed_min": 5.5, "tokens": 2293760, "kl": 0.15682, "ce": 2.1779, "hidden": 0.0, "lr": 2.53e-05, "tok_per_s": 9595.7, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 150, "elapsed_min": 5.78, "tokens": 2457600, "kl": 0.16326, "ce": 2.0207, "hidden": 0.0, "lr": 2.22e-05, "tok_per_s": 9782.9, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 160, "elapsed_min": 6.06, "tokens": 2621440, "kl": 0.1559, "ce": 2.1187, "hidden": 0.0, "lr": 1.92e-05, "tok_per_s": 9805.0, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 170, "elapsed_min": 6.34, "tokens": 2785280, "kl": 0.15254, "ce": 1.925, "hidden": 0.0, "lr": 1.63e-05, "tok_per_s": 9760.6, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 180, "elapsed_min": 6.62, "tokens": 2949120, "kl": 0.16582, "ce": 2.0791, "hidden": 0.0, "lr": 1.37e-05, "tok_per_s": 9756.1, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 190, "elapsed_min": 6.9, "tokens": 3112960, "kl": 0.15353, "ce": 1.9813, "hidden": 0.0, "lr": 1.14e-05, "tok_per_s": 9786.1, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 200, "elapsed_min": 7.18, "tokens": 3276800, "kl": 0.14946, "ce": 2.2042, "hidden": 0.0, "lr": 9.3e-06, "tok_per_s": 9797.5, "gpu_gb_peak": 18.15}
+{"event": "eval", "step": 200, "elapsed_min": 7.21, "tokens": 3276800, "kl": 0.15227, "nll_student": 2.1407, "nll_teacher": 2.03954, "top1": 0.83576, "ppl_ratio": 1.1065, "positions": 32764, "rel_mse": {"3": 0.31034, "7": 0.326, "11": 0.34326, "15": 0.3227, "19": 0.32993, "23": 0.11933}, "rel_mse_mean": 0.29193, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 210, "elapsed_min": 7.49, "tokens": 3440640, "kl": 0.16447, "ce": 2.1497, "hidden": 0.0, "lr": 7.7e-06, "tok_per_s": 8719.8, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 220, "elapsed_min": 7.77, "tokens": 3604480, "kl": 0.1548, "ce": 2.2323, "hidden": 0.0, "lr": 6.4e-06, "tok_per_s": 9788.1, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 230, "elapsed_min": 8.05, "tokens": 3768320, "kl": 0.16159, "ce": 1.9379, "hidden": 0.0, "lr": 5.5e-06, "tok_per_s": 9816.5, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 240, "elapsed_min": 8.33, "tokens": 3932160, "kl": 0.14658, "ce": 2.0134, "hidden": 0.0, "lr": 5.1e-06, "tok_per_s": 9779.5, "gpu_gb_peak": 18.15}
+{"event": "step", "step": 244, "elapsed_min": 8.44, "tokens": 3997696, "kl": 0.16603, "ce": 2.1123, "hidden": 0.0, "lr": 5e-06, "tok_per_s": 9792.9, "gpu_gb_peak": 18.15}
+{"event": "eval", "step": 244, "elapsed_min": 8.47, "tokens": 3997696, "kl": 0.15145, "nll_student": 2.1375, "nll_teacher": 2.03954, "top1": 0.83628, "ppl_ratio": 1.1029, "positions": 32764, "rel_mse": {"3": 0.31023, "7": 0.32556, "11": 0.3431, "15": 0.3228, "19": 0.32998, "23": 0.11909}, "rel_mse_mean": 0.29179, "gpu_gb_peak": 18.15}
+{"event": "done", "step": 244, "elapsed_min": 8.48, "tokens": 3997696, "status": "done"}

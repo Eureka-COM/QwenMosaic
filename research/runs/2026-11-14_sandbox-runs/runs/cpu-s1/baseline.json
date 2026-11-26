@@ -1,0 +1,27 @@
+{
+ "trained": {
+  "kl": 0.73681,
+  "nll_student": 2.99307,
+  "nll_teacher": 2.27294,
+  "top1": 0.65688,
+  "ppl_ratio": 2.0547,
+  "positions": 1533,
+  "rel_mse": {
+   "3": 0.52769,
+   "7": 0.49481,
+   "11": 0.51654,
+   "15": 0.666,
+   "19": 0.4803,
+   "23": 0.3662
+  },
+  "rel_mse_mean": 0.50859
+ },
+ "memories_silenced": {
+  "kl": 1.20994,
+  "nll_student": 3.47575,
+  "nll_teacher": 2.27294,
+  "top1": 0.52642,
+  "ppl_ratio": 3.3295,
+  "positions": 1533
+ }
+}

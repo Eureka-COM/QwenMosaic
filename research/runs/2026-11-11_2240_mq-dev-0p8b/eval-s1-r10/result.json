@@ -1,0 +1,50 @@
+{
+ "status": "done",
+ "metrics": {
+  "kl": 0.26603,
+  "nll_student": 2.43544,
+  "nll_teacher": 2.1957,
+  "top1": 0.77592,
+  "ppl_ratio": 1.2709,
+  "positions": 32752,
+  "rel_mse": {
+   "3": 0.28432,
+   "7": 0.29879,
+   "11": 0.28318,
+   "15": 0.30787,
+   "19": 0.29377,
+   "23": 0.10324
+  },
+  "rel_mse_mean": 0.26186
+ },
+ "recall": {
+  "32": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 0.5
+  },
+  "512": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "1500": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "6000": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  }
+ },
+ "samples": 5,
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ }
+}

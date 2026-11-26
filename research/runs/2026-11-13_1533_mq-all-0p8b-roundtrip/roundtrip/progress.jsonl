@@ -1,0 +1,5 @@
+{"event": "loaded", "elapsed_min": 0.43, "rows": [6, 256], "lora_modules": 72}
+{"event": "in_memory", "elapsed_min": 1.02, "kl_teacher": 0.51262, "nll": 2.44951, "ppl_ratio": 1.6187, "top1_teacher": 0.7294}
+{"event": "saved_fp32", "elapsed_min": 1.39, "kl_teacher": 0.51262, "nll": 2.44952, "ppl_ratio": 1.6187, "top1_teacher": 0.7294, "kl_in_memory": 0.0, "top1_in_memory": 1.0, "max_logit_diff": 0.0168}
+{"event": "saved_bf16", "elapsed_min": 1.69, "kl_teacher": 0.5127, "nll": 2.44916, "ppl_ratio": 1.6181, "top1_teacher": 0.7307, "kl_in_memory": 1.8e-05, "top1_in_memory": 0.9987, "max_logit_diff": 0.4335}
+{"event": "done", "elapsed_min": 1.7}

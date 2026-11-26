@@ -1,0 +1,33 @@
+{"event": "fetch_try", "step": 1, "elapsed_min": 0.0, "file": "HuggingFaceFW/fineweb-edu:sample/10BT/000_00000.parquet"}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/content/data/fineweb-edu/sample/10BT/000_00000.parquet
+{"event": "fetched", "step": 1, "elapsed_min": 0.41, "file": "HuggingFaceFW/fineweb-edu:sample/10BT/000_00000.parquet", "bytes": 2152819114}
+{"event": "fetch_try", "step": 1, "elapsed_min": 0.41, "file": "HuggingFaceFW/fineweb-edu:sample/10BT/001_00000.parquet"}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/content/data/fineweb-edu/sample/10BT/001_00000.parquet
+{"event": "fetched", "step": 1, "elapsed_min": 0.81, "file": "HuggingFaceFW/fineweb-edu:sample/10BT/001_00000.parquet", "bytes": 2152222432}
+{"event": "fetch_try", "step": 1, "elapsed_min": 0.81, "file": "HuggingFaceFW/fineweb-edu:sample/10BT/002_00000.parquet"}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/content/data/fineweb-edu/sample/10BT/002_00000.parquet
+{"event": "fetched", "step": 1, "elapsed_min": 1.23, "file": "HuggingFaceFW/fineweb-edu:sample/10BT/002_00000.parquet", "bytes": 2151796315}
+{"event": "train", "step": 51200, "elapsed_min": 1.36, "tokens": 59754747, "tok_per_s": 8216885}
+{"event": "train", "step": 100352, "elapsed_min": 1.47, "tokens": 116129655, "tok_per_s": 8398930}
+{"event": "train", "step": 151552, "elapsed_min": 1.59, "tokens": 174168059, "tok_per_s": 8361899}
+{"event": "train", "step": 200704, "elapsed_min": 1.69, "tokens": 229176222, "tok_per_s": 8470232}
+{"event": "train", "step": 251904, "elapsed_min": 1.8, "tokens": 287103042, "tok_per_s": 8528354}
+{"event": "train", "step": 301056, "elapsed_min": 1.91, "tokens": 342239532, "tok_per_s": 8576103}
+{"event": "train", "step": 350208, "elapsed_min": 2.01, "tokens": 398768615, "tok_per_s": 8596257}
+{"event": "train", "step": 401408, "elapsed_min": 2.13, "tokens": 458793732, "tok_per_s": 8596764}
+{"event": "train", "step": 450560, "elapsed_min": 2.24, "tokens": 516097648, "tok_per_s": 8600342}
+{"event": "train", "step": 501760, "elapsed_min": 2.36, "tokens": 575385431, "tok_per_s": 8586943}
+{"event": "train", "step": 550912, "elapsed_min": 2.47, "tokens": 631867145, "tok_per_s": 8539927}
+{"event": "train", "step": 600064, "elapsed_min": 2.58, "tokens": 687855022, "tok_per_s": 8575171}
+{"event": "train", "step": 651264, "elapsed_min": 2.69, "tokens": 746505791, "tok_per_s": 8592897}
+{"event": "train", "step": 700416, "elapsed_min": 2.8, "tokens": 803381044, "tok_per_s": 8597202}
+{"event": "train", "step": 750576, "elapsed_min": 2.91, "tokens": 860975503, "tok_per_s": 8586563}
+{"event": "train", "step": 801776, "elapsed_min": 3.03, "tokens": 919335953, "tok_per_s": 8576007}
+{"event": "train", "step": 850928, "elapsed_min": 3.13, "tokens": 974380845, "tok_per_s": 8578594}
+{"event": "train", "step": 900080, "elapsed_min": 3.24, "tokens": 1029838907, "tok_per_s": 8569673}
+{"event": "train", "step": 951280, "elapsed_min": 3.36, "tokens": 1087535011, "tok_per_s": 8572207}
+SIGTERM: stopping after this step (saving first)
+out of time while tokenizing

@@ -1,0 +1,28 @@
+[
+ {
+  "k": 0,
+  "gold": "18",
+  "prompt_tokens": 99,
+  "teacher": "To solve this problem, we need to calculate the total number of eggs Janet lays, subtract the eggs she eats and bakes, and then determine the revenue from selling the remaining eggs.\n\n**Step 1: Calculate the total number of eggs laid.**\nJanet lays 16 eggs per day.\n$$",
+  "teacher_answer": "16",
+  "teacher_ok": false,
+  "teacher_finished": false,
+  "student": "To solve this problem, we need to calculate the daily earnings from three different activities: selling eggs, baking muffins, and selling eggs at the farmers' market.\n\n**Step 1: Calculate the daily earnings from selling eggs.**\n*   **Daily eggs:** 16 eggs per day.\n*  ",
+  "student_answer": "16",
+  "student_ok": false,
+  "student_finished": false
+ },
+ {
+  "k": 1,
+  "gold": "3",
+  "prompt_tokens": 60,
+  "teacher": "To solve this problem, we need to break down the relationship between the number of bolts and the amount of fiber used.\n\n**Step 1: Identify the given information.**\n*   The robe requires **2 bolts** of blue fiber.\n*   The robe requires **half that much** white fiber.\n\n",
+  "teacher_answer": "2",
+  "teacher_ok": false,
+  "teacher_finished": false,
+  "student": "To solve this problem, we need to determine the total number of bolts required to make a robe.\n\n1.  **Identify the components of the robe:**\n    *   **Blue fiber:** 2 bolts.\n    *   **White fiber:** Half of the blue fiber.\n\n2.  **",
+  "student_answer": "2",
+  "student_ok": false,
+  "student_finished": false
+ }
+]

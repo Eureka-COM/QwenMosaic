@@ -1,0 +1,11 @@
+{
+ "out": "/home/claude/runs/cpu-export-weights",
+ "parameters": 746393888,
+ "memory_parameters": 38044128,
+ "attention_parameters_left": 0,
+ "shards": 1,
+ "reload_max_logit_diff": 0.12097,
+ "reload_top1_agree": 1.0,
+ "attention_parameters_after_reload": 0,
+ "attention_modules_after_reload": 0
+}

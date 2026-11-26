@@ -1,0 +1,11 @@
+{
+ "status": "budget",
+ "step": 505,
+ "total_steps": 915,
+ "tokens": 33095680,
+ "family": "transformer",
+ "lr": 0.0012,
+ "parameters": 114582016,
+ "minutes": 11.1,
+ "gpu_gb_peak": 4.35
+}

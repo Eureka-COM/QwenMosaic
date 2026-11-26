@@ -1,0 +1,30 @@
+{
+ "positions": 1530,
+ "variants": {
+  "in_memory": {
+   "kl_teacher": 0.13514,
+   "nll": 2.08445,
+   "ppl_ratio": 1.1237,
+   "top1_teacher": 0.8745
+  },
+  "saved_fp32": {
+   "kl_teacher": 0.13514,
+   "nll": 2.08445,
+   "ppl_ratio": 1.1237,
+   "top1_teacher": 0.8745,
+   "kl_in_memory": -0.0,
+   "top1_in_memory": 1.0,
+   "max_logit_diff": 0.0001
+  },
+  "saved_bf16": {
+   "kl_teacher": 0.13526,
+   "nll": 2.08456,
+   "ppl_ratio": 1.1238,
+   "top1_teacher": 0.8745,
+   "kl_in_memory": 2.2e-05,
+   "top1_in_memory": 0.9993,
+   "max_logit_diff": 0.1911
+  }
+ },
+ "nll_teacher": 1.9678
+}

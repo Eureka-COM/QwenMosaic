@@ -1,0 +1,173 @@
+{
+ "name": "mq-27b-s2-final",
+ "purpose": "docs/plan-mosaic-qwen.md §9：次へ進める重み（段 2）で、最後の評価、一般のベンチマーク（MMLU・GSM8K を元の 27B と比較）、書き出しの確認を 1 回の起動で行う。学習はしない",
+ "save_mode": "token",
+ "auto_stop": true,
+ "export_token": true,
+ "max_minutes": 115,
+ "save_every_min": 5,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   },
+   {
+    "repo": "cais/mmlu",
+    "file": "all/test-00000-of-00001.parquet",
+    "dir": "/content/data/mmlu"
+   },
+   {
+    "repo": "openai/gsm8k",
+    "file": "main/test-00000-of-00001.parquet",
+    "dir": "/content/data/gsm8k"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-s2",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 10,
+   "no_common": true,
+   "args": [
+    "--store",
+    "github-release:mq-27b-s2",
+    "--dest",
+    "/content/prev/s2/delta",
+    "--require-tag",
+    "done"
+   ]
+  },
+  {
+   "name": "eval-s2",
+   "script": "scripts/mq_eval.py",
+   "no_common": true,
+   "max_minutes": 20,
+   "after": [
+    "fetch-s2"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "8000",
+    "--delta",
+    "/content/prev/s2/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json",
+    "samples.json"
+   ]
+  },
+  {
+   "name": "bench-s2",
+   "script": "scripts/mq_bench.py",
+   "no_common": true,
+   "max_minutes": 45,
+   "after": [
+    "eval-s2"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--delta",
+    "/content/prev/s2/delta",
+    "--mmlu",
+    "/content/data/mmlu/all/test-00000-of-00001.parquet",
+    "--gsm",
+    "/content/data/gsm8k/main/test-00000-of-00001.parquet",
+    "--n-mmlu",
+    "1000",
+    "--n-gsm",
+    "100",
+    "--gsm-max-new",
+    "256",
+    "--gsm-minutes",
+    "22",
+    "--max-minutes",
+    "42"
+   ],
+   "output_files": [
+    "bench.json",
+    "result.json"
+   ]
+  },
+  {
+   "name": "export-s2",
+   "script": "scripts/mq_export.py",
+   "no_common": true,
+   "max_minutes": 30,
+   "after": [
+    "bench-s2"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--delta",
+    "/content/prev/s2/delta",
+    "--weights-dir",
+    "/content/export/mosaic-qwen-27b",
+    "--shard-mb",
+    "1900"
+   ],
+   "output_files": [
+    "export_report.json"
+   ]
+  }
+ ],
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "code_commit": "903abd4"
+}

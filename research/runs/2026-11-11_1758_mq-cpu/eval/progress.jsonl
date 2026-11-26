@@ -1,0 +1,4 @@
+{"event": "start", "step": 0, "elapsed_min": 0.09, "layers": [3, 7, 11, 15, 19, 23], "delta": "/home/claude/runs/cpu-s2/delta", "backends": {"attention": "dense", "leaky_average": "scan", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}, "attention_parameters_in_student": 0}
+{"event": "metrics", "step": 1, "elapsed_min": 0.57, "kl": 0.50183, "nll_student": 2.79976, "nll_teacher": 2.27807, "top1": 0.68982, "ppl_ratio": 1.6849, "positions": 1022, "rel_mse_mean": 0.58006}
+{"event": "recall", "step": 2, "elapsed_min": 2.01, "32": {"n": 4, "teacher": 1.0, "student": 0.0}, "400": {"n": 4, "teacher": 1.0, "student": 0.0}}
+{"event": "done", "step": 3, "elapsed_min": 2.74, "status": "done"}

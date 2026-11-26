@@ -1,0 +1,8002 @@
+[
+ {
+  "i": 13835,
+  "subject": "virology",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 100
+ },
+ {
+  "i": 6311,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 82
+ },
+ {
+  "i": 12418,
+  "subject": "professional_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 207
+ },
+ {
+  "i": 6890,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 80
+ },
+ {
+  "i": 663,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 101
+ },
+ {
+  "i": 4242,
+  "subject": "high_school_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 144
+ },
+ {
+  "i": 8376,
+  "subject": "moral_disputes",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 120
+ },
+ {
+  "i": 7961,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 96
+ },
+ {
+  "i": 6634,
+  "subject": "jurisprudence",
+  "gold": 2,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 74
+ },
+ {
+  "i": 12841,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 117
+ },
+ {
+  "i": 13596,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 110
+ },
+ {
+  "i": 4969,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 7808,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 72
+ },
+ {
+  "i": 5866,
+  "subject": "high_school_world_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 473
+ },
+ {
+  "i": 9558,
+  "subject": "nutrition",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 90
+ },
+ {
+  "i": 3578,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 91
+ },
+ {
+  "i": 8268,
+  "subject": "moral_disputes",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 132
+ },
+ {
+  "i": 2281,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 121
+ },
+ {
+  "i": 4617,
+  "subject": "high_school_microeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 91
+ },
+ {
+  "i": 2289,
+  "subject": "elementary_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 102
+ },
+ {
+  "i": 12383,
+  "subject": "professional_medicine",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 156
+ },
+ {
+  "i": 1553,
+  "subject": "computer_security",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 105
+ },
+ {
+  "i": 10131,
+  "subject": "prehistory",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 86
+ },
+ {
+  "i": 13097,
+  "subject": "public_relations",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 76
+ },
+ {
+  "i": 4104,
+  "subject": "high_school_macroeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 119
+ },
+ {
+  "i": 8725,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 152
+ },
+ {
+  "i": 11553,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 294
+ },
+ {
+  "i": 13274,
+  "subject": "security_studies",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 181
+ },
+ {
+  "i": 9861,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 259
+ },
+ {
+  "i": 2407,
+  "subject": "elementary_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 85
+ },
+ {
+  "i": 5081,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 95
+ },
+ {
+  "i": 1618,
+  "subject": "conceptual_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 101
+ },
+ {
+  "i": 11957,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 284
+ },
+ {
+  "i": 1208,
+  "subject": "college_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 181
+ },
+ {
+  "i": 13934,
+  "subject": "world_religions",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 91
+ },
+ {
+  "i": 11206,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 285
+ },
+ {
+  "i": 5409,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 99
+ },
+ {
+  "i": 7735,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 73
+ },
+ {
+  "i": 9171,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 146
+ },
+ {
+  "i": 1649,
+  "subject": "conceptual_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 84
+ },
+ {
+  "i": 5796,
+  "subject": "high_school_us_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 394
+ },
+ {
+  "i": 7113,
+  "subject": "marketing",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 78
+ },
+ {
+  "i": 5180,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 112
+ },
+ {
+  "i": 10008,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 10492,
+  "subject": "professional_accounting",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 169
+ },
+ {
+  "i": 3350,
+  "subject": "high_school_european_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 321
+ },
+ {
+  "i": 9052,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 137
+ },
+ {
+  "i": 7815,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 75
+ },
+ {
+  "i": 7253,
+  "subject": "marketing",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 8541,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 142
+ },
+ {
+  "i": 4267,
+  "subject": "high_school_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 107
+ },
+ {
+  "i": 1020,
+  "subject": "college_computer_science",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 195
+ },
+ {
+  "i": 13189,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 259
+ },
+ {
+  "i": 8989,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 151
+ },
+ {
+  "i": 230,
+  "subject": "anatomy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 84
+ },
+ {
+  "i": 1528,
+  "subject": "computer_security",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 72
+ },
+ {
+  "i": 11791,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 88
+ },
+ {
+  "i": 13764,
+  "subject": "virology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 70
+ },
+ {
+  "i": 6534,
+  "subject": "international_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 140
+ },
+ {
+  "i": 11636,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 246
+ },
+ {
+  "i": 13514,
+  "subject": "sociology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 109
+ },
+ {
+  "i": 12862,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 121
+ },
+ {
+  "i": 10947,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 256
+ },
+ {
+  "i": 10244,
+  "subject": "prehistory",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 126
+ },
+ {
+  "i": 18,
+  "subject": "abstract_algebra",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 90
+ },
+ {
+  "i": 10025,
+  "subject": "prehistory",
+  "gold": 3,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 86
+ },
+ {
+  "i": 8086,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 77
+ },
+ {
+  "i": 13566,
+  "subject": "sociology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 112
+ },
+ {
+  "i": 5458,
+  "subject": "high_school_statistics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 132
+ },
+ {
+  "i": 3996,
+  "subject": "high_school_macroeconomics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 94
+ },
+ {
+  "i": 11964,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 307
+ },
+ {
+  "i": 5328,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 101
+ },
+ {
+  "i": 11528,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 390
+ },
+ {
+  "i": 1031,
+  "subject": "college_computer_science",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 112
+ },
+ {
+  "i": 3130,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 141
+ },
+ {
+  "i": 9298,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 146
+ },
+ {
+  "i": 3632,
+  "subject": "high_school_geography",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 80
+ },
+ {
+  "i": 3909,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 81
+ },
+ {
+  "i": 13162,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 93
+ },
+ {
+  "i": 2334,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 133
+ },
+ {
+  "i": 13159,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 90
+ },
+ {
+  "i": 8896,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 149
+ },
+ {
+  "i": 7339,
+  "subject": "medical_genetics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 139
+ },
+ {
+  "i": 1494,
+  "subject": "computer_security",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 74
+ },
+ {
+  "i": 1318,
+  "subject": "college_medicine",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 115
+ },
+ {
+  "i": 5243,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 88
+ },
+ {
+  "i": 8322,
+  "subject": "moral_disputes",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 112
+ },
+ {
+  "i": 8016,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 120
+ },
+ {
+  "i": 1786,
+  "subject": "conceptual_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 104
+ },
+ {
+  "i": 4938,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 106
+ },
+ {
+  "i": 9031,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 151
+ },
+ {
+  "i": 4769,
+  "subject": "high_school_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 126
+ },
+ {
+  "i": 11576,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 288
+ },
+ {
+  "i": 2044,
+  "subject": "electrical_engineering",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 83
+ },
+ {
+  "i": 8969,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 143
+ },
+ {
+  "i": 5451,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 146
+ },
+ {
+  "i": 13344,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 196
+ },
+ {
+  "i": 8852,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 139
+ },
+ {
+  "i": 3329,
+  "subject": "high_school_european_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 586
+ },
+ {
+  "i": 9882,
+  "subject": "philosophy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 90
+ },
+ {
+  "i": 8965,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 144
+ },
+ {
+  "i": 9627,
+  "subject": "nutrition",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 90
+ },
+ {
+  "i": 4712,
+  "subject": "high_school_microeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 99
+ },
+ {
+  "i": 7290,
+  "subject": "medical_genetics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 80
+ },
+ {
+  "i": 1501,
+  "subject": "computer_security",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 75
+ },
+ {
+  "i": 9769,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 216
+ },
+ {
+  "i": 13073,
+  "subject": "public_relations",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 74
+ },
+ {
+  "i": 6306,
+  "subject": "human_aging",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 100
+ },
+ {
+  "i": 5194,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 87
+ },
+ {
+  "i": 9431,
+  "subject": "nutrition",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 83
+ },
+ {
+  "i": 3966,
+  "subject": "high_school_macroeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 90
+ },
+ {
+  "i": 4756,
+  "subject": "high_school_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 137
+ },
+ {
+  "i": 3012,
+  "subject": "high_school_chemistry",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 104
+ },
+ {
+  "i": 3102,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 87
+ },
+ {
+  "i": 13458,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 178
+ },
+ {
+  "i": 3059,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 223
+ },
+ {
+  "i": 540,
+  "subject": "clinical_knowledge",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 97
+ },
+ {
+  "i": 10039,
+  "subject": "prehistory",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 88
+ },
+ {
+  "i": 10758,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 459
+ },
+ {
+  "i": 4260,
+  "subject": "high_school_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 92
+ },
+ {
+  "i": 7807,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 83
+ },
+ {
+  "i": 1131,
+  "subject": "college_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 215
+ },
+ {
+  "i": 1471,
+  "subject": "computer_security",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 87
+ },
+ {
+  "i": 11120,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 281
+ },
+ {
+  "i": 12412,
+  "subject": "professional_medicine",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 212
+ },
+ {
+  "i": 2133,
+  "subject": "elementary_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 116
+ },
+ {
+  "i": 2450,
+  "subject": "formal_logic",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 118
+ },
+ {
+  "i": 633,
+  "subject": "clinical_knowledge",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 82
+ },
+ {
+  "i": 13802,
+  "subject": "virology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 79
+ },
+ {
+  "i": 1314,
+  "subject": "college_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 103
+ },
+ {
+  "i": 11457,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 200
+ },
+ {
+  "i": 13588,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 101
+ },
+ {
+  "i": 8857,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 141
+ },
+ {
+  "i": 11198,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 283
+ },
+ {
+  "i": 6410,
+  "subject": "human_sexuality",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 120
+ },
+ {
+  "i": 13727,
+  "subject": "virology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 82
+ },
+ {
+  "i": 11555,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 307
+ },
+ {
+  "i": 8594,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 144
+ },
+ {
+  "i": 4515,
+  "subject": "high_school_microeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 191
+ },
+ {
+  "i": 8549,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 152
+ },
+ {
+  "i": 13297,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 161
+ },
+ {
+  "i": 3858,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 103
+ },
+ {
+  "i": 13917,
+  "subject": "world_religions",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 3525,
+  "subject": "high_school_geography",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 119
+ },
+ {
+  "i": 11132,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 236
+ },
+ {
+  "i": 9663,
+  "subject": "nutrition",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 119
+ },
+ {
+  "i": 13521,
+  "subject": "sociology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 98
+ },
+ {
+  "i": 6871,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 99
+ },
+ {
+  "i": 9497,
+  "subject": "nutrition",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 92
+ },
+ {
+  "i": 4509,
+  "subject": "high_school_microeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 151
+ },
+ {
+  "i": 7382,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 103
+ },
+ {
+  "i": 8071,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 70
+ },
+ {
+  "i": 10817,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 263
+ },
+ {
+  "i": 10505,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 135
+ },
+ {
+  "i": 11472,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 357
+ },
+ {
+  "i": 12997,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 102
+ },
+ {
+  "i": 5855,
+  "subject": "high_school_world_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 244
+ },
+ {
+  "i": 1349,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 143
+ },
+ {
+  "i": 5313,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 89
+ },
+ {
+  "i": 1889,
+  "subject": "econometrics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 97
+ },
+ {
+  "i": 7969,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 85
+ },
+ {
+  "i": 9618,
+  "subject": "nutrition",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 98
+ },
+ {
+  "i": 10324,
+  "subject": "prehistory",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 89
+ },
+ {
+  "i": 5493,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 133
+ },
+ {
+  "i": 13845,
+  "subject": "virology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 91
+ },
+ {
+  "i": 3119,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 145
+ },
+ {
+  "i": 3981,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 85
+ },
+ {
+  "i": 265,
+  "subject": "astronomy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 191
+ },
+ {
+  "i": 11984,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 392
+ },
+ {
+  "i": 4440,
+  "subject": "high_school_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 81
+ },
+ {
+  "i": 1919,
+  "subject": "econometrics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 202
+ },
+ {
+  "i": 11556,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 170
+ },
+ {
+  "i": 3612,
+  "subject": "high_school_geography",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 100
+ },
+ {
+  "i": 6095,
+  "subject": "human_aging",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 88
+ },
+ {
+  "i": 13018,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 116
+ },
+ {
+  "i": 2793,
+  "subject": "high_school_biology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 113
+ },
+ {
+  "i": 5448,
+  "subject": "high_school_statistics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 155
+ },
+ {
+  "i": 6981,
+  "subject": "management",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 103
+ },
+ {
+  "i": 13367,
+  "subject": "security_studies",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 161
+ },
+ {
+  "i": 1018,
+  "subject": "college_computer_science",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 102
+ },
+ {
+  "i": 1648,
+  "subject": "conceptual_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 97
+ },
+ {
+  "i": 12830,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 146
+ },
+ {
+  "i": 2397,
+  "subject": "elementary_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 117
+ },
+ {
+  "i": 14013,
+  "subject": "world_religions",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 11430,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 234
+ },
+ {
+  "i": 3584,
+  "subject": "high_school_geography",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 97
+ },
+ {
+  "i": 741,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 97
+ },
+ {
+  "i": 13387,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 251
+ },
+ {
+  "i": 9402,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 150
+ },
+ {
+  "i": 10390,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 128
+ },
+ {
+  "i": 8752,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 156
+ },
+ {
+  "i": 9865,
+  "subject": "philosophy",
+  "gold": 3,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 90
+ },
+ {
+  "i": 11150,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 263
+ },
+ {
+  "i": 1212,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 87
+ },
+ {
+  "i": 437,
+  "subject": "business_ethics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 135
+ },
+ {
+  "i": 2038,
+  "subject": "electrical_engineering",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 110
+ },
+ {
+  "i": 10403,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 136
+ },
+ {
+  "i": 3088,
+  "subject": "high_school_chemistry",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 145
+ },
+ {
+  "i": 9934,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 82
+ },
+ {
+  "i": 13600,
+  "subject": "sociology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 109
+ },
+ {
+  "i": 9436,
+  "subject": "nutrition",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 109
+ },
+ {
+  "i": 1961,
+  "subject": "electrical_engineering",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 6409,
+  "subject": "human_sexuality",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 133
+ },
+ {
+  "i": 1499,
+  "subject": "computer_security",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 155
+ },
+ {
+  "i": 6064,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 326
+ },
+ {
+  "i": 13661,
+  "subject": "us_foreign_policy",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 86
+ },
+ {
+  "i": 1901,
+  "subject": "econometrics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 113
+ },
+ {
+  "i": 596,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 143
+ },
+ {
+  "i": 9920,
+  "subject": "philosophy",
+  "gold": 0,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 99
+ },
+ {
+  "i": 354,
+  "subject": "astronomy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 132
+ },
+ {
+  "i": 3188,
+  "subject": "high_school_computer_science",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 217
+ },
+ {
+  "i": 3030,
+  "subject": "high_school_chemistry",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 140
+ },
+ {
+  "i": 11765,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 232
+ },
+ {
+  "i": 2029,
+  "subject": "electrical_engineering",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 80
+ },
+ {
+  "i": 7851,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 68
+ },
+ {
+  "i": 3450,
+  "subject": "high_school_geography",
+  "gold": 0,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 87
+ },
+ {
+  "i": 11913,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 190
+ },
+ {
+  "i": 13119,
+  "subject": "public_relations",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 106
+ },
+ {
+  "i": 1000,
+  "subject": "college_computer_science",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 102
+ },
+ {
+  "i": 11130,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 314
+ },
+ {
+  "i": 373,
+  "subject": "astronomy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 71
+ },
+ {
+  "i": 8916,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 146
+ },
+ {
+  "i": 6973,
+  "subject": "management",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 74
+ },
+ {
+  "i": 10167,
+  "subject": "prehistory",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 130
+ },
+ {
+  "i": 1662,
+  "subject": "conceptual_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 98
+ },
+ {
+  "i": 13695,
+  "subject": "us_foreign_policy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 120
+ },
+ {
+  "i": 4258,
+  "subject": "high_school_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 106
+ },
+ {
+  "i": 1146,
+  "subject": "college_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 91
+ },
+ {
+  "i": 3618,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 85
+ },
+ {
+  "i": 1179,
+  "subject": "college_mathematics",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 99
+ },
+ {
+  "i": 10599,
+  "subject": "professional_accounting",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 129
+ },
+ {
+  "i": 4932,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 109
+ },
+ {
+  "i": 5739,
+  "subject": "high_school_us_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 403
+ },
+ {
+  "i": 7144,
+  "subject": "marketing",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 80
+ },
+ {
+  "i": 2954,
+  "subject": "high_school_biology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 78
+ },
+ {
+  "i": 8251,
+  "subject": "moral_disputes",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 153
+ },
+ {
+  "i": 7653,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 127
+ },
+ {
+  "i": 645,
+  "subject": "clinical_knowledge",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 179
+ },
+ {
+  "i": 9772,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 100
+ },
+ {
+  "i": 1653,
+  "subject": "conceptual_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 84
+ },
+ {
+  "i": 3266,
+  "subject": "high_school_computer_science",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 119
+ },
+ {
+  "i": 4262,
+  "subject": "high_school_mathematics",
+  "gold": 0,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 125
+ },
+ {
+  "i": 5874,
+  "subject": "high_school_world_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 782
+ },
+ {
+  "i": 11986,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 268
+ },
+ {
+  "i": 7704,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 76
+ },
+ {
+  "i": 13735,
+  "subject": "virology",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 113
+ },
+ {
+  "i": 9335,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 145
+ },
+ {
+  "i": 2775,
+  "subject": "high_school_biology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 195
+ },
+ {
+  "i": 11431,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 248
+ },
+ {
+  "i": 11020,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 311
+ },
+ {
+  "i": 3332,
+  "subject": "high_school_european_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 327
+ },
+ {
+  "i": 12572,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 106
+ },
+ {
+  "i": 951,
+  "subject": "college_chemistry",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 110
+ },
+ {
+  "i": 12921,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 135
+ },
+ {
+  "i": 11078,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 271
+ },
+ {
+  "i": 2592,
+  "subject": "global_facts",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 89
+ },
+ {
+  "i": 13851,
+  "subject": "virology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 95
+ },
+ {
+  "i": 2653,
+  "subject": "global_facts",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 131
+ },
+ {
+  "i": 5608,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 164
+ },
+ {
+  "i": 8674,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 145
+ },
+ {
+  "i": 4107,
+  "subject": "high_school_macroeconomics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 145
+ },
+ {
+  "i": 1920,
+  "subject": "electrical_engineering",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 99
+ },
+ {
+  "i": 9777,
+  "subject": "philosophy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 105
+ },
+ {
+  "i": 7246,
+  "subject": "marketing",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 104
+ },
+ {
+  "i": 10905,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 286
+ },
+ {
+  "i": 2864,
+  "subject": "high_school_biology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 118
+ },
+ {
+  "i": 216,
+  "subject": "anatomy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 79
+ },
+ {
+  "i": 7727,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 97
+ },
+ {
+  "i": 11162,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 267
+ },
+ {
+  "i": 6715,
+  "subject": "logical_fallacies",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 172
+ },
+ {
+  "i": 9324,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 147
+ },
+ {
+  "i": 8332,
+  "subject": "moral_disputes",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 88
+ },
+ {
+  "i": 5102,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 119
+ },
+ {
+  "i": 10632,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 350
+ },
+ {
+  "i": 5851,
+  "subject": "high_school_us_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 356
+ },
+ {
+  "i": 6367,
+  "subject": "human_sexuality",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 106
+ },
+ {
+  "i": 13724,
+  "subject": "virology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 99
+ },
+ {
+  "i": 10774,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 272
+ },
+ {
+  "i": 4111,
+  "subject": "high_school_macroeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 123
+ },
+ {
+  "i": 2513,
+  "subject": "formal_logic",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 268
+ },
+ {
+  "i": 9184,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 139
+ },
+ {
+  "i": 11318,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 223
+ },
+ {
+  "i": 203,
+  "subject": "anatomy",
+  "gold": 1,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 94
+ },
+ {
+  "i": 7503,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 84
+ },
+ {
+  "i": 12149,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 343
+ },
+ {
+  "i": 1295,
+  "subject": "college_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 100
+ },
+ {
+  "i": 5503,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 144
+ },
+ {
+  "i": 12108,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 234
+ },
+ {
+  "i": 748,
+  "subject": "clinical_knowledge",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 108
+ },
+ {
+  "i": 8918,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 145
+ },
+ {
+  "i": 4601,
+  "subject": "high_school_microeconomics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 112
+ },
+ {
+  "i": 2209,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 111
+ },
+ {
+  "i": 3934,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 12487,
+  "subject": "professional_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 158
+ },
+ {
+  "i": 7894,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 147
+ },
+ {
+  "i": 5770,
+  "subject": "high_school_us_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 287
+ },
+ {
+  "i": 9996,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 95
+ },
+ {
+  "i": 4716,
+  "subject": "high_school_microeconomics",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 131
+ },
+ {
+  "i": 11033,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 266
+ },
+ {
+  "i": 5885,
+  "subject": "high_school_world_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 240
+ },
+ {
+  "i": 9671,
+  "subject": "nutrition",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 88
+ },
+ {
+  "i": 10383,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 186
+ },
+ {
+  "i": 13988,
+  "subject": "world_religions",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 75
+ },
+ {
+  "i": 10175,
+  "subject": "prehistory",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 118
+ },
+ {
+  "i": 2168,
+  "subject": "elementary_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 114
+ },
+ {
+  "i": 11724,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 408
+ },
+ {
+  "i": 5083,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 88
+ },
+ {
+  "i": 6357,
+  "subject": "human_sexuality",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 111
+ },
+ {
+  "i": 12263,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 149
+ },
+ {
+  "i": 6789,
+  "subject": "logical_fallacies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 124
+ },
+ {
+  "i": 13580,
+  "subject": "sociology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 114
+ },
+ {
+  "i": 10663,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 470
+ },
+ {
+  "i": 1322,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 90
+ },
+ {
+  "i": 24,
+  "subject": "abstract_algebra",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 103
+ },
+ {
+  "i": 9741,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 210
+ },
+ {
+  "i": 3150,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 124
+ },
+ {
+  "i": 11445,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 370
+ },
+ {
+  "i": 5478,
+  "subject": "high_school_statistics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 100
+ },
+ {
+  "i": 2622,
+  "subject": "global_facts",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 97
+ },
+ {
+  "i": 3922,
+  "subject": "high_school_macroeconomics",
+  "gold": 1,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 117
+ },
+ {
+  "i": 3655,
+  "subject": "high_school_government_and_politics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 137
+ },
+ {
+  "i": 10443,
+  "subject": "professional_accounting",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 128
+ },
+ {
+  "i": 7342,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 136
+ },
+ {
+  "i": 6203,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 99
+ },
+ {
+  "i": 11638,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 296
+ },
+ {
+  "i": 11039,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 249
+ },
+ {
+  "i": 9308,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 139
+ },
+ {
+  "i": 516,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 92
+ },
+ {
+  "i": 6590,
+  "subject": "jurisprudence",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 116
+ },
+ {
+  "i": 11498,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 238
+ },
+ {
+  "i": 9297,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 142
+ },
+ {
+  "i": 6852,
+  "subject": "machine_learning",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 122
+ },
+ {
+  "i": 12651,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 77
+ },
+ {
+  "i": 10849,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 353
+ },
+ {
+  "i": 11616,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 353
+ },
+ {
+  "i": 766,
+  "subject": "college_biology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 217
+ },
+ {
+  "i": 2714,
+  "subject": "high_school_biology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 103
+ },
+ {
+  "i": 7296,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 85
+ },
+ {
+  "i": 1046,
+  "subject": "college_computer_science",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 120
+ },
+ {
+  "i": 4247,
+  "subject": "high_school_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 122
+ },
+ {
+  "i": 11493,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 305
+ },
+ {
+  "i": 2583,
+  "subject": "global_facts",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 88
+ },
+ {
+  "i": 7313,
+  "subject": "medical_genetics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 99
+ },
+ {
+  "i": 8643,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 138
+ },
+ {
+  "i": 7983,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 9198,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 145
+ },
+ {
+  "i": 9895,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 87
+ },
+ {
+  "i": 12377,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 194
+ },
+ {
+  "i": 1,
+  "subject": "abstract_algebra",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 103
+ },
+ {
+  "i": 637,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 131
+ },
+ {
+  "i": 8103,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 5340,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 74
+ },
+ {
+  "i": 5112,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 73
+ },
+ {
+  "i": 13725,
+  "subject": "virology",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 113
+ },
+ {
+  "i": 7649,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 72
+ },
+ {
+  "i": 816,
+  "subject": "college_biology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 155
+ },
+ {
+  "i": 13255,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 162
+ },
+ {
+  "i": 13479,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 96
+ },
+ {
+  "i": 13310,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 343
+ },
+ {
+  "i": 6801,
+  "subject": "logical_fallacies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 77
+ },
+ {
+  "i": 3080,
+  "subject": "high_school_chemistry",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 106
+ },
+ {
+  "i": 8987,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 136
+ },
+ {
+  "i": 10372,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 211
+ },
+ {
+  "i": 1367,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 128
+ },
+ {
+  "i": 13720,
+  "subject": "virology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 86
+ },
+ {
+  "i": 11887,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 292
+ },
+ {
+  "i": 2138,
+  "subject": "elementary_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 194
+ },
+ {
+  "i": 241,
+  "subject": "astronomy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 164
+ },
+ {
+  "i": 6583,
+  "subject": "jurisprudence",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 76
+ },
+ {
+  "i": 11116,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 192
+ },
+ {
+  "i": 6840,
+  "subject": "machine_learning",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 121
+ },
+ {
+  "i": 55,
+  "subject": "abstract_algebra",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 103
+ },
+ {
+  "i": 3498,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 75
+ },
+ {
+  "i": 234,
+  "subject": "anatomy",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 112
+ },
+ {
+  "i": 11752,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 357
+ },
+ {
+  "i": 12365,
+  "subject": "professional_medicine",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 210
+ },
+ {
+  "i": 38,
+  "subject": "abstract_algebra",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 74
+ },
+ {
+  "i": 11071,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 268
+ },
+ {
+  "i": 8656,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 159
+ },
+ {
+  "i": 10028,
+  "subject": "prehistory",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 95
+ },
+ {
+  "i": 1602,
+  "subject": "conceptual_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 122
+ },
+ {
+  "i": 3120,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 84
+ },
+ {
+  "i": 1948,
+  "subject": "electrical_engineering",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 107
+ },
+ {
+  "i": 9967,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 87
+ },
+ {
+  "i": 10637,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 350
+ },
+ {
+  "i": 3252,
+  "subject": "high_school_computer_science",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 123
+ },
+ {
+  "i": 4954,
+  "subject": "high_school_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 88
+ },
+ {
+  "i": 4587,
+  "subject": "high_school_microeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 101
+ },
+ {
+  "i": 11281,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 323
+ },
+ {
+  "i": 2985,
+  "subject": "high_school_chemistry",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 82
+ },
+ {
+  "i": 1641,
+  "subject": "conceptual_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 75
+ },
+ {
+  "i": 7792,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 64
+ },
+ {
+  "i": 13990,
+  "subject": "world_religions",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 82
+ },
+ {
+  "i": 6499,
+  "subject": "international_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 113
+ },
+ {
+  "i": 10283,
+  "subject": "prehistory",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 106
+ },
+ {
+  "i": 1332,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 113
+ },
+ {
+  "i": 357,
+  "subject": "astronomy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 78
+ },
+ {
+  "i": 4500,
+  "subject": "high_school_microeconomics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 104
+ },
+ {
+  "i": 7421,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 66
+ },
+ {
+  "i": 13104,
+  "subject": "public_relations",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 67
+ },
+ {
+  "i": 12981,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 83
+ },
+ {
+  "i": 1896,
+  "subject": "econometrics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 179
+ },
+ {
+  "i": 4202,
+  "subject": "high_school_macroeconomics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 109
+ },
+ {
+  "i": 2185,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 151
+ },
+ {
+  "i": 10708,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 290
+ },
+ {
+  "i": 8533,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 154
+ },
+ {
+  "i": 13390,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 185
+ },
+ {
+  "i": 10662,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 298
+ },
+ {
+  "i": 10566,
+  "subject": "professional_accounting",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 130
+ },
+ {
+  "i": 5686,
+  "subject": "high_school_us_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 337
+ },
+ {
+  "i": 1885,
+  "subject": "econometrics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 100
+ },
+ {
+  "i": 2530,
+  "subject": "formal_logic",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 165
+ },
+ {
+  "i": 4561,
+  "subject": "high_school_microeconomics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 98
+ },
+ {
+  "i": 13946,
+  "subject": "world_religions",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 76
+ },
+ {
+  "i": 304,
+  "subject": "astronomy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 133
+ },
+ {
+  "i": 693,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 95
+ },
+ {
+  "i": 666,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 93
+ },
+ {
+  "i": 3370,
+  "subject": "high_school_european_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 264
+ },
+ {
+  "i": 11157,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 254
+ },
+ {
+  "i": 4254,
+  "subject": "high_school_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 104
+ },
+ {
+  "i": 9148,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 143
+ },
+ {
+  "i": 5156,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 75
+ },
+ {
+  "i": 6011,
+  "subject": "high_school_world_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 407
+ },
+ {
+  "i": 688,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 79
+ },
+ {
+  "i": 13866,
+  "subject": "virology",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 158
+ },
+ {
+  "i": 12273,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 193
+ },
+ {
+  "i": 11490,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 255
+ },
+ {
+  "i": 9954,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 203
+ },
+ {
+  "i": 10737,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 315
+ },
+ {
+  "i": 8101,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 76
+ },
+ {
+  "i": 11671,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 449
+ },
+ {
+  "i": 10553,
+  "subject": "professional_accounting",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 130
+ },
+ {
+  "i": 7514,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 86
+ },
+ {
+  "i": 10488,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 127
+ },
+ {
+  "i": 7134,
+  "subject": "marketing",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 90
+ },
+ {
+  "i": 6102,
+  "subject": "human_aging",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 130
+ },
+ {
+  "i": 8813,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 140
+ },
+ {
+  "i": 2921,
+  "subject": "high_school_biology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 99
+ },
+ {
+  "i": 3405,
+  "subject": "high_school_european_history",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 543
+ },
+ {
+  "i": 6153,
+  "subject": "human_aging",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 116
+ },
+ {
+  "i": 9619,
+  "subject": "nutrition",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 121
+ },
+ {
+  "i": 4768,
+  "subject": "high_school_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 154
+ },
+ {
+  "i": 145,
+  "subject": "anatomy",
+  "gold": 2,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 119
+ },
+ {
+  "i": 2268,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 82
+ },
+ {
+  "i": 2474,
+  "subject": "formal_logic",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 161
+ },
+ {
+  "i": 4446,
+  "subject": "high_school_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 124
+ },
+ {
+  "i": 5462,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 262
+ },
+ {
+  "i": 5529,
+  "subject": "high_school_statistics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 161
+ },
+ {
+  "i": 12937,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 88
+ },
+ {
+  "i": 6016,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 532
+ },
+ {
+  "i": 11771,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 132
+ },
+ {
+  "i": 1535,
+  "subject": "computer_security",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 119
+ },
+ {
+  "i": 5541,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 169
+ },
+ {
+  "i": 12769,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 113
+ },
+ {
+  "i": 10166,
+  "subject": "prehistory",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 78
+ },
+ {
+  "i": 584,
+  "subject": "clinical_knowledge",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 103
+ },
+ {
+  "i": 675,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 89
+ },
+ {
+  "i": 4417,
+  "subject": "high_school_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 139
+ },
+ {
+  "i": 2684,
+  "subject": "high_school_biology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 137
+ },
+ {
+  "i": 2448,
+  "subject": "formal_logic",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 148
+ },
+ {
+  "i": 9559,
+  "subject": "nutrition",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 116
+ },
+ {
+  "i": 4743,
+  "subject": "high_school_physics",
+  "gold": 2,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 105
+ },
+ {
+  "i": 5913,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 409
+ },
+ {
+  "i": 6468,
+  "subject": "international_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 141
+ },
+ {
+  "i": 8986,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 148
+ },
+ {
+  "i": 2124,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 4807,
+  "subject": "high_school_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 132
+ },
+ {
+  "i": 1882,
+  "subject": "econometrics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 210
+ },
+ {
+  "i": 7832,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 79
+ },
+ {
+  "i": 11968,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 273
+ },
+ {
+  "i": 3927,
+  "subject": "high_school_macroeconomics",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 108
+ },
+ {
+  "i": 790,
+  "subject": "college_biology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 88
+ },
+ {
+  "i": 5044,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 81
+ },
+ {
+  "i": 2942,
+  "subject": "high_school_biology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 109
+ },
+ {
+  "i": 14041,
+  "subject": "world_religions",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 8569,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 140
+ },
+ {
+  "i": 11938,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 287
+ },
+ {
+  "i": 1161,
+  "subject": "college_mathematics",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 118
+ },
+ {
+  "i": 4958,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 87
+ },
+ {
+  "i": 6605,
+  "subject": "jurisprudence",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 127
+ },
+ {
+  "i": 13689,
+  "subject": "us_foreign_policy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 81
+ },
+ {
+  "i": 5382,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 93
+ },
+ {
+  "i": 4902,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 134
+ },
+ {
+  "i": 6794,
+  "subject": "logical_fallacies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 89
+ },
+ {
+  "i": 1780,
+  "subject": "conceptual_physics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 112
+ },
+ {
+  "i": 1628,
+  "subject": "conceptual_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 109
+ },
+ {
+  "i": 9188,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 145
+ },
+ {
+  "i": 7883,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 134
+ },
+ {
+  "i": 7766,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 80
+ },
+ {
+  "i": 5522,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 128
+ },
+ {
+  "i": 13776,
+  "subject": "virology",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 92
+ },
+ {
+  "i": 13072,
+  "subject": "public_relations",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 71
+ },
+ {
+  "i": 13309,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 190
+ },
+ {
+  "i": 5630,
+  "subject": "high_school_statistics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 137
+ },
+ {
+  "i": 2036,
+  "subject": "electrical_engineering",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 85
+ },
+ {
+  "i": 7849,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 1900,
+  "subject": "econometrics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 160
+ },
+ {
+  "i": 11462,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 291
+ },
+ {
+  "i": 8154,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 148
+ },
+ {
+  "i": 6988,
+  "subject": "management",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 83
+ },
+ {
+  "i": 619,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 102
+ },
+ {
+  "i": 4946,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 221
+ },
+ {
+  "i": 5489,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 138
+ },
+ {
+  "i": 12038,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 247
+ },
+ {
+  "i": 11257,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 480
+ },
+ {
+  "i": 2550,
+  "subject": "formal_logic",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 110
+ },
+ {
+  "i": 2728,
+  "subject": "high_school_biology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 132
+ },
+ {
+  "i": 10268,
+  "subject": "prehistory",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 102
+ },
+ {
+  "i": 9248,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 152
+ },
+ {
+  "i": 13207,
+  "subject": "security_studies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 100
+ },
+ {
+  "i": 10467,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 163
+ },
+ {
+  "i": 1424,
+  "subject": "college_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 157
+ },
+ {
+  "i": 1078,
+  "subject": "college_computer_science",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 148
+ },
+ {
+  "i": 13234,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 101
+ },
+ {
+  "i": 1387,
+  "subject": "college_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 111
+ },
+ {
+  "i": 3244,
+  "subject": "high_school_computer_science",
+  "gold": 1,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 159
+ },
+ {
+  "i": 12285,
+  "subject": "professional_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 274
+ },
+ {
+  "i": 3621,
+  "subject": "high_school_geography",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 1001,
+  "subject": "college_computer_science",
+  "gold": 2,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 163
+ },
+ {
+  "i": 6304,
+  "subject": "human_aging",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 89
+ },
+ {
+  "i": 128,
+  "subject": "anatomy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 93
+ },
+ {
+  "i": 1606,
+  "subject": "conceptual_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 87
+ },
+ {
+  "i": 6452,
+  "subject": "international_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 87
+ },
+ {
+  "i": 9117,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 155
+ },
+ {
+  "i": 8503,
+  "subject": "moral_disputes",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 107
+ },
+ {
+  "i": 4748,
+  "subject": "high_school_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 215
+ },
+ {
+  "i": 7348,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 83
+ },
+ {
+  "i": 8005,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 67
+ },
+ {
+  "i": 12915,
+  "subject": "professional_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 83
+ },
+ {
+  "i": 9582,
+  "subject": "nutrition",
+  "gold": 1,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 79
+ },
+ {
+  "i": 11704,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 542
+ },
+ {
+  "i": 11129,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 211
+ },
+ {
+  "i": 3559,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 99
+ },
+ {
+  "i": 6931,
+  "subject": "machine_learning",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 96
+ },
+ {
+  "i": 1370,
+  "subject": "college_physics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 137
+ },
+ {
+  "i": 6034,
+  "subject": "high_school_world_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 319
+ },
+ {
+  "i": 3606,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 94
+ },
+ {
+  "i": 4274,
+  "subject": "high_school_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 82
+ },
+ {
+  "i": 9588,
+  "subject": "nutrition",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 75
+ },
+ {
+  "i": 12732,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 134
+ },
+ {
+  "i": 2729,
+  "subject": "high_school_biology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 145
+ },
+ {
+  "i": 7065,
+  "subject": "marketing",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 91
+ },
+ {
+  "i": 3144,
+  "subject": "high_school_chemistry",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 210
+ },
+ {
+  "i": 5873,
+  "subject": "high_school_world_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 312
+ },
+ {
+  "i": 1884,
+  "subject": "econometrics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 117
+ },
+ {
+  "i": 13467,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 96
+ },
+ {
+  "i": 13973,
+  "subject": "world_religions",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 86
+ },
+ {
+  "i": 11501,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 211
+ },
+ {
+  "i": 452,
+  "subject": "business_ethics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 115
+ },
+ {
+  "i": 8614,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 148
+ },
+ {
+  "i": 7399,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 77
+ },
+ {
+  "i": 12327,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 215
+ },
+ {
+  "i": 11090,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 435
+ },
+ {
+  "i": 3304,
+  "subject": "high_school_european_history",
+  "gold": 0,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 332
+ },
+ {
+  "i": 8144,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 75
+ },
+ {
+  "i": 6520,
+  "subject": "international_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 176
+ },
+ {
+  "i": 3395,
+  "subject": "high_school_european_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 356
+ },
+ {
+  "i": 10502,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 193
+ },
+ {
+  "i": 689,
+  "subject": "clinical_knowledge",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 113
+ },
+ {
+  "i": 13065,
+  "subject": "public_relations",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 80
+ },
+ {
+  "i": 3537,
+  "subject": "high_school_geography",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 71
+ },
+ {
+  "i": 10214,
+  "subject": "prehistory",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 93
+ },
+ {
+  "i": 1714,
+  "subject": "conceptual_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 87
+ },
+ {
+  "i": 3243,
+  "subject": "high_school_computer_science",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 146
+ },
+ {
+  "i": 7510,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 6193,
+  "subject": "human_aging",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 5925,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 649
+ },
+ {
+  "i": 8952,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 144
+ },
+ {
+  "i": 13549,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 109
+ },
+ {
+  "i": 2479,
+  "subject": "formal_logic",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 160
+ },
+ {
+  "i": 1716,
+  "subject": "conceptual_physics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 72
+ },
+ {
+  "i": 9768,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 85
+ },
+ {
+  "i": 7993,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 74
+ },
+ {
+  "i": 2431,
+  "subject": "elementary_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 89
+ },
+ {
+  "i": 9239,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 146
+ },
+ {
+  "i": 6650,
+  "subject": "jurisprudence",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 103
+ },
+ {
+  "i": 10458,
+  "subject": "professional_accounting",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 95
+ },
+ {
+  "i": 11139,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 422
+ },
+ {
+  "i": 6934,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 105
+ },
+ {
+  "i": 8539,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 152
+ },
+ {
+  "i": 8116,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 77
+ },
+ {
+  "i": 5283,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 88
+ },
+ {
+  "i": 13656,
+  "subject": "us_foreign_policy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 112
+ },
+ {
+  "i": 8166,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 140
+ },
+ {
+  "i": 8169,
+  "subject": "moral_disputes",
+  "gold": 0,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 143
+ },
+ {
+  "i": 10404,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 151
+ },
+ {
+  "i": 10978,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 263
+ },
+ {
+  "i": 3309,
+  "subject": "high_school_european_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 316
+ },
+ {
+  "i": 8893,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 138
+ },
+ {
+  "i": 9990,
+  "subject": "philosophy",
+  "gold": 3,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 102
+ },
+ {
+  "i": 159,
+  "subject": "anatomy",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 85
+ },
+ {
+  "i": 5574,
+  "subject": "high_school_statistics",
+  "gold": 2,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 201
+ },
+ {
+  "i": 11560,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 251
+ },
+ {
+  "i": 12239,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 224
+ },
+ {
+  "i": 5214,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 82
+ },
+ {
+  "i": 13404,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 102
+ },
+ {
+  "i": 5272,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 87
+ },
+ {
+  "i": 581,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 98
+ },
+ {
+  "i": 8603,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 144
+ },
+ {
+  "i": 2430,
+  "subject": "elementary_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 89
+ },
+ {
+  "i": 4208,
+  "subject": "high_school_macroeconomics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 100
+ },
+ {
+  "i": 9872,
+  "subject": "philosophy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 98
+ },
+ {
+  "i": 12847,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 133
+ },
+ {
+  "i": 2554,
+  "subject": "formal_logic",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 79
+ },
+ {
+  "i": 13800,
+  "subject": "virology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 88
+ },
+ {
+  "i": 6209,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 9551,
+  "subject": "nutrition",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 193
+ },
+ {
+  "i": 4823,
+  "subject": "high_school_physics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 145
+ },
+ {
+  "i": 11573,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 234
+ },
+ {
+  "i": 13222,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 199
+ },
+ {
+  "i": 7707,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 74
+ },
+ {
+  "i": 1087,
+  "subject": "college_computer_science",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 130
+ },
+ {
+  "i": 13106,
+  "subject": "public_relations",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 93
+ },
+ {
+  "i": 1386,
+  "subject": "college_physics",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 177
+ },
+ {
+  "i": 8462,
+  "subject": "moral_disputes",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 137
+ },
+ {
+  "i": 3687,
+  "subject": "high_school_government_and_politics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 90
+ },
+ {
+  "i": 665,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 81
+ },
+ {
+  "i": 4922,
+  "subject": "high_school_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 86
+ },
+ {
+  "i": 250,
+  "subject": "astronomy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 73
+ },
+ {
+  "i": 12433,
+  "subject": "professional_medicine",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 247
+ },
+ {
+  "i": 13827,
+  "subject": "virology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 90
+ },
+ {
+  "i": 7349,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 100
+ },
+ {
+  "i": 5416,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 72
+ },
+ {
+  "i": 2632,
+  "subject": "global_facts",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 102
+ },
+ {
+  "i": 13117,
+  "subject": "public_relations",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 95
+ },
+ {
+  "i": 2438,
+  "subject": "elementary_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 110
+ },
+ {
+  "i": 10749,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 158
+ },
+ {
+  "i": 7548,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 69
+ },
+ {
+  "i": 6083,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 299
+ },
+ {
+  "i": 8273,
+  "subject": "moral_disputes",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 139
+ },
+ {
+  "i": 6262,
+  "subject": "human_aging",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 105
+ },
+ {
+  "i": 8680,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 144
+ },
+ {
+  "i": 8231,
+  "subject": "moral_disputes",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 129
+ },
+ {
+  "i": 550,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 108
+ },
+ {
+  "i": 1485,
+  "subject": "computer_security",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 75
+ },
+ {
+  "i": 11117,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 252
+ },
+ {
+  "i": 13011,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 13190,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 147
+ },
+ {
+  "i": 8486,
+  "subject": "moral_disputes",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 160
+ },
+ {
+  "i": 12416,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 281
+ },
+ {
+  "i": 9832,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 77
+ },
+ {
+  "i": 1251,
+  "subject": "college_medicine",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 78
+ },
+ {
+  "i": 12238,
+  "subject": "professional_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 153
+ },
+ {
+  "i": 6985,
+  "subject": "management",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 90
+ },
+ {
+  "i": 12363,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 414
+ },
+ {
+  "i": 3376,
+  "subject": "high_school_european_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 603
+ },
+ {
+  "i": 4745,
+  "subject": "high_school_physics",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 114
+ },
+ {
+  "i": 8772,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 149
+ },
+ {
+  "i": 9807,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 86
+ },
+ {
+  "i": 6845,
+  "subject": "machine_learning",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 124
+ },
+ {
+  "i": 13528,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 110
+ },
+ {
+  "i": 7900,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 74
+ },
+ {
+  "i": 13852,
+  "subject": "virology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 101
+ },
+ {
+  "i": 12960,
+  "subject": "professional_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 82
+ },
+ {
+  "i": 6366,
+  "subject": "human_sexuality",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 81
+ },
+ {
+  "i": 9952,
+  "subject": "philosophy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 87
+ },
+ {
+  "i": 9607,
+  "subject": "nutrition",
+  "gold": 2,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 81
+ },
+ {
+  "i": 3826,
+  "subject": "high_school_government_and_politics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 128
+ },
+ {
+  "i": 13947,
+  "subject": "world_religions",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 79
+ },
+ {
+  "i": 13075,
+  "subject": "public_relations",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 99
+ },
+ {
+  "i": 335,
+  "subject": "astronomy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 120
+ },
+ {
+  "i": 10764,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 187
+ },
+ {
+  "i": 3,
+  "subject": "abstract_algebra",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 117
+ },
+ {
+  "i": 12136,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 257
+ },
+ {
+  "i": 2981,
+  "subject": "high_school_chemistry",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 107
+ },
+ {
+  "i": 4955,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 106
+ },
+ {
+  "i": 8304,
+  "subject": "moral_disputes",
+  "gold": 3,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 86
+ },
+ {
+  "i": 9343,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 144
+ },
+ {
+  "i": 4169,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 139
+ },
+ {
+  "i": 5450,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 188
+ },
+ {
+  "i": 1075,
+  "subject": "college_computer_science",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 142
+ },
+ {
+  "i": 8085,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 109
+ },
+ {
+  "i": 4292,
+  "subject": "high_school_mathematics",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 98
+ },
+ {
+  "i": 13517,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 114
+ },
+ {
+  "i": 4961,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 75
+ },
+ {
+  "i": 12656,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 85
+ },
+ {
+  "i": 6685,
+  "subject": "logical_fallacies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 111
+ },
+ {
+  "i": 6294,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 92
+ },
+ {
+  "i": 13271,
+  "subject": "security_studies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 222
+ },
+ {
+  "i": 6286,
+  "subject": "human_aging",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 84
+ },
+ {
+  "i": 2683,
+  "subject": "high_school_biology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 127
+ },
+ {
+  "i": 10501,
+  "subject": "professional_accounting",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 196
+ },
+ {
+  "i": 2086,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 114
+ },
+ {
+  "i": 3914,
+  "subject": "high_school_macroeconomics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 96
+ },
+ {
+  "i": 4703,
+  "subject": "high_school_microeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 116
+ },
+ {
+  "i": 11951,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 3,
+  "student": 1,
+  "tokens": 455
+ },
+ {
+  "i": 13597,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 96
+ },
+ {
+  "i": 5472,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 138
+ },
+ {
+  "i": 909,
+  "subject": "college_chemistry",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 191
+ },
+ {
+  "i": 588,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 85
+ },
+ {
+  "i": 7886,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 181
+ },
+ {
+  "i": 6846,
+  "subject": "machine_learning",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 85
+ },
+ {
+  "i": 2308,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 138
+ },
+ {
+  "i": 8058,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 84
+ },
+ {
+  "i": 9862,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 104
+ },
+ {
+  "i": 11750,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 225
+ },
+ {
+  "i": 1337,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 176
+ },
+ {
+  "i": 11035,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 234
+ },
+ {
+  "i": 11447,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 203
+ },
+ {
+  "i": 2480,
+  "subject": "formal_logic",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 116
+ },
+ {
+  "i": 13275,
+  "subject": "security_studies",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 276
+ },
+ {
+  "i": 5779,
+  "subject": "high_school_us_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 226
+ },
+ {
+  "i": 6736,
+  "subject": "logical_fallacies",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 77
+ },
+ {
+  "i": 576,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 73
+ },
+ {
+  "i": 10023,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 81
+ },
+ {
+  "i": 7639,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 80
+ },
+ {
+  "i": 6335,
+  "subject": "human_sexuality",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 109
+ },
+ {
+  "i": 7518,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 144
+ },
+ {
+  "i": 770,
+  "subject": "college_biology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 117
+ },
+ {
+  "i": 7715,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 101
+ },
+ {
+  "i": 12749,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 169
+ },
+ {
+  "i": 331,
+  "subject": "astronomy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 84
+ },
+ {
+  "i": 531,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 104
+ },
+ {
+  "i": 9802,
+  "subject": "philosophy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 231
+ },
+ {
+  "i": 10115,
+  "subject": "prehistory",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 101
+ },
+ {
+  "i": 2174,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 124
+ },
+ {
+  "i": 10321,
+  "subject": "prehistory",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 91
+ },
+ {
+  "i": 5306,
+  "subject": "high_school_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 226
+ },
+ {
+  "i": 1725,
+  "subject": "conceptual_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 74
+ },
+ {
+  "i": 11470,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 272
+ },
+ {
+  "i": 8997,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 147
+ },
+ {
+  "i": 10633,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 244
+ },
+ {
+  "i": 5679,
+  "subject": "high_school_us_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 464
+ },
+ {
+  "i": 3194,
+  "subject": "high_school_computer_science",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 269
+ },
+ {
+  "i": 6281,
+  "subject": "human_aging",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 83
+ },
+ {
+  "i": 12835,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 116
+ },
+ {
+  "i": 12720,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 139
+ },
+ {
+  "i": 12737,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 106
+ },
+ {
+  "i": 8033,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 77
+ },
+ {
+  "i": 1818,
+  "subject": "econometrics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 112
+ },
+ {
+  "i": 985,
+  "subject": "college_chemistry",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 221
+ },
+ {
+  "i": 11482,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 319
+ },
+ {
+  "i": 7654,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 77
+ },
+ {
+  "i": 10065,
+  "subject": "prehistory",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 96
+ },
+ {
+  "i": 10359,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 97
+ },
+ {
+  "i": 5535,
+  "subject": "high_school_statistics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 168
+ },
+ {
+  "i": 10657,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 287
+ },
+ {
+  "i": 11182,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 267
+ },
+ {
+  "i": 11691,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 394
+ },
+ {
+  "i": 10191,
+  "subject": "prehistory",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 104
+ },
+ {
+  "i": 4855,
+  "subject": "high_school_physics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 162
+ },
+ {
+  "i": 12919,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 108
+ },
+ {
+  "i": 13912,
+  "subject": "world_religions",
+  "gold": 3,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 73
+ },
+ {
+  "i": 2082,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 148
+ },
+ {
+  "i": 6351,
+  "subject": "human_sexuality",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 81
+ },
+ {
+  "i": 13096,
+  "subject": "public_relations",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 101
+ },
+ {
+  "i": 4813,
+  "subject": "high_school_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 131
+ },
+ {
+  "i": 12218,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 404
+ },
+ {
+  "i": 1991,
+  "subject": "electrical_engineering",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 12869,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 178
+ },
+ {
+  "i": 3098,
+  "subject": "high_school_chemistry",
+  "gold": 2,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 106
+ },
+ {
+  "i": 625,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 105
+ },
+ {
+  "i": 12814,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 113
+ },
+ {
+  "i": 6422,
+  "subject": "human_sexuality",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 88
+ },
+ {
+  "i": 7283,
+  "subject": "marketing",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 86
+ },
+ {
+  "i": 6087,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 199
+ },
+ {
+  "i": 12396,
+  "subject": "professional_medicine",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 156
+ },
+ {
+  "i": 7462,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 83
+ },
+ {
+  "i": 5841,
+  "subject": "high_school_us_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 445
+ },
+ {
+  "i": 12936,
+  "subject": "professional_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 121
+ },
+ {
+  "i": 10354,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 109
+ },
+ {
+  "i": 1234,
+  "subject": "college_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 122
+ },
+ {
+  "i": 731,
+  "subject": "clinical_knowledge",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 127
+ },
+ {
+  "i": 655,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 133
+ },
+ {
+  "i": 7965,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 4184,
+  "subject": "high_school_macroeconomics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 101
+ },
+ {
+  "i": 436,
+  "subject": "business_ethics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 108
+ },
+ {
+  "i": 8520,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 155
+ },
+ {
+  "i": 10920,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 251
+ },
+ {
+  "i": 9326,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 156
+ },
+ {
+  "i": 9368,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 141
+ },
+ {
+  "i": 3538,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 69
+ },
+ {
+  "i": 3762,
+  "subject": "high_school_government_and_politics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 99
+ },
+ {
+  "i": 1531,
+  "subject": "computer_security",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 121
+ },
+ {
+  "i": 12719,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 90
+ },
+ {
+  "i": 13424,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 92
+ },
+ {
+  "i": 10279,
+  "subject": "prehistory",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 98
+ },
+ {
+  "i": 11444,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 180
+ },
+ {
+  "i": 8580,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 145
+ },
+ {
+  "i": 6883,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 148
+ },
+ {
+  "i": 8308,
+  "subject": "moral_disputes",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 87
+ },
+ {
+  "i": 5002,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 93
+ },
+ {
+  "i": 1858,
+  "subject": "econometrics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 156
+ },
+ {
+  "i": 2386,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 205
+ },
+ {
+  "i": 6979,
+  "subject": "management",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 91
+ },
+ {
+  "i": 9273,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 152
+ },
+ {
+  "i": 6914,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 103
+ },
+ {
+  "i": 1376,
+  "subject": "college_physics",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 131
+ },
+ {
+  "i": 6809,
+  "subject": "logical_fallacies",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 79
+ },
+ {
+  "i": 1030,
+  "subject": "college_computer_science",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 95
+ },
+ {
+  "i": 1625,
+  "subject": "conceptual_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 6802,
+  "subject": "logical_fallacies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 94
+ },
+ {
+  "i": 12678,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 86
+ },
+ {
+  "i": 2558,
+  "subject": "formal_logic",
+  "gold": 0,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 161
+ },
+ {
+  "i": 12030,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 344
+ },
+ {
+  "i": 503,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 118
+ },
+ {
+  "i": 12965,
+  "subject": "professional_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 101
+ },
+ {
+  "i": 7319,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 84
+ },
+ {
+  "i": 7062,
+  "subject": "marketing",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 103
+ },
+ {
+  "i": 11246,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 519
+ },
+ {
+  "i": 6832,
+  "subject": "logical_fallacies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 166
+ },
+ {
+  "i": 493,
+  "subject": "clinical_knowledge",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 107
+ },
+ {
+  "i": 8136,
+  "subject": "miscellaneous",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 138
+ },
+ {
+  "i": 5316,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 188
+ },
+ {
+  "i": 11838,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 179
+ },
+ {
+  "i": 4138,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 106
+ },
+ {
+  "i": 1286,
+  "subject": "college_medicine",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 146
+ },
+ {
+  "i": 5775,
+  "subject": "high_school_us_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 362
+ },
+ {
+  "i": 1152,
+  "subject": "college_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 131
+ },
+ {
+  "i": 1988,
+  "subject": "electrical_engineering",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 67
+ },
+ {
+  "i": 5886,
+  "subject": "high_school_world_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 392
+ },
+ {
+  "i": 11334,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 158
+ },
+ {
+  "i": 481,
+  "subject": "business_ethics",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 85
+ },
+ {
+  "i": 5659,
+  "subject": "high_school_us_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 302
+ },
+ {
+  "i": 5699,
+  "subject": "high_school_us_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 265
+ },
+ {
+  "i": 2914,
+  "subject": "high_school_biology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 99
+ },
+ {
+  "i": 163,
+  "subject": "anatomy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 88
+ },
+ {
+  "i": 13603,
+  "subject": "sociology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 93
+ },
+ {
+  "i": 3776,
+  "subject": "high_school_government_and_politics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 85
+ },
+ {
+  "i": 13418,
+  "subject": "sociology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 150
+ },
+ {
+  "i": 5993,
+  "subject": "high_school_world_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 271
+ },
+ {
+  "i": 1155,
+  "subject": "college_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 109
+ },
+ {
+  "i": 9774,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 118
+ },
+ {
+  "i": 2347,
+  "subject": "elementary_mathematics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 1,
+  "tokens": 135
+ },
+ {
+  "i": 3407,
+  "subject": "high_school_european_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 446
+ },
+ {
+  "i": 52,
+  "subject": "abstract_algebra",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 91
+ },
+ {
+  "i": 3355,
+  "subject": "high_school_european_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 510
+ },
+ {
+  "i": 10797,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 370
+ },
+ {
+  "i": 11038,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 305
+ },
+ {
+  "i": 11994,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 358
+ },
+ {
+  "i": 2018,
+  "subject": "electrical_engineering",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 96
+ },
+ {
+  "i": 12254,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 189
+ },
+ {
+  "i": 117,
+  "subject": "anatomy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 74
+ },
+ {
+  "i": 4804,
+  "subject": "high_school_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 130
+ },
+ {
+  "i": 6047,
+  "subject": "high_school_world_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 375
+ },
+ {
+  "i": 11296,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 263
+ },
+ {
+  "i": 403,
+  "subject": "business_ethics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 92
+ },
+ {
+  "i": 9909,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 110
+ },
+ {
+  "i": 3815,
+  "subject": "high_school_government_and_politics",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 120
+ },
+ {
+  "i": 2324,
+  "subject": "elementary_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 95
+ },
+ {
+  "i": 3063,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 199
+ },
+ {
+  "i": 7439,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 101
+ },
+ {
+  "i": 1841,
+  "subject": "econometrics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 118
+ },
+ {
+  "i": 7810,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 79
+ },
+ {
+  "i": 5643,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 115
+ },
+ {
+  "i": 11591,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 414
+ },
+ {
+  "i": 4230,
+  "subject": "high_school_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 109
+ },
+ {
+  "i": 2132,
+  "subject": "elementary_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 1,
+  "tokens": 130
+ },
+ {
+  "i": 457,
+  "subject": "business_ethics",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 87
+ },
+ {
+  "i": 3409,
+  "subject": "high_school_european_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 586
+ },
+ {
+  "i": 5934,
+  "subject": "high_school_world_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 534
+ },
+ {
+  "i": 5488,
+  "subject": "high_school_statistics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 130
+ },
+ {
+  "i": 7755,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 76
+ },
+ {
+  "i": 4794,
+  "subject": "high_school_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 94
+ },
+ {
+  "i": 9063,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 153
+ },
+ {
+  "i": 10418,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 275
+ },
+ {
+  "i": 5357,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 79
+ },
+ {
+  "i": 3015,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 80
+ },
+ {
+  "i": 9716,
+  "subject": "philosophy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 78
+ },
+ {
+  "i": 1323,
+  "subject": "college_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 133
+ },
+ {
+  "i": 1680,
+  "subject": "conceptual_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 81
+ },
+ {
+  "i": 8736,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 143
+ },
+ {
+  "i": 9516,
+  "subject": "nutrition",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 102
+ },
+ {
+  "i": 5042,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 90
+ },
+ {
+  "i": 2562,
+  "subject": "formal_logic",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 146
+ },
+ {
+  "i": 6170,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 82
+ },
+ {
+  "i": 2051,
+  "subject": "electrical_engineering",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 70
+ },
+ {
+  "i": 13179,
+  "subject": "security_studies",
+  "gold": 1,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 99
+ },
+ {
+  "i": 3650,
+  "subject": "high_school_government_and_politics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 111
+ },
+ {
+  "i": 5175,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 98
+ },
+ {
+  "i": 8328,
+  "subject": "moral_disputes",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 118
+ },
+ {
+  "i": 3978,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 136
+ },
+ {
+  "i": 3877,
+  "subject": "high_school_macroeconomics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 122
+ },
+ {
+  "i": 12367,
+  "subject": "professional_medicine",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 321
+ },
+ {
+  "i": 3013,
+  "subject": "high_school_chemistry",
+  "gold": 1,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 147
+ },
+ {
+  "i": 6877,
+  "subject": "machine_learning",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 159
+ },
+ {
+  "i": 10865,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 314
+ },
+ {
+  "i": 757,
+  "subject": "college_biology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 111
+ },
+ {
+  "i": 2166,
+  "subject": "elementary_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 85
+ },
+ {
+  "i": 9850,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 75
+ },
+ {
+  "i": 336,
+  "subject": "astronomy",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 93
+ },
+ {
+  "i": 1276,
+  "subject": "college_medicine",
+  "gold": 3,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 170
+ },
+ {
+  "i": 11504,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 228
+ },
+ {
+  "i": 1199,
+  "subject": "college_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 94
+ },
+ {
+  "i": 2163,
+  "subject": "elementary_mathematics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 95
+ },
+ {
+  "i": 6885,
+  "subject": "machine_learning",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 93
+ },
+ {
+  "i": 4905,
+  "subject": "high_school_psychology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 69
+ },
+ {
+  "i": 9023,
+  "subject": "moral_scenarios",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 138
+ },
+ {
+  "i": 6828,
+  "subject": "logical_fallacies",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 113
+ },
+ {
+  "i": 12138,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 263
+ },
+ {
+  "i": 2331,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 3,
+  "student": 0,
+  "tokens": 82
+ },
+ {
+  "i": 9684,
+  "subject": "nutrition",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 82
+ },
+ {
+  "i": 6917,
+  "subject": "machine_learning",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 120
+ },
+ {
+  "i": 4882,
+  "subject": "high_school_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 163
+ },
+ {
+  "i": 10436,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 175
+ },
+ {
+  "i": 5809,
+  "subject": "high_school_us_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 347
+ },
+ {
+  "i": 1385,
+  "subject": "college_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 134
+ },
+ {
+  "i": 4064,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 129
+ },
+ {
+  "i": 7287,
+  "subject": "medical_genetics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 78
+ },
+ {
+  "i": 10367,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 190
+ },
+ {
+  "i": 6049,
+  "subject": "high_school_world_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 446
+ },
+ {
+  "i": 10437,
+  "subject": "professional_accounting",
+  "gold": 0,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 105
+ },
+ {
+  "i": 8670,
+  "subject": "moral_scenarios",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 140
+ },
+ {
+  "i": 947,
+  "subject": "college_chemistry",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 90
+ },
+ {
+  "i": 6167,
+  "subject": "human_aging",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 79
+ },
+ {
+  "i": 6694,
+  "subject": "logical_fallacies",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 147
+ },
+ {
+  "i": 138,
+  "subject": "anatomy",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 94
+ },
+ {
+  "i": 6835,
+  "subject": "machine_learning",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 104
+ },
+ {
+  "i": 11930,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 453
+ },
+ {
+  "i": 5253,
+  "subject": "high_school_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 127
+ },
+ {
+  "i": 7230,
+  "subject": "marketing",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 103
+ },
+ {
+  "i": 3342,
+  "subject": "high_school_european_history",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 326
+ },
+ {
+  "i": 6088,
+  "subject": "high_school_world_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 526
+ },
+ {
+  "i": 4805,
+  "subject": "high_school_physics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 220
+ },
+ {
+  "i": 1491,
+  "subject": "computer_security",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 100
+ },
+ {
+  "i": 3038,
+  "subject": "high_school_chemistry",
+  "gold": 3,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 127
+ },
+ {
+  "i": 13050,
+  "subject": "public_relations",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 234
+ },
+ {
+  "i": 1779,
+  "subject": "conceptual_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 81
+ },
+ {
+  "i": 4537,
+  "subject": "high_school_microeconomics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 97
+ },
+ {
+  "i": 1837,
+  "subject": "econometrics",
+  "gold": 3,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 237
+ },
+ {
+  "i": 9145,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 147
+ },
+ {
+  "i": 9921,
+  "subject": "philosophy",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 98
+ },
+ {
+  "i": 11275,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 226
+ },
+ {
+  "i": 2521,
+  "subject": "formal_logic",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 205
+ },
+ {
+  "i": 13036,
+  "subject": "professional_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 88
+ },
+ {
+  "i": 11511,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 0,
+  "student": 3,
+  "tokens": 370
+ },
+ {
+  "i": 7309,
+  "subject": "medical_genetics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 104
+ },
+ {
+  "i": 6533,
+  "subject": "international_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 151
+ },
+ {
+  "i": 3037,
+  "subject": "high_school_chemistry",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 123
+ },
+ {
+  "i": 12577,
+  "subject": "professional_psychology",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 105
+ },
+ {
+  "i": 6909,
+  "subject": "machine_learning",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 87
+ },
+ {
+  "i": 7073,
+  "subject": "marketing",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 83
+ },
+ {
+  "i": 2862,
+  "subject": "high_school_biology",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 86
+ },
+ {
+  "i": 4062,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 88
+ },
+ {
+  "i": 7429,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 91
+ },
+ {
+  "i": 5576,
+  "subject": "high_school_statistics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 188
+ },
+ {
+  "i": 8574,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 150
+ },
+ {
+  "i": 2335,
+  "subject": "elementary_mathematics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 119
+ },
+ {
+  "i": 5822,
+  "subject": "high_school_us_history",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 564
+ },
+ {
+  "i": 7576,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 127
+ },
+ {
+  "i": 10346,
+  "subject": "prehistory",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 159
+ },
+ {
+  "i": 10441,
+  "subject": "professional_accounting",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 138
+ },
+ {
+  "i": 1417,
+  "subject": "college_physics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 2,
+  "tokens": 139
+ },
+ {
+  "i": 7918,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 77
+ },
+ {
+  "i": 12370,
+  "subject": "professional_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 167
+ },
+ {
+  "i": 3336,
+  "subject": "high_school_european_history",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 275
+ },
+ {
+  "i": 4828,
+  "subject": "high_school_physics",
+  "gold": 2,
+  "teacher": 0,
+  "student": 2,
+  "tokens": 133
+ },
+ {
+  "i": 30,
+  "subject": "abstract_algebra",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 118
+ },
+ {
+  "i": 13601,
+  "subject": "sociology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 124
+ },
+ {
+  "i": 11452,
+  "subject": "professional_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 467
+ },
+ {
+  "i": 7357,
+  "subject": "medical_genetics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 76
+ },
+ {
+  "i": 10137,
+  "subject": "prehistory",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 89
+ },
+ {
+  "i": 7569,
+  "subject": "miscellaneous",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 156
+ },
+ {
+  "i": 127,
+  "subject": "anatomy",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 96
+ },
+ {
+  "i": 3583,
+  "subject": "high_school_geography",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 80
+ },
+ {
+  "i": 4891,
+  "subject": "high_school_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 0,
+  "tokens": 119
+ },
+ {
+  "i": 1875,
+  "subject": "econometrics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 181
+ },
+ {
+  "i": 12593,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 116
+ },
+ {
+  "i": 10304,
+  "subject": "prehistory",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 75
+ },
+ {
+  "i": 4934,
+  "subject": "high_school_psychology",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 79
+ },
+ {
+  "i": 8932,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 148
+ },
+ {
+  "i": 9980,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 3,
+  "tokens": 97
+ },
+ {
+  "i": 2559,
+  "subject": "formal_logic",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 102
+ },
+ {
+  "i": 6950,
+  "subject": "management",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 93
+ },
+ {
+  "i": 11571,
+  "subject": "professional_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 293
+ },
+ {
+  "i": 12310,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 345
+ },
+ {
+  "i": 7723,
+  "subject": "miscellaneous",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 77
+ },
+ {
+  "i": 1516,
+  "subject": "computer_security",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 78
+ },
+ {
+  "i": 11111,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 1,
+  "student": 2,
+  "tokens": 298
+ },
+ {
+  "i": 8153,
+  "subject": "miscellaneous",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 81
+ },
+ {
+  "i": 12453,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 141
+ },
+ {
+  "i": 3807,
+  "subject": "high_school_government_and_politics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 88
+ },
+ {
+  "i": 8908,
+  "subject": "moral_scenarios",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 144
+ },
+ {
+  "i": 12484,
+  "subject": "professional_psychology",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 182
+ },
+ {
+  "i": 6640,
+  "subject": "jurisprudence",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 80
+ },
+ {
+  "i": 4588,
+  "subject": "high_school_microeconomics",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 104
+ },
+ {
+  "i": 10355,
+  "subject": "professional_accounting",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 148
+ },
+ {
+  "i": 1979,
+  "subject": "electrical_engineering",
+  "gold": 1,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 79
+ },
+ {
+  "i": 4424,
+  "subject": "high_school_mathematics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 123
+ },
+ {
+  "i": 10952,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 422
+ },
+ {
+  "i": 664,
+  "subject": "clinical_knowledge",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 120
+ },
+ {
+  "i": 4,
+  "subject": "abstract_algebra",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 130
+ },
+ {
+  "i": 4203,
+  "subject": "high_school_macroeconomics",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 110
+ },
+ {
+  "i": 6527,
+  "subject": "international_law",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 116
+ },
+ {
+  "i": 8619,
+  "subject": "moral_scenarios",
+  "gold": 1,
+  "teacher": 1,
+  "student": 0,
+  "tokens": 136
+ },
+ {
+  "i": 9529,
+  "subject": "nutrition",
+  "gold": 1,
+  "teacher": 1,
+  "student": 3,
+  "tokens": 160
+ },
+ {
+  "i": 11632,
+  "subject": "professional_law",
+  "gold": 3,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 287
+ },
+ {
+  "i": 6491,
+  "subject": "international_law",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 139
+ },
+ {
+  "i": 7284,
+  "subject": "medical_genetics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 83
+ },
+ {
+  "i": 1671,
+  "subject": "conceptual_physics",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 72
+ },
+ {
+  "i": 12231,
+  "subject": "professional_medicine",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 362
+ },
+ {
+  "i": 5797,
+  "subject": "high_school_us_history",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 182
+ },
+ {
+  "i": 4643,
+  "subject": "high_school_microeconomics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 141
+ },
+ {
+  "i": 12373,
+  "subject": "professional_medicine",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 217
+ },
+ {
+  "i": 11019,
+  "subject": "professional_law",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 268
+ },
+ {
+  "i": 3211,
+  "subject": "high_school_computer_science",
+  "gold": 0,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 74
+ },
+ {
+  "i": 9755,
+  "subject": "philosophy",
+  "gold": 2,
+  "teacher": 2,
+  "student": 2,
+  "tokens": 95
+ },
+ {
+  "i": 1396,
+  "subject": "college_physics",
+  "gold": 1,
+  "teacher": 1,
+  "student": 1,
+  "tokens": 116
+ },
+ {
+  "i": 580,
+  "subject": "clinical_knowledge",
+  "gold": 3,
+  "teacher": 3,
+  "student": 3,
+  "tokens": 118
+ },
+ {
+  "i": 1154,
+  "subject": "college_mathematics",
+  "gold": 2,
+  "teacher": 0,
+  "student": 0,
+  "tokens": 127
+ }
+]

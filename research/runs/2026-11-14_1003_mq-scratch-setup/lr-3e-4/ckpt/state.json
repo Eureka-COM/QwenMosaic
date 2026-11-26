@@ -1,0 +1,10 @@
+{
+ "step": 915,
+ "tokens": 59965440,
+ "tag": "done",
+ "evals_done": [
+  915
+ ],
+ "family": "transformer",
+ "lr": 0.0003
+}

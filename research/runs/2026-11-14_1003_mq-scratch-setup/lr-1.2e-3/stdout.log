@@ -1,0 +1,58 @@
+ninja: no work to do.
+{"event": "start", "step": 0, "elapsed_min": 0.0, "family": "transformer", "parameters": 114582016, "non_embedding": 81814016, "total_steps": 915, "tokens_per_step": 65536, "lr": 0.0012, "duty": 0.7, "resumed": false, "backends": {"attention": "official (training) / dense (no-grad)", "leaky_average": "kernel", "attention_fallback": null, "leaky_fallback": null, "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"}}
+/content/mmllm/scripts/scratch_train.py:201: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  loss_acc += float(loss) * args.accum; n_acc += 1
+{"event": "step", "step": 10, "elapsed_min": 0.29, "tokens": 655360, "loss": 9.5891, "lr": 0.00026667, "grad_norm": 1.225, "tok_per_s": 37516.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 20, "elapsed_min": 0.51, "tokens": 1310720, "loss": 8.093, "lr": 0.00053333, "grad_norm": 0.931, "tok_per_s": 49972.9, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 30, "elapsed_min": 0.72, "tokens": 1966080, "loss": 7.2826, "lr": 0.0008, "grad_norm": 0.662, "tok_per_s": 50745.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 40, "elapsed_min": 0.94, "tokens": 2621440, "loss": 7.0738, "lr": 0.00106667, "grad_norm": 0.668, "tok_per_s": 49996.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 50, "elapsed_min": 1.16, "tokens": 3276800, "loss": 6.7729, "lr": 0.00119994, "grad_norm": 0.46, "tok_per_s": 50716.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 60, "elapsed_min": 1.37, "tokens": 3932160, "loss": 6.5566, "lr": 0.00119924, "grad_norm": 0.525, "tok_per_s": 50627.9, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 70, "elapsed_min": 1.59, "tokens": 4587520, "loss": 6.3976, "lr": 0.00119777, "grad_norm": 0.856, "tok_per_s": 50531.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 80, "elapsed_min": 1.81, "tokens": 5242880, "loss": 6.3207, "lr": 0.00119553, "grad_norm": 0.725, "tok_per_s": 50254.1, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 90, "elapsed_min": 2.02, "tokens": 5898240, "loss": 6.1758, "lr": 0.00119252, "grad_norm": 0.463, "tok_per_s": 50597.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 100, "elapsed_min": 2.24, "tokens": 6553600, "loss": 6.0987, "lr": 0.00118874, "grad_norm": 0.789, "tok_per_s": 50222.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 110, "elapsed_min": 2.46, "tokens": 7208960, "loss": 6.0067, "lr": 0.00118421, "grad_norm": 0.451, "tok_per_s": 50531.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 120, "elapsed_min": 2.67, "tokens": 7864320, "loss": 5.9398, "lr": 0.00117892, "grad_norm": 0.489, "tok_per_s": 50780.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 130, "elapsed_min": 2.89, "tokens": 8519680, "loss": 5.8717, "lr": 0.00117288, "grad_norm": 0.371, "tok_per_s": 51234.2, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 140, "elapsed_min": 3.1, "tokens": 9175040, "loss": 5.8223, "lr": 0.00116611, "grad_norm": 0.477, "tok_per_s": 50958.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 150, "elapsed_min": 3.32, "tokens": 9830400, "loss": 5.7745, "lr": 0.0011586, "grad_norm": 0.499, "tok_per_s": 50491.7, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 160, "elapsed_min": 3.53, "tokens": 10485760, "loss": 5.6943, "lr": 0.00115038, "grad_norm": 0.455, "tok_per_s": 50132.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 170, "elapsed_min": 3.75, "tokens": 11141120, "loss": 5.6532, "lr": 0.00114144, "grad_norm": 0.485, "tok_per_s": 50496.7, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 180, "elapsed_min": 3.97, "tokens": 11796480, "loss": 5.5804, "lr": 0.00113181, "grad_norm": 0.446, "tok_per_s": 50568.1, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 190, "elapsed_min": 4.18, "tokens": 12451840, "loss": 5.5077, "lr": 0.00112149, "grad_norm": 0.615, "tok_per_s": 50920.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 200, "elapsed_min": 4.4, "tokens": 13107200, "loss": 5.4913, "lr": 0.0011105, "grad_norm": 0.372, "tok_per_s": 50783.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 210, "elapsed_min": 4.61, "tokens": 13762560, "loss": 5.4359, "lr": 0.00109885, "grad_norm": 0.396, "tok_per_s": 50010.8, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 220, "elapsed_min": 4.83, "tokens": 14417920, "loss": 5.3898, "lr": 0.00108656, "grad_norm": 0.355, "tok_per_s": 50156.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 230, "elapsed_min": 5.05, "tokens": 15073280, "loss": 5.3722, "lr": 0.00107364, "grad_norm": 0.393, "tok_per_s": 50845.2, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 240, "elapsed_min": 5.26, "tokens": 15728640, "loss": 5.3049, "lr": 0.00106011, "grad_norm": 0.398, "tok_per_s": 50653.9, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 250, "elapsed_min": 5.48, "tokens": 16384000, "loss": 5.2608, "lr": 0.00104599, "grad_norm": 0.374, "tok_per_s": 50259.2, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 260, "elapsed_min": 5.7, "tokens": 17039360, "loss": 5.2463, "lr": 0.0010313, "grad_norm": 0.362, "tok_per_s": 50549.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 270, "elapsed_min": 5.91, "tokens": 17694720, "loss": 5.197, "lr": 0.00101605, "grad_norm": 0.314, "tok_per_s": 50645.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 280, "elapsed_min": 6.13, "tokens": 18350080, "loss": 5.1498, "lr": 0.00100027, "grad_norm": 0.448, "tok_per_s": 50504.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 290, "elapsed_min": 6.35, "tokens": 19005440, "loss": 5.1305, "lr": 0.00098397, "grad_norm": 0.401, "tok_per_s": 50199.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 300, "elapsed_min": 6.56, "tokens": 19660800, "loss": 5.1307, "lr": 0.00096718, "grad_norm": 0.449, "tok_per_s": 50350.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 310, "elapsed_min": 6.78, "tokens": 20316160, "loss": 5.08, "lr": 0.00094992, "grad_norm": 0.358, "tok_per_s": 51053.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 320, "elapsed_min": 6.99, "tokens": 20971520, "loss": 5.0244, "lr": 0.00093221, "grad_norm": 0.351, "tok_per_s": 50932.7, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 330, "elapsed_min": 7.21, "tokens": 21626880, "loss": 5.044, "lr": 0.00091407, "grad_norm": 0.315, "tok_per_s": 50333.8, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 340, "elapsed_min": 7.43, "tokens": 22282240, "loss": 5.0243, "lr": 0.00089554, "grad_norm": 0.313, "tok_per_s": 50192.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 350, "elapsed_min": 7.64, "tokens": 22937600, "loss": 4.9526, "lr": 0.00087663, "grad_norm": 0.402, "tok_per_s": 50871.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 360, "elapsed_min": 7.85, "tokens": 23592960, "loss": 4.9476, "lr": 0.00085736, "grad_norm": 0.386, "tok_per_s": 50991.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 370, "elapsed_min": 8.07, "tokens": 24248320, "loss": 4.9311, "lr": 0.00083777, "grad_norm": 0.368, "tok_per_s": 50105.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 380, "elapsed_min": 8.29, "tokens": 24903680, "loss": 4.9085, "lr": 0.00081787, "grad_norm": 0.365, "tok_per_s": 50495.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 390, "elapsed_min": 8.5, "tokens": 25559040, "loss": 4.8792, "lr": 0.0007977, "grad_norm": 0.341, "tok_per_s": 50778.1, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 400, "elapsed_min": 8.72, "tokens": 26214400, "loss": 4.8565, "lr": 0.00077727, "grad_norm": 0.374, "tok_per_s": 50299.0, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 410, "elapsed_min": 8.94, "tokens": 26869760, "loss": 4.8429, "lr": 0.00075663, "grad_norm": 0.316, "tok_per_s": 50134.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 420, "elapsed_min": 9.15, "tokens": 27525120, "loss": 4.8177, "lr": 0.00073579, "grad_norm": 0.304, "tok_per_s": 50628.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 430, "elapsed_min": 9.37, "tokens": 28180480, "loss": 4.8075, "lr": 0.00071478, "grad_norm": 0.343, "tok_per_s": 50587.3, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 440, "elapsed_min": 9.59, "tokens": 28835840, "loss": 4.8026, "lr": 0.00069362, "grad_norm": 0.327, "tok_per_s": 50356.5, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 450, "elapsed_min": 9.8, "tokens": 29491200, "loss": 4.7743, "lr": 0.00067235, "grad_norm": 0.314, "tok_per_s": 50571.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 460, "elapsed_min": 10.02, "tokens": 30146560, "loss": 4.7448, "lr": 0.000651, "grad_norm": 0.322, "tok_per_s": 49992.9, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 470, "elapsed_min": 10.24, "tokens": 30801920, "loss": 4.7504, "lr": 0.00062959, "grad_norm": 0.307, "tok_per_s": 50543.1, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 480, "elapsed_min": 10.45, "tokens": 31457280, "loss": 4.7231, "lr": 0.00060814, "grad_norm": 0.301, "tok_per_s": 50619.4, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 490, "elapsed_min": 10.67, "tokens": 32112640, "loss": 4.6784, "lr": 0.0005867, "grad_norm": 0.326, "tok_per_s": 50576.6, "gpu_gb_peak": 4.35}
+{"event": "step", "step": 500, "elapsed_min": 10.88, "tokens": 32768000, "loss": 4.6743, "lr": 0.00056528, "grad_norm": 0.331, "tok_per_s": 50862.0, "gpu_gb_peak": 4.35}
+SIGTERM: stopping after this step (saving first)
+{"event": "saved", "step": 505, "elapsed_min": 11.01, "tokens": 33095680, "tag": "budget"}
+{"event": "stopped", "step": 505, "elapsed_min": 11.01, "status": "budget"}

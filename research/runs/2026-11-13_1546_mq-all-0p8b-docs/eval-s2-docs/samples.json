@@ -1,0 +1,27 @@
+[
+ {
+  "prompt": "Explain in two sentences why the sky is blue.",
+  "teacher": "The sky appears blue because sunlight scatters off the Earth's atmosphere, with shorter wavelengths of blue light being scattered more effectively than longer ones, while the longer wavelengths of red and orange light travel further and reach our eyes.\n",
+  "student": "**Blue Sky**\n\n**Blue Sky**\n\n**Blue Sky**\n\n**Blue Sky**\n\n**Sky Sky**\n\n**Sky Sky**\n\n**Sky Sky**\n\n**Sky Sky**\n\n**Sky**\n\n**Sky Sky**\n\n**Sky Sky**\n\n**Sky Sky**\n\n**Sky Sky**\n\n"
+ },
+ {
+  "prompt": "Write a Python function that returns the n-th Fibonacci number.",
+  "teacher": "Here’s a simple, efficient Python function that returns the n-th Fibonacci number:\n\n```python\ndef fibonacci(n: int) -> int:\n    \"\"\"\n    Return the n-th Fibonacci number (1-indexed).\n    F(0) = 0, F(1) = 1, F",
+  "student": "```python\n```python\n```python\n```python\n```python\n```\nimport matplotlib\n```\nimport matplotlib\nimport matplotlib\nimport matplotlib\nimport matplotlib\nimport matplotlib\nimport matplotlib\nimport numpy\nimport matplotlib\nimport matplotlib\nimport numpy\nimport matplotlib\nimport numpy\nimport numpy\nimport matplotlib\n"
+ },
+ {
+  "prompt": "日本で一番高い山は何ですか。標高も答えてください。",
+  "teacher": "日本では、**富士山**が「一番高い山」とされています。\n\nその標高は約 **3,378 米**（3,378.3 米）です。\n\n※ただし、山頂付近の標高は 3,378.3 米",
+  "student": "I am sorry, but I am sorry, I am not able to provide any information about the current state of the current state of the current state of the current state of the current state of the current state of the current state of the current state of the current state of the current state of the current state of the current"
+ },
+ {
+  "prompt": "List three differences between a list and a tuple in Python.",
+  "teacher": "Here are three key differences between a list and a tuple in Python:\n\n1.  **Mutability**:\n    *   **Lists** are mutable, meaning you can modify the elements inside them (e.g., `list.append(x)` or `list[0] = 10`).\n    *  ",
+  "student": "**A list of items: [1, 2, 3, 5, 6, 7, 7, 8, 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, "
+ },
+ {
+  "prompt": "次の文を英語に訳してください：「記憶は予測のためにある。」",
+  "teacher": "\"Memory is for prediction.\"\n",
+  "student": "In English:\n\n**In English:**\n\n**In English:\n\n**In English:\n\n**In English:\n\n**In English:\n\n**In English:\n\n**In English:\n\n**\n**In English:\n\n**In English:\n\n**In English:\n\n**In English:\n\n**In"
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "plan": "mq-27b-s3",
+ "runs": {
+  "fetch-s2": "ok in 0.8 min",
+  "s3": "ok in 142.5 min",
+  "eval-s3": "ok in 5.0 min"
+ },
+ "started": "2026-11-12 14:47:14",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_mem_gb": 95.0,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 148.4,
+ "finished": "2026-11-12 17:15:37"
+}

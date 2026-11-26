@@ -1,0 +1,21 @@
+{
+ "plan": "mq-diag-0p8b-init",
+ "runs": {
+  "init-ov": "ok in 20.0 min",
+  "init-ovk": "ok in 20.3 min",
+  "init-ov-lr3e4": "ok in 10.5 min"
+ },
+ "started": "2026-11-13 23:16:14",
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "environment": {
+  "python": "3.12.3",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_mem_gb": 31.8,
+  "transformers": "5.22.2",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 30.7,
+ "finished": "2026-11-13 23:46:55"
+}

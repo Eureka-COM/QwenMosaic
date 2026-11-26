@@ -1,0 +1,27 @@
+[
+ {
+  "prompt": "Explain in two sentences why the sky is blue.",
+  "teacher": "The sky appears blue because sunlight scatters off the Earth's atmosphere, with shorter wavelengths of blue light being scattered more effectively than longer ones, making the sky look blue to our eyes.\n",
+  "student": "The sky is blue because it is the sky that is blue.\n\n*(Note: This is a common misconception. The sky is actually a mixture of gases, gases, and gases, and the sky is not blue.)*\n\n**Correction:** The sky is blue because it is the sky.\n\n*(Note: This"
+ },
+ {
+  "prompt": "Write a Python function that returns the n-th Fibonacci number.",
+  "teacher": "Here’s a simple, efficient Python function that returns the n-th Fibonacci number:\n\n```python\ndef fibonacci(n: int) -> int:\n    \"\"\"\n    Return the n-th Fibonacci number (1-indexed).\n    F(0) = 0, F(1) = 1, F",
+  "student": "Here are a few ways to implement this in Python, depending on whether you want to use recursion, recursion with memoization, or recursion with memoization and memoization.\n\n### Option 1: Recursive Approach (Recursive)\n\n```python\ndef get_nth_fibonacci(n):\n    \"\"\"\n    Returns"
+ },
+ {
+  "prompt": "日本で一番高い山は何ですか。標高も答えてください。",
+  "teacher": "日本では、**富士山**が「一番高い山」とされています。\n\nその標高は約 **3,378 米**（3,378.3 米）です。\n\n※ただし、山頂付近の標高は 3,378.3 米",
+  "student": "日本には**「富士山」**という唯一の最高峰があります。\n\n- **名称**: 富士山（富士山）\n- **位置**: 日本海東部、日本海東部\n- **最高海拔**: **約 3,718 米**（約 16,"
+ },
+ {
+  "prompt": "List three differences between a list and a tuple in Python.",
+  "teacher": "Here are three key differences between a list and a tuple in Python:\n\n1.  **Mutability**:\n    *   **Lists** are mutable, meaning you can modify the elements inside them (e.g., `list.append(new_element)` or `list[0] = \"new\"`).\n    *",
+  "student": "Here are the key differences between a list and a tuple in Python:\n\n### 1. **Mutability**\n- **List**: Mutable. You can modify elements in place (e.g., `list[0] = 10`).\n  ```python\n  x = [1, 2,"
+ },
+ {
+  "prompt": "次の文を英語に訳してください：「記憶は予測のためにある。」",
+  "teacher": "\"Memory is for prediction.\"\n",
+  "student": "The following translation reflects the original meaning of the Japanese phrase:\n\n> **\"Memory is a tool for remembering the past.\"**\n\nThis translation conveys the core idea that memory is a tool for remembering the past, as the original Japanese text does. The translation is concise and directly reflects the original meaning.\n\nIf you"
+ }
+]

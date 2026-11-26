@@ -1,0 +1,82 @@
+{
+ "status": "done",
+ "metrics": {
+  "kl": 0.53118,
+  "nll_student": 2.57628,
+  "nll_teacher": 2.10334,
+  "top1": 0.6922,
+  "ppl_ratio": 1.6047,
+  "positions": 32752,
+  "calibration": {
+   "entropy_teacher": 1.85507,
+   "entropy_student": 2.37498,
+   "correct_teacher": 0.55566,
+   "correct_student": 0.49017,
+   "nll_teacher_temperature_1.25": 2.15988,
+   "nll_teacher_temperature_1.5": 2.42887,
+   "hard_nll": 8.0,
+   "hard_positions": 1522.0,
+   "nll_teacher_hard": 10.088,
+   "nll_student_hard": 9.7843,
+   "nll_teacher_rest": 1.71421,
+   "nll_student_rest": 2.225
+  },
+  "rel_mse": {
+   "0": 0.14526,
+   "1": 0.30852,
+   "2": 0.27416,
+   "3": 0.33857,
+   "4": 0.46571,
+   "5": 0.43053,
+   "6": 0.4765,
+   "7": 0.37615,
+   "8": 0.49035,
+   "9": 0.46463,
+   "10": 0.34648,
+   "11": 0.37469,
+   "12": 0.38322,
+   "13": 0.38596,
+   "14": 0.33375,
+   "15": 0.35443,
+   "16": 0.30329,
+   "17": 0.33938,
+   "18": 0.33681,
+   "19": 0.29884,
+   "20": 0.20893,
+   "21": 0.31543,
+   "22": 0.24785,
+   "23": 0.13983
+  },
+  "rel_mse_mean": 0.33914
+ },
+ "recall": {
+  "32": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "512": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "1500": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "6000": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  }
+ },
+ "samples": 5,
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ }
+}

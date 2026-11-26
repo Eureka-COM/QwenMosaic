@@ -10,7 +10,7 @@
 | `third_party/MemoryMosaics/` | [facebookresearch/MemoryMosaics](https://github.com/facebookresearch/MemoryMosaics)（commit c2ca0e8） | Apache License 2.0。Copyright (c) Meta Platforms, Inc. and affiliates | 配布元の LICENSE.txt は apache.org の Apache License 2.0 の本文と完全に一致した（SHA-256 が同じ）。中の Python ファイル 30 個は、どれも先頭に Meta の著作権表示がある |
 | それ以外のコードと文書 | Eureka-COM/mosaic-qwen を整理したもの | Apache License 2.0（[LICENSE](../LICENSE)） | |
 
-公式のコードは書き換えていません。`tests/test_official_vendor.py` が、`third_party/MemoryMosaics/UPSTREAM.json` に記録した 1 ファイルずつのハッシュと照合します。
+公式のコードは書き換えていません。2026-11-26 に配布元の commit c2ca0e8（この日の時点で main の最新）を取り直し、同梱した 49 ファイルが 1 バイトも違わないことを確かめました。日常の確かめとしては、`tests/test_official_vendor.py` が、`third_party/MemoryMosaics/UPSTREAM.json` に記録した 1 ファイルずつのハッシュと照合します。
 CPU など、公式の部品が動かない場所で使う代わりの計算は `src/mmllm/official.py` にだけ置いています。
 
 ## 元にするモデル（含まない。実行するときに Hugging Face から取る）

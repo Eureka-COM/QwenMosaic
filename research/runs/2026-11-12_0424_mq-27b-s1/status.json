@@ -1,0 +1,19 @@
+{
+ "plan": "mq-27b-s1",
+ "runs": {
+  "s1": "ok in 60.8 min"
+ },
+ "started": "2026-11-12 04:24:09",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_mem_gb": 79.3,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 64.4,
+ "finished": "2026-11-12 05:28:33"
+}

@@ -1,0 +1,166 @@
+{
+ "name": "mq-27b-s3",
+ "purpose": "docs/plan-mosaic-qwen.md：Qwen3.8-27B 段3（長い列）：8k トークンの列で段2 を続ける。重みは github-release:mq-27b-* に置き、同じ計画をもう一度起動すると続きから進む（1 回の起動は 240 分まで）",
+ "save_mode": "token",
+ "auto_stop": true,
+ "export_token": true,
+ "max_minutes": 295,
+ "save_every_min": 10,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-s2",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 15,
+   "no_common": true,
+   "args": [
+    "--store",
+    "github-release:mq-27b-s2",
+    "--dest",
+    "/content/prev/s2/delta",
+    "--require-tag",
+    "done"
+   ]
+  },
+  {
+   "name": "s3",
+   "script": "scripts/mq_stage2.py",
+   "no_common": true,
+   "max_minutes": 240,
+   "after": [
+    "fetch-s2"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--store",
+    "github-release:mq-27b-s3",
+    "--shard-mb",
+    "1900",
+    "--no-optim-save",
+    "--save-every-min",
+    "30",
+    "--delta-in",
+    "/content/prev/s2/delta",
+    "--train",
+    "mem+lora",
+    "--lora-r",
+    "32",
+    "--grad-checkpoint",
+    "--seq-len",
+    "8192",
+    "--max-doc",
+    "8192",
+    "--bsz",
+    "1",
+    "--positions",
+    "1024",
+    "--tokens",
+    "8e6",
+    "--lr",
+    "5e-5",
+    "--warmup",
+    "20",
+    "--eval-every",
+    "100",
+    "--eval-rows",
+    "2"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ]
+  },
+  {
+   "name": "eval-s3",
+   "script": "scripts/mq_eval.py",
+   "no_common": true,
+   "max_minutes": 35,
+   "after": [
+    "s3"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "8000",
+    "--delta",
+    "/content/out/s3/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32,512,1500,6000",
+    "--recall-n",
+    "20"
+   ],
+   "output_files": [
+    "metrics.json",
+    "recall.json"
+   ]
+  }
+ ],
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "code_commit": "ecbb658"
+}

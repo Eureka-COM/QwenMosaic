@@ -1,0 +1,30 @@
+{
+ "plan": "mq-dev-0p8b",
+ "runs": {
+  "env": "ok in 5.0 min",
+  "s1-r10": "ok in 13.4 min",
+  "s1-r05": "ok in 10.8 min",
+  "s2-r05": "ok in 19.9 min",
+  "eval-s1-r05": "ok in 2.8 min",
+  "s2-r10": "failed (exit 1) in 1.0 min",
+  "eval-s1-r10": "ok in 2.8 min",
+  "eval-s2-r10": "skipped (dependency not successful)",
+  "s3-r10": "skipped (dependency not successful)",
+  "eval-s3-r10": "skipped (dependency not successful)",
+  "export-r10": "skipped (dependency not successful)",
+  "eval-s2-r05": "ok in 2.8 min"
+ },
+ "started": "2026-11-11 22:40:51",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_mem_gb": 79.3,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 40.5,
+ "finished": "2026-11-11 23:21:22"
+}

@@ -1,0 +1,42 @@
+{
+ "mq_config": {
+  "n_short_heads": 8,
+  "n_long_heads": 8,
+  "head_dim": 128,
+  "window": 256,
+  "skip": 64,
+  "random_skip": 192,
+  "layout": "flat",
+  "memory_gate": true,
+  "short_key_feature": "leaky_average",
+  "long_key_feature": "leaky_average",
+  "recurrence_chunk_size": 1024,
+  "recurrence_padding": 256,
+  "replace": "attention",
+  "init_seed": 42,
+  "base_model": "/content/models/Qwen3.5-0.8B",
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf",
+  "layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23
+  ],
+  "format_version": 1
+ },
+ "shards": [
+  "delta-00000.safetensors"
+ ],
+ "split": {},
+ "lora": {},
+ "num_memory_parameters": 38044128,
+ "attention_parameters_left": 0,
+ "extra": {
+  "stage": 1,
+  "step": 610,
+  "tokens": 9994240,
+  "tag": "done"
+ }
+}

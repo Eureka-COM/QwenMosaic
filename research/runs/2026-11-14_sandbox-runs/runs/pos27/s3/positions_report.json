@@ -1,0 +1,216 @@
+{
+ "model": "/content/models/Qwen3.8-27B",
+ "delta": "/content/out/s3/delta",
+ "sets": {
+  "r2048": {
+   "rows": 16,
+   "kinds": {
+    "all positions": {
+     "positions": 32752,
+     "loss_teacher": 1.96,
+     "loss_student": 1.8589,
+     "ppl_ratio": 0.9038,
+     "kl": 0.1663,
+     "top1_agreement": 0.8396,
+     "teacher_bad_share": 0.0491,
+     "teacher_predicts_end_of_turn_wrongly": 0.099
+    },
+    "plain text, no conversation before it": {
+     "positions": 20830,
+     "loss_teacher": 1.5877,
+     "loss_student": 1.6567,
+     "ppl_ratio": 1.0714,
+     "kl": 0.15,
+     "top1_agreement": 0.8418,
+     "teacher_bad_share": 0.027,
+     "teacher_predicts_end_of_turn_wrongly": 0.0008
+    },
+    "where the teacher's output means something (the first two)": {
+     "positions": 28459,
+     "loss_teacher": 1.6195,
+     "loss_student": 1.6324,
+     "ppl_ratio": 1.0129,
+     "kl": 0.1548,
+     "top1_agreement": 0.8375,
+     "teacher_bad_share": 0.0285,
+     "teacher_predicts_end_of_turn_wrongly": 0.0575
+    },
+    "separator": {
+     "positions": 35,
+     "loss_teacher": 4.1802,
+     "loss_student": 3.6176,
+     "ppl_ratio": 0.5698,
+     "kl": 0.1502,
+     "top1_agreement": 0.7714,
+     "teacher_bad_share": 0.1429,
+     "teacher_predicts_end_of_turn_wrongly": 0.0286
+    },
+    "conversation: template tokens": {
+     "positions": 297,
+     "loss_teacher": 1.6007,
+     "loss_student": 0.9848,
+     "ppl_ratio": 0.5402,
+     "kl": 0.1442,
+     "top1_agreement": 0.9495,
+     "teacher_bad_share": 0.0875,
+     "teacher_predicts_end_of_turn_wrongly": 0.0269
+    },
+    "the other positions (separator left out)": {
+     "positions": 4258,
+     "loss_teacher": 4.2178,
+     "loss_student": 3.3585,
+     "ppl_ratio": 0.4234,
+     "kl": 0.243,
+     "top1_agreement": 0.8542,
+     "teacher_bad_share": 0.1865,
+     "teacher_predicts_end_of_turn_wrongly": 0.3772
+    },
+    "conversation: system turn": {
+     "positions": 342,
+     "loss_teacher": 3.3644,
+     "loss_student": 3.0755,
+     "ppl_ratio": 0.7491,
+     "kl": 0.0958,
+     "top1_agreement": 0.9386,
+     "teacher_bad_share": 0.1608,
+     "teacher_predicts_end_of_turn_wrongly": 0.0585
+    },
+    "conversation: user's turns": {
+     "positions": 1268,
+     "loss_teacher": 5.5617,
+     "loss_student": 4.4525,
+     "ppl_ratio": 0.3298,
+     "kl": 0.2647,
+     "top1_agreement": 0.8423,
+     "teacher_bad_share": 0.2303,
+     "teacher_predicts_end_of_turn_wrongly": 0.5584
+    },
+    "conversation: assistant's turns": {
+     "positions": 7629,
+     "loss_teacher": 1.7064,
+     "loss_student": 1.566,
+     "ppl_ratio": 0.8691,
+     "kl": 0.1679,
+     "top1_agreement": 0.8258,
+     "teacher_bad_share": 0.0324,
+     "teacher_predicts_end_of_turn_wrongly": 0.2121
+    },
+    "plain text after a conversation": {
+     "positions": 2351,
+     "loss_teacher": 3.9478,
+     "loss_student": 3.1094,
+     "ppl_ratio": 0.4324,
+     "kl": 0.2651,
+     "top1_agreement": 0.8362,
+     "teacher_bad_share": 0.1791,
+     "teacher_predicts_end_of_turn_wrongly": 0.3701
+    }
+   }
+  },
+  "r8192": {
+   "rows": 1,
+   "kinds": {
+    "all positions": {
+     "positions": 8191,
+     "loss_teacher": 2.0351,
+     "loss_student": 1.8452,
+     "ppl_ratio": 0.8271,
+     "kl": 0.2029,
+     "top1_agreement": 0.8465,
+     "teacher_bad_share": 0.057,
+     "teacher_predicts_end_of_turn_wrongly": 0.0824
+    },
+    "plain text, no conversation before it": {
+     "positions": 5215,
+     "loss_teacher": 1.3614,
+     "loss_student": 1.4522,
+     "ppl_ratio": 1.095,
+     "kl": 0.1304,
+     "top1_agreement": 0.8621,
+     "teacher_bad_share": 0.0213,
+     "teacher_predicts_end_of_turn_wrongly": 0.0
+    },
+    "where the teacher's output means something (the first two)": {
+     "positions": 6076,
+     "loss_teacher": 1.3465,
+     "loss_student": 1.4029,
+     "ppl_ratio": 1.058,
+     "kl": 0.1371,
+     "top1_agreement": 0.8636,
+     "teacher_bad_share": 0.0212,
+     "teacher_predicts_end_of_turn_wrongly": 0.0122
+    },
+    "separator": {
+     "positions": 11,
+     "loss_teacher": 5.3086,
+     "loss_student": 4.9377,
+     "ppl_ratio": 0.6901,
+     "kl": 0.1776,
+     "top1_agreement": 0.9091,
+     "teacher_bad_share": 0.1818,
+     "teacher_predicts_end_of_turn_wrongly": 0.3636
+    },
+    "conversation: template tokens": {
+     "positions": 40,
+     "loss_teacher": 1.3579,
+     "loss_student": 0.841,
+     "ppl_ratio": 0.5963,
+     "kl": 0.1712,
+     "top1_agreement": 0.925,
+     "teacher_bad_share": 0.1,
+     "teacher_predicts_end_of_turn_wrongly": 0.0
+    },
+    "the other positions (separator left out)": {
+     "positions": 2104,
+     "loss_teacher": 4.0064,
+     "loss_student": 3.1063,
+     "ppl_ratio": 0.4066,
+     "kl": 0.3932,
+     "top1_agreement": 0.7971,
+     "teacher_bad_share": 0.1597,
+     "teacher_predicts_end_of_turn_wrongly": 0.2837
+    },
+    "conversation: system turn": {
+     "positions": 38,
+     "loss_teacher": 2.2955,
+     "loss_student": 2.1079,
+     "ppl_ratio": 0.829,
+     "kl": 0.0671,
+     "top1_agreement": 0.9737,
+     "teacher_bad_share": 0.0526,
+     "teacher_predicts_end_of_turn_wrongly": 0.0263
+    },
+    "conversation: user's turns": {
+     "positions": 511,
+     "loss_teacher": 4.98,
+     "loss_student": 3.9585,
+     "ppl_ratio": 0.36,
+     "kl": 0.2416,
+     "top1_agreement": 0.8219,
+     "teacher_bad_share": 0.1918,
+     "teacher_predicts_end_of_turn_wrongly": 0.3738
+    },
+    "conversation: assistant's turns": {
+     "positions": 861,
+     "loss_teacher": 1.2563,
+     "loss_student": 1.1046,
+     "ppl_ratio": 0.8593,
+     "kl": 0.1774,
+     "top1_agreement": 0.8722,
+     "teacher_bad_share": 0.0209,
+     "teacher_predicts_end_of_turn_wrongly": 0.0859
+    },
+    "plain text after a conversation": {
+     "positions": 1515,
+     "loss_teacher": 3.7908,
+     "loss_student": 2.9038,
+     "ppl_ratio": 0.4119,
+     "kl": 0.4584,
+     "top1_agreement": 0.7809,
+     "teacher_bad_share": 0.1531,
+     "teacher_predicts_end_of_turn_wrongly": 0.2673
+    }
+   }
+  }
+ }
+}

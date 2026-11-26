@@ -1,0 +1,20 @@
+{
+ "plan": "mq-diag-teachers",
+ "runs": {
+  "fit-qwen3": "ok in 20.3 min",
+  "fit-minicpm5": "ok in 19.5 min"
+ },
+ "started": "2026-11-13 19:08:00",
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "environment": {
+  "python": "3.12.3",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_mem_gb": 31.8,
+  "transformers": "5.22.2",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 40.5,
+ "finished": "2026-11-13 19:48:31"
+}

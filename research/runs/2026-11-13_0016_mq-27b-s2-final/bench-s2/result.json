@@ -1,0 +1,41 @@
+{
+ "status": "done",
+ "delta": "/content/prev/s2/delta",
+ "backends": {
+  "attention": "official (training) / dense (no-grad)",
+  "leaky_average": "kernel",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ },
+ "mmlu": {
+  "n": 1000,
+  "sampled_from": 14042,
+  "teacher": 0.843,
+  "student": 0.771,
+  "same_answer": 0.841,
+  "both_right": 737,
+  "only_teacher_right": 106,
+  "only_student_right": 34,
+  "both_wrong": 123
+ },
+ "gsm8k": {
+  "n": 15,
+  "asked_for": 100,
+  "max_new_tokens": 256,
+  "teacher": 0.2,
+  "student": 0.0,
+  "both_right": 0,
+  "only_teacher_right": 3,
+  "only_student_right": 0,
+  "both_wrong": 12,
+  "finished_with_answer": {
+   "teacher": 2,
+   "student": 0
+  },
+  "tokens_per_second": {
+   "teacher": 8.2,
+   "student": 4.2
+  }
+ }
+}

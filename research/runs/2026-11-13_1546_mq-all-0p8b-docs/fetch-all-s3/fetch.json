@@ -1,0 +1,16 @@
+{
+ "store": "github-release:mq-all-0p8b-s3 (Eureka-COM/mosaic-qwen)",
+ "found": true,
+ "files": [
+  "delta-00000.safetensors",
+  "mq_config.json"
+ ],
+ "checkpoint": {
+  "stage": 2,
+  "step": 488,
+  "tokens": 7995392,
+  "tag": "done",
+  "train": "mem+lora",
+  "seq_len": 8192
+ }
+}

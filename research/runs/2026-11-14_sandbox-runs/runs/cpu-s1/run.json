@@ -1,0 +1,99 @@
+{
+ "stage": 1,
+ "args": {
+  "model": "/home/claude/models/Qwen3.5-0.8B",
+  "data": [
+   "/home/claude/data/cosmopedia-100k"
+  ],
+  "out": "/home/claude/runs/cpu-s1",
+  "resume": null,
+  "store": null,
+  "seq_len": 512,
+  "max_doc": null,
+  "bsz": 2,
+  "tokens": null,
+  "steps": 150,
+  "lr": 0.001,
+  "lr_min_ratio": 0.01,
+  "warmup": 15,
+  "clip": 1.0,
+  "no_train_norms": false,
+  "eval_every": 50,
+  "eval_rows": 3,
+  "log_every": 5,
+  "save_every_min": 10.0,
+  "save_dtype": "bf16",
+  "shard_mb": 90,
+  "no_optim_save": false,
+  "seed": 0,
+  "skip_quantum": 32,
+  "device": "auto",
+  "dtype": "auto",
+  "max_minutes": null,
+  "docs": 3000,
+  "short_heads": 8,
+  "long_heads": 8,
+  "head_dim": 128,
+  "window": 128,
+  "skip": 32,
+  "random_skip": 96,
+  "layout": "flat",
+  "replace": "attention",
+  "init_seed": 42
+ },
+ "device": "cpu",
+ "dtype": "torch.float32",
+ "backends": {
+  "attention": "dense",
+  "leaky_average": "scan",
+  "attention_fallback": null,
+  "leaky_fallback": null,
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf"
+ },
+ "mq_config": {
+  "n_short_heads": 8,
+  "n_long_heads": 8,
+  "head_dim": 128,
+  "window": 128,
+  "skip": 32,
+  "random_skip": 96,
+  "layout": "flat",
+  "memory_gate": true,
+  "short_key_feature": "leaky_average",
+  "long_key_feature": "leaky_average",
+  "recurrence_chunk_size": 1024,
+  "recurrence_padding": 256,
+  "replace": "attention",
+  "init_seed": 42,
+  "base_model": "/home/claude/models/Qwen3.5-0.8B",
+  "upstream_commit": "c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf",
+  "layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23
+  ],
+  "format_version": 1
+ },
+ "memory_parameters": 38044128,
+ "trainable": 38050272,
+ "attention_parameters_in_student": 0,
+ "data": {
+  "seq_len": 512,
+  "max_doc": 512,
+  "sep_id": 248044,
+  "sources": [
+   {
+    "name": "cosmopedia-100k:text",
+    "docs": 3000,
+    "weight": 1.0,
+    "chat": false,
+    "holdout": 64
+   }
+  ]
+ },
+ "total_steps": 150,
+ "tokens_per_step": 1024
+}

@@ -1,0 +1,25 @@
+{
+ "plan": "mq-scratch-setup",
+ "runs": {
+  "prep": "ok in 3.0 min",
+  "speed-mm": "ok in 19.3 min",
+  "speed-tf": "ok in 9.5 min",
+  "lr-3e-4": "ok in 28.8 min",
+  "lr-6e-4": "ok in 28.8 min",
+  "lr-1.2e-3": "incomplete (missing or empty outputs: /content/out/lr-1.2e-3/evals.jsonl) in 11.3 min",
+  "pick-lr": "skipped (dependency not successful)"
+ },
+ "started": "2026-11-14 10:03:05",
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "environment": {
+  "python": "3.12.3",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_mem_gb": 31.8,
+  "transformers": "5.22.2",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 62.9,
+ "finished": "2026-11-14 11:06:01"
+}

@@ -1,0 +1,20 @@
+{
+ "plan": "mq-27b-s2",
+ "runs": {
+  "fetch-s1": "ok in 3.8 min",
+  "s2": "failed (exit 1) in 8.8 min"
+ },
+ "started": "2026-11-12 05:55:51",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_mem_gb": 79.3,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 15.9,
+ "finished": "2026-11-12 06:11:46"
+}

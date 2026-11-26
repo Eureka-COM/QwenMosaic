@@ -1,0 +1,30 @@
+{
+ "plan": "mq-dev-0p8b",
+ "runs": {
+  "env": "failed (exit 1) in 1.5 min",
+  "s1-r10": "skipped (dependency not successful)",
+  "s2-r10": "skipped (dependency not successful)",
+  "eval-s1-r10": "skipped (dependency not successful)",
+  "eval-s2-r10": "skipped (dependency not successful)",
+  "s3-r10": "skipped (dependency not successful)",
+  "eval-s3-r10": "skipped (dependency not successful)",
+  "export-r10": "skipped (dependency not successful)",
+  "s1-r05": "skipped (dependency not successful)",
+  "s2-r05": "skipped (dependency not successful)",
+  "eval-s1-r05": "skipped (dependency not successful)",
+  "eval-s2-r05": "skipped (dependency not successful)"
+ },
+ "started": "2026-11-11 22:30:49",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_mem_gb": 95.0,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 2.4,
+ "finished": "2026-11-11 22:33:14"
+}

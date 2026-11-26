@@ -1,0 +1,28 @@
+{
+ "plan": "mq-diag-0p8b-train",
+ "runs": {
+  "fetch-all-s1": "ok in 1.3 min",
+  "fetch-all-s2": "ok in 0.8 min",
+  "fetch-all-s3": "ok in 0.3 min",
+  "evalc-s2-all": "ok in 5.8 min",
+  "cont-kl": "ok in 61.5 min",
+  "evalc-cont-kl": "ok in 1.5 min",
+  "all-kl": "ok in 67.3 min",
+  "evalc-all-kl": "ok in 1.8 min",
+  "all-ce": "ok in 69.3 min",
+  "evalc-all-ce": "ok in 1.8 min"
+ },
+ "started": "2026-11-13 19:48:35",
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8",
+ "environment": {
+  "python": "3.12.3",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_mem_gb": 31.8,
+  "transformers": "5.22.2",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 205.2,
+ "finished": "2026-11-13 23:13:45"
+}

@@ -1,0 +1,16 @@
+scripts/mq_causality.py on the Colab G4 (RTX PRO 6000, 95 GB), 2026-11-12 08:05-08:08 UTC, in the VM where 27B stage 2 was training
+(results/2026-11-12_0641_mq-27b-s2), code = the clone of that run + this script (md5 0a305d3d427e...).
+Qwen3.5-0.8B, 8+8 heads, memories randomised, seq 2048, cuts 40,300,1023,1024,1025,1500.
+The full causality.json stayed on the VM (/content/caus/causality.json); these lines were read from the terminal:
+
+cuda torch.bfloat16 official (training) / dense (no-grad) | kernel | any: False
+teacher | extra 0 | twice 0.0 | max 0.0 | after 56.2
+student, no gradient, fixed skip | extra 0 | twice 0.0 | max 0.0 | after 41.2
+student, no gradient, sampled skip | extra 128 | twice 0.0 | max 0.0 | after 45.9
+student, with gradient, fixed skip | extra 0 | twice 0.0 | max 0.0 | after 42.1
+student, with gradient, sampled skip | extra 128 | twice 0.0 | max 0.0 | after 37.4
+student, with gradient, sampled skip (another) | extra 128 | twice 0.0 | max 0.0 | after 38.9
+ANY MODE SEES THE FUTURE: False
+
+(extra = random part of the long-memory skip; twice = max difference between two runs on the same input; max = largest change of
+the hidden states up to the cut over all cuts; after = smallest, over the cuts, of the largest change after the cut)

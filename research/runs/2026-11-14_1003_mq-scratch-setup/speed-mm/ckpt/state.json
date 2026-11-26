@@ -1,0 +1,10 @@
+{
+ "step": 305,
+ "tokens": 19988480,
+ "tag": "stop_after",
+ "evals_done": [
+  0
+ ],
+ "family": "mosaics_v2",
+ "lr": 0.0006
+}

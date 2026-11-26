@@ -1,0 +1,21 @@
+{
+ "plan": "mq-all-0p8b-env",
+ "runs": {
+  "env-all-2k": "ok in 3.0 min",
+  "env-all-2k-nockpt": "ok in 1.8 min",
+  "env-all-8k": "ok in 1.3 min"
+ },
+ "started": "2026-11-13 03:27:40",
+ "premises_sha": "23540ffd7265b7b4d6ebf8c3a1c609b25f28eba929f90f3969ba4ed7ebb1bfd1",
+ "environment": {
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_mem_gb": 39.5,
+  "transformers": "5.22.1",
+  "flash_linear_attention": true
+ },
+ "elapsed_min": 6.6,
+ "finished": "2026-11-13 03:34:19"
+}
