@@ -2,7 +2,7 @@
 
 この文書は、置き換えた 1 層が何を計算するかを、別の実装（専用のカーネルなど）を作る人に向けて書きます。
 計算の本体は公式の Memory Mosaics のコード（`third_party/MemoryMosaics/model/mosaics/`）で、このリポジトリはそれを Qwen の層の差し込み口につなぐだけです。
-式の細部は公式のコードと論文（[SOURCES.md](SOURCES.md)）が正本です。
+式の細部の拠り所は、公式のコードと論文（[SOURCES.md](SOURCES.md)）です。
 
 ## 1. 何を何に置き換えるか
 
@@ -24,22 +24,22 @@ Qwen3.5 / Qwen3.8 の言語モデルは、Gated DeltaNet の層 3 つと softmax
 ```
 
 - `feed_forward` は、元の層の MLP の重みそのものです（写しではなく同じ Parameter を共有します）。公式の FeedForward は `w2(silu(w1 x) * w3 x)` で、Qwen の MLP の `gate_proj`・`up_proj`・`down_proj` がそのまま当てはまります。活性化が SiLU でない、またはバイアスがある MLP は変換を断ります
-- `attention_norm` と `ffn_norm` は、元の層の 2 つの RMSNorm の重みで始めます。Qwen3.5 の RMSNorm は `1 + weight` を掛ける形なので、`_qwen_norm_weight` で公式の形（`weight` を掛ける）に直してから写します
+- `attention_norm` と `ffn_norm` は元の層の 2 つの RMSNorm の重みで始めます。Qwen3.5 の RMSNorm は `1 + weight` を掛ける形なので、`_qwen_norm_weight` で公式の形（`weight` を掛ける）に直してから写します
 - 元の `q_proj`・`k_proj`・`v_proj`・`o_proj`・`q_norm`・`k_norm` は取り除きます。学習の間は教師として横に残し、`drop_teacher()` か書き出しのときに捨てます
 
 ## 2. 記憶 1 つの計算
 
-`short` と `long` は、どちらも公式の `MosaicsMemory`（`model/mosaics/memory.py`）です。違うのは、どの位置を読めるかだけです。
+`short` と `long` はどちらも公式の `MosaicsMemory`（`model/mosaics/memory.py`）です。違うのは、どの位置を読めるかだけです。
 公式のコードの冒頭の説明を、記号を変えずに訳します。
 
-各ヘッドで、位置 T の問い合わせ q_T は、記憶を `sum_i softmax_i(q_T · k_i) v_i` として読みます。
+各ヘッドで、位置 T の問い合わせ q_T は記憶を `sum_i softmax_i(q_T · k_i) v_i` として読みます。
 
 - 鍵 `k_T = phi(x_T, x_{T-1}, ...)`：射影した入力の漏れ平均（leaky average）を、長さ 1 にそろえたもの
 - 問い合わせ `q_T = beta(n) * k_T`：鍵そのものに、帯域幅 `beta(n)` を掛けたもの
 - 帯域幅 `beta(n) = b1 * n^a + b0`：記憶の大きさ n が増えるほど鋭くなる
 - 値 `v_T = psi(x_{T+1}, x_T)`：次の入力と今の入力の射影を混ぜ、長さ 1 にそろえたもの。値が 1 つ先の入力を持つので、問い合わせは自分の位置を読まない
 
-位置の符号化（RoPE など）は使いません。位置の情報は、漏れ平均と、読める範囲の決め方から入ります。
+位置の符号化（RoPE など）は使いません。位置の情報は漏れ平均と、読める範囲の決め方から入ります。
 
 ### 読める範囲（マスク）
 
@@ -53,7 +53,9 @@ Qwen3.5 / Qwen3.8 の言語モデルは、Gated DeltaNet の層 3 つと softmax
 `MQConfig.attn_bias_type` が `"causal"`（このリポジトリの既定）なら、1 行に詰めた複数の文書をまたいで読みます。
 `"doc_causal"`（公式の Memory Mosaics v2 の設定ファイルの値）なら、今の文書の中だけを読みます。研究の記録の主な実行は `"causal"` で、`"doc_causal"` は全層置き換えの手順 2 で使いました。
 
-### 重み（1 つの記憶、ヘッド数 H、ヘッドの幅 d、モデルの幅 dim）
+### 重み
+
+1 つの記憶の重みです。ヘッドの数を H、ヘッドの幅を d、モデルの幅を dim と書きます。
 
 | 名前 | 形 | 役目 |
 |---|---|---|
@@ -78,11 +80,11 @@ Qwen3.5 / Qwen3.8 の言語モデルは、Gated DeltaNet の層 3 つと softmax
 | 記憶のゲート | あり |
 | 置き方（layout） | `flat`（short と long を同じ入力に並べて足す） |
 
-## 3. 2 つの計算の部品と、CPU の代わりの計算
+## 3. 2 つの計算の部品と CPU の代わりの計算
 
 公式のコードには、どこでも動くとは限らない部品が 2 つあります。`src/mmllm/official.py` は、公式のファイルを書き換えずに、それぞれの前に切り替えを置きます。
 
-| 部品 | 公式の実装 | CPU などで使う代わりの計算 | 一致の確かめ |
+| 部品 | 公式の実装 | CPU などで使う代わりの計算 | 一致の確認 |
 |---|---|---|---|
 | 記憶の読み出し（softmax の重み付き和） | PyTorch の FlexAttention（`torch.compile`） | `dense_attention`：同じ式を、マスクを当てた密な行列で計算する。何も読めない行は 0 | `tests/test_official_vendor.py` |
 | 漏れ平均 `y_t = omega_t * y_{t-1} + u_t` | JIT で作る CUDA のカーネル（nvcc と ninja が要る） | `leaky_avg_scan`：同じ漸化式を、log2(T) 段の並列のスキャンで計算する | `tests/test_official_vendor.py` |

@@ -2,20 +2,20 @@
 
 学習済みの Qwen3.5 / Qwen3.8 の注意の層を、Meta FAIR の公式 Memory Mosaics の層に置き換える道具と、その研究の記録です。
 置き換えたあとのモデルには、元の注意の層とその重み（q・k・v・o の射影）が残りません。
-置き換えた層は、過去の入力から作った鍵と値を、ガウスカーネルの回帰で読み出します（重みの付け方は softmax です）。
+置き換えた層は過去の入力から作った鍵と値を、ガウスカーネルの回帰で読み出します（重みの付け方は softmax です）。
 
-このリポジトリは、Eureka-COM/mosaic-qwen（2026-11-11〜11-14 の研究）を、ほかの人や別の実装へ渡せる形に整理したものです。
-公式の Memory Mosaics のコードは、無改変のまま `third_party/MemoryMosaics/` に入っています。
+このリポジトリは Eureka-COM/mosaic-qwen（2026-11-11〜11-14 の研究）を、ほかの人や別の実装へ渡せる形に整理したものです。
+公式の Memory Mosaics のコードは無改変のまま `third_party/MemoryMosaics/` に入っています。
 
 ## できること
 
 - Hugging Face Transformers の Qwen3.5 / Qwen3.8 のモデルを読み込み、注意の層（`full_attention`）をすべて公式の `MosaicBlock` に置き換えます。`replace="all"` を指定すると Gated DeltaNet の層も含めた全層を置き換えます
-- 置き換えた層の FFN と正規化は、元の層の重みから始めます。新しく学習するのは短い記憶と長い記憶です
+- 置き換えた層の FFN と正規化は元の層の重みから始めます。新しく学習するのは短い記憶と長い記憶です
 - 元のモデルを教師にして、3 段の蒸留（層合わせ、全体の蒸留、長い列）で記憶を学習します
 - 学習した差分（記憶・正規化・LoRA）の保存と読み込み、注意の重みを含まない単体のモデルへの書き出し、`model.generate` による生成ができます
 - 置き換えた 1 層の入出力と重みを、別の実装の答え合わせ用に書き出せます（`examples/dump_layer_reference.py`）
 
-## すぐ試す（CPU だけ）
+## CPU だけで試す
 
 ```bash
 pip install -e ".[test]"
@@ -24,7 +24,7 @@ python examples/dump_layer_reference.py --out reference.safetensors
 python tools/verify_results.py                     # docs/RESULTS.md の数字を生データと照合する
 ```
 
-transformers は 5.22 までを使ってください。5.24.1 では、生成のキャッシュと Qwen3・Llama 型の変換の試験が落ちます（[docs/REPRODUCE.md](docs/REPRODUCE.md)）。
+transformers は 5.22 までを使ってください。5.24.1 では生成のキャッシュと Qwen3・Llama 型の変換の試験が落ちます（[docs/REPRODUCE.md](docs/REPRODUCE.md)）。
 `official.py` は `third_party/MemoryMosaics/` をリポジトリの中から読むので、`pip install -e .`（編集可能なインストール）で入れます。
 
 本物の Qwen3.5-0.8B で変換する最小の例です。
@@ -44,7 +44,7 @@ mq.drop_teacher()                           # 元の注意の層を捨てる
 
 ## 結果のあらまし
 
-数字はすべて `research/` の実行記録から取り、`tools/verify_results.py` で生データと照合しています。詳しくは [docs/RESULTS.md](docs/RESULTS.md) にあります。
+数字はすべて `research/` の実行記録から取り、`tools/verify_results.py` で生データと照合しています。詳しくは [docs/RESULTS.md](docs/RESULTS.md) にあります。表の「語」はトークンのことです。
 
 | 置き換えたもの | 教師との KL | PPL 比 | 想起（6,000 語前） | 判定（計画の基準） |
 |---|---|---|---|---|
@@ -52,8 +52,8 @@ mq.drop_teacher()                           # 元の注意の層を捨てる
 | Qwen3.8-27B の注意 16 層 | 0.166 | 0.897 | 0/20（評価の作りによる。下を参照） | 数値の基準は満たした |
 | Qwen3.5-0.8B の全 24 層 | 0.492 | 1.530 | 19/20 | 保留 |
 
-- 27B の想起の 0/20 は、評価の詰め物と質問の入れ方で起きていました。会話を含まない詰め物では、6,000 語前でも 10 問中 10 問を取り出しました
-- 27B の段 2 の重みは、MMLU 1,000 問で元の 84.3% に対して 77.1% でした。数学 5 科目での差が大きく出ています
+- 27B の想起の 0/20 は評価の詰め物と質問の入れ方で起きていました。会話を含まない詰め物では 6,000 語前でも 10 問中 10 問を取り出しました
+- 27B の段 2 の重みは MMLU 1,000 問で元の 84.3% に対して 77.1% でした。数学 5 科目での差が大きく出ています
 - 全 24 層の置き換えは、記録の範囲では合格の線に届いていません。いちばん長い学習（1.6 億語）でも KL は 0.408（合格の線は 0.30）で、学習していない種類の文（英語 Wikipedia）では KL 0.577 まで開きます。品質が止まる理由の切り分けも記録にあります
 
 ## 中身

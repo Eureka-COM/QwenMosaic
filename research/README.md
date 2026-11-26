@@ -1,6 +1,6 @@
 # 研究の記録
 
-このフォルダは、元のリポジトリ Eureka-COM/mosaic-qwen の研究（2026-11-11〜11-14）の記録です。
+このフォルダは元のリポジトリ Eureka-COM/mosaic-qwen の研究（2026-11-11〜11-14）の記録です。
 文書と実行の生データは、書かれたときのまま写しています。数字や判断を、あとから書き換えてはいません。
 いま読める形のまとめは [../docs/RESULTS.md](../docs/RESULTS.md) にあります。
 
@@ -22,15 +22,15 @@
 
 ## ブランチとフォルダ
 
-元のリポジトリでは、実行ごとの結果を `results/<日時>_<計画名>` のブランチに置いていました。
+元のリポジトリでは実行ごとの結果を `results/<日時>_<計画名>` のブランチに置いていました。
 ここでは、そのブランチの中身を `runs/<日時>_<計画名>/` のフォルダに移しています。記録の文書に `results/2026-11-12_1447_mq-27b-s3` のようなブランチ名が出てきたら、`runs/2026-11-12_1447_mq-27b-s3/` を見てください。
 
-- `runs/2026-11-11_1758_mq-cpu/` だけは、さらに前のリポジトリ Eureka-COM/memory-mosaics-LLM のブランチから写しました（`docs/results/mq-cpu-2026-11-12.md` がそう書いています）
+- `runs/2026-11-11_1758_mq-cpu/` だけはさらに前のリポジトリ Eureka-COM/memory-mosaics-LLM のブランチから写しました（`docs/results/mq-cpu-2026-11-12.md` がそう書いています）
 - 重みのファイル（`*.safetensors`）と、Qwen の `tokenizer.json` は写していません。写さなかったファイルの一覧は `runs/EXCLUDED-weights.txt` にあります
 
 ## 学習した重み
 
-学習した重みは、このリポジトリに入れていません。元のリポジトリ（Eureka-COM/mosaic-qwen、非公開）の Release に、次の名前で置いてあります。
+学習した重みはこのリポジトリに入れていません。元のリポジトリ（Eureka-COM/mosaic-qwen、非公開）の Release に、次の名前で置いてあります。
 
 | Release | 中身（記録の文書による） |
 |---|---|
@@ -48,9 +48,9 @@
 - `tests/test_mq_scripts.py`（リポジトリの最上位の試験）：実行計画の置き場を `research/colab/plans/` に直しました
 - `tests/test_premises.py`・`tests/test_colab.py`・`tests/test_runner_fail_closed.py` は、元の `tests/` からここへ移しました
 
-`colab/` の道具は、結果を元のリポジトリのブランチと Release へ送る作りで、トークンの名前（`MM_GITHUB_TOKEN` など）も元の環境のものです。このリポジトリで動かすときは、送り先とトークンを直してください。
+`colab/` の道具は結果を元のリポジトリのブランチと Release へ送る作りで、トークンの名前（`MM_GITHUB_TOKEN` など）も元の環境のものです。このリポジトリで動かすときは、送り先とトークンを直してください。
 
-## 前提について
+## 前提
 
-元のリポジトリでは、`docs/PREMISES.md` を研究者の指示なしに変えない決まりで、計画は前提のハッシュが合わないと起動しませんでした（`colab/runner.py` の `check_premises`）。
-ここに写した前提も、研究の記録として、書き換えずに残しています。
+元のリポジトリでは `docs/PREMISES.md` を研究者の指示なしに変えない決まりで、計画は前提のハッシュが合わないと起動しませんでした（`colab/runner.py` の `check_premises`）。
+ここに写した前提も研究の記録として、書き換えずに残しています。

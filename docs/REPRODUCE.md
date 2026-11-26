@@ -1,7 +1,7 @@
 # 再現の手順
 
 研究の記録（`research/`）の実行を、このリポジトリのコードで繰り返すための手順です。
-1 回ごとの正確な設定は、実行計画のファイル（`research/colab/plans/<計画名>.json`）に引数ごと残っています。この文書は流れと置き場所だけを書きます。
+1 回ごとの正確な設定は実行計画のファイル（`research/colab/plans/<計画名>.json`）に引数ごと残っています。この文書は流れと置き場所だけを書きます。
 
 ## 1. 環境
 
@@ -32,7 +32,7 @@ python research/tests/test_runner_fail_closed.py --runner research/colab/runner.
 学習と評価の台本は、`--data PATH[:FIELD][@WEIGHT]` で文書の置き場を受け取ります（`src/mmllm/mq_data.py`）。
 PATH は parquet・jsonl・jsonl.gz・json.gz のファイルか、それらのフォルダです。FIELD は文書の列（既定は `text`）で、会話の列（`messages`）はモデルの会話の書式に直して使います。
 
-研究の記録の実行は、次の 4 つを 4:2:2:1 の重みで混ぜていました（データの出典とライセンスは [SOURCES.md](SOURCES.md)）。
+研究の記録の実行は次の 4 つを 4:2:2:1 の重みで混ぜていました（データの出典とライセンスは [SOURCES.md](SOURCES.md)）。
 
 ```
 --data data/cosmopedia-100k@4 --data data/ultrachat:messages@2 --data data/wikipedia-ja@2 --data data/codeparrot:content@1
@@ -57,13 +57,15 @@ python scripts/mq_eval.py   --model Qwen/Qwen3.5-0.8B --delta runs/s2/delta --da
 python scripts/mq_export.py --model Qwen/Qwen3.5-0.8B --delta runs/s2/delta --out export/mosaic-qwen-0.8b
 ```
 
-- どの台本も、途中経過を `--out` の `progress.jsonl` に 1 行ずつ書きます。止まったら `--resume <前の --out>` で続きから始めます
+- どの台本も途中経過を `--out` の `progress.jsonl` に 1 行ずつ書きます。止まったら `--resume <前の --out>` で続きから始めます
 - 学習したものは `delta/`（記憶・正規化・LoRA の差分）に入ります。`mmllm.load_mosaic_qwen(base_model, delta)` で読み込めます
 - `mq_export.py` は LoRA を足し込み、元の注意の層を消した単体のモデルを書き、読み直して注意の重みが 0 個であることと出力が同じことを確かめます
 
-ほかの台本の役目は、各ファイルの先頭の説明にあります（`mq_recall_probe.py`：想起の切り分け、`mq_bench.py`：MMLU と GSM8K、`mq_stage1_control.py`：層合わせの対照、`scratch_*.py`：公式の Memory Mosaics を最初から学習する比べ）。
+ほかの台本の役目は各ファイルの先頭の説明にあります（`mq_recall_probe.py`：想起の切り分け、`mq_bench.py`：MMLU と GSM8K、`mq_stage1_control.py`：層合わせの対照、`scratch_*.py`：公式の Memory Mosaics を最初から学習する比べ）。
 
-## 4. 必要な GPU の目安（記録の実測）
+## 4. 必要な GPU の目安
+
+どれも記録にある実測です。
 
 | 規模 | 段 | GPU | 実測 |
 |---|---|---|---|
@@ -72,10 +74,10 @@ python scripts/mq_export.py --model Qwen/Qwen3.5-0.8B --delta runs/s2/delta --ou
 | 27B | 段 2 | A100 80GB | 勾配チェックポイントが必須。勾配を積み上げると A100 では足りず、RTX PRO 6000 Blackwell（95GB）で毎秒 1,104 語 |
 | 27B | 段 3（列 8,192 語） | RTX PRO 6000 Blackwell（95GB） | 毎秒 1,022 語、最大 73.5GiB |
 
-数字の出どころは、それぞれ `research/docs/results/` の P27・段 1・段 2・段 3 の記録です。
+数字の出どころはそれぞれ `research/docs/results/` の P27・段 1・段 2・段 3 の記録です。
 
 ## 5. 研究の記録の動かし方
 
-記録の実行は、計画のファイルを `research/colab/runner.py` に渡して動かしていました。Colab（`start_cell_mq.py`）、Modal（`modal_mq.py`）、ローカルの GPU（`local_mq.py`、手順は `research/docs/local-5090.md`）の 3 つの入り口があります。
-この道具は、結果を GitHub の `results/<日時>_<計画名>` ブランチへ、重みを Release へ送る作りで、元のリポジトリ（Eureka-COM/mosaic-qwen）の置き場とトークンの名前を前提にしています。
+記録の実行は計画のファイルを `research/colab/runner.py` に渡して動かしていました。Colab（`start_cell_mq.py`）、Modal（`modal_mq.py`）、ローカルの GPU（`local_mq.py`、手順は `research/docs/local-5090.md`）の 3 つの入り口があります。
+この道具は結果を GitHub の `results/<日時>_<計画名>` ブランチへ、重みを Release へ送る作りで、元のリポジトリ（Eureka-COM/mosaic-qwen）の置き場とトークンの名前を前提にしています。
 このリポジトリで使うときは、送り先とトークンを自分の環境に合わせて直す必要があります。詳しくは [research/README.md](../research/README.md) にあります。
