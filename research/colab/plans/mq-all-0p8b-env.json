@@ -1,0 +1,119 @@
+{
+ "name": "mq-all-0p8b-env",
+ "purpose": "docs/plan-mosaic-qwen.md §10：Qwen3.5-0.8B の全 24 層を公式 Memory Mosaics の層に置き換えたときの、段1 と段2 の 1 ステップの速さと最大メモリを測る（系列長 2,048 と 8,192）。学習はしない。学習量とバッチの大きさをこの実測で決める",
+ "save_mode": "token",
+ "auto_stop": true,
+ "max_minutes": 35,
+ "save_every_min": 5,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ]
+ },
+ "runs": [
+  {
+   "name": "env-all-2k",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 12,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "2048",
+    "--bsz",
+    "8",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--steps",
+    "4",
+    "--stage2",
+    "--grad-checkpoint"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "env-all-2k-nockpt",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 8,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "2048",
+    "--bsz",
+    "8",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--steps",
+    "4",
+    "--stage2"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "env-all-8k",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 10,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "8192",
+    "--bsz",
+    "2",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--steps",
+    "4",
+    "--stage2",
+    "--grad-checkpoint",
+    "--positions",
+    "1024"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

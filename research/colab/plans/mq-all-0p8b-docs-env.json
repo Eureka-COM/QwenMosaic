@@ -1,0 +1,188 @@
+{
+ "name": "mq-all-0p8b-docs-env",
+ "purpose": "docs/plan-mosaic-qwen.md §10 手順 2 の前：本物のデータで文書のまとまりを作って中身と所要時間を見る。記憶 3 つ・文書ごとの区切り（doc_causal）での 1 ステップの速さと最大メモリを、16,384 トークンで測る。学習はしない",
+ "save_mode": "token",
+ "auto_stop": true,
+ "max_minutes": 50,
+ "save_every_min": 5,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   },
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00001-of-00002.parquet",
+    "dir": "/content/ctx/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/test_sft-00000-of-00001-f7dfac4afe5b93f4.parquet",
+    "dir": "/content/ctx/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00013-of-00015.parquet",
+    "dir": "/content/ctx/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-train",
+    "file": "file-000000000001.json.gz",
+    "dir": "/content/ctx/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "clusters",
+   "script": "scripts/mq_cluster_check.py",
+   "wait": true,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "40000",
+    "--seq-len",
+    "16384",
+    "--max-doc",
+    "8192",
+    "--cluster-size",
+    "60",
+    "--holdout-frac",
+    "0.05",
+    "--cluster-cache",
+    "/content/cache/clusters",
+    "--fresh-data",
+    "/content/ctx/cosmopedia-100k@4",
+    "--fresh-data",
+    "/content/ctx/ultrachat:messages@2",
+    "--fresh-data",
+    "/content/ctx/wikipedia-ja@2",
+    "--fresh-data",
+    "/content/ctx/codeparrot:content@1",
+    "--fresh-docs",
+    "6000"
+   ],
+   "output_files": [
+    "clusters.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "env-docs-16k",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 12,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "16384",
+    "--bsz",
+    "1",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--bias",
+    "doc_causal",
+    "--cluster-heads",
+    "8",
+    "--steps",
+    "4",
+    "--stage2",
+    "--grad-checkpoint",
+    "--positions",
+    "2048"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "env-docs-8k",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 10,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "8192",
+    "--bsz",
+    "2",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--bias",
+    "doc_causal",
+    "--cluster-heads",
+    "8",
+    "--steps",
+    "4",
+    "--stage2",
+    "--grad-checkpoint",
+    "--positions",
+    "1024"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

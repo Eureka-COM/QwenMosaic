@@ -1,0 +1,138 @@
+{
+ "name": "mq-27b-recall-probe",
+ "purpose": "docs/plan-mosaic-qwen.md 追記（想起の切り分け）：Qwen3.8-27B の教師と、段1・段2・段3 の重みで、想起の問いを 4 通り（評価と同じ詰め物／会話を含まない詰め物／会話の形／生成の経路）に分けて、答えの位置の確率を測る。学習はしない",
+ "save_mode": "token",
+ "auto_stop": true,
+ "export_token": true,
+ "max_minutes": 40,
+ "save_every_min": 5,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-s1",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 10,
+   "no_common": true,
+   "args": [
+    "--store",
+    "github-release:mq-27b-s1",
+    "--dest",
+    "/content/prev/s1/delta",
+    "--require-tag",
+    "done"
+   ]
+  },
+  {
+   "name": "fetch-s2",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 10,
+   "no_common": true,
+   "args": [
+    "--store",
+    "github-release:mq-27b-s2",
+    "--dest",
+    "/content/prev/s2/delta",
+    "--require-tag",
+    "done"
+   ]
+  },
+  {
+   "name": "fetch-s3",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 10,
+   "no_common": true,
+   "args": [
+    "--store",
+    "github-release:mq-27b-s3",
+    "--dest",
+    "/content/prev/s3/delta",
+    "--require-tag",
+    "done"
+   ]
+  },
+  {
+   "name": "probe",
+   "script": "scripts/mq_recall_probe.py",
+   "no_common": true,
+   "max_minutes": 30,
+   "after": [
+    "fetch-s1",
+    "fetch-s2",
+    "fetch-s3"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--delta",
+    "s1=/content/prev/s1/delta",
+    "--delta",
+    "s2=/content/prev/s2/delta",
+    "--delta",
+    "s3=/content/prev/s3/delta",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "8000",
+    "--max-minutes",
+    "27"
+   ],
+   "output_files": [
+    "probe.json",
+    "result.json"
+   ]
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

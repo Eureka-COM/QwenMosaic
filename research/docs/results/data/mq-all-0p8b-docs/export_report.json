@@ -1,0 +1,22 @@
+{
+ "out": "/content/export/mosaic-qwen-0.8b-docs",
+ "parameters": 746835776,
+ "memory_parameters": 228264768,
+ "attention_parameters_left": 0,
+ "shards": 1,
+ "reload_max_logit_diff": 0.92188,
+ "reload_top1_agree": 0.8889,
+ "attention_parameters_after_reload": 0,
+ "attention_modules_after_reload": 0,
+ "stored": {
+  "where": "github-release:mq-all-0p8b-docs-dev (Eureka-COM/mosaic-qwen)",
+  "files": [
+   "chat_template.jinja",
+   "config.json",
+   "model-00000.safetensors",
+   "mq_config.json",
+   "tokenizer.json",
+   "tokenizer_config.json"
+  ]
+ }
+}

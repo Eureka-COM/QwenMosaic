@@ -1,0 +1,302 @@
+{
+ "name": "mq-scratch-setup",
+ "purpose": "docs/plan-scratch.md 準備：学習の文章（fineweb-edu）を公式のトークナイザで用意し、Memory Mosaics v2 と Transformer （どちらも公式の設定を幅 512・4 ヘッドに縮めたもの、24 層）を並べたときの速さと VRAM を測り、学習率を Transformer で決める（3e-4・6e-4・1.2e-3 を各 6,000 万トークン、学習に使わない行の損失がいちばん低いもの）",
+ "save_mode": "token",
+ "auto_stop": true,
+ "max_minutes": 420,
+ "save_every_min": 10,
+ "max_parallel": 2,
+ "stagger_sec": 30,
+ "gpu_frac": 0.92,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [],
+  "data": []
+ },
+ "runs": [
+  {
+   "name": "prep",
+   "script": "scripts/scratch_prep.py",
+   "max_minutes": 180,
+   "args": [
+    "--tokenizer",
+    "mistralai/Mistral-7B-v0.1",
+    "--fetch",
+    "HuggingFaceFW/fineweb-edu:sample/10BT/000_00000.parquet",
+    "--fetch",
+    "HuggingFaceFW/fineweb-edu:sample/10BT/001_00000.parquet",
+    "--fetch",
+    "HuggingFaceFW/fineweb-edu:sample/10BT/002_00000.parquet",
+    "--fetch-dir",
+    "/content/data/fineweb-edu",
+    "--train",
+    "/content/data/fineweb-edu/sample/10BT/000_00000.parquet",
+    "--train",
+    "/content/data/fineweb-edu/sample/10BT/001_00000.parquet",
+    "--eval",
+    "/content/data/fineweb-edu/sample/10BT/002_00000.parquet",
+    "--train-tokens",
+    "1.5e9",
+    "--data-out",
+    "/content/scratch-data"
+   ],
+   "output_files": [
+    "meta.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "speed-mm",
+   "script": "scripts/scratch_train.py",
+   "after": [
+    "prep"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 40,
+   "args": [
+    "--family",
+    "mosaics_v2",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--duty",
+    "0.7",
+    "--save-every-min",
+    "1000",
+    "--tokens",
+    "1.2e9",
+    "--stop-after",
+    "2e7",
+    "--eval-at",
+    "0",
+    "--lr",
+    "6e-4"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "speed-tf",
+   "script": "scripts/scratch_train.py",
+   "after": [
+    "prep"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 40,
+   "args": [
+    "--family",
+    "transformer",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--duty",
+    "0.7",
+    "--save-every-min",
+    "1000",
+    "--tokens",
+    "1.2e9",
+    "--stop-after",
+    "2e7",
+    "--eval-at",
+    "0",
+    "--lr",
+    "6e-4"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "lr-3e-4",
+   "script": "scripts/scratch_train.py",
+   "after": [
+    "speed-mm",
+    "speed-tf"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 90,
+   "args": [
+    "--family",
+    "transformer",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--duty",
+    "0.7",
+    "--save-every-min",
+    "1000",
+    "--tokens",
+    "6e7",
+    "--eval-at",
+    "1.0",
+    "--lr",
+    "3e-4"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "lr-6e-4",
+   "script": "scripts/scratch_train.py",
+   "after": [
+    "speed-mm",
+    "speed-tf"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 90,
+   "args": [
+    "--family",
+    "transformer",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--duty",
+    "0.7",
+    "--save-every-min",
+    "1000",
+    "--tokens",
+    "6e7",
+    "--eval-at",
+    "1.0",
+    "--lr",
+    "6e-4"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "lr-1.2e-3",
+   "script": "scripts/scratch_train.py",
+   "after": [
+    "speed-mm",
+    "speed-tf"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 90,
+   "args": [
+    "--family",
+    "transformer",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--duty",
+    "0.7",
+    "--save-every-min",
+    "1000",
+    "--tokens",
+    "6e7",
+    "--eval-at",
+    "1.0",
+    "--lr",
+    "1.2e-3"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "pick-lr",
+   "script": "scripts/scratch_pick_lr.py",
+   "after": [
+    "lr-3e-4",
+    "lr-6e-4",
+    "lr-1.2e-3"
+   ],
+   "max_minutes": 5,
+   "args": [
+    "--run",
+    "/content/out/lr-3e-4",
+    "--run",
+    "/content/out/lr-6e-4",
+    "--run",
+    "/content/out/lr-1.2e-3",
+    "--write",
+    "/content/scratch-lr"
+   ],
+   "output_files": [
+    "lr.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

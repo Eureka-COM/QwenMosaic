@@ -1,0 +1,87 @@
+{
+ "name": "mq-all-0p8b-env-l4",
+ "purpose": "docs/plan-mosaic-qwen.md §10：0.8B の全層置き換えの学習を L4（24GB）で回したときの速さを測る。メモリは足りる（学習の最大 6.7GB）ので、1 ユニットあたりのトークン数を A100 と比べて安い方を使う。学習はしない",
+ "save_mode": "token",
+ "auto_stop": true,
+ "max_minutes": 32,
+ "save_every_min": 5,
+ "max_parallel": 1,
+ "require_gpu": [
+  "L4"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ]
+ },
+ "runs": [
+  {
+   "name": "env-all-2k",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 14,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "2048",
+    "--bsz",
+    "8",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--steps",
+    "4",
+    "--stage2",
+    "--grad-checkpoint"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "env-all-8k",
+   "script": "scripts/mq_env.py",
+   "wait": true,
+   "max_minutes": 12,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--seq",
+    "8192",
+    "--bsz",
+    "2",
+    "--short-heads",
+    "8",
+    "--long-heads",
+    "8",
+    "--replace",
+    "all",
+    "--steps",
+    "4",
+    "--stage2",
+    "--grad-checkpoint",
+    "--positions",
+    "1024"
+   ],
+   "output_files": [
+    "env.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

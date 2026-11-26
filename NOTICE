@@ -1,0 +1,42 @@
+QwenMosaic
+Copyright 2026 Eureka-COM
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+It is a reorganized copy of the research repository Eureka-COM/mosaic-qwen.
+
+----------------------------------------------------------------------
+Third-party code included in this repository
+----------------------------------------------------------------------
+
+third_party/MemoryMosaics/
+  An unmodified copy of files from facebookresearch/MemoryMosaics
+  (https://github.com/facebookresearch/MemoryMosaics, commit
+  c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf, 2026-10-23): model/, configs/,
+  inference/, LICENSE.txt, README.md, requirements.txt, CODE_OF_CONDUCT.md,
+  CONTRIBUTING.md.
+  Copyright (c) Meta Platforms, Inc. and affiliates.
+  Licensed under the Apache License, Version 2.0
+  (third_party/MemoryMosaics/LICENSE.txt).
+  The per-file SHA-256 list is third_party/MemoryMosaics/UPSTREAM.json;
+  src/mmllm/official.py loads the package and refuses to run if a file differs.
+
+----------------------------------------------------------------------
+Models and data used at run time (not included in this repository)
+----------------------------------------------------------------------
+
+Base models, downloaded from Hugging Face at run time:
+  Qwen/Qwen3.5-0.8B   Copyright 2026 Alibaba Cloud, Apache License 2.0
+  Qwen/Qwen3.8-27B    Copyright 2026 Alibaba Cloud, Apache License 2.0
+
+Other models and datasets that scripts in this repository or the research
+records under research/ refer to are listed, with their sources, in
+docs/SOURCES.md. None of their weights or data files are included here; their
+own licenses apply when you download them.
+
+----------------------------------------------------------------------
+Methods
+----------------------------------------------------------------------
+
+The training procedure of scripts/mq_stage1.py and scripts/mq_stage2.py follows
+the steps described in RADLADS (Goldstein, Alcaide, Lu, Cheah;
+arXiv:2505.03005). No code from that work is included.

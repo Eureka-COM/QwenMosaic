@@ -1,0 +1,25 @@
+{
+ "summary": {
+  "32": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "512": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "1500": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 1.0
+  },
+  "6000": {
+   "n": 20,
+   "teacher": 1.0,
+   "student": 0.95
+  }
+ },
+ "cases": 80
+}

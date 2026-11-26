@@ -1,0 +1,175 @@
+{
+ "note": "computed after the results were seen (not part of the criteria fixed beforehand)",
+ "related_minus_unrelated": {
+  "teacher": {
+   "mean": 0.21666,
+   "lo": 0.13317,
+   "hi": 0.31583
+  },
+  "all": {
+   "mean": 0.20427,
+   "lo": 0.11074,
+   "hi": 0.31446
+  },
+  "docs": {
+   "mean": 0.27646,
+   "lo": 0.16604,
+   "hi": 0.40831
+  }
+ },
+ "loss_at_max": {
+  "teacher": {
+   "mean": 1.75518,
+   "lo": 1.6028,
+   "hi": 1.90939
+  },
+  "all": {
+   "mean": 2.29076,
+   "lo": 2.12187,
+   "hi": 2.4584
+  },
+  "docs": {
+   "mean": 2.38498,
+   "lo": 2.21691,
+   "hi": 2.54911
+  }
+ },
+ "loss_at_0": {
+  "teacher": {
+   "mean": 1.99914,
+   "lo": 1.86276,
+   "hi": 2.14095
+  },
+  "all": {
+   "mean": 2.48874,
+   "lo": 2.35202,
+   "hi": 2.63133
+  },
+  "docs": {
+   "mean": 2.79654,
+   "lo": 2.66916,
+   "hi": 2.92994
+  }
+ },
+ "pairs": {
+  "related_minus_unrelated: docs - teacher": {
+   "mean": 0.0598,
+   "lo": 0.01845,
+   "hi": 0.1197
+  },
+  "loss_at_max: docs - teacher": {
+   "mean": 0.6298,
+   "lo": 0.57484,
+   "hi": 0.68649
+  },
+  "loss_at_0: docs - teacher": {
+   "mean": 0.79741,
+   "lo": 0.72922,
+   "hi": 0.87161
+  },
+  "related_minus_unrelated: docs - all": {
+   "mean": 0.07219,
+   "lo": 0.03971,
+   "hi": 0.12466
+  },
+  "loss_at_max: docs - all": {
+   "mean": 0.09422,
+   "lo": 0.06389,
+   "hi": 0.12602
+  },
+  "loss_at_0: docs - all": {
+   "mean": 0.3078,
+   "lo": 0.25172,
+   "hi": 0.37379
+  },
+  "related_minus_unrelated: all - teacher": {
+   "mean": -0.01239,
+   "lo": -0.03099,
+   "hi": 0.00738
+  },
+  "loss_at_max: all - teacher": {
+   "mean": 0.53558,
+   "lo": 0.50001,
+   "hi": 0.57083
+  },
+  "loss_at_0: all - teacher": {
+   "mean": 0.4896,
+   "lo": 0.45904,
+   "hi": 0.52091
+  }
+ },
+ "by_source": {
+  "codeparrot:content": {
+   "teacher": {
+    "0": 1.4053,
+    "max": 1.2226,
+    "unrelated": 1.4313
+   },
+   "all": {
+    "0": 2.0171,
+    "max": 1.8374,
+    "unrelated": 2.083
+   },
+   "docs": {
+    "0": 2.6792,
+    "max": 2.1309,
+    "unrelated": 2.5163
+   },
+   "n": 20
+  },
+  "cosmopedia-100k:text": {
+   "teacher": {
+    "0": 2.1451,
+    "max": 2.0667,
+    "unrelated": 2.1153
+   },
+   "all": {
+    "0": 2.6492,
+    "max": 2.637,
+    "unrelated": 2.6504
+   },
+   "docs": {
+    "0": 2.7691,
+    "max": 2.6237,
+    "unrelated": 2.6693
+   },
+   "n": 20
+  },
+  "ultrachat:messages": {
+   "teacher": {
+    "0": 1.8235,
+    "max": 1.7201,
+    "unrelated": 1.7452
+   },
+   "all": {
+    "0": 2.2359,
+    "max": 2.2112,
+    "unrelated": 2.1997
+   },
+   "docs": {
+    "0": 2.3825,
+    "max": 2.2644,
+    "unrelated": 2.2972
+   },
+   "n": 20
+  },
+  "wikipedia-ja:text": {
+   "teacher": {
+    "0": 2.6227,
+    "max": 2.0113,
+    "unrelated": 2.5956
+   },
+   "all": {
+    "0": 3.0527,
+    "max": 2.4775,
+    "unrelated": 3.0471
+   },
+   "docs": {
+    "0": 3.3554,
+    "max": 2.5209,
+    "unrelated": 3.163
+   },
+   "n": 20
+  }
+ }
+}

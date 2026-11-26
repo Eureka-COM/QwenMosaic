@@ -1,0 +1,14 @@
+mosaic-qwen
+
+third_party/MemoryMosaics/ is an unmodified copy of files from facebookresearch/MemoryMosaics
+(commit c2ca0e88c5c89fc18a0a9465d6f7a1c3c8ea8faf, 2026-10-23): model/, configs/, inference/,
+LICENSE.txt, README.md, requirements.txt, CODE_OF_CONDUCT.md, CONTRIBUTING.md. Copyright (c) Meta
+Platforms, Inc. and affiliates, Apache License 2.0 (third_party/MemoryMosaics/LICENSE.txt). The
+per-file SHA-256 list is third_party/MemoryMosaics/UPSTREAM.json; src/mmllm/official.py loads the
+package and refuses to run if a file differs.
+
+The training procedure of scripts/mq_stage1.py and scripts/mq_stage2.py follows the steps described in
+RADLADS (Goldstein, Alcaide, Lu, Cheah; arXiv:2505.03005). No code from that work is included.
+
+Base models: Qwen/Qwen3.5-0.8B and Qwen/Qwen3.8-27B (Alibaba Cloud, Apache License 2.0); their weights
+are downloaded from Hugging Face at run time and are not part of this repository.

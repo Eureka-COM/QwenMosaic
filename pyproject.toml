@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwenmosaic"
+version = "0.1.0"
+description = "Qwen3.5 / Qwen3.8 の注意の層を公式 Memory Mosaics の層に置き換える道具と、その研究の記録"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.5",
+  # 試験は 5.22.2 ですべて通り、5.24.1 では生成のキャッシュと Qwen3・Llama 型の変換の試験が落ちる（docs/REPRODUCE.md）
+  "transformers>=5.2,<5.23",
+  "safetensors",
+  "pyyaml",
+  "pyarrow",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["mmllm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "research/tests"]
+# 台本として動かす試験（python research/tests/test_runner_fail_closed.py --runner research/colab/runner.py）
+addopts = "--ignore=research/tests/test_runner_fail_closed.py"

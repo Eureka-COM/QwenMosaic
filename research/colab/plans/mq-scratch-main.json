@@ -1,0 +1,120 @@
+{
+ "name": "mq-scratch-main",
+ "purpose": "docs/plan-scratch.md 本番：Memory Mosaics v2 と Transformer を、同じ行・同じ順・同じ設定で最初から並べて学習する（4e8 トークンずつ、GPU の使用は 7 割に抑える）。1・2.5・5・7.5・10 割の時点で、学習に使わない文章で損失・文書の中での損失の下がり方・想起を測る",
+ "save_mode": "token",
+ "auto_stop": true,
+ "export_token": true,
+ "max_minutes": 1560,
+ "save_every_min": 10,
+ "max_parallel": 2,
+ "stagger_sec": 20,
+ "gpu_frac": 0.92,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [],
+  "data": []
+ },
+ "runs": [
+  {
+   "name": "main-mm",
+   "script": "scripts/scratch_train.py",
+   "gpu_gb": 8,
+   "max_minutes": 1500,
+   "args": [
+    "--family",
+    "mosaics_v2",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--tokens",
+    "4e8",
+    "--lr-from",
+    "/content/scratch-lr/lr.json",
+    "--duty",
+    "0.7",
+    "--gpu-lock",
+    "/content/gpu.lock",
+    "--eval-at",
+    "0.1,0.25,0.5,0.75,1.0",
+    "--store",
+    "github-release:mq-scratch-mm",
+    "--save-every-min",
+    "30"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "main-tf",
+   "script": "scripts/scratch_train.py",
+   "gpu_gb": 8,
+   "max_minutes": 1500,
+   "args": [
+    "--family",
+    "transformer",
+    "--data",
+    "/content/scratch-data",
+    "--dim",
+    "512",
+    "--heads",
+    "4",
+    "--seq-len",
+    "4096",
+    "--bsz",
+    "4",
+    "--accum",
+    "4",
+    "--tokens",
+    "4e8",
+    "--lr-from",
+    "/content/scratch-lr/lr.json",
+    "--duty",
+    "0.7",
+    "--gpu-lock",
+    "/content/gpu.lock",
+    "--eval-at",
+    "0.1,0.25,0.5,0.75,1.0",
+    "--store",
+    "github-release:mq-scratch-tf",
+    "--save-every-min",
+    "30"
+   ],
+   "output_files": [
+    "result.json",
+    "run.json",
+    "evals.jsonl"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

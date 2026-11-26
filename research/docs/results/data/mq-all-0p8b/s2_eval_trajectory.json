@@ -1,0 +1,155 @@
+[
+ {
+  "where": "colab-a100",
+  "step": 0,
+  "tokens": 0,
+  "kl": 2.16445,
+  "ppl_ratio": 8.9587,
+  "top1": 0.39137,
+  "rel_mse_mean": 0.24886
+ },
+ {
+  "where": "colab-a100",
+  "step": 150,
+  "tokens": 2457600,
+  "kl": 0.82784,
+  "ppl_ratio": 2.217,
+  "top1": 0.60979,
+  "rel_mse_mean": 0.28172
+ },
+ {
+  "where": "colab-a100",
+  "step": 300,
+  "tokens": 4915200,
+  "kl": 0.75109,
+  "ppl_ratio": 2.0063,
+  "top1": 0.62555,
+  "rel_mse_mean": 0.29764
+ },
+ {
+  "where": "local-5090",
+  "step": 600,
+  "tokens": 9830400,
+  "kl": 0.672,
+  "ppl_ratio": 1.8627,
+  "top1": 0.6454,
+  "rel_mse_mean": 0.31599
+ },
+ {
+  "where": "local-5090",
+  "step": 750,
+  "tokens": 12288000,
+  "kl": 0.65561,
+  "ppl_ratio": 1.8125,
+  "top1": 0.65193,
+  "rel_mse_mean": 0.32215
+ },
+ {
+  "where": "local-5090",
+  "step": 900,
+  "tokens": 14745600,
+  "kl": 0.62293,
+  "ppl_ratio": 1.8031,
+  "top1": 0.66158,
+  "rel_mse_mean": 0.32553
+ },
+ {
+  "where": "local-5090",
+  "step": 1050,
+  "tokens": 17203200,
+  "kl": 0.609,
+  "ppl_ratio": 1.7432,
+  "top1": 0.6631,
+  "rel_mse_mean": 0.3287
+ },
+ {
+  "where": "local-5090",
+  "step": 1200,
+  "tokens": 19660800,
+  "kl": 0.59284,
+  "ppl_ratio": 1.7085,
+  "top1": 0.66836,
+  "rel_mse_mean": 0.33056
+ },
+ {
+  "where": "local-5090",
+  "step": 1350,
+  "tokens": 22118400,
+  "kl": 0.56769,
+  "ppl_ratio": 1.674,
+  "top1": 0.67611,
+  "rel_mse_mean": 0.3313
+ },
+ {
+  "where": "local-5090",
+  "step": 1500,
+  "tokens": 24576000,
+  "kl": 0.5489,
+  "ppl_ratio": 1.6493,
+  "top1": 0.68338,
+  "rel_mse_mean": 0.33191
+ },
+ {
+  "where": "local-5090",
+  "step": 1650,
+  "tokens": 27033600,
+  "kl": 0.5396,
+  "ppl_ratio": 1.6269,
+  "top1": 0.68729,
+  "rel_mse_mean": 0.33147
+ },
+ {
+  "where": "local-5090",
+  "step": 1800,
+  "tokens": 29491200,
+  "kl": 0.52911,
+  "ppl_ratio": 1.6127,
+  "top1": 0.68802,
+  "rel_mse_mean": 0.33127
+ },
+ {
+  "where": "local-5090",
+  "step": 1950,
+  "tokens": 31948800,
+  "kl": 0.52124,
+  "ppl_ratio": 1.602,
+  "top1": 0.69138,
+  "rel_mse_mean": 0.33053
+ },
+ {
+  "where": "local-5090",
+  "step": 2100,
+  "tokens": 34406400,
+  "kl": 0.51286,
+  "ppl_ratio": 1.5863,
+  "top1": 0.69315,
+  "rel_mse_mean": 0.3304
+ },
+ {
+  "where": "local-5090",
+  "step": 2250,
+  "tokens": 36864000,
+  "kl": 0.50854,
+  "ppl_ratio": 1.5778,
+  "top1": 0.69461,
+  "rel_mse_mean": 0.32982
+ },
+ {
+  "where": "local-5090",
+  "step": 2400,
+  "tokens": 39321600,
+  "kl": 0.50516,
+  "ppl_ratio": 1.5708,
+  "top1": 0.69303,
+  "rel_mse_mean": 0.32962
+ },
+ {
+  "where": "local-5090",
+  "step": 2441,
+  "tokens": 39993344,
+  "kl": 0.50439,
+  "ppl_ratio": 1.5769,
+  "top1": 0.69406,
+  "rel_mse_mean": 0.32952
+ }
+]

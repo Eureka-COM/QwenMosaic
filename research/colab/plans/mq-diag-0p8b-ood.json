@@ -1,0 +1,219 @@
+{
+ "name": "mq-diag-0p8b-ood",
+ "purpose": "docs/plan-mosaic-qwen.md §10 診断 5b：段2 の 3 通り（記憶+LoRA の蒸留、全部の重みの蒸留、全部の重みで蒸留なし）と夜間の長い学習を、どれも学習していない種類の文章（英語 Wikipedia）で比べる。蒸留なしの PPL の良さがデータへの慣れかどうかを見る",
+ "save_mode": "token",
+ "auto_stop": true,
+ "max_minutes": 60,
+ "save_every_min": 10,
+ "max_parallel": 2,
+ "stagger_sec": 20,
+ "gpu_frac": 0.92,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000",
+  "RTX 5090"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "data": [
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.en/train-00000-of-00041.parquet",
+    "dir": "/content/ood/wikipedia-en"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-s2",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 20,
+   "args": [
+    "--store",
+    "github-release:mq-all-0p8b-s2",
+    "--dest",
+    "/content/prev/s2/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "ood-s2",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "fetch-s2"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/ood/wikipedia-en",
+    "--docs",
+    "4000",
+    "--delta",
+    "/content/prev/s2/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32",
+    "--recall-n",
+    "2",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "fetch-allkl",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 20,
+   "args": [
+    "--store",
+    "github-release:mq-diag-0p8b-allkl",
+    "--dest",
+    "/content/prev/allkl/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "ood-allkl",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "fetch-allkl"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/ood/wikipedia-en",
+    "--docs",
+    "4000",
+    "--delta",
+    "/content/prev/allkl/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32",
+    "--recall-n",
+    "2",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "fetch-allce",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 20,
+   "args": [
+    "--store",
+    "github-release:mq-diag-0p8b-allce",
+    "--dest",
+    "/content/prev/allce/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "ood-allce",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "fetch-allce"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/ood/wikipedia-en",
+    "--docs",
+    "4000",
+    "--delta",
+    "/content/prev/allce/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32",
+    "--recall-n",
+    "2",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "fetch-long",
+   "script": "scripts/mq_fetch.py",
+   "max_minutes": 20,
+   "args": [
+    "--store",
+    "github-release:mq-diag-0p8b-long",
+    "--dest",
+    "/content/prev/long/delta",
+    "--require-tag",
+    "done"
+   ],
+   "no_common": true
+  },
+  {
+   "name": "ood-long",
+   "script": "scripts/mq_eval.py",
+   "after": [
+    "fetch-long"
+   ],
+   "gpu_gb": 8,
+   "max_minutes": 25,
+   "args": [
+    "--model",
+    "/content/models/Qwen3.5-0.8B",
+    "--data",
+    "/content/ood/wikipedia-en",
+    "--docs",
+    "4000",
+    "--delta",
+    "/content/prev/long/delta",
+    "--eval-rows",
+    "16",
+    "--recall-distances",
+    "32",
+    "--recall-n",
+    "2",
+    "--no-samples"
+   ],
+   "output_files": [
+    "metrics.json"
+   ],
+   "no_common": true
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

@@ -1,0 +1,56 @@
+{
+ "1820/short": {
+  "max_diff": 4.76837158203125e-07,
+  "positions_off": 0,
+  "first_off": null,
+  "last_off": null,
+  "diff_at_last_position": 1.043081283569336e-07,
+  "scale": 0.070824533700943,
+  "seconds": 5.3
+ },
+ "1820/long": {
+  "max_diff": 7.152557373046875e-07,
+  "positions_off": 0,
+  "first_off": null,
+  "last_off": null,
+  "diff_at_last_position": 7.450580596923828e-08,
+  "scale": 0.048650942742824554,
+  "seconds": 5.4
+ },
+ "6320/short": {
+  "max_diff": 5.364418029785156e-07,
+  "positions_off": 0,
+  "first_off": null,
+  "last_off": null,
+  "diff_at_last_position": 5.21540641784668e-08,
+  "scale": 0.06833124160766602,
+  "seconds": 0.9
+ },
+ "6320/long": {
+  "max_diff": 7.152557373046875e-07,
+  "positions_off": 0,
+  "first_off": null,
+  "last_off": null,
+  "diff_at_last_position": 3.3527612686157227e-08,
+  "scale": 0.0308856088668108,
+  "seconds": 0.8
+ },
+ "8192/short": {
+  "max_diff": 4.470348358154297e-07,
+  "positions_off": 0,
+  "first_off": null,
+  "last_off": null,
+  "diff_at_last_position": 1.4901161193847656e-07,
+  "scale": 0.06820675730705261,
+  "seconds": 0.9
+ },
+ "8192/long": {
+  "max_diff": 2.980232238769531e-07,
+  "positions_off": 0,
+  "first_off": null,
+  "last_off": null,
+  "diff_at_last_position": 2.7939677238464355e-08,
+  "scale": 0.02753269299864769,
+  "seconds": 1.0
+ }
+}

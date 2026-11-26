@@ -1,0 +1,741 @@
+{
+ "all": {
+  "all": {
+   "n": 1000,
+   "teacher": 84.3,
+   "student": 77.1,
+   "difference": 7.2,
+   "plus_minus_95": 2.3,
+   "only_teacher_right": 106,
+   "only_student_right": 34
+  }
+ },
+ "math_or_not": {
+  "math": {
+   "n": 77,
+   "teacher": 83.1,
+   "student": 57.1,
+   "difference": 26.0,
+   "plus_minus_95": 10.4,
+   "only_teacher_right": 21,
+   "only_student_right": 1
+  },
+  "not math": {
+   "n": 923,
+   "teacher": 84.4,
+   "student": 78.8,
+   "difference": 5.6,
+   "plus_minus_95": 2.3,
+   "only_teacher_right": 85,
+   "only_student_right": 33
+  }
+ },
+ "category": {
+  "STEM": {
+   "n": 224,
+   "teacher": 83.9,
+   "student": 70.5,
+   "difference": 13.4,
+   "plus_minus_95": 5.1,
+   "only_teacher_right": 34,
+   "only_student_right": 4
+  },
+  "other (business, health, misc.)": {
+   "n": 246,
+   "teacher": 83.7,
+   "student": 77.6,
+   "difference": 6.1,
+   "plus_minus_95": 3.7,
+   "only_teacher_right": 19,
+   "only_student_right": 4
+  },
+  "social sciences": {
+   "n": 203,
+   "teacher": 89.7,
+   "student": 84.2,
+   "difference": 5.4,
+   "plus_minus_95": 4.4,
+   "only_teacher_right": 16,
+   "only_student_right": 5
+  },
+  "humanities": {
+   "n": 327,
+   "teacher": 81.7,
+   "student": 76.8,
+   "difference": 4.9,
+   "plus_minus_95": 4.5,
+   "only_teacher_right": 37,
+   "only_student_right": 21
+  }
+ },
+ "subcategory": {
+  "math": {
+   "n": 77,
+   "teacher": 83.1,
+   "student": 57.1,
+   "difference": 26.0,
+   "plus_minus_95": 10.4,
+   "only_teacher_right": 21,
+   "only_student_right": 1
+  },
+  "physics": {
+   "n": 51,
+   "teacher": 88.2,
+   "student": 78.4,
+   "difference": 9.8,
+   "plus_minus_95": 11.2,
+   "only_teacher_right": 7,
+   "only_student_right": 2
+  },
+  "computer science": {
+   "n": 43,
+   "teacher": 83.7,
+   "student": 74.4,
+   "difference": 9.3,
+   "plus_minus_95": 8.7,
+   "only_teacher_right": 4,
+   "only_student_right": 0
+  },
+  "law": {
+   "n": 122,
+   "teacher": 77.9,
+   "student": 68.9,
+   "difference": 9.0,
+   "plus_minus_95": 7.9,
+   "only_teacher_right": 18,
+   "only_student_right": 7
+  },
+  "health": {
+   "n": 138,
+   "teacher": 85.5,
+   "student": 76.8,
+   "difference": 8.7,
+   "plus_minus_95": 5.5,
+   "only_teacher_right": 14,
+   "only_student_right": 2
+  },
+  "psychology": {
+   "n": 72,
+   "teacher": 95.8,
+   "student": 87.5,
+   "difference": 8.3,
+   "plus_minus_95": 6.4,
+   "only_teacher_right": 6,
+   "only_student_right": 0
+  },
+  "engineering": {
+   "n": 12,
+   "teacher": 83.3,
+   "student": 75.0,
+   "difference": 8.3,
+   "plus_minus_95": 15.6,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "geography": {
+   "n": 14,
+   "teacher": 92.9,
+   "student": 85.7,
+   "difference": 7.1,
+   "plus_minus_95": 13.5,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "economics": {
+   "n": 48,
+   "teacher": 89.6,
+   "student": 83.3,
+   "difference": 6.2,
+   "plus_minus_95": 10.7,
+   "only_teacher_right": 5,
+   "only_student_right": 2
+  },
+  "business": {
+   "n": 22,
+   "teacher": 90.9,
+   "student": 86.4,
+   "difference": 4.5,
+   "plus_minus_95": 8.7,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "history": {
+   "n": 67,
+   "teacher": 95.5,
+   "student": 91.0,
+   "difference": 4.5,
+   "plus_minus_95": 6.5,
+   "only_teacher_right": 4,
+   "only_student_right": 1
+  },
+  "culture": {
+   "n": 27,
+   "teacher": 96.3,
+   "student": 92.6,
+   "difference": 3.7,
+   "plus_minus_95": 7.1,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "other": {
+   "n": 86,
+   "teacher": 79.1,
+   "student": 76.7,
+   "difference": 2.3,
+   "plus_minus_95": 5.6,
+   "only_teacher_right": 4,
+   "only_student_right": 2
+  },
+  "philosophy": {
+   "n": 138,
+   "teacher": 78.3,
+   "student": 76.8,
+   "difference": 1.4,
+   "plus_minus_95": 7.5,
+   "only_teacher_right": 15,
+   "only_student_right": 13
+  },
+  "politics": {
+   "n": 42,
+   "teacher": 73.8,
+   "student": 73.8,
+   "difference": 0.0,
+   "plus_minus_95": 11.4,
+   "only_teacher_right": 3,
+   "only_student_right": 3
+  },
+  "chemistry": {
+   "n": 23,
+   "teacher": 65.2,
+   "student": 65.2,
+   "difference": 0.0,
+   "plus_minus_95": 12.1,
+   "only_teacher_right": 1,
+   "only_student_right": 1
+  },
+  "biology": {
+   "n": 18,
+   "teacher": 100.0,
+   "student": 100.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  }
+ },
+ "subject": {
+  "abstract_algebra": {
+   "n": 9,
+   "teacher": 77.8,
+   "student": 44.4,
+   "difference": 33.3,
+   "plus_minus_95": 30.8,
+   "only_teacher_right": 3,
+   "only_student_right": 0
+  },
+  "high_school_mathematics": {
+   "n": 14,
+   "teacher": 85.7,
+   "student": 57.1,
+   "difference": 28.6,
+   "plus_minus_95": 23.7,
+   "only_teacher_right": 4,
+   "only_student_right": 0
+  },
+  "college_mathematics": {
+   "n": 7,
+   "teacher": 57.1,
+   "student": 28.6,
+   "difference": 28.6,
+   "plus_minus_95": 33.5,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "elementary_mathematics": {
+   "n": 27,
+   "teacher": 96.3,
+   "student": 70.4,
+   "difference": 25.9,
+   "plus_minus_95": 16.5,
+   "only_teacher_right": 7,
+   "only_student_right": 0
+  },
+  "college_physics": {
+   "n": 8,
+   "teacher": 75.0,
+   "student": 50.0,
+   "difference": 25.0,
+   "plus_minus_95": 30.0,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "college_computer_science": {
+   "n": 10,
+   "teacher": 90.0,
+   "student": 70.0,
+   "difference": 20.0,
+   "plus_minus_95": 24.8,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "high_school_statistics": {
+   "n": 20,
+   "teacher": 75.0,
+   "student": 55.0,
+   "difference": 20.0,
+   "plus_minus_95": 22.3,
+   "only_teacher_right": 5,
+   "only_student_right": 1
+  },
+  "formal_logic": {
+   "n": 13,
+   "teacher": 84.6,
+   "student": 69.2,
+   "difference": 15.4,
+   "plus_minus_95": 19.6,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "clinical_knowledge": {
+   "n": 29,
+   "teacher": 89.7,
+   "student": 75.9,
+   "difference": 13.8,
+   "plus_minus_95": 12.6,
+   "only_teacher_right": 4,
+   "only_student_right": 0
+  },
+  "professional_medicine": {
+   "n": 22,
+   "teacher": 90.9,
+   "student": 77.3,
+   "difference": 13.6,
+   "plus_minus_95": 14.3,
+   "only_teacher_right": 3,
+   "only_student_right": 0
+  },
+  "machine_learning": {
+   "n": 15,
+   "teacher": 66.7,
+   "student": 53.3,
+   "difference": 13.3,
+   "plus_minus_95": 17.2,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "international_law": {
+   "n": 8,
+   "teacher": 100.0,
+   "student": 87.5,
+   "difference": 12.5,
+   "plus_minus_95": 22.9,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "human_sexuality": {
+   "n": 8,
+   "teacher": 100.0,
+   "student": 87.5,
+   "difference": 12.5,
+   "plus_minus_95": 22.9,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "professional_psychology": {
+   "n": 34,
+   "teacher": 97.1,
+   "student": 85.3,
+   "difference": 11.8,
+   "plus_minus_95": 10.8,
+   "only_teacher_right": 4,
+   "only_student_right": 0
+  },
+  "conceptual_physics": {
+   "n": 18,
+   "teacher": 100.0,
+   "student": 88.9,
+   "difference": 11.1,
+   "plus_minus_95": 14.5,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "high_school_world_history": {
+   "n": 19,
+   "teacher": 100.0,
+   "student": 89.5,
+   "difference": 10.5,
+   "plus_minus_95": 13.8,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "marketing": {
+   "n": 10,
+   "teacher": 100.0,
+   "student": 90.0,
+   "difference": 10.0,
+   "plus_minus_95": 18.6,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "professional_law": {
+   "n": 108,
+   "teacher": 75.9,
+   "student": 66.7,
+   "difference": 9.3,
+   "plus_minus_95": 8.7,
+   "only_teacher_right": 17,
+   "only_student_right": 7
+  },
+  "logical_fallacies": {
+   "n": 11,
+   "teacher": 90.9,
+   "student": 81.8,
+   "difference": 9.1,
+   "plus_minus_95": 17.0,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "professional_accounting": {
+   "n": 24,
+   "teacher": 66.7,
+   "student": 58.3,
+   "difference": 8.3,
+   "plus_minus_95": 11.1,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "electrical_engineering": {
+   "n": 12,
+   "teacher": 83.3,
+   "student": 75.0,
+   "difference": 8.3,
+   "plus_minus_95": 15.6,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "high_school_microeconomics": {
+   "n": 13,
+   "teacher": 92.3,
+   "student": 84.6,
+   "difference": 7.7,
+   "plus_minus_95": 14.5,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "medical_genetics": {
+   "n": 13,
+   "teacher": 100.0,
+   "student": 92.3,
+   "difference": 7.7,
+   "plus_minus_95": 14.5,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "econometrics": {
+   "n": 13,
+   "teacher": 92.3,
+   "student": 84.6,
+   "difference": 7.7,
+   "plus_minus_95": 25.8,
+   "only_teacher_right": 2,
+   "only_student_right": 1
+  },
+  "moral_disputes": {
+   "n": 14,
+   "teacher": 78.6,
+   "student": 71.4,
+   "difference": 7.1,
+   "plus_minus_95": 24.0,
+   "only_teacher_right": 2,
+   "only_student_right": 1
+  },
+  "high_school_geography": {
+   "n": 14,
+   "teacher": 92.9,
+   "student": 85.7,
+   "difference": 7.1,
+   "plus_minus_95": 13.5,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "high_school_us_history": {
+   "n": 14,
+   "teacher": 100.0,
+   "student": 92.9,
+   "difference": 7.1,
+   "plus_minus_95": 13.5,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "virology": {
+   "n": 15,
+   "teacher": 66.7,
+   "student": 60.0,
+   "difference": 6.7,
+   "plus_minus_95": 12.6,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "human_aging": {
+   "n": 15,
+   "teacher": 93.3,
+   "student": 86.7,
+   "difference": 6.7,
+   "plus_minus_95": 12.6,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "high_school_physics": {
+   "n": 15,
+   "teacher": 80.0,
+   "student": 73.3,
+   "difference": 6.7,
+   "plus_minus_95": 29.0,
+   "only_teacher_right": 3,
+   "only_student_right": 2
+  },
+  "college_medicine": {
+   "n": 16,
+   "teacher": 87.5,
+   "student": 81.2,
+   "difference": 6.2,
+   "plus_minus_95": 21.0,
+   "only_teacher_right": 2,
+   "only_student_right": 1
+  },
+  "nutrition": {
+   "n": 17,
+   "teacher": 82.4,
+   "student": 76.5,
+   "difference": 5.9,
+   "plus_minus_95": 19.8,
+   "only_teacher_right": 2,
+   "only_student_right": 1
+  },
+  "high_school_psychology": {
+   "n": 38,
+   "teacher": 94.7,
+   "student": 89.5,
+   "difference": 5.3,
+   "plus_minus_95": 7.1,
+   "only_teacher_right": 2,
+   "only_student_right": 0
+  },
+  "prehistory": {
+   "n": 20,
+   "teacher": 95.0,
+   "student": 90.0,
+   "difference": 5.0,
+   "plus_minus_95": 9.6,
+   "only_teacher_right": 1,
+   "only_student_right": 0
+  },
+  "high_school_macroeconomics": {
+   "n": 22,
+   "teacher": 86.4,
+   "student": 81.8,
+   "difference": 4.5,
+   "plus_minus_95": 15.3,
+   "only_teacher_right": 2,
+   "only_student_right": 1
+  },
+  "miscellaneous": {
+   "n": 57,
+   "teacher": 87.7,
+   "student": 87.7,
+   "difference": 0.0,
+   "plus_minus_95": 6.9,
+   "only_teacher_right": 2,
+   "only_student_right": 2
+  },
+  "jurisprudence": {
+   "n": 6,
+   "teacher": 83.3,
+   "student": 83.3,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "sociology": {
+   "n": 19,
+   "teacher": 94.7,
+   "student": 94.7,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "computer_security": {
+   "n": 11,
+   "teacher": 100.0,
+   "student": 100.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "public_relations": {
+   "n": 11,
+   "teacher": 54.5,
+   "student": 54.5,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "security_studies": {
+   "n": 19,
+   "teacher": 78.9,
+   "student": 78.9,
+   "difference": 0.0,
+   "plus_minus_95": 25.3,
+   "only_teacher_right": 3,
+   "only_student_right": 3
+  },
+  "philosophy": {
+   "n": 30,
+   "teacher": 83.3,
+   "student": 83.3,
+   "difference": 0.0,
+   "plus_minus_95": 13.1,
+   "only_teacher_right": 2,
+   "only_student_right": 2
+  },
+  "anatomy": {
+   "n": 11,
+   "teacher": 63.6,
+   "student": 63.6,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "high_school_chemistry": {
+   "n": 19,
+   "teacher": 73.7,
+   "student": 73.7,
+   "difference": 0.0,
+   "plus_minus_95": 14.6,
+   "only_teacher_right": 1,
+   "only_student_right": 1
+  },
+  "astronomy": {
+   "n": 10,
+   "teacher": 90.0,
+   "student": 90.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "high_school_biology": {
+   "n": 13,
+   "teacher": 100.0,
+   "student": 100.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "management": {
+   "n": 6,
+   "teacher": 100.0,
+   "student": 100.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "business_ethics": {
+   "n": 6,
+   "teacher": 66.7,
+   "student": 66.7,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "us_foreign_policy": {
+   "n": 4,
+   "teacher": 75.0,
+   "student": 75.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "high_school_computer_science": {
+   "n": 7,
+   "teacher": 85.7,
+   "student": 85.7,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "college_chemistry": {
+   "n": 4,
+   "teacher": 25.0,
+   "student": 25.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "global_facts": {
+   "n": 5,
+   "teacher": 40.0,
+   "student": 40.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "high_school_government_and_politics": {
+   "n": 8,
+   "teacher": 87.5,
+   "student": 87.5,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "college_biology": {
+   "n": 5,
+   "teacher": 100.0,
+   "student": 100.0,
+   "difference": 0.0,
+   "plus_minus_95": 0.0,
+   "only_teacher_right": 0,
+   "only_student_right": 0
+  },
+  "moral_scenarios": {
+   "n": 60,
+   "teacher": 70.0,
+   "student": 71.7,
+   "difference": -1.7,
+   "plus_minus_95": 13.5,
+   "only_teacher_right": 8,
+   "only_student_right": 9
+  },
+  "high_school_european_history": {
+   "n": 14,
+   "teacher": 85.7,
+   "student": 92.9,
+   "difference": -7.1,
+   "plus_minus_95": 13.5,
+   "only_teacher_right": 0,
+   "only_student_right": 1
+  },
+  "world_religions": {
+   "n": 10,
+   "teacher": 90.0,
+   "student": 100.0,
+   "difference": -10.0,
+   "plus_minus_95": 18.6,
+   "only_teacher_right": 0,
+   "only_student_right": 1
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "name": "mq-27b-s2",
+ "purpose": "docs/plan-mosaic-qwen.md：Qwen3.8-27B 段2（全体蒸留）：記憶＋LoRA を、元のモデルの出力に合わせて学習。重みは github-release:mq-27b-* に置き、同じ計画をもう一度起動すると続きから進む（1 回の起動は 705 分まで）",
+ "save_mode": "token",
+ "auto_stop": true,
+ "export_token": true,
+ "max_minutes": 720,
+ "save_every_min": 10,
+ "max_parallel": 1,
+ "require_gpu": [
+  "A100",
+  "H100",
+  "H200",
+  "B200",
+  "RTX PRO 6000"
+ ],
+ "setup": {
+  "pip": [
+   "transformers>=5.2,<6",
+   "pyarrow",
+   "flash-linear-attention",
+   "datasets",
+   "safetensors",
+   "ninja",
+   "accelerate"
+  ],
+  "models": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "data": [
+   {
+    "repo": "HuggingFaceTB/cosmopedia-100k",
+    "file": "data/train-00000-of-00002.parquet",
+    "dir": "/content/data/cosmopedia-100k"
+   },
+   {
+    "repo": "HuggingFaceH4/ultrachat_200k",
+    "file": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+    "dir": "/content/data/ultrachat"
+   },
+   {
+    "repo": "wikimedia/wikipedia",
+    "file": "20231101.ja/train-00014-of-00015.parquet",
+    "dir": "/content/data/wikipedia-ja"
+   },
+   {
+    "repo": "codeparrot/codeparrot-clean-valid",
+    "file": "file-000000000054.json.gz",
+    "dir": "/content/data/codeparrot"
+   }
+  ]
+ },
+ "runs": [
+  {
+   "name": "fetch-s1",
+   "script": "scripts/mq_fetch.py",
+   "wait": true,
+   "max_minutes": 15,
+   "no_common": true,
+   "args": [
+    "--store",
+    "github-release:mq-27b-s1",
+    "--dest",
+    "/content/prev/s1/delta",
+    "--require-tag",
+    "done"
+   ]
+  },
+  {
+   "name": "s2",
+   "script": "scripts/mq_stage2.py",
+   "no_common": true,
+   "max_minutes": 705,
+   "after": [
+    "fetch-s1"
+   ],
+   "args": [
+    "--model",
+    "/content/models/Qwen3.8-27B",
+    "--data",
+    "/content/data/cosmopedia-100k@4",
+    "--data",
+    "/content/data/ultrachat:messages@2",
+    "--data",
+    "/content/data/wikipedia-ja@2",
+    "--data",
+    "/content/data/codeparrot:content@1",
+    "--docs",
+    "60000",
+    "--store",
+    "github-release:mq-27b-s2",
+    "--shard-mb",
+    "1900",
+    "--no-optim-save",
+    "--save-every-min",
+    "30",
+    "--delta-in",
+    "/content/prev/s1/delta",
+    "--train",
+    "mem+lora",
+    "--lora-r",
+    "32",
+    "--grad-checkpoint",
+    "--seq-len",
+    "2048",
+    "--bsz",
+    "1",
+    "--accum",
+    "4",
+    "--positions",
+    "512",
+    "--tokens",
+    "30e6",
+    "--lr",
+    "1e-4",
+    "--warmup",
+    "30",
+    "--eval-every",
+    "200",
+    "--eval-rows",
+    "4"
+   ],
+   "output_files": [
+    "delta/mq_config.json",
+    "result.json"
+   ]
+  }
+ ],
+ "premises_sha": "8c8c8df9a368a1d8a220888753a99fe50570b6843d4bd7e182c0c10e1134d6f8"
+}

@@ -1,0 +1,36 @@
+{
+ "questions": 15,
+ "teacher": {
+  "equations_found": 23,
+  "wrong": 0,
+  "questions_with_a_wrong_equation": 0,
+  "wrong_equations": [],
+  "wrote_the_asked_form": 2,
+  "right": 3
+ },
+ "student": {
+  "equations_found": 28,
+  "wrong": 4,
+  "questions_with_a_wrong_equation": 4,
+  "wrong_equations": [
+   {
+    "k": 0,
+    "text": "$16 - 7 = 3"
+   },
+   {
+    "k": 4,
+    "text": "$15 + 25 = 25"
+   },
+   {
+    "k": 12,
+    "text": "$\\$13.5 - \\$3 = \\$7.5"
+   },
+   {
+    "k": 14,
+    "text": "$$16 - 4 = 4"
+   }
+  ],
+  "wrote_the_asked_form": 0,
+  "right": 0
+ }
+}

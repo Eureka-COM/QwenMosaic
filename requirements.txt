@@ -1,0 +1,8 @@
+torch>=2.5
+transformers>=5.2,<5.23   # Qwen3.5 (qwen3_5) support; tests pass on 5.22.2, the generation-cache and Qwen3/Llama conversion tests fail on 5.24.1
+safetensors
+pytest
+# optional on GPU (much faster Gated DeltaNet): flash-linear-attention, causal-conv1d
+pyyaml                 # mmllm.official reads the upstream config files
+pyarrow                # parquet training data (mmllm.mq_data)
+# GPU runs of the main line: ninja + the CUDA toolkit (nvcc) build the upstream leaky-average kernel
